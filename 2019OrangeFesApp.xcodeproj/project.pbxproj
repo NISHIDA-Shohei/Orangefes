@@ -1,0 +1,1071 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A18F2954D0A33D4A863690 /* Pods_2019OrangeFesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E494D09027F4286DE66F1DB /* Pods_2019OrangeFesAppTests.framework */; };
+		7B67D14F9C850DD344352CB4 /* Pods_2019OrangeFesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106D36733594C51209219568 /* Pods_2019OrangeFesApp.framework */; };
+		9C4BFBBD26908CADCC737F65 /* Pods_2019OrangeFesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002DDB883336FD4A1813B45A /* Pods_2019OrangeFesAppUITests.framework */; };
+		B6198C7E22B1E02D001FB4A6 /* LostEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6198C7D22B1E02D001FB4A6 /* LostEnterViewController.swift */; };
+		B6198C8022B33545001FB4A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6198C7F22B33545001FB4A6 /* LoginViewController.swift */; };
+		B6198CBC22B539CC001FB4A6 /* Else.png in Resources */ = {isa = PBXBuildFile; fileRef = B6198CBB22B539CC001FB4A6 /* Else.png */; };
+		B66EC66422B0A2370086DDDD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66EC66322B0A2370086DDDD /* GoogleService-Info.plist */; };
+		B670F15522BB0226006F4899 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14022BB0226006F4899 /* iTunesArtwork@1x.png */; };
+		B670F15622BB0226006F4899 /* Icon-App-76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14222BB0226006F4899 /* Icon-App-76x76@2x.png */; };
+		B670F15722BB0226006F4899 /* Icon-App-29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14322BB0226006F4899 /* Icon-App-29x29@1x.png */; };
+		B670F15822BB0226006F4899 /* Icon-App-40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14422BB0226006F4899 /* Icon-App-40x40@1x.png */; };
+		B670F15922BB0226006F4899 /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14522BB0226006F4899 /* Icon-App-20x20@1x.png */; };
+		B670F15A22BB0226006F4899 /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14622BB0226006F4899 /* Icon-App-83.5x83.5@2x.png */; };
+		B670F15B22BB0226006F4899 /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14722BB0226006F4899 /* Icon-App-20x20@3x.png */; };
+		B670F15C22BB0226006F4899 /* ItunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14822BB0226006F4899 /* ItunesArtwork@2x.png */; };
+		B670F15D22BB0226006F4899 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = B670F14922BB0226006F4899 /* Contents.json */; };
+		B670F15E22BB0226006F4899 /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14A22BB0226006F4899 /* Icon-App-20x20@2x.png */; };
+		B670F15F22BB0226006F4899 /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14B22BB0226006F4899 /* Icon-App-29x29@3x.png */; };
+		B670F16022BB0226006F4899 /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14C22BB0226006F4899 /* Icon-App-40x40@2x.png */; };
+		B670F16122BB0226006F4899 /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14D22BB0226006F4899 /* Icon-App-60x60@3x.png */; };
+		B670F16222BB0226006F4899 /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14E22BB0226006F4899 /* Icon-App-60x60@2x.png */; };
+		B670F16322BB0226006F4899 /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14F22BB0226006F4899 /* Icon-App-76x76@1x.png */; };
+		B670F16422BB0226006F4899 /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F15022BB0226006F4899 /* Icon-App-40x40@3x.png */; };
+		B670F16522BB0226006F4899 /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F15122BB0226006F4899 /* Icon-App-29x29@2x.png */; };
+		B670F16622BB0226006F4899 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B670F15222BB0226006F4899 /* README.md */; };
+		B670F16722BB0226006F4899 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F15322BB0226006F4899 /* iTunesArtwork@2x.png */; };
+		B670F16822BB0226006F4899 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F15422BB0226006F4899 /* iTunesArtwork@3x.png */; };
+		B670F16A22BB02C7006F4899 /* OrangefesAppIconPre.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F16922BB02C7006F4899 /* OrangefesAppIconPre.png */; };
+		B6BF3E2022A0801D00D8521F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E1F22A0801D00D8521F /* AppDelegate.swift */; };
+		B6BF3E2722A0801D00D8521F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E2522A0801D00D8521F /* Main.storyboard */; };
+		B6BF3E2922A0801F00D8521F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E2822A0801F00D8521F /* Assets.xcassets */; };
+		B6BF3E2C22A0801F00D8521F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E2A22A0801F00D8521F /* LaunchScreen.storyboard */; };
+		B6BF3E3722A0801F00D8521F /* _019OrangeFesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E3622A0801F00D8521F /* _019OrangeFesAppTests.swift */; };
+		B6BF3E4222A0801F00D8521F /* _019OrangeFesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E4122A0801F00D8521F /* _019OrangeFesAppUITests.swift */; };
+		B6BF3E5022A080CA00D8521F /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E4F22A080CA00D8521F /* ProgrammeViewController.swift */; };
+		B6BF3E5222A080EA00D8521F /* ProgrammeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E5122A080EA00D8521F /* ProgrammeTableViewController.swift */; };
+		B6BF3E5422A0810000D8521F /* ProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E5322A0810000D8521F /* ProgrammeTableViewCell.swift */; };
+		B6BF3E5B22A0837300D8521F /* Pic1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E5722A0837300D8521F /* Pic1.jpeg */; };
+		B6BF3E5C22A0837300D8521F /* Pic4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E5822A0837300D8521F /* Pic4.jpeg */; };
+		B6BF3E5D22A0837300D8521F /* Pic3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E5922A0837300D8521F /* Pic3.jpeg */; };
+		B6BF3E5E22A0837300D8521F /* Pic2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E5A22A0837300D8521F /* Pic2.jpeg */; };
+		B6BF3E6122A083BF00D8521F /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E6022A083BF00D8521F /* ScheduleTableViewCell.swift */; };
+		B6BF3E6322A083D800D8521F /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E6222A083D800D8521F /* ScheduleTableViewController.swift */; };
+		B6BF3E6522A083F100D8521F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E6422A083F100D8521F /* ScheduleViewController.swift */; };
+		B6BF3E7022A0BAD000D8521F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E6F22A0BAD000D8521F /* MapViewController.swift */; };
+		B6BF3E7222A0BAED00D8521F /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E7122A0BAED00D8521F /* MapTableViewController.swift */; };
+		B6BF3E7422A0BB0800D8521F /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E7322A0BB0800D8521F /* MapTableViewCell.swift */; };
+		B6BF3E7822A10ABF00D8521F /* Map1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E7722A10ABF00D8521F /* Map1.jpg */; };
+		B6BF3E7F22A20AFC00D8521F /* OrangeFes LS.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E7C22A20AFB00D8521F /* OrangeFes LS.png */; };
+		B6BF3E8022A20AFC00D8521F /* Test1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E7D22A20AFC00D8521F /* Test1.jpg */; };
+		B6BF3E8122A20AFC00D8521F /* Test2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E7E22A20AFC00D8521F /* Test2.JPG */; };
+		B6BF3EC522A53FC100D8521F /* ElseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EC422A53FC100D8521F /* ElseViewController.swift */; };
+		B6BF3EC722A53FD800D8521F /* ElseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EC622A53FD800D8521F /* ElseTableViewController.swift */; };
+		B6BF3EC922A53FEC00D8521F /* ElseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EC822A53FEC00D8521F /* ElseTableViewCell.swift */; };
+		B6BF3ECD22A54D3100D8521F /* Day2TimeTable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3ECB22A54D3000D8521F /* Day2TimeTable.jpg */; };
+		B6BF3ECE22A54D3100D8521F /* Day1TimeTable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3ECC22A54D3100D8521F /* Day1TimeTable.jpg */; };
+		B6BF3ED522A5E7F000D8521F /* 13.PNG in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3ED022A5E7F000D8521F /* 13.PNG */; };
+		B6BF3ED622A5E7F000D8521F /* 21.PNG in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3ED122A5E7F000D8521F /* 21.PNG */; };
+		B6BF3ED722A5E7F000D8521F /* 22.PNG in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3ED222A5E7F000D8521F /* 22.PNG */; };
+		B6BF3ED822A5E7F000D8521F /* 23.PNG in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3ED322A5E7F000D8521F /* 23.PNG */; };
+		B6BF3ED922A5E7F000D8521F /* 4.PNG in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3ED422A5E7F000D8521F /* 4.PNG */; };
+		B6BF3EDB22A6569100D8521F /* Staff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3EDA22A6569000D8521F /* Staff.jpg */; };
+		B6BF3EDD22A8C81C00D8521F /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EDC22A8C81C00D8521F /* FavoriteTableViewController.swift */; };
+		B6BF3EDF22A8CD2E00D8521F /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EDE22A8CD2E00D8521F /* FavoriteTableViewCell.swift */; };
+		B6BF3EE122A8CD5E00D8521F /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EE022A8CD5E00D8521F /* FavoriteViewController.swift */; };
+		B6BF3EE622AD275500D8521F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EE522AD275500D8521F /* TabBarController.swift */; };
+		B6BF3EEC22ADD2C100D8521F /* TimeTable.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3EE822ADD2C100D8521F /* TimeTable.png */; };
+		B6BF3EED22ADD2C100D8521F /* Performance.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3EE922ADD2C100D8521F /* Performance.png */; };
+		B6BF3EEE22ADD2C100D8521F /* Programme.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3EEA22ADD2C100D8521F /* Programme.png */; };
+		B6BF3EEF22ADD2C100D8521F /* Favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3EEB22ADD2C100D8521F /* Favorite.png */; };
+		B6BF3EF122ADD33C00D8521F /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3EF022ADD33B00D8521F /* Map.png */; };
+		B6BF3EF322AE1AF400D8521F /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EF222AE1AF400D8521F /* NavigationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6BF3E3322A0801F00D8521F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6BF3E1422A0801D00D8521F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6BF3E1B22A0801D00D8521F;
+			remoteInfo = 2019OrangeFesApp;
+		};
+		B6BF3E3E22A0801F00D8521F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6BF3E1422A0801D00D8521F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6BF3E1B22A0801D00D8521F;
+			remoteInfo = 2019OrangeFesApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002DDB883336FD4A1813B45A /* Pods_2019OrangeFesAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2019OrangeFesAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		106D36733594C51209219568 /* Pods_2019OrangeFesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2019OrangeFesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5781FCC2F8460C56C2CC2FB8 /* Pods-2019OrangeFesAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2019OrangeFesAppUITests.release.xcconfig"; path = "Target Support Files/Pods-2019OrangeFesAppUITests/Pods-2019OrangeFesAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		682B45A0B013D6A4DE172FED /* Pods-2019OrangeFesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2019OrangeFesApp.debug.xcconfig"; path = "Target Support Files/Pods-2019OrangeFesApp/Pods-2019OrangeFesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		715ED5BEAC3207C1EA543BF3 /* Pods-2019OrangeFesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2019OrangeFesApp.release.xcconfig"; path = "Target Support Files/Pods-2019OrangeFesApp/Pods-2019OrangeFesApp.release.xcconfig"; sourceTree = "<group>"; };
+		782EBA45B90E5FEF2DE49B25 /* Pods-2019OrangeFesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2019OrangeFesAppTests.release.xcconfig"; path = "Target Support Files/Pods-2019OrangeFesAppTests/Pods-2019OrangeFesAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8780A37FF064D248BB8DD1DF /* Pods-2019OrangeFesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2019OrangeFesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-2019OrangeFesAppUITests/Pods-2019OrangeFesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E494D09027F4286DE66F1DB /* Pods_2019OrangeFesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2019OrangeFesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6198C7D22B1E02D001FB4A6 /* LostEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostEnterViewController.swift; sourceTree = "<group>"; };
+		B6198C7F22B33545001FB4A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B6198CBB22B539CC001FB4A6 /* Else.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Else.png; sourceTree = "<group>"; };
+		B66EC66322B0A2370086DDDD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B670F14022BB0226006F4899 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		B670F14222BB0226006F4899 /* Icon-App-76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png"; sourceTree = "<group>"; };
+		B670F14322BB0226006F4899 /* Icon-App-29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png"; sourceTree = "<group>"; };
+		B670F14422BB0226006F4899 /* Icon-App-40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png"; sourceTree = "<group>"; };
+		B670F14522BB0226006F4899 /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
+		B670F14622BB0226006F4899 /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		B670F14722BB0226006F4899 /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
+		B670F14822BB0226006F4899 /* ItunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ItunesArtwork@2x.png"; sourceTree = "<group>"; };
+		B670F14922BB0226006F4899 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		B670F14A22BB0226006F4899 /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
+		B670F14B22BB0226006F4899 /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		B670F14C22BB0226006F4899 /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		B670F14D22BB0226006F4899 /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		B670F14E22BB0226006F4899 /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		B670F14F22BB0226006F4899 /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		B670F15022BB0226006F4899 /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		B670F15122BB0226006F4899 /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		B670F15222BB0226006F4899 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B670F15322BB0226006F4899 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		B670F15422BB0226006F4899 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		B670F16922BB02C7006F4899 /* OrangefesAppIconPre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OrangefesAppIconPre.png; sourceTree = "<group>"; };
+		B6BF3E1C22A0801D00D8521F /* 2019OrangeFesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2019OrangeFesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6BF3E1F22A0801D00D8521F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6BF3E2622A0801D00D8521F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6BF3E2822A0801F00D8521F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6BF3E2B22A0801F00D8521F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6BF3E2D22A0801F00D8521F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6BF3E3222A0801F00D8521F /* 2019OrangeFesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2019OrangeFesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6BF3E3622A0801F00D8521F /* _019OrangeFesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _019OrangeFesAppTests.swift; sourceTree = "<group>"; };
+		B6BF3E3822A0801F00D8521F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6BF3E3D22A0801F00D8521F /* 2019OrangeFesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2019OrangeFesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6BF3E4122A0801F00D8521F /* _019OrangeFesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _019OrangeFesAppUITests.swift; sourceTree = "<group>"; };
+		B6BF3E4322A0801F00D8521F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6BF3E4F22A080CA00D8521F /* ProgrammeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
+		B6BF3E5122A080EA00D8521F /* ProgrammeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeTableViewController.swift; sourceTree = "<group>"; };
+		B6BF3E5322A0810000D8521F /* ProgrammeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeTableViewCell.swift; sourceTree = "<group>"; };
+		B6BF3E5722A0837300D8521F /* Pic1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pic1.jpeg; sourceTree = "<group>"; };
+		B6BF3E5822A0837300D8521F /* Pic4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pic4.jpeg; sourceTree = "<group>"; };
+		B6BF3E5922A0837300D8521F /* Pic3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pic3.jpeg; sourceTree = "<group>"; };
+		B6BF3E5A22A0837300D8521F /* Pic2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pic2.jpeg; sourceTree = "<group>"; };
+		B6BF3E6022A083BF00D8521F /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		B6BF3E6222A083D800D8521F /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		B6BF3E6422A083F100D8521F /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		B6BF3E6F22A0BAD000D8521F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B6BF3E7122A0BAED00D8521F /* MapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
+		B6BF3E7322A0BB0800D8521F /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
+		B6BF3E7722A10ABF00D8521F /* Map1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Map1.jpg; sourceTree = "<group>"; };
+		B6BF3E7C22A20AFB00D8521F /* OrangeFes LS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrangeFes LS.png"; sourceTree = "<group>"; };
+		B6BF3E7D22A20AFC00D8521F /* Test1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test1.jpg; sourceTree = "<group>"; };
+		B6BF3E7E22A20AFC00D8521F /* Test2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test2.JPG; sourceTree = "<group>"; };
+		B6BF3EC422A53FC100D8521F /* ElseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElseViewController.swift; sourceTree = "<group>"; };
+		B6BF3EC622A53FD800D8521F /* ElseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElseTableViewController.swift; sourceTree = "<group>"; };
+		B6BF3EC822A53FEC00D8521F /* ElseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElseTableViewCell.swift; sourceTree = "<group>"; };
+		B6BF3ECB22A54D3000D8521F /* Day2TimeTable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Day2TimeTable.jpg; sourceTree = "<group>"; };
+		B6BF3ECC22A54D3100D8521F /* Day1TimeTable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Day1TimeTable.jpg; sourceTree = "<group>"; };
+		B6BF3ED022A5E7F000D8521F /* 13.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.PNG; sourceTree = "<group>"; };
+		B6BF3ED122A5E7F000D8521F /* 21.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.PNG; sourceTree = "<group>"; };
+		B6BF3ED222A5E7F000D8521F /* 22.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.PNG; sourceTree = "<group>"; };
+		B6BF3ED322A5E7F000D8521F /* 23.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.PNG; sourceTree = "<group>"; };
+		B6BF3ED422A5E7F000D8521F /* 4.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.PNG; sourceTree = "<group>"; };
+		B6BF3EDA22A6569000D8521F /* Staff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Staff.jpg; sourceTree = "<group>"; };
+		B6BF3EDC22A8C81C00D8521F /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		B6BF3EDE22A8CD2E00D8521F /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		B6BF3EE022A8CD5E00D8521F /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		B6BF3EE522AD275500D8521F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B6BF3EE822ADD2C100D8521F /* TimeTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeTable.png; sourceTree = "<group>"; };
+		B6BF3EE922ADD2C100D8521F /* Performance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Performance.png; sourceTree = "<group>"; };
+		B6BF3EEA22ADD2C100D8521F /* Programme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Programme.png; sourceTree = "<group>"; };
+		B6BF3EEB22ADD2C100D8521F /* Favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Favorite.png; sourceTree = "<group>"; };
+		B6BF3EF022ADD33B00D8521F /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
+		B6BF3EF222AE1AF400D8521F /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		BEB26BF1C111827A623DE745 /* Pods-2019OrangeFesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2019OrangeFesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-2019OrangeFesAppTests/Pods-2019OrangeFesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6BF3E1922A0801D00D8521F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B67D14F9C850DD344352CB4 /* Pods_2019OrangeFesApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6BF3E2F22A0801F00D8521F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A18F2954D0A33D4A863690 /* Pods_2019OrangeFesAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6BF3E3A22A0801F00D8521F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4BFBBD26908CADCC737F65 /* Pods_2019OrangeFesAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		876343226CE0197F62756F6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				106D36733594C51209219568 /* Pods_2019OrangeFesApp.framework */,
+				8E494D09027F4286DE66F1DB /* Pods_2019OrangeFesAppTests.framework */,
+				002DDB883336FD4A1813B45A /* Pods_2019OrangeFesAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9029F21C71E73B7F60E5121E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				682B45A0B013D6A4DE172FED /* Pods-2019OrangeFesApp.debug.xcconfig */,
+				715ED5BEAC3207C1EA543BF3 /* Pods-2019OrangeFesApp.release.xcconfig */,
+				BEB26BF1C111827A623DE745 /* Pods-2019OrangeFesAppTests.debug.xcconfig */,
+				782EBA45B90E5FEF2DE49B25 /* Pods-2019OrangeFesAppTests.release.xcconfig */,
+				8780A37FF064D248BB8DD1DF /* Pods-2019OrangeFesAppUITests.debug.xcconfig */,
+				5781FCC2F8460C56C2CC2FB8 /* Pods-2019OrangeFesAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B66EC66F22B11C3D0086DDDD /* LostAndFound */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF3E6222A083D800D8521F /* ScheduleTableViewController.swift */,
+				B6BF3E6022A083BF00D8521F /* ScheduleTableViewCell.swift */,
+				B6BF3E6422A083F100D8521F /* ScheduleViewController.swift */,
+				B6198C7D22B1E02D001FB4A6 /* LostEnterViewController.swift */,
+			);
+			path = LostAndFound;
+			sourceTree = "<group>";
+		};
+		B670F13F22BB0226006F4899 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B670F16922BB02C7006F4899 /* OrangefesAppIconPre.png */,
+				B670F14022BB0226006F4899 /* iTunesArtwork@1x.png */,
+				B670F14122BB0226006F4899 /* AppIcon.appiconset */,
+				B670F15222BB0226006F4899 /* README.md */,
+				B670F15322BB0226006F4899 /* iTunesArtwork@2x.png */,
+				B670F15422BB0226006F4899 /* iTunesArtwork@3x.png */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		B670F14122BB0226006F4899 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				B670F14222BB0226006F4899 /* Icon-App-76x76@2x.png */,
+				B670F14322BB0226006F4899 /* Icon-App-29x29@1x.png */,
+				B670F14422BB0226006F4899 /* Icon-App-40x40@1x.png */,
+				B670F14522BB0226006F4899 /* Icon-App-20x20@1x.png */,
+				B670F14622BB0226006F4899 /* Icon-App-83.5x83.5@2x.png */,
+				B670F14722BB0226006F4899 /* Icon-App-20x20@3x.png */,
+				B670F14822BB0226006F4899 /* ItunesArtwork@2x.png */,
+				B670F14922BB0226006F4899 /* Contents.json */,
+				B670F14A22BB0226006F4899 /* Icon-App-20x20@2x.png */,
+				B670F14B22BB0226006F4899 /* Icon-App-29x29@3x.png */,
+				B670F14C22BB0226006F4899 /* Icon-App-40x40@2x.png */,
+				B670F14D22BB0226006F4899 /* Icon-App-60x60@3x.png */,
+				B670F14E22BB0226006F4899 /* Icon-App-60x60@2x.png */,
+				B670F14F22BB0226006F4899 /* Icon-App-76x76@1x.png */,
+				B670F15022BB0226006F4899 /* Icon-App-40x40@3x.png */,
+				B670F15122BB0226006F4899 /* Icon-App-29x29@2x.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		B6BF3E1322A0801D00D8521F = {
+			isa = PBXGroup;
+			children = (
+				B6BF3E1E22A0801D00D8521F /* 2019OrangeFesApp */,
+				B6BF3E3522A0801F00D8521F /* 2019OrangeFesAppTests */,
+				B6BF3E4022A0801F00D8521F /* 2019OrangeFesAppUITests */,
+				B6BF3E1D22A0801D00D8521F /* Products */,
+				9029F21C71E73B7F60E5121E /* Pods */,
+				876343226CE0197F62756F6A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6BF3E1D22A0801D00D8521F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF3E1C22A0801D00D8521F /* 2019OrangeFesApp.app */,
+				B6BF3E3222A0801F00D8521F /* 2019OrangeFesAppTests.xctest */,
+				B6BF3E3D22A0801F00D8521F /* 2019OrangeFesAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6BF3E1E22A0801D00D8521F /* 2019OrangeFesApp */ = {
+			isa = PBXGroup;
+			children = (
+				B670F13F22BB0226006F4899 /* ios */,
+				B6BF3EE722ADD2C100D8521F /* TabIcon */,
+				B6BF3ECF22A5E7F000D8521F /* MapPic */,
+				B6BF3E7B22A20AFB00D8521F /* Picture */,
+				B6BF3E7622A10ABF00D8521F /* SchoolMap */,
+				B6BF3E5622A0837300D8521F /* OrangePhoto */,
+				B6BF3E1F22A0801D00D8521F /* AppDelegate.swift */,
+				B6BF3E2522A0801D00D8521F /* Main.storyboard */,
+				B6BF3E2822A0801F00D8521F /* Assets.xcassets */,
+				B6BF3E7522A0D8B400D8521F /* Map */,
+				B6BF3E5522A082B000D8521F /* Programme */,
+				B6BF3ECA22A5400200D8521F /* Else */,
+				B6BF3EE422AC9BBC00D8521F /* Favorite */,
+				B6BF3EF222AE1AF400D8521F /* NavigationViewController.swift */,
+				B6BF3EE522AD275500D8521F /* TabBarController.swift */,
+				B6BF3E2A22A0801F00D8521F /* LaunchScreen.storyboard */,
+				B66EC66322B0A2370086DDDD /* GoogleService-Info.plist */,
+				B6BF3E2D22A0801F00D8521F /* Info.plist */,
+			);
+			path = 2019OrangeFesApp;
+			sourceTree = "<group>";
+		};
+		B6BF3E3522A0801F00D8521F /* 2019OrangeFesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF3E3622A0801F00D8521F /* _019OrangeFesAppTests.swift */,
+				B6BF3E3822A0801F00D8521F /* Info.plist */,
+			);
+			path = 2019OrangeFesAppTests;
+			sourceTree = "<group>";
+		};
+		B6BF3E4022A0801F00D8521F /* 2019OrangeFesAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF3E4122A0801F00D8521F /* _019OrangeFesAppUITests.swift */,
+				B6BF3E4322A0801F00D8521F /* Info.plist */,
+			);
+			path = 2019OrangeFesAppUITests;
+			sourceTree = "<group>";
+		};
+		B6BF3E5522A082B000D8521F /* Programme */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF3E5122A080EA00D8521F /* ProgrammeTableViewController.swift */,
+				B6BF3E5322A0810000D8521F /* ProgrammeTableViewCell.swift */,
+				B6BF3E4F22A080CA00D8521F /* ProgrammeViewController.swift */,
+			);
+			path = Programme;
+			sourceTree = "<group>";
+		};
+		B6BF3E5622A0837300D8521F /* OrangePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF3E5722A0837300D8521F /* Pic1.jpeg */,
+				B6BF3E5822A0837300D8521F /* Pic4.jpeg */,
+				B6BF3E5922A0837300D8521F /* Pic3.jpeg */,
+				B6BF3E5A22A0837300D8521F /* Pic2.jpeg */,
+			);
+			path = OrangePhoto;
+			sourceTree = "<group>";
+		};
+		B6BF3E7522A0D8B400D8521F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF3E7122A0BAED00D8521F /* MapTableViewController.swift */,
+				B6BF3E7322A0BB0800D8521F /* MapTableViewCell.swift */,
+				B6BF3E6F22A0BAD000D8521F /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		B6BF3E7622A10ABF00D8521F /* SchoolMap */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF3E7722A10ABF00D8521F /* Map1.jpg */,
+			);
+			path = SchoolMap;
+			sourceTree = "<group>";
+		};
+		B6BF3E7B22A20AFB00D8521F /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF3EDA22A6569000D8521F /* Staff.jpg */,
+				B6BF3ECC22A54D3100D8521F /* Day1TimeTable.jpg */,
+				B6BF3ECB22A54D3000D8521F /* Day2TimeTable.jpg */,
+				B6BF3E7C22A20AFB00D8521F /* OrangeFes LS.png */,
+				B6BF3E7D22A20AFC00D8521F /* Test1.jpg */,
+				B6BF3E7E22A20AFC00D8521F /* Test2.JPG */,
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		B6BF3ECA22A5400200D8521F /* Else */ = {
+			isa = PBXGroup;
+			children = (
+				B66EC66F22B11C3D0086DDDD /* LostAndFound */,
+				B6198C7F22B33545001FB4A6 /* LoginViewController.swift */,
+				B6BF3EC622A53FD800D8521F /* ElseTableViewController.swift */,
+				B6BF3EC822A53FEC00D8521F /* ElseTableViewCell.swift */,
+				B6BF3EC422A53FC100D8521F /* ElseViewController.swift */,
+			);
+			path = Else;
+			sourceTree = "<group>";
+		};
+		B6BF3ECF22A5E7F000D8521F /* MapPic */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF3ED022A5E7F000D8521F /* 13.PNG */,
+				B6BF3ED122A5E7F000D8521F /* 21.PNG */,
+				B6BF3ED222A5E7F000D8521F /* 22.PNG */,
+				B6BF3ED322A5E7F000D8521F /* 23.PNG */,
+				B6BF3ED422A5E7F000D8521F /* 4.PNG */,
+			);
+			path = MapPic;
+			sourceTree = "<group>";
+		};
+		B6BF3EE422AC9BBC00D8521F /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF3EDC22A8C81C00D8521F /* FavoriteTableViewController.swift */,
+				B6BF3EDE22A8CD2E00D8521F /* FavoriteTableViewCell.swift */,
+				B6BF3EE022A8CD5E00D8521F /* FavoriteViewController.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		B6BF3EE722ADD2C100D8521F /* TabIcon */ = {
+			isa = PBXGroup;
+			children = (
+				B6198CBB22B539CC001FB4A6 /* Else.png */,
+				B6BF3EE822ADD2C100D8521F /* TimeTable.png */,
+				B6BF3EE922ADD2C100D8521F /* Performance.png */,
+				B6BF3EF022ADD33B00D8521F /* Map.png */,
+				B6BF3EEA22ADD2C100D8521F /* Programme.png */,
+				B6BF3EEB22ADD2C100D8521F /* Favorite.png */,
+			);
+			path = TabIcon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6BF3E1B22A0801D00D8521F /* 2019OrangeFesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6BF3E4622A0801F00D8521F /* Build configuration list for PBXNativeTarget "2019OrangeFesApp" */;
+			buildPhases = (
+				13AB3EEC6AFBFFD890187230 /* [CP] Check Pods Manifest.lock */,
+				B6BF3E1822A0801D00D8521F /* Sources */,
+				B6BF3E1922A0801D00D8521F /* Frameworks */,
+				B6BF3E1A22A0801D00D8521F /* Resources */,
+				7EF367109C51E1D4C8E9FBE5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 2019OrangeFesApp;
+			productName = 2019OrangeFesApp;
+			productReference = B6BF3E1C22A0801D00D8521F /* 2019OrangeFesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6BF3E3122A0801F00D8521F /* 2019OrangeFesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6BF3E4922A0801F00D8521F /* Build configuration list for PBXNativeTarget "2019OrangeFesAppTests" */;
+			buildPhases = (
+				E5CB8ABF95AE366583A00E5B /* [CP] Check Pods Manifest.lock */,
+				B6BF3E2E22A0801F00D8521F /* Sources */,
+				B6BF3E2F22A0801F00D8521F /* Frameworks */,
+				B6BF3E3022A0801F00D8521F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6BF3E3422A0801F00D8521F /* PBXTargetDependency */,
+			);
+			name = 2019OrangeFesAppTests;
+			productName = 2019OrangeFesAppTests;
+			productReference = B6BF3E3222A0801F00D8521F /* 2019OrangeFesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6BF3E3C22A0801F00D8521F /* 2019OrangeFesAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6BF3E4C22A0801F00D8521F /* Build configuration list for PBXNativeTarget "2019OrangeFesAppUITests" */;
+			buildPhases = (
+				755ABEF88136DD6C4A16F632 /* [CP] Check Pods Manifest.lock */,
+				B6BF3E3922A0801F00D8521F /* Sources */,
+				B6BF3E3A22A0801F00D8521F /* Frameworks */,
+				B6BF3E3B22A0801F00D8521F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6BF3E3F22A0801F00D8521F /* PBXTargetDependency */,
+			);
+			name = 2019OrangeFesAppUITests;
+			productName = 2019OrangeFesAppUITests;
+			productReference = B6BF3E3D22A0801F00D8521F /* 2019OrangeFesAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6BF3E1422A0801D00D8521F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Shohei Nishida";
+				TargetAttributes = {
+					B6BF3E1B22A0801D00D8521F = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					B6BF3E3122A0801F00D8521F = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = B6BF3E1B22A0801D00D8521F;
+					};
+					B6BF3E3C22A0801F00D8521F = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = B6BF3E1B22A0801D00D8521F;
+					};
+				};
+			};
+			buildConfigurationList = B6BF3E1722A0801D00D8521F /* Build configuration list for PBXProject "2019OrangeFesApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6BF3E1322A0801D00D8521F;
+			productRefGroup = B6BF3E1D22A0801D00D8521F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6BF3E1B22A0801D00D8521F /* 2019OrangeFesApp */,
+				B6BF3E3122A0801F00D8521F /* 2019OrangeFesAppTests */,
+				B6BF3E3C22A0801F00D8521F /* 2019OrangeFesAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6BF3E1A22A0801D00D8521F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B670F16822BB0226006F4899 /* iTunesArtwork@3x.png in Resources */,
+				B6BF3EF122ADD33C00D8521F /* Map.png in Resources */,
+				B6BF3ED922A5E7F000D8521F /* 4.PNG in Resources */,
+				B6198CBC22B539CC001FB4A6 /* Else.png in Resources */,
+				B66EC66422B0A2370086DDDD /* GoogleService-Info.plist in Resources */,
+				B6BF3EEF22ADD2C100D8521F /* Favorite.png in Resources */,
+				B6BF3ED822A5E7F000D8521F /* 23.PNG in Resources */,
+				B670F16122BB0226006F4899 /* Icon-App-60x60@3x.png in Resources */,
+				B6BF3ED622A5E7F000D8521F /* 21.PNG in Resources */,
+				B670F16322BB0226006F4899 /* Icon-App-76x76@1x.png in Resources */,
+				B670F15F22BB0226006F4899 /* Icon-App-29x29@3x.png in Resources */,
+				B6BF3EEC22ADD2C100D8521F /* TimeTable.png in Resources */,
+				B6BF3E8122A20AFC00D8521F /* Test2.JPG in Resources */,
+				B6BF3E8022A20AFC00D8521F /* Test1.jpg in Resources */,
+				B6BF3ED722A5E7F000D8521F /* 22.PNG in Resources */,
+				B6BF3E7822A10ABF00D8521F /* Map1.jpg in Resources */,
+				B6BF3E5D22A0837300D8521F /* Pic3.jpeg in Resources */,
+				B6BF3E7F22A20AFC00D8521F /* OrangeFes LS.png in Resources */,
+				B670F15E22BB0226006F4899 /* Icon-App-20x20@2x.png in Resources */,
+				B670F15A22BB0226006F4899 /* Icon-App-83.5x83.5@2x.png in Resources */,
+				B6BF3ED522A5E7F000D8521F /* 13.PNG in Resources */,
+				B670F15822BB0226006F4899 /* Icon-App-40x40@1x.png in Resources */,
+				B670F15722BB0226006F4899 /* Icon-App-29x29@1x.png in Resources */,
+				B6BF3EED22ADD2C100D8521F /* Performance.png in Resources */,
+				B6BF3ECD22A54D3100D8521F /* Day2TimeTable.jpg in Resources */,
+				B670F15D22BB0226006F4899 /* Contents.json in Resources */,
+				B6BF3EDB22A6569100D8521F /* Staff.jpg in Resources */,
+				B6BF3E5C22A0837300D8521F /* Pic4.jpeg in Resources */,
+				B670F16222BB0226006F4899 /* Icon-App-60x60@2x.png in Resources */,
+				B6BF3ECE22A54D3100D8521F /* Day1TimeTable.jpg in Resources */,
+				B6BF3E2C22A0801F00D8521F /* LaunchScreen.storyboard in Resources */,
+				B6BF3E2922A0801F00D8521F /* Assets.xcassets in Resources */,
+				B670F16722BB0226006F4899 /* iTunesArtwork@2x.png in Resources */,
+				B670F15522BB0226006F4899 /* iTunesArtwork@1x.png in Resources */,
+				B670F16A22BB02C7006F4899 /* OrangefesAppIconPre.png in Resources */,
+				B670F16522BB0226006F4899 /* Icon-App-29x29@2x.png in Resources */,
+				B6BF3EEE22ADD2C100D8521F /* Programme.png in Resources */,
+				B670F15622BB0226006F4899 /* Icon-App-76x76@2x.png in Resources */,
+				B670F15922BB0226006F4899 /* Icon-App-20x20@1x.png in Resources */,
+				B670F15B22BB0226006F4899 /* Icon-App-20x20@3x.png in Resources */,
+				B6BF3E5B22A0837300D8521F /* Pic1.jpeg in Resources */,
+				B670F16022BB0226006F4899 /* Icon-App-40x40@2x.png in Resources */,
+				B670F15C22BB0226006F4899 /* ItunesArtwork@2x.png in Resources */,
+				B670F16422BB0226006F4899 /* Icon-App-40x40@3x.png in Resources */,
+				B6BF3E2722A0801D00D8521F /* Main.storyboard in Resources */,
+				B670F16622BB0226006F4899 /* README.md in Resources */,
+				B6BF3E5E22A0837300D8521F /* Pic2.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6BF3E3022A0801F00D8521F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6BF3E3B22A0801F00D8521F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13AB3EEC6AFBFFD890187230 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-2019OrangeFesApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		755ABEF88136DD6C4A16F632 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-2019OrangeFesAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EF367109C51E1D4C8E9FBE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-2019OrangeFesApp/Pods-2019OrangeFesApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-2019OrangeFesApp/Pods-2019OrangeFesApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-2019OrangeFesApp/Pods-2019OrangeFesApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5CB8ABF95AE366583A00E5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-2019OrangeFesAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6BF3E1822A0801D00D8521F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6198C8022B33545001FB4A6 /* LoginViewController.swift in Sources */,
+				B6BF3EC922A53FEC00D8521F /* ElseTableViewCell.swift in Sources */,
+				B6BF3E6322A083D800D8521F /* ScheduleTableViewController.swift in Sources */,
+				B6BF3EC722A53FD800D8521F /* ElseTableViewController.swift in Sources */,
+				B6BF3EE622AD275500D8521F /* TabBarController.swift in Sources */,
+				B6BF3E5422A0810000D8521F /* ProgrammeTableViewCell.swift in Sources */,
+				B6198C7E22B1E02D001FB4A6 /* LostEnterViewController.swift in Sources */,
+				B6BF3E7422A0BB0800D8521F /* MapTableViewCell.swift in Sources */,
+				B6BF3EDD22A8C81C00D8521F /* FavoriteTableViewController.swift in Sources */,
+				B6BF3E6122A083BF00D8521F /* ScheduleTableViewCell.swift in Sources */,
+				B6BF3EF322AE1AF400D8521F /* NavigationViewController.swift in Sources */,
+				B6BF3E7022A0BAD000D8521F /* MapViewController.swift in Sources */,
+				B6BF3E6522A083F100D8521F /* ScheduleViewController.swift in Sources */,
+				B6BF3EDF22A8CD2E00D8521F /* FavoriteTableViewCell.swift in Sources */,
+				B6BF3E5222A080EA00D8521F /* ProgrammeTableViewController.swift in Sources */,
+				B6BF3EC522A53FC100D8521F /* ElseViewController.swift in Sources */,
+				B6BF3EE122A8CD5E00D8521F /* FavoriteViewController.swift in Sources */,
+				B6BF3E5022A080CA00D8521F /* ProgrammeViewController.swift in Sources */,
+				B6BF3E7222A0BAED00D8521F /* MapTableViewController.swift in Sources */,
+				B6BF3E2022A0801D00D8521F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6BF3E2E22A0801F00D8521F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6BF3E3722A0801F00D8521F /* _019OrangeFesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6BF3E3922A0801F00D8521F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6BF3E4222A0801F00D8521F /* _019OrangeFesAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6BF3E3422A0801F00D8521F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6BF3E1B22A0801D00D8521F /* 2019OrangeFesApp */;
+			targetProxy = B6BF3E3322A0801F00D8521F /* PBXContainerItemProxy */;
+		};
+		B6BF3E3F22A0801F00D8521F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6BF3E1B22A0801D00D8521F /* 2019OrangeFesApp */;
+			targetProxy = B6BF3E3E22A0801F00D8521F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6BF3E2522A0801D00D8521F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6BF3E2622A0801D00D8521F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6BF3E2A22A0801F00D8521F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6BF3E2B22A0801F00D8521F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6BF3E4422A0801F00D8521F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6BF3E4522A0801F00D8521F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6BF3E4722A0801F00D8521F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 682B45A0B013D6A4DE172FED /* Pods-2019OrangeFesApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCSS55CCXZ;
+				INFOPLIST_FILE = 2019OrangeFesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shohei.N.-019OrangeFesApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6BF3E4822A0801F00D8521F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 715ED5BEAC3207C1EA543BF3 /* Pods-2019OrangeFesApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCSS55CCXZ;
+				INFOPLIST_FILE = 2019OrangeFesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shohei.N.-019OrangeFesApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6BF3E4A22A0801F00D8521F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB26BF1C111827A623DE745 /* Pods-2019OrangeFesAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCSS55CCXZ;
+				INFOPLIST_FILE = 2019OrangeFesAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shohei.N.-019OrangeFesAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2019OrangeFesApp.app/2019OrangeFesApp";
+			};
+			name = Debug;
+		};
+		B6BF3E4B22A0801F00D8521F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 782EBA45B90E5FEF2DE49B25 /* Pods-2019OrangeFesAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCSS55CCXZ;
+				INFOPLIST_FILE = 2019OrangeFesAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shohei.N.-019OrangeFesAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2019OrangeFesApp.app/2019OrangeFesApp";
+			};
+			name = Release;
+		};
+		B6BF3E4D22A0801F00D8521F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8780A37FF064D248BB8DD1DF /* Pods-2019OrangeFesAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCSS55CCXZ;
+				INFOPLIST_FILE = 2019OrangeFesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shohei.N.-019OrangeFesAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 2019OrangeFesApp;
+			};
+			name = Debug;
+		};
+		B6BF3E4E22A0801F00D8521F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5781FCC2F8460C56C2CC2FB8 /* Pods-2019OrangeFesAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCSS55CCXZ;
+				INFOPLIST_FILE = 2019OrangeFesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shohei.N.-019OrangeFesAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 2019OrangeFesApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6BF3E1722A0801D00D8521F /* Build configuration list for PBXProject "2019OrangeFesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6BF3E4422A0801F00D8521F /* Debug */,
+				B6BF3E4522A0801F00D8521F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6BF3E4622A0801F00D8521F /* Build configuration list for PBXNativeTarget "2019OrangeFesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6BF3E4722A0801F00D8521F /* Debug */,
+				B6BF3E4822A0801F00D8521F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6BF3E4922A0801F00D8521F /* Build configuration list for PBXNativeTarget "2019OrangeFesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6BF3E4A22A0801F00D8521F /* Debug */,
+				B6BF3E4B22A0801F00D8521F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6BF3E4C22A0801F00D8521F /* Build configuration list for PBXNativeTarget "2019OrangeFesAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6BF3E4D22A0801F00D8521F /* Debug */,
+				B6BF3E4E22A0801F00D8521F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6BF3E1422A0801D00D8521F /* Project object */;
+}
