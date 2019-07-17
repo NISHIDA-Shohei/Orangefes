@@ -459,6 +459,7 @@
 				B6BF3E1922A0801D00D8521F /* Frameworks */,
 				B6BF3E1A22A0801D00D8521F /* Resources */,
 				7EF367109C51E1D4C8E9FBE5 /* [CP] Embed Pods Frameworks */,
+				76601D8A9C1061DCBFB90270 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -664,6 +665,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76601D8A9C1061DCBFB90270 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-2019OrangeFesApp/Pods-2019OrangeFesApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-2019OrangeFesApp/Pods-2019OrangeFesApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-2019OrangeFesApp/Pods-2019OrangeFesApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7EF367109C51E1D4C8E9FBE5 /* [CP] Embed Pods Frameworks */ = {

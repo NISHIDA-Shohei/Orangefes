@@ -14,7 +14,7 @@ class ProgrammeTableViewController: UITableViewController {
     
     // cellのlabelに書く文字列
     //1=1号館 2=2号館 3=3号館 4=4号館 5=オレンジの間前
-    let ProgrammeName1: [String] = ["茶道部","華道部","カメラ同好会","マンガ部","美術部"]
+    let ProgrammeName1: [String] = ["茶道部","華道部","カメラ同好会","マンガ部",]
     let ProgrammeDescription1: [String] = [
         "おいしいおせ抹茶とお菓子をかわいい浴衣女子がおもてなしします！！ゆっくりのんびりお楽しみください。１号間新和室でお待ちしています。ほっと一息つきたいときに是非お立ち寄りください。"
         ,"こんにちは。私たち華道部は２年生５人と人数が少ないながら、この日のために練習をしてきました。可愛い作品から美しい作品まで、部員の個性溢れる作品をぜひ見に来てください。"
@@ -120,7 +120,7 @@ class ProgrammeTableViewController: UITableViewController {
         if p == 2 {
             return 320
         } else {
-            return 80
+            return 100
         }
         
 }
@@ -212,9 +212,9 @@ class ProgrammeTableViewController: UITableViewController {
                 sectionPlace = "公演"
         } else {
             if sectionNumber == 0 {
-                sectionPlace = "9月15日(土)"
+                sectionPlace = "9月28日(土)"
             } else {
-                sectionPlace = "9月16日(日)"
+                sectionPlace = "9月29日(日)"
             }
         }
         return "\(sectionPlace)"
