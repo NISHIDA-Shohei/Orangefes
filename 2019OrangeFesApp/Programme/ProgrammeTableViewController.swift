@@ -14,15 +14,20 @@ class ProgrammeTableViewController: UITableViewController {
     
     // cellのlabelに書く文字列
     //1=1号館 2=2号館 3=3号館 4=4号館 5=オレンジの間前
-    let ProgrammeName1: [String] = ["茶道部","華道部","カメラ同好会","マンガ部",]
+    let ProgrammeName1: [String] = ["漫画広報部","華道部","茶道部"]
+    let ProgrammePicture1String: [String] = ["112-1.png","112-2.png","114.png"]
+    var ProgrammePicture1: [UIImage?] = []
     let ProgrammeDescription1: [String] = [
-        "おいしいおせ抹茶とお菓子をかわいい浴衣女子がおもてなしします！！ゆっくりのんびりお楽しみください。１号間新和室でお待ちしています。ほっと一息つきたいときに是非お立ち寄りください。"
-        ,"こんにちは。私たち華道部は２年生５人と人数が少ないながら、この日のために練習をしてきました。可愛い作品から美しい作品まで、部員の個性溢れる作品をぜひ見に来てください。"
-        ,"来てからのお楽しみです。"
-        ,"漫画広報部では、プリマヴェーラの販売とイラストの展示を行っております。また、ラミネートカードの手作り体験もできます。是非来てください！"
+        "部員の「好きなもの」を詰め込んだ、『Primarera』という部誌を発行しております。その他、平面だけでなく立体でも展示をしております。お立ち寄りいただければ幸いです！"
+        ,"華道部です。私たちは月2回ほどコーチの元で練習を重ねてきました。テーマは行事です。私達の作品、ぜひ見に来てください。"
+        ,"お茶とお菓子が食べれます。1席200円です。正座はしないので、お気軽にお越し下さい。日頃の稽古の成果を生かせるよう頑張ります。"
     ]
     
-    let ProgrammeName2: [String] = ["〇〇を探せ！","フォトジェニック縁日","juciE stand","Wonderful Waffle","オレンジすぎる休憩所","マンゴーアイス","ドーナツ","タピオカ","家庭部","2-A","冷やしパインとラムネ","かえってきたまさるくん","Four color photo booth","1-H","american club","It,Disappears,H","閉ざされた研究所","ソフトボール部","Let me out -私を出して-","1-G","3-7","マカロン36","アイストロベリー","公式テニス部"]
+    let ProgrammeName2: [String] = ["ゆっかいず","ドーナツショップ","お化け屋敷","ちゅるちゅるらんど","硬式テニス部３年","BEES","たこやき","すいーと♡えんじぇる","起業家クラス","法政国際男子２年","バレー部","硬式テニス部１・２年","放送部","１年H組","１年C組","図書委員会","アメリカンドッグ","１年E組","あなたとコンビに法政チーズ","１年G組"]
+    
+    let ProgrammePicture2String: [String] = ["211.png","212.png","213.png","214.png","215.png","216.png","217.png","218.png","220.png","221.png","223.png","224.png","225.png","226.png","227.png","228.png","234.png","235.png","236.png","237.png"]
+    
+    var ProgrammePicture2:[UIImage?] = []
     
     let ProgrammeDescription2: [String] = [
         "法政国際内に仮装した人が紛れ込んでしまった！？人混みの中に隠れている人々を探し、スタンプを獲得せよ！果たしてあなた達は探し出すことができるのだろうか・・・？"
@@ -46,13 +51,14 @@ class ProgrammeTableViewController: UITableViewController {
         ,"＜クリア率17%＞脱出ゲームを１年間で１００種類以上クリアした猛者たちからの挑戦状。ホラー脱出ゲーム！試されるのはあなたの５つの能力。分析能力・閃き力・注意力・推理力・精神力。あなたは脱出できるのか。"
         ,"1-Gにはかわいくてカラフルなインスタ映えスポットがたくさん！撮らなきゃ損ですよ？！"
         ,"こんにちは！3年7組です！私たちのクラスはディッtピンドッツというつぶつぶアイスをご提供します！普段のアイスでは味わえないつぶつぶ食感味わってみませんか？法政国際になって初めての文化祭です！ぜひ楽しんでいって下さい！"
-        ,"え！？文化祭でマカロン！？て思ったそこの君！！なんと3-6では１つ¥105で絶品マカロンをお届けしちゃうよ♡休憩がてらにお一ついかが？"
-        ,"あつ〜い文化祭のおともにアイストロベリーはいかがですか？♡冷凍イチゴとアイスの夢のコラボレーション！内装は「ワタシタチの展示会」と称して写真をたくさん貼るので是非みに来て下さい！"
-        ,"３階まで上がってきてお疲れのそこのあなた！くりこ庵のたい焼きはいかがですか？元気な公式テニス部が、ミキの昴生・亜生とお出迎えします！ぜひ来て下さい♪"
     ]
-    let ProgrammeName3: [String] = ["小ホール（公演）","美術部",]
-    let ProgrammeDescription3: [String] = ["公演一覧をご覧ください","文化祭の思い出、形に残しませんか？私達美術部が作った作品を見るだけでなく、ポストカード・ブレスレット作りが体験できます！ハンドメイドの消しゴムはんこ売ってます！声をかけて下されば、似顔絵も描きますよ♩"]
-    let ProgrammeName4: [String] = ["食堂","同窓会","PTAバザー","放送部","入試相談室"]
+    let ProgrammeName3: [String] = ["家庭科部","美術部",]
+    let ProgrammePicture3String: [String] = ["310.png","321.png"]
+    var ProgrammePicture3: [UIImage?] = []
+    let ProgrammeDescription3: [String] = ["家庭部はクッキーを販売しています。2袋100円のワンコインなので気軽にご購入いただけます。手軽に甘いものが欲しくなった時にいかがでしょうか？","こんにちは！オレンジ祭では昨年と同様に手作りハンコと小さなオブジェ等を販売します！合作は1人1つ小さな家を作り、机の上で小さな街を作ります。"]
+    let ProgrammeName4: [String] = ["バドミントン部","RESISTANCE","有志ダンス","同窓会","PTAバザー","入試相談室"]
+    let ProgrammePicture4String: [String] = ["432.png","431-1.png","431-2.png","SchoolLogo.png","SchoolLogo.png","SchoolLogo.png"]
+    var ProgrammePicture4: [UIImage?] = []
     let ProgrammeDescription4: [String] = [
         "食堂の説明"
         ,"同窓会バザー・手作り品販売　談話コーナー　お茶を用意してお待ちしています。"
@@ -62,15 +68,19 @@ class ProgrammeTableViewController: UITableViewController {
     
     ]
     let ProgrammeName5: [String] = ["MOS BURGER","31アイスクリーム","ベル　エポック","MARION CREPES"]
+    let ProgrammePicture5String: [String] = ["000.png","000.png","000.png","000.png"]
+    var ProgrammePicture5: [UIImage?] = []
     let ProgrammeDescription5: [String] = ["ハンバーガー屋","アイスクリーム屋","パン屋","クレープ屋"]
 
-    let ProgrammePicture1: [String] = ["Pic1.jpeg","Pic2.jpeg","Pic3.jpeg","Pic4.jpeg"]
     
-    let hogehogetest = "hogehoge"
-    // test
+
     
     //公演一覧　統合データ部分////////////////////////////////////////////////////////////
-    let Group: [String] = ["応援部","バトントワラー部","ダンス部","弦楽部","合気道部","ゴスペル部","英語部","有志演劇","軽音楽部"]
+    let Group: [String] = ["応援部","ダンス部","弦楽部","合気道部","ゴスペル部","英語部","有志演劇","軽音楽部","吹奏楽部"]
+    
+    let GroupPictureString: [String] = ["Meteors.png","Dance.png","StringMusic.png","Aikido.png","Gospel.png","ESS.png","Drama.png","SchoolBand.png","BrassBand.png"]
+    
+    var GroupPicture: [UIImage?] = []
     
     let GroupDescription: [String] = [
         "Go!METEORS!!"
@@ -82,12 +92,9 @@ class ProgrammeTableViewController: UITableViewController {
         ,"Alice in Wonder Land ＠小ホール"
         ,"ご飯の時間！２い！"
         ,"こんにちは軽音楽部です！私たちは部員８９名という大人数で楽しく仲良くライブに向けて練習をしています！オレンジ祭では１日目１年生と３年生、２日目は２年生と３年生が演奏します！３年生はこれで引退です！ぜひ！見に来てください！♡"]
-    //データ終了///////////////////////////////////////////////////////////////////////////////////////
     
     let TimeTableImage: [String] = ["Day1TimeTable.jpg","Day2TimeTable.jpg"]
     
-    
-    //統合用p値設定///
     var p: Int = 0
     func reload(){
         tableView.reloadData()
@@ -107,6 +114,25 @@ class ProgrammeTableViewController: UITableViewController {
         /* UD初期化
         if let bundleId = Bundle.main.bundleIdentifier {
             UserDefaults.standard.removePersistentDomain(forName: bundleId) */
+        for fileName in ProgrammePicture1String {
+            ProgrammePicture1.append(UIImage(named: fileName))
+        }
+        for fileName in ProgrammePicture2String {
+            ProgrammePicture2.append(UIImage(named: fileName))
+        }
+        for fileName in ProgrammePicture3String {
+            ProgrammePicture3.append(UIImage(named: fileName))
+        }
+        for fileName in ProgrammePicture4String {
+            ProgrammePicture4.append(UIImage(named: fileName))
+        }
+        for fileName in ProgrammePicture5String {
+            ProgrammePicture5.append(UIImage(named: fileName))
+        }
+        for fileName in GroupPictureString {
+            GroupPicture.append(UIImage(named: fileName))
+        }
+        
         }
     
     
@@ -117,12 +143,7 @@ class ProgrammeTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if p == 2 {
-            return 320
-        } else {
-            return 100
-        }
-        
+        return 100
 }
     
     // sectionの数を返す関数
@@ -228,18 +249,13 @@ class ProgrammeTableViewController: UITableViewController {
         //UserDefaultの情報を取得
         let UDColorTest: [String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
         let UDColorTestPerformance: [String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
-
         //cellに右矢印を追加する
         ProgrammeCell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
-        
-        //cellの色
-        //ProgrammeCell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 204/255, alpha: 1.0)
-        
         // ここでcellのlabelに値を入れています。
         if p == 0 {
             if indexPath.section == 0 {
                 ProgrammeCell.name.text = ProgrammeName1[indexPath.item]
-                ProgrammeCell.ProgrammePicture.image = UIImage(named: ProgrammePicture1[indexPath.item])
+                ProgrammeCell.ProgrammePicture.image = ProgrammePicture1[indexPath.row]
                 if UDColorTest.contains(ProgrammeName1[indexPath.item]){
                     ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
                 }else{
@@ -248,6 +264,7 @@ class ProgrammeTableViewController: UITableViewController {
                 
             } else if indexPath.section == 1 {
                 ProgrammeCell.name.text = ProgrammeName2[indexPath.item]
+                ProgrammeCell.ProgrammePicture.image = ProgrammePicture2[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName2[indexPath.item]){
                     ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
@@ -257,6 +274,7 @@ class ProgrammeTableViewController: UITableViewController {
                 
             } else if indexPath.section == 2 {
                 ProgrammeCell.name.text = ProgrammeName3[indexPath.item]
+                ProgrammeCell.ProgrammePicture.image = ProgrammePicture3[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName3[indexPath.item]){
                     ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
@@ -266,6 +284,7 @@ class ProgrammeTableViewController: UITableViewController {
                 
             } else if indexPath.section == 3 {
                 ProgrammeCell.name.text = ProgrammeName4[indexPath.item]
+                ProgrammeCell.ProgrammePicture.image = ProgrammePicture4[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName4[indexPath.item]){
                     ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
@@ -275,6 +294,7 @@ class ProgrammeTableViewController: UITableViewController {
                 
             } else if indexPath.section == 4 {
                 ProgrammeCell.name.text = ProgrammeName5[indexPath.item]
+                ProgrammeCell.ProgrammePicture.image = ProgrammePicture5[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName5[indexPath.item]){
                     ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
@@ -285,7 +305,7 @@ class ProgrammeTableViewController: UITableViewController {
         } else if p == 1 {
             // ここでcellのlabelに値を入れています。//ここに新たな文字をい入れる
             ProgrammeCell.name.text = Group[indexPath.item]
-            
+            ProgrammeCell.ProgrammePicture.image = GroupPicture[indexPath.row]
             if UDColorTestPerformance.contains(Group[indexPath.item]){
                 ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
             }else{
@@ -293,11 +313,11 @@ class ProgrammeTableViewController: UITableViewController {
             }
         } else {
             if indexPath.section == 0 {
-                ProgrammeCell.ProgrammePicture.image = UIImage(named: TimeTableImage[0])
-                ProgrammeCell.name.text = ""
+                ProgrammeCell.ProgrammePicture.image = UIImage(named: "000.png")
+                ProgrammeCell.name.text = "公演タイムテーブル"
             } else {
-                ProgrammeCell.ProgrammePicture.image = UIImage(named: TimeTableImage[1])
-                ProgrammeCell.name.text = ""
+                ProgrammeCell.ProgrammePicture.image = UIImage(named: "000.png")
+                ProgrammeCell.name.text = "公演タイムテーブル"
             }
         }
 
@@ -317,7 +337,7 @@ class ProgrammeTableViewController: UITableViewController {
         
         // タップされたボタンのtableviewの選択行を取得
         let button = sender as! UIButton
-        let cell = button.superview?.superview as! UITableViewCell
+        let cell = button.superview?.superview?.superview as! UITableViewCell
         let row = tableView.indexPath(for: cell)!.row
         let section = tableView.indexPath(for: cell)!.section
         
@@ -411,29 +431,35 @@ class ProgrammeTableViewController: UITableViewController {
             if indexPath.section == 0 {
                 ProgrammeGiveData = ProgrammeName1[indexPath.item]
                 ProgrammeDescriptionGiveData = ProgrammeDescription1[indexPath.item]
+                performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
                 
             } else if indexPath.section == 1 {
                 ProgrammeGiveData = ProgrammeName2[indexPath.item]
                 ProgrammeDescriptionGiveData = ProgrammeDescription2[indexPath.item]
+                performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
                 
             } else if indexPath.section == 2 {
                 ProgrammeGiveData = ProgrammeName3[indexPath.item]
                 ProgrammeDescriptionGiveData = ProgrammeDescription3[indexPath.item]
+                performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
                 
             } else if indexPath.section == 3 {
                 ProgrammeGiveData = ProgrammeName4[indexPath.item]
                 ProgrammeDescriptionGiveData = ProgrammeDescription4[indexPath.item]
+                performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
                 
             } else if indexPath.section == 4 {
                 ProgrammeGiveData = ProgrammeName5[indexPath.item]
+                performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
             }
+            
+        } else if p == 2 {
+            performSegue(withIdentifier: "TimeTableSegue", sender: nil)
         } else {
             ProgrammeGiveData = Group[indexPath.item]
             ProgrammeDescriptionGiveData = GroupDescription[indexPath.item]
+            performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
         }
-
-        // Segueを使った画面遷移を行う関数
-        performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
     }
     
     // 遷移先のViewControllerにデータを渡す関数
