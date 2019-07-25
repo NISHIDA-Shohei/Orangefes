@@ -279,7 +279,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="NtF-jw-9mw" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="その他" image="Else.png" selectedImage="Else.png" id="zKU-v1-u6Z"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="xcg-TS-iY4">
-                        <rect key="frame" x="0.0" y="20" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="98"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -534,7 +534,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OiG-8b-uZb">
-                                <rect key="frame" x="0.0" y="116" width="414" height="247"/>
+                                <rect key="frame" x="0.0" y="116" width="414" height="294"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -544,12 +544,13 @@ https://forms.gle/kejw7gb7R72pzjPt9
                     <navigationItem key="navigationItem" title="Title" id="zJt-GM-P8v"/>
                     <connections>
                         <outlet property="ProgrammeDescription" destination="nL7-RE-wPe" id="B6F-9m-g5U"/>
+                        <outlet property="ProgrammePicture" destination="OiG-8b-uZb" id="IqF-Tp-s55"/>
                         <outlet property="ProgrammeTitle" destination="zJt-GM-P8v" id="GPW-wk-Gcn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BF7-1z-AnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="1330"/>
+            <point key="canvasLocation" x="902.89855072463774" y="1329.6195652173915"/>
         </scene>
         <!--Title-->
         <scene sceneID="KCl-g6-9j1">
@@ -652,7 +653,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cow-21-4Ma">
                                                     <rect key="frame" x="91" y="30" width="230" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -700,7 +701,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="7mh-CX-032" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="企画一覧" image="Programme.png" selectedImage="Programme.png" id="QN7-TL-yBR"/>
                     <navigationBar key="navigationBar" alpha="0.5" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="JE3-PF-xKM">
-                        <rect key="frame" x="0.0" y="20" width="414" height="98"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -846,7 +847,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="62o-KI-MAV" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Favorite" image="Favorite.png" selectedImage="Favorite.png" id="PEl-GQ-17q"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="JkN-mX-jvh">
-                        <rect key="frame" x="0.0" y="20" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="98"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="40"/>

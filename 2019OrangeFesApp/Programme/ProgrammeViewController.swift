@@ -12,9 +12,11 @@ class ProgrammeViewController: UIViewController {
     
     @IBOutlet weak var ProgrammeTitle: UINavigationItem!
     @IBOutlet weak var ProgrammeDescription: UITextView!
+    @IBOutlet weak var ProgrammePicture: UIImageView!
+    
     
     var ProgrammeReceiveData: String = ""
-    
+    var ProgrammePictureReceiveData: String = ""
     var ProgrammeDescriptionReceiveData: String = ""
     
     
@@ -36,9 +38,10 @@ class ProgrammeViewController: UIViewController {
         
         
         ProgrammeDescription.text = ProgrammeDescriptionReceiveData
-        
-        
         ProgrammeTitle.title = ProgrammeReceiveData
+        ProgrammePicture.image = UIImage(named: ProgrammePictureReceiveData)
+        
+        
     }
     
     

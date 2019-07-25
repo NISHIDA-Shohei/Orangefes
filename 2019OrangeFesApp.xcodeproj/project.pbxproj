@@ -74,6 +74,7 @@
 		B67ABC6222DEC34600B5005B /* ESS.png in Resources */ = {isa = PBXBuildFile; fileRef = B67ABC3D22DEC34600B5005B /* ESS.png */; };
 		B67ABC7722E0228C00B5005B /* 000.png in Resources */ = {isa = PBXBuildFile; fileRef = B67ABC7622E0228C00B5005B /* 000.png */; };
 		B6976F7F22E848250046BB30 /* SchoolLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B6976F7E22E848240046BB30 /* SchoolLogo.png */; };
+		B6976F8122E93F040046BB30 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = B6976F8022E93F040046BB30 /* 222.png */; };
 		B6BF3E2022A0801D00D8521F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E1F22A0801D00D8521F /* AppDelegate.swift */; };
 		B6BF3E2722A0801D00D8521F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E2522A0801D00D8521F /* Main.storyboard */; };
 		B6BF3E2922A0801F00D8521F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E2822A0801F00D8521F /* Assets.xcassets */; };
@@ -210,6 +211,7 @@
 		B67ABC3D22DEC34600B5005B /* ESS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ESS.png; sourceTree = "<group>"; };
 		B67ABC7622E0228C00B5005B /* 000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 000.png; sourceTree = "<group>"; };
 		B6976F7E22E848240046BB30 /* SchoolLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SchoolLogo.png; sourceTree = "<group>"; };
+		B6976F8022E93F040046BB30 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
 		B6BF3E1C22A0801D00D8521F /* 2019OrangeFesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2019OrangeFesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BF3E1F22A0801D00D8521F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6BF3E2622A0801D00D8521F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 				B67ABC3B22DEC34600B5005B /* 218.png */,
 				B67ABC3322DEC34600B5005B /* 220.png */,
 				B67ABC3022DEC34500B5005B /* 221.png */,
+				B6976F8022E93F040046BB30 /* 222.png */,
 				B67ABC3622DEC34600B5005B /* 223.png */,
 				B67ABC3A22DEC34600B5005B /* 224.png */,
 				B67ABC3C22DEC34600B5005B /* 225.png */,
@@ -680,6 +683,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6976F8122E93F040046BB30 /* 222.png in Resources */,
 				B67ABC5C22DEC34600B5005B /* 237.png in Resources */,
 				B670F16822BB0226006F4899 /* iTunesArtwork@3x.png in Resources */,
 				B6BF3EF122ADD33C00D8521F /* Map.png in Resources */,

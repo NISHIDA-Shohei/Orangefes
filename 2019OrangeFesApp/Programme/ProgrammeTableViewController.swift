@@ -18,39 +18,39 @@ class ProgrammeTableViewController: UITableViewController {
     let ProgrammePicture1String: [String] = ["112-1.png","112-2.png","114.png"]
     var ProgrammePicture1: [UIImage?] = []
     let ProgrammeDescription1: [String] = [
-        "部員の「好きなもの」を詰め込んだ、『Primarera』という部誌を発行しております。その他、平面だけでなく立体でも展示をしております。お立ち寄りいただければ幸いです！"
+    "部員の「好きなもの」を詰め込んだ、『Primarera』という部誌を発行しております。その他、平面だけでなく立体でも展示をしております。お立ち寄りいただければ幸いです！"
         ,"華道部です。私たちは月2回ほどコーチの元で練習を重ねてきました。テーマは行事です。私達の作品、ぜひ見に来てください。"
         ,"お茶とお菓子が食べれます。1席200円です。正座はしないので、お気軽にお越し下さい。日頃の稽古の成果を生かせるよう頑張ります。"
     ]
     
-    let ProgrammeName2: [String] = ["ゆっかいず","ドーナツショップ","お化け屋敷","ちゅるちゅるらんど","硬式テニス部３年","BEES","たこやき","すいーと♡えんじぇる","起業家クラス","法政国際男子２年","バレー部","硬式テニス部１・２年","放送部","１年H組","１年C組","図書委員会","アメリカンドッグ","１年E組","あなたとコンビに法政チーズ","１年G組"]
+    let ProgrammeName2: [String] = ["ゆっかいず","ドーナツショップ","お化け屋敷","ちゅるちゅるらんど","硬式テニス部３年","BEES","トッポギ","すいーと♡えんじぇる","起業家クラス","法政国際２年男子","Café in The Daytime","バレー部","硬式テニス部１・２年","放送部","１年H組","１年C組","図書委員会","アメリカンドッグ","１年E組","あなたとコンビに法政チーズ","１年G組"]
     
-    let ProgrammePicture2String: [String] = ["211.png","212.png","213.png","214.png","215.png","216.png","217.png","218.png","220.png","221.png","223.png","224.png","225.png","226.png","227.png","228.png","234.png","235.png","236.png","237.png"]
+    let ProgrammePicture2String: [String] = ["211.png","212.png","213.png","214.png","215.png","216.png","217.png","218.png","220.png","221.png","222.png","223.png","224.png","225.png","226.png","227.png","228.png","234.png","235.png","236.png","237.png"]
     
     var ProgrammePicture2:[UIImage?] = []
     
     let ProgrammeDescription2: [String] = [
-        "法政国際内に仮装した人が紛れ込んでしまった！？人混みの中に隠れている人々を探し、スタンプを獲得せよ！果たしてあなた達は探し出すことができるのだろうか・・・？"
-        ,"#1B映えのB楽しい３つの縁日ゲームに挑戦できます！高得点のアナタにはヨーヨーやお菓子をプレゼント♡フォトスポットも用意してお待ちしております♪1Bに来ればインスタ映え間違いナシ！"
-        ,"ちょっと暑いな〜と思っているそこのキミ！可愛い子たちが売っているジュースで涼んでみませんか！？美女ばっかりの天然オアシスですよ！！！色んな種類があるので是非飲みに来てね♡"
-        ,"キャラメル味、チョコレート味、メープル味の３種類のワッフル屋さんせです！！とっても美味しくて、可愛いお店なので、ぜひ来てください！！"
-        ,"「朗報」２号館１階に休憩スペース有り！エアコンの効いた部屋で休めます！総オレンジのフォトジェニックな空間なのでカワイイ写真も撮れます♡"
-        ,"暑い時はやっぱアイスでしょ！！！食べるしかないぞそこの君！！冷たいマンゴーアイス食べて気分爽快〜♡３−３のマンゴーアイス食べに来てね！"
-        ,"可愛い、美味しい、ドーナツはいかがですか？ソースやトッピングも貴方次第⭐︎お気に入りの組み合わせにカスタマイズしてポップでスイートなひと時をエンジョイして下さい♡"
-        ,"３年１組です！！私たちはタピオカを売ります。味は２種類でカルピス味とミルクティー味があります。ぜひ来て下さい！！"
-        ,"毎年恒例の家庭部のクッキーを売ります！３枚で１００円！２号館１階のロビーにて販売しています。買わないと損！家庭部部員が１から丁寧に作りました。"
-        ,"2-Aの出し物は来てからのお楽しみです。"
-        ,"私たち２Bは冷やしパインとラムネを売ります！！暑くても寒くてもパインとラムネを食べると夏に戻れる！？私たちと平成最後の夏を取り戻しましょう！お待ちしています！"
-        ,"トンネルをくぐった先の公衆電話でお化けと話せるという噂が・・・あなたの悩みにまさるくんが答えてくれる！？新感覚お化け屋敷！雑談でもOK※お互いの顔は見えないようになっています。"
-        ,"オレンジ祭に来た思い出をSNSにアップしてくれるあなたへ！！４つの色の系統に分けてそれぞれのテーマの可愛カッコイイ素敵な写真を残していきませんか？タトゥーシールや小物もあります！ぜひ来て下さい♡"
-        ,"1-Hの出し物は来てからのお楽しみです。"
-        ,"1年E組は海外風をテーマに展示、フェイスペイントを行っています！カラフルでかわいい部屋はインスタ映え間違いなし！！おしゃれ女子必見ですよ！！"
-        ,"アメリカ、マナブーセッツ州には廃病院がある。最近そこでは心霊現象が多発しているらしい。君たちにはその現象を調査してきてほしい。ただし命の保証はできない・・・。"
-        ,"101年前、とある１人の研究者が雪山の研究所にいた。噂では得体の知れない化け物を作り出したそう。肝も体も冷えるお化け屋敷なんて行くしかないでしょ！"
-        ,"おにぎり売ってます！ぜひ来てね！！"
-        ,"＜クリア率17%＞脱出ゲームを１年間で１００種類以上クリアした猛者たちからの挑戦状。ホラー脱出ゲーム！試されるのはあなたの５つの能力。分析能力・閃き力・注意力・推理力・精神力。あなたは脱出できるのか。"
-        ,"1-Gにはかわいくてカラフルなインスタ映えスポットがたくさん！撮らなきゃ損ですよ？！"
-        ,"こんにちは！3年7組です！私たちのクラスはディッtピンドッツというつぶつぶアイスをご提供します！普段のアイスでは味わえないつぶつぶ食感味わってみませんか？法政国際になって初めての文化祭です！ぜひ楽しんでいって下さい！"
+        "「ゆっかいず」こんにちは！ゆっかいずです^_^私たちゆっかいずは3年有志の団体で超ド級においしいタピオカを売っています！かんわいいフォトブースも用意しているので是非来てくだサイ！"
+        ,"「ドーナツショップ」かわいくオシャレにドレスアップした女の子たちがフォトブースにもなるアットホームな空間でドーナツショップをオープンします！2号館1階手前から2番目の教室でお待ちしてます！"
+        ,"「お化け屋敷」携帯を無くしたから探してくれと頼まれ電話をかけてみると、恐ろしい怪物の声が!!!切るとすぐに鳴り出す着信音。そこには090-2829-37564という番号が!!213で、怪物が待ってます！"
+        ,"「ちゅるちゅるらんど」夢と魔法とら〜めんの王国へようこそ！お昼にはみんなでおいしいら〜めんを食べてちゅるちゅるしよう！レッツちゅるちゅる！"
+        ,"「硬式テニス部3年」硬式テニス部3年は冷たくて甘いシューアイスを売っています！定番のバニラ味をはじめ、色々な種類の味を揃えています！ぜひMr &Mrsシューアイスに会いに来てください！"
+        ,"「BEES」1年生のパワフルさと3年生のキラキラに負けません!!2年有志の「bees」です！チュロスはいかがですか？一緒に写真が撮れるフォトブースあります♡インスタ映え間違いなし...!!"
+        ,"「トッポギ」1年A組はトッポギを販売しています！場所は2号館1階の217教室です！安くて美味しいトッポギとお待ちしています。ぜひ来てください！"
+        ,"「すいーと♡えんじぇる」２号館の長い道を抜けたその先に…そこにあるけれどそこにはない求めるものにのみ招かれる幻のお茶会が開かれています。さて、あなたはたどり着けるのでしょうか…？"
+        ,"「起業家クラス」こんにちは！起業家クラスです！（（タピオカタピオカタピオカタピオカタピオカタピオカタピオカタピオカタピオカタピオカタピオカタピオカタピオカタピオカタピオカタピオカタピオカタピオカタピオカタ…。"
+        ,"「法政国際2年男子」私たち「法政国際2年男子」は、『映画上映会』をやります!!共学になって男子1号の笑いあり、涙ある作品をぜひご覧下さい！上映中に飲んだり食べたりできるようにお菓子やジュースを用意しています。皆さん、ぜひお越し下さい！"
+            ,"「Café in The Daytime」Hello当店は午前中にフードがなくなってしまうことが多いオレンジ祭の対策として午後から開店いたします。（人材不足ではありません。決して、、、）お客様のお好みのパンケーキと紅茶をご提供いたします。"
+        ,"「バレー部」こんにちは、バレー部です。バレー部ではタピオカミルクティーとお菓子を販売します。1・2・3年生全員が一丸となって出店を頑張るので是非来てください!!場所は2号館2階の223教室です。"
+            ,"「硬式テニス部1・2年」硬式テニス部1・2年によるたいやき屋さんです！かわいくて美味しいたいやきを売るので、ぜひお越し下さい！"
+        ,"「放送部」放送部は224教室でビデオ放送を行っています。構成やナレーションまでこだわって作成したので、ぜひ見にきて下さい。また、少し疲れてしまった時の休憩スペースとしてもどうぞ!!"
+            ,"「1年H組」1年H組です。New York風のAmerican Hot dogに、少しTwistを付け加えました。インスタ映え間違いなしのコーナーや、イケメン男子が待っています！"
+        ,"「1年C組」こんにちは、1Cです!!1Cでは、美味しいチュロスを販売しています！小腹が空いた方、甘いものが好きな方、チュロスが好きな方！ぜひ、お越しください!!2号館2階、227教室でお待ちしています^_^"
+        ,"「図書委員会」生徒のみなさんと先生方から読まなくなった本を寄付していただき、古本として販売します。海外文学から絵本まで様々なジャンルを用意しています！是非お気軽に足を運んでみてください！"
+            ,"「アメリカンドッグ」☆ベビーカステラ ☆ミニアメリカンドッグ ☆チーズボールやります！小腹がすいたら234へ!!待ってます！"
+        ,"「1年E組」法政国際高校1年E組に迷いこんでしまったあなた。次々と迫りくる試練を乗り越え脱出デキルカナ...!?リアル脱出ゲーム、是非おこし下さい！"
+        ,"「あなたとコンビに法政チーズ」1-Fでチーズスティックをを販売します！　最近流行りの伸びるチーズを法政コンビニで味わって見ませんか？"
+        ,"「１年G組」「肉巻きおにぎりがここにある！」私たち1年G組はやみつきになるジューシー肉巻き弁当を用意してあなたをお待ちしています！売り切れごめんの肉巻きおにぎり！1Gへ急げ!!"
     ]
     let ProgrammeName3: [String] = ["家庭科部","美術部",]
     let ProgrammePicture3String: [String] = ["310.png","321.png"]
@@ -60,11 +60,12 @@ class ProgrammeTableViewController: UITableViewController {
     let ProgrammePicture4String: [String] = ["432.png","431-1.png","431-2.png","SchoolLogo.png","SchoolLogo.png","SchoolLogo.png"]
     var ProgrammePicture4: [UIImage?] = []
     let ProgrammeDescription4: [String] = [
-        "食堂の説明"
-        ,"同窓会バザー・手作り品販売　談話コーナー　お茶を用意してお待ちしています。"
-        ,"法政国際高オリジナル商品も販売します♪♪♪数限定なのでお見逃しなく！！　皆様のお越しをお待ちしております　※PTAバザー主催の売上金は、生徒たちの為に使わせていただきます"
-        ,"成田国際空港の説明ビデオを流しています"
-        ,"①全体説明　9/15 13:00 9/16 10:00 11:30 13:00 ②個別相談 9/15 14:00-15:30 9/16 10:30-15:30 来年度、本校を受験される中学生および保護者の方々のために設けた部屋です。個別相談はなるべく全体説明をお聞きになった上で、おまわり下さい。"
+    "「バドミントン部」４号館で焼き小籠包を売っています！外はパリッとこんがり焼き目をつけて、中はジューシーな肉汁が溢れ出てくる、ココでしか食べられない横浜の伝統ある焼き小籠包、ぜひ召し上がり下さい！！４号館でお待ちしています！！"
+    ,"「RESISTANCE」こんにちは、Resistanceです。私たちは軽音部ではなく、学校外での活動を主にやっています。今回はDJの人も加えてライブもします。是非来てください！"
+    ,"「有志ダンス」2年の伊東沙彩と松尾晃聖です。私たちは外部で本格的にダンスを習っていて、様々な活動をしています。振りつけも、今日も衣装も自分たちで考え、作り出しました。是非、私たちのダンスを見に来て下さいね。"
+        ,"「同窓会」"
+    ,"「PTAバザー」法政国際高オリジナル商品も販売します♪♪♪数限定なのでお見逃しなく！！　皆様のお越しをお待ちしております　※PTAバザー主催の売上金は、生徒たちの為に使わせていただきます"
+        ,"①全体説明　9/28 13:00 9/29 10:00 11:30 13:00 ②個別相談 9/28 14:00-15:30 9/29 10:30-15:30 来年度、本校を受験される中学生および保護者の方々のために設けた部屋です。個別相談はなるべく全体説明をお聞きになった上で、おまわり下さい。"
     
     ]
     let ProgrammeName5: [String] = ["MOS BURGER","31アイスクリーム","ベル　エポック","MARION CREPES"]
@@ -85,8 +86,8 @@ class ProgrammeTableViewController: UITableViewController {
     let GroupDescription: [String] = [
         "Go!METEORS!!"
         ,"是非来てください！"
-        ,"ダンス部です！４月からこのオレ祭のためにたくさんの練習をしてきました！校庭公演では可愛い衣装でキラキラ笑顔で3学年の公演をお見せします！体育館公演では多くのジャンルを精一杯お見せします。お越しください！"
-        ,"私たち弦楽部はヴァイオリン１８人、ヴィオラ７人、チェロ４人、コントラバス２人、フルート２人で活動しています！体育館で演奏するので是非見に来てください。"
+    ,"ダンス部です！４月からこのオレ祭のためにたくさんの練習をしてきました！校庭公演では可愛い衣装でキラキラ笑顔で3学年の公演をお見せします！体育館公演では多くのジャンルを精一杯お見せします。お越しください！"
+    ,"私たち弦楽部はヴァイオリン１８人、ヴィオラ７人、チェロ４人、コントラバス２人、フルート２人で活動しています！体育館で演奏するので是非見に来てください。"
         ,"是非来てください！"
         ,"是非来てください！"
         ,"Alice in Wonder Land ＠小ホール"
@@ -102,7 +103,9 @@ class ProgrammeTableViewController: UITableViewController {
 
     // 遷移先のViewControllerに渡す変数
     var ProgrammeGiveData: String = ""
+    var ProgrammePictureGiveData: String = ""
     var ProgrammeDescriptionGiveData: String = ""
+    
     
     //UserDefaultsの変数
     var userDefaults = UserDefaults.standard
@@ -303,7 +306,6 @@ class ProgrammeTableViewController: UITableViewController {
                 }
             }
         } else if p == 1 {
-            // ここでcellのlabelに値を入れています。//ここに新たな文字をい入れる
             ProgrammeCell.name.text = Group[indexPath.item]
             ProgrammeCell.ProgrammePicture.image = GroupPicture[indexPath.row]
             if UDColorTestPerformance.contains(Group[indexPath.item]){
@@ -430,26 +432,32 @@ class ProgrammeTableViewController: UITableViewController {
         if p == 0 {
             if indexPath.section == 0 {
                 ProgrammeGiveData = ProgrammeName1[indexPath.item]
+                ProgrammePictureGiveData = ProgrammePicture1String[indexPath.row]
                 ProgrammeDescriptionGiveData = ProgrammeDescription1[indexPath.item]
                 performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
                 
             } else if indexPath.section == 1 {
                 ProgrammeGiveData = ProgrammeName2[indexPath.item]
+                ProgrammePictureGiveData = ProgrammePicture2String[indexPath.row]
                 ProgrammeDescriptionGiveData = ProgrammeDescription2[indexPath.item]
                 performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
                 
             } else if indexPath.section == 2 {
                 ProgrammeGiveData = ProgrammeName3[indexPath.item]
+                ProgrammePictureGiveData = ProgrammePicture3String[indexPath.row]
                 ProgrammeDescriptionGiveData = ProgrammeDescription3[indexPath.item]
                 performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
                 
             } else if indexPath.section == 3 {
                 ProgrammeGiveData = ProgrammeName4[indexPath.item]
+                ProgrammePictureGiveData = ProgrammePicture4String[indexPath.row]
                 ProgrammeDescriptionGiveData = ProgrammeDescription4[indexPath.item]
                 performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
                 
             } else if indexPath.section == 4 {
                 ProgrammeGiveData = ProgrammeName5[indexPath.item]
+                ProgrammePictureGiveData = ProgrammePicture5String[indexPath.row]
+                ProgrammeDescriptionGiveData = ProgrammeDescription5[indexPath.item]
                 performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
             }
             
@@ -457,6 +465,7 @@ class ProgrammeTableViewController: UITableViewController {
             performSegue(withIdentifier: "TimeTableSegue", sender: nil)
         } else {
             ProgrammeGiveData = Group[indexPath.item]
+            ProgrammePictureGiveData = GroupPictureString[indexPath.row]
             ProgrammeDescriptionGiveData = GroupDescription[indexPath.item]
             performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
         }
@@ -468,6 +477,7 @@ class ProgrammeTableViewController: UITableViewController {
             let Pvc = segue.destination as! ProgrammeViewController
             Pvc.ProgrammeReceiveData = ProgrammeGiveData
             Pvc.ProgrammeDescriptionReceiveData = ProgrammeDescriptionGiveData
+            Pvc.ProgrammePictureReceiveData = ProgrammePictureGiveData
         }
     }
     
