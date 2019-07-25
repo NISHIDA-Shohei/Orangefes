@@ -12,6 +12,7 @@ class FavoriteTableViewCell: UITableViewCell {
     
     @IBOutlet weak var FavoriteNameLabel: UILabel!
     @IBOutlet weak var FavoriteButton: UIButton!
+    @IBOutlet weak var FavoritePicture: UIImageView!
     
 
     override func awakeFromNib() {

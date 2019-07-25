@@ -77,13 +77,13 @@ class ProgrammeTableViewController: UITableViewController {
 
     
     //公演一覧　統合データ部分////////////////////////////////////////////////////////////
-    let Group: [String] = ["応援部","ダンス部","弦楽部","合気道部","ゴスペル部","英語部","有志演劇","軽音楽部","吹奏楽部"]
+    let Performance: [String] = ["応援部","ダンス部","弦楽部","合気道部","ゴスペル部","英語部","有志演劇","軽音楽部","吹奏楽部"]
     
-    let GroupPictureString: [String] = ["Meteors.png","Dance.png","StringMusic.png","Aikido.png","Gospel.png","ESS.png","Drama.png","SchoolBand.png","BrassBand.png"]
+    let PerformancePictureString: [String] = ["Meteors.png","Dance.png","StringMusic.png","Aikido.png","Gospel.png","ESS.png","Drama.png","SchoolBand.png","BrassBand.png"]
     
-    var GroupPicture: [UIImage?] = []
+    var PerformancePicture: [UIImage?] = []
     
-    let GroupDescription: [String] = [
+    let PerformanceDescription: [String] = [
         "Go!METEORS!!"
         ,"是非来てください！"
     ,"ダンス部です！４月からこのオレ祭のためにたくさんの練習をしてきました！校庭公演では可愛い衣装でキラキラ笑顔で3学年の公演をお見せします！体育館公演では多くのジャンルを精一杯お見せします。お越しください！"
@@ -114,9 +114,12 @@ class ProgrammeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        /* UD初期化
-        if let bundleId = Bundle.main.bundleIdentifier {
-            UserDefaults.standard.removePersistentDomain(forName: bundleId) */
+         //UD初期化
+        /*if let bundleId = Bundle.main.bundleIdentifier {
+         UserDefaults.standard.removePersistentDomain(forName: bundleId)
+            
+        } */
+        
         for fileName in ProgrammePicture1String {
             ProgrammePicture1.append(UIImage(named: fileName))
         }
@@ -132,8 +135,8 @@ class ProgrammeTableViewController: UITableViewController {
         for fileName in ProgrammePicture5String {
             ProgrammePicture5.append(UIImage(named: fileName))
         }
-        for fileName in GroupPictureString {
-            GroupPicture.append(UIImage(named: fileName))
+        for fileName in PerformancePictureString {
+            PerformancePicture.append(UIImage(named: fileName))
         }
         
         }
@@ -177,7 +180,7 @@ class ProgrammeTableViewController: UITableViewController {
                 return ProgrammeName5.count
             }
         } else if p == 1 {
-                return Group.count
+                return Performance.count
         } else {
                 return 1
         }
@@ -306,9 +309,9 @@ class ProgrammeTableViewController: UITableViewController {
                 }
             }
         } else if p == 1 {
-            ProgrammeCell.name.text = Group[indexPath.item]
-            ProgrammeCell.ProgrammePicture.image = GroupPicture[indexPath.row]
-            if UDColorTestPerformance.contains(Group[indexPath.item]){
+            ProgrammeCell.name.text = Performance[indexPath.item]
+            ProgrammeCell.ProgrammePicture.image = PerformancePicture[indexPath.row]
+            if UDColorTestPerformance.contains(Performance[indexPath.item]){
                 ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
             }else{
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
@@ -336,6 +339,10 @@ class ProgrammeTableViewController: UITableViewController {
         var getUDPerformanceName:[String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
         var getUDProgrammeDescription:[String] = userDefaults.array(forKey: "UDProgrammeDescriptionKey") as? [String] ?? []
         var getUDPerformanceDescription:[String] = userDefaults.array(forKey: "UDPerformanceDescriptionKey") as? [String] ?? []
+        var getUDProgrammePicture:[String] = userDefaults.array(forKey: "UDProgrammePictureKey" ) as? [String] ?? []
+        var getUDPerformancePicture:[String] = userDefaults.array(forKey: "UDPerformancePictureKey" ) as? [String] ?? []
+        
+        print("getUDProgrammePicture\(getUDProgrammePicture)" )
         
         // タップされたボタンのtableviewの選択行を取得
         let button = sender as! UIButton
@@ -355,63 +362,77 @@ class ProgrammeTableViewController: UITableViewController {
                 if getUDProgrammeName.contains(ProgrammeName1[row]){
                     getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName1[row])!)
                     getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription1[row])!)
+                    getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture1String[row])!)
                     changeBlack()
                 }else {
                     getUDProgrammeName.append(ProgrammeName1[row])
                     getUDProgrammeDescription.append(ProgrammeDescription1[row])
+                    getUDProgrammePicture.append(ProgrammePicture1String[row])
                     changeOrange()
                 }
             }else if section == 1 {
                 if getUDProgrammeName.contains(ProgrammeName2[row]){
                     getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName2[row])!)
                     getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription2[row])!)
+                    getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture2String[row])!)
                     changeBlack()
                 }else {
                     getUDProgrammeName.append(ProgrammeName2[row])
                     getUDProgrammeDescription.append(ProgrammeDescription2[row])
+                    getUDProgrammePicture.append(ProgrammePicture2String[row])
                     changeOrange()
                 }
             }else if section == 2 {
                 if getUDProgrammeName.contains(ProgrammeName3[row]){
                     getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName3[row])!)
                     getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription3[row])!)
+                    getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture3String[row])!)
                     changeBlack()
                 }else {
                     getUDProgrammeName.append(ProgrammeName3[row])
                     getUDProgrammeDescription.append(ProgrammeDescription3[row])
+                    getUDProgrammePicture.append(ProgrammePicture3String[row])
                     changeOrange()
                 }
             }else if section == 3 {
                 if getUDProgrammeName.contains(ProgrammeName4[row]){
                     getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName4[row])!)
                     getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription4[row])!)
+                    getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture4String[row])!)
                     changeBlack()
                 }else {
                     getUDProgrammeName.append(ProgrammeName4[row])
                     getUDProgrammeDescription.append(ProgrammeDescription4[row])
+                    getUDProgrammePicture.append(ProgrammePicture4String[row])
                     changeOrange()
                 }
             }else if section == 4 {
                 if getUDProgrammeName.contains(ProgrammeName5[row]){
                     getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName5[row])!)
                     getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription5[row])!)
+                    getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture5String[row])!)
                     changeBlack()
                 }else {
                     getUDProgrammeName.append(ProgrammeName5[row])
                     getUDProgrammeDescription.append(ProgrammeDescription5[row])
+                    getUDProgrammePicture.append(ProgrammePicture5String[row])
                     changeOrange()
                 }
             }
             print("start\(getUDProgrammeDescription)")
+            print(getUDProgrammePicture)
+            print(getUDProgrammeName)
         } else {
             //UDProgrammeNameにProgrammeNameを代入している
-            if getUDPerformanceName.contains(Group[row]){
-                getUDPerformanceName.remove(at: getUDPerformanceName.firstIndex(of: Group[row])!)
-                getUDPerformanceDescription.remove(at: getUDPerformanceDescription.firstIndex(of: Group[row])!)
+            if getUDPerformanceName.contains(Performance[row]){
+                getUDPerformanceName.remove(at: getUDPerformanceName.firstIndex(of: Performance[row])!)
+                getUDPerformanceDescription.remove(at: getUDPerformanceDescription.firstIndex(of: Performance[row])!)
+                getUDPerformancePicture.remove(at: getUDPerformancePicture.firstIndex(of: PerformancePictureString[row])!)
                 button.setTitleColor(UIColor.black, for: .normal)
             }else {
-                getUDPerformanceName.append(Group[row])
-                getUDPerformanceDescription.append(Group[row])
+                getUDPerformanceName.append(Performance[row])
+                getUDPerformanceDescription.append(PerformanceDescription[row])
+                getUDPerformancePicture.append(PerformancePictureString[row])
                 button.setTitleColor(UIColor.orange, for: .normal)
             }
         }
@@ -423,6 +444,10 @@ class ProgrammeTableViewController: UITableViewController {
         userDefaults.set(getUDPerformanceName, forKey: "UDPerformanceNameKey")
         userDefaults.set(getUDProgrammeDescription, forKey: "UDProgrammeDescriptionKey")
         userDefaults.set(getUDPerformanceDescription, forKey: "UDPerformanceDescriptionKey")
+        userDefaults.set(getUDProgrammePicture, forKey: "UDProgrammePictureKey")
+        userDefaults.set(getUDPerformancePicture, forKey: "UDPerformancePictureKey")
+
+        
     }
     
     // cellが押されたときに呼ばれる関数
@@ -464,9 +489,9 @@ class ProgrammeTableViewController: UITableViewController {
         } else if p == 2 {
             performSegue(withIdentifier: "TimeTableSegue", sender: nil)
         } else {
-            ProgrammeGiveData = Group[indexPath.item]
-            ProgrammePictureGiveData = GroupPictureString[indexPath.row]
-            ProgrammeDescriptionGiveData = GroupDescription[indexPath.item]
+            ProgrammeGiveData = Performance[indexPath.item]
+            ProgrammePictureGiveData = PerformancePictureString[indexPath.row]
+            ProgrammeDescriptionGiveData = PerformanceDescription[indexPath.item]
             performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
         }
     }

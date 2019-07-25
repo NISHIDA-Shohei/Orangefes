@@ -17,11 +17,16 @@ class FavoriteTableViewController: UITableViewController {
     var FavoritePerformanceName: [String] = []
     var FavoriteProgrammeDescription: [String] = []
     var FavoritePerformanceDescription: [String] = []
+    var FavoriteProgrammePictureString: [String] = []
+    var FavoritePerformancePictureString: [String] = []
+    
+    var FavoriteProgrammePicture:[UIImage?] = []
+    var FavoritePerformancePicture:[UIImage?] = []
+    
     
     var giveData = ""
     var giveDescriptionData = ""
-    var givePerformanceData = ""
-    var givePerformanceDescriptionData = ""
+    var givePictureStringData = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +42,21 @@ class FavoriteTableViewController: UITableViewController {
         
         let getFavoritePerformanceDescription:[String] = userDefaults.array(forKey: "UDPerformanceDescriptionKey") as? [String] ?? []
         FavoritePerformanceDescription = getFavoritePerformanceDescription
+        
+        let getFavoriteProgrammePictureString:[String] = userDefaults.array(forKey: "UDProgrammePictureKey") as? [String] ?? []
+        FavoriteProgrammePictureString = getFavoriteProgrammePictureString
+        
+        let getPerformancePictureString:[String] = userDefaults.array(forKey: "UDPerformancePictureKey") as? [String] ?? []
+        FavoritePerformancePictureString = getPerformancePictureString
+        
+        for fileName in FavoriteProgrammePictureString {
+            FavoriteProgrammePicture.append(UIImage(named: fileName))
+        }
+        for fileName in FavoritePerformancePictureString {
+            FavoritePerformancePicture.append(UIImage(named: fileName))
+        }
+        //リロードする
+        tableView.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,9 +72,23 @@ class FavoriteTableViewController: UITableViewController {
         
         let getFavoritePerformanceDescription:[String] = userDefaults.array(forKey: "UDPerformanceDescriptionKey") as? [String] ?? []
         FavoritePerformanceDescription = getFavoritePerformanceDescription
+        
+        let getProgrammePictureString:[String] = userDefaults.array(forKey: "UDProgrammePictureKey") as? [String] ?? []
+        FavoriteProgrammePictureString = getProgrammePictureString
+        
+        let getPerformancePictureString:[String] = userDefaults.array(forKey: "UDPerformancePictureKey") as? [String] ?? []
+        FavoritePerformancePictureString = getPerformancePictureString
+        
+        for fileName in FavoriteProgrammePictureString {
+            FavoriteProgrammePicture.append(UIImage(named: fileName))
+        }
+        for fileName in FavoritePerformancePictureString {
+            FavoritePerformancePicture.append(UIImage(named: fileName))
+        }
         //リロードする
         tableView.reloadData()
-        }
+        
+    }
     
     // sectionの数を返す関数
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -114,7 +148,7 @@ class FavoriteTableViewController: UITableViewController {
         if indexPath.section == 0{
             // ここでcellのlabelに値を入れています。//ここに新たな文字をい入れる
             FavoriteCell.FavoriteNameLabel.text = FavoriteName[indexPath.item]
-            
+            FavoriteCell.FavoritePicture.image = FavoriteProgrammePicture[indexPath.item]
             if UDColorTestProgramme.contains(FavoriteName[indexPath.item]){
                 FavoriteCell.FavoriteButton.setTitleColor(UIColor.orange, for: .normal)
             } else {
@@ -122,6 +156,7 @@ class FavoriteTableViewController: UITableViewController {
             }
         } else {
             FavoriteCell.FavoriteNameLabel.text = FavoritePerformanceName[indexPath.item]
+            FavoriteCell.FavoritePicture.image = FavoritePerformancePicture[indexPath.row]
             if UDColorTestPerformance.contains(FavoritePerformanceName[indexPath.item]){
                 FavoriteCell.FavoriteButton.setTitleColor(UIColor.orange, for: .normal)
             } else {
@@ -139,24 +174,21 @@ class FavoriteTableViewController: UITableViewController {
         if indexPath.section == 0 {
             giveData = FavoriteName[indexPath.item]
             giveDescriptionData = FavoriteProgrammeDescription[indexPath.item]
+            givePictureStringData = FavoriteProgrammePictureString[indexPath.row]
         } else {
             giveData = FavoritePerformanceName[indexPath.item]
             giveDescriptionData = FavoritePerformanceDescription[indexPath.item]
+            givePictureStringData = FavoritePerformancePictureString[indexPath.row]
         }
-        
-        
-
-        // Segueを使った画面遷移を行う関数
         performSegue(withIdentifier: "FavoriteSegue", sender: nil)
-        
     }
-    
     // 遷移先のViewControllerにデータを渡す関数
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "FavoriteSegue" {
             let vc = segue.destination as! FavoriteViewController
             vc.receiveData = giveData
             vc.receiveDescriptionData = giveDescriptionData
+            vc.receivePictureStringData = givePictureStringData
         }
     }
     
@@ -165,8 +197,12 @@ class FavoriteTableViewController: UITableViewController {
         
         // userDefaultsに保存された値の取得
         var getUDProgrammeName:[String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
-        var getUDPerformanceName:[String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
+        var getUDProgrammeDescription:[String] = userDefaults.array(forKey: "UDProgrammeDescriptionKey") as? [String] ?? []
+        var getUDProgrammePicture:[String] = userDefaults.array(forKey: "UDProgrammePictureKey" ) as? [String] ?? []
         
+        var getUDPerformanceName:[String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
+        var getUDPerformanceDescription:[String] = userDefaults.array(forKey: "UDPerformanceDescriptionKey") as? [String] ?? []
+        var getUDPerformancePicture:[String] = userDefaults.array(forKey: "UDPerformancePictureKey" ) as? [String] ?? []
         // タップされたボタンのtableviewの選択行を取得
         let button = sender as! UIButton
         let cell = button.superview?.superview as! UITableViewCell
@@ -183,9 +219,13 @@ class FavoriteTableViewController: UITableViewController {
         if section == 0 {
             if getUDProgrammeName.contains(FavoriteName[row]){
                 getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: FavoriteName[row])!)
+                getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: FavoriteProgrammeDescription[row])!)
+                getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: FavoriteProgrammePictureString[row])!)
                 changeBlack()
             }else {
                 getUDProgrammeName.append(FavoriteName[row])
+                getUDProgrammeDescription.append(FavoriteProgrammeDescription[row])
+                getUDProgrammePicture.append(FavoriteProgrammePictureString[row])
                 changeOrange()
                 print("ここには来ないはず")
             }
