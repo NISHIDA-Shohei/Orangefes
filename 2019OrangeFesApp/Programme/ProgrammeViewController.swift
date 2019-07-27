@@ -14,51 +14,27 @@ class ProgrammeViewController: UIViewController {
     @IBOutlet weak var ProgrammeDescription: UITextView!
     @IBOutlet weak var ProgrammePicture: UIImageView!
     
-    
     var ProgrammeReceiveData: String = ""
     var ProgrammePictureReceiveData: String = ""
     var ProgrammeDescriptionReceiveData: String = ""
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 枠のカラー
         ProgrammeDescription.layer.borderColor = UIColor.orange.cgColor
-        
         // 枠の幅
         ProgrammeDescription.layer.borderWidth = 1.0
-        
         // 枠を角丸にする場合
-       ProgrammeDescription.layer.cornerRadius = 10.0
-       ProgrammeDescription.layer.masksToBounds = true
-        
-
-        
-        
+        ProgrammeDescription.layer.cornerRadius = 10.0
+        ProgrammeDescription.layer.masksToBounds = true
         
         ProgrammeDescription.text = ProgrammeDescriptionReceiveData
         ProgrammeTitle.title = ProgrammeReceiveData
         ProgrammePicture.image = UIImage(named: ProgrammePictureReceiveData)
-        
-        
     }
-    
-    
-    
-    // Do any additional setup after loading the view.
 }
 
-
-/*
- // MARK: - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- // Get the new view controller using segue.destination.
- // Pass the selected object to the new view controller.
- }
- */
 
 
 

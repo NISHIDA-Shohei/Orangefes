@@ -20,8 +20,7 @@ class ProgrammeTableViewController: UITableViewController {
     let ProgrammeDescription1: [String] = [
         "「漫画広報部」部員の「好きなもの」を詰め込んだ、『Primarera』という部誌を発行しております。その他、平面だけでなく立体でも展示をしております。お立ち寄りいただければ幸いです！"
         ,"「華道部」華道部です。私たちは月2回ほどコーチの元で練習を重ねてきました。テーマは行事です。私達の作品、ぜひ見に来てください。"
-        ,"「茶道部」お茶とお菓子が食べれます。1席200円です。正座はしないので、お気軽にお越し下さい。日頃の稽古の成果を生かせるよう頑張ります。"
-    ]
+        ,"「茶道部」お茶とお菓子が食べれます。1席200円です。正座はしないので、お気軽にお越し下さい。日頃の稽古の成果を生かせるよう頑張ります。"]
     
     let ProgrammeName2: [String] = ["ゆっかいず","ドーナツショップ","お化け屋敷","ちゅるちゅるらんど","硬式テニス部３年","BEES","トッポギ","すいーと♡えんじぇる","起業家クラス","法政国際２年男子","Café in The Daytime","バレー部","硬式テニス部１・２年","放送部","１年H組","１年C組","図書委員会","アメリカンドッグ","１年E組","あなたとコンビに法政チーズ","１年G組"]
     
@@ -50,8 +49,8 @@ class ProgrammeTableViewController: UITableViewController {
             ,"「アメリカンドッグ」☆ベビーカステラ ☆ミニアメリカンドッグ ☆チーズボールやります！小腹がすいたら234へ!!待ってます！"
         ,"「1年E組」法政国際高校1年E組に迷いこんでしまったあなた。次々と迫りくる試練を乗り越え脱出デキルカナ...!?リアル脱出ゲーム、是非おこし下さい！"
         ,"「あなたとコンビに法政チーズ」1-Fでチーズスティックをを販売します！　最近流行りの伸びるチーズを法政コンビニで味わって見ませんか？"
-        ,"「１年G組」「肉巻きおにぎりがここにある！」私たち1年G組はやみつきになるジューシー肉巻き弁当を用意してあなたをお待ちしています！売り切れごめんの肉巻きおにぎり！1Gへ急げ!!"
-    ]
+        ,"「１年G組」「肉巻きおにぎりがここにある！」私たち1年G組はやみつきになるジューシー肉巻き弁当を用意してあなたをお待ちしています！売り切れごめんの肉巻きおにぎり！1Gへ急げ!!"]
+    
     let ProgrammeName3: [String] = ["家庭科部","美術部",]
     let ProgrammePicture3String: [String] = ["310.png","321.png"]
     var ProgrammePicture3: [UIImage?] = []
@@ -65,9 +64,8 @@ class ProgrammeTableViewController: UITableViewController {
         ,"「有志ダンス」2年の伊東沙彩と松尾晃聖です。私たちは外部で本格的にダンスを習っていて、様々な活動をしています。振りつけも、今日も衣装も自分たちで考え、作り出しました。是非、私たちのダンスを見に来て下さいね。"
         ,"「同窓会」"
         ,"「PTAバザー」法政国際高オリジナル商品も販売します♪♪♪数限定なのでお見逃しなく！！　皆様のお越しをお待ちしております　※PTAバザー主催の売上金は、生徒たちの為に使わせていただきます"
-        ,"①全体説明　9/28 13:00 9/29 10:00 11:30 13:00 ②個別相談 9/28 14:00-15:30 9/29 10:30-15:30 来年度、本校を受験される中学生および保護者の方々のために設けた部屋です。個別相談はなるべく全体説明をお聞きになった上で、おまわり下さい。"
+        ,"①全体説明　9/28 13:00 9/29 10:00 11:30 13:00 ②個別相談 9/28 14:00-15:30 9/29 10:30-15:30 来年度、本校を受験される中学生および保護者の方々のために設けた部屋です。個別相談はなるべく全体説明をお聞きになった上で、おまわり下さい。"]
     
-    ]
     let ProgrammeName5: [String] = ["MOS BURGER","31アイスクリーム","ベル　エポック","MARION CREPES"]
     let ProgrammePicture5String: [String] = ["000.png","000.png","000.png","000.png"]
     var ProgrammePicture5: [UIImage?] = []
@@ -89,8 +87,10 @@ class ProgrammeTableViewController: UITableViewController {
     
     let TimeTableImage: [String] = ["Day1TimeTable.jpg","Day2TimeTable.jpg"]
     
+    //segment controll用関数
     var p: Int = 0
-    func reload(){
+    
+    func reload() {
         tableView.reloadData()
     }
 
@@ -99,7 +99,6 @@ class ProgrammeTableViewController: UITableViewController {
     var ProgrammePictureGiveData: String = ""
     var ProgrammeDescriptionGiveData: String = ""
     
-    
     //UserDefaultsの変数
     var userDefaults = UserDefaults.standard
     var UDProgrammeName:String = ""
@@ -107,10 +106,9 @@ class ProgrammeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-         //UD初期化
+         //UD初期化 リリース前に削除
         if let bundleId = Bundle.main.bundleIdentifier {
          UserDefaults.standard.removePersistentDomain(forName: bundleId)
-            
         }
         
         for fileName in ProgrammePicture1String {
@@ -131,16 +129,13 @@ class ProgrammeTableViewController: UITableViewController {
         for fileName in PerformancePictureString {
             PerformancePicture.append(UIImage(named: fileName))
         }
-        
         }
-    
     
     //リロードする
     override func viewWillAppear(_ animated: Bool) {
-        tableView.reloadData()
-        // cellの高さを返す関数
+        reload()
     }
-
+    // cellの高さを返す関数
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
 }
@@ -148,10 +143,8 @@ class ProgrammeTableViewController: UITableViewController {
     // sectionの数を返す関数
     override func numberOfSections(in tableView: UITableView) -> Int {
         if p == 0 {
-            //企画
             return 5
         } else if p == 1{
-            //公演
             return 1
         } else {
             return 2
@@ -186,23 +179,19 @@ class ProgrammeTableViewController: UITableViewController {
             //labelの色
             view.tintColor = UIColor(red: 255/255, green: 204/255, blue: 102/255, alpha: 0.7)
             let header = view as! UITableViewHeaderFooterView
-            //labelの文字
+            //labelの文字の色
             header.textLabel?.textColor = UIColor.black
         } else if p == 1{
-            //labelの色
             view.tintColor = UIColor(red: 102/255, green: 255/255, blue: 153/255, alpha: 0.7)
             let header = view as! UITableViewHeaderFooterView
-            //labelの文字
             header.textLabel?.textColor = UIColor.black
         } else {
-            //labelの色
             view.tintColor = UIColor(red: 204/255, green: 153/255, blue: 255/255, alpha: 0.7)
             let header = view as! UITableViewHeaderFooterView
-            //labelの文字
             header.textLabel?.textColor = UIColor.black
         }
-
     }
+    
     // sectionの高さを返す関数
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 40
@@ -210,12 +199,10 @@ class ProgrammeTableViewController: UITableViewController {
     
     // sectionに載せる文字列を返す関数
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
         //sectionの日付
         let sectionNumber = section
         var sectionPlace: String = ""
         
-        //追加部分
         if p == 0 {
             if sectionNumber == 0 {
                 sectionPlace = "1号館"
@@ -241,10 +228,8 @@ class ProgrammeTableViewController: UITableViewController {
     }
 
     // cellの情報を書き込む関数
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let ProgrammeCell = tableView.dequeueReusableCell(withIdentifier: "ProgrammeTableViewCell", for: indexPath as IndexPath) as! ProgrammeTableViewCell
-        
         //UserDefaultの情報を取得
         let UDColorTest: [String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
         let UDColorTestPerformance: [String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
@@ -321,12 +306,9 @@ class ProgrammeTableViewController: UITableViewController {
 
         return ProgrammeCell
     }
-    
-    
-    //=======================================================================
-    //favorite ボタン　実装
+
+    //お気に入りボタン
     @IBAction func tapAddButton(sender: Any) {
-        
         // userDefaultsに保存された値の取得
         var getUDProgrammeName:[String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
         var getUDPerformanceName:[String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
@@ -410,9 +392,6 @@ class ProgrammeTableViewController: UITableViewController {
                     changeOrange()
                 }
             }
-            print("start\(getUDProgrammeDescription)")
-            print(getUDProgrammePicture)
-            print(getUDProgrammeName)
         } else {
             //UDProgrammeNameにProgrammeNameを代入している
             if getUDPerformanceName.contains(Performance[row]){
@@ -431,14 +410,11 @@ class ProgrammeTableViewController: UITableViewController {
         // userDefaultsに格納したい値
         //UserDefaultにUDProgrammeNameを保存する
         userDefaults.set(getUDProgrammeName, forKey: "UDProgrammeNameKey")
-        //UserDefaultにUDPerformanceNameを保存する
         userDefaults.set(getUDPerformanceName, forKey: "UDPerformanceNameKey")
         userDefaults.set(getUDProgrammeDescription, forKey: "UDProgrammeDescriptionKey")
         userDefaults.set(getUDPerformanceDescription, forKey: "UDPerformanceDescriptionKey")
         userDefaults.set(getUDProgrammePicture, forKey: "UDProgrammePictureKey")
         userDefaults.set(getUDPerformancePicture, forKey: "UDPerformancePictureKey")
-
-        
     }
     
     // cellが押されたときに呼ばれる関数
@@ -507,7 +483,6 @@ class ProgrammeTableViewController: UITableViewController {
             p = 1
             reload()
         case 2:
-            //self.performSegue(withIdentifier: "TimeTableSegue", sender: nil)
             p = 2
             reload()
         default:
@@ -515,6 +490,4 @@ class ProgrammeTableViewController: UITableViewController {
             reload()
         }
     }
-    
-    
 }

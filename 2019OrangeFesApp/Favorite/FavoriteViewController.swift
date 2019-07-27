@@ -14,12 +14,9 @@ class FavoriteViewController: UIViewController {
     @IBOutlet weak var FavoriteDescriptionText: UITextView!
     @IBOutlet weak var FavoritePicture: UIImageView!
  
-    
     var receiveData: String = ""
     var receiveDescriptionData: String = ""
     var receivePictureStringData: String = ""
-
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,24 +29,9 @@ class FavoriteViewController: UIViewController {
         FavoriteDescriptionText.layer.cornerRadius = 10.0
         FavoriteDescriptionText.layer.masksToBounds = true
         
-        
-
         FavoriteDescriptionText.text = receiveDescriptionData
         FavoriteTitle.title = receiveData
         FavoritePicture.image = UIImage(named: receivePictureStringData)
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

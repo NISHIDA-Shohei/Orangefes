@@ -26,31 +26,9 @@ class FavoriteTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //UDProgrammeNameKeyから情報を取得
-        let getFavoriteName:[String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
-        FavoriteName = getFavoriteName
-        //UDPerformanceNameKeyから情報を取得
-        let getFavoritePerformanceName:[String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
-        FavoritePerformanceName = getFavoritePerformanceName
-        
-        let getFavoriteProgrammeDescription:[String] = userDefaults.array(forKey: "UDProgrammeDescriptionKey") as? [String] ?? []
-        FavoriteProgrammeDescription = getFavoriteProgrammeDescription
-        
-        let getFavoritePerformanceDescription:[String] = userDefaults.array(forKey: "UDPerformanceDescriptionKey") as? [String] ?? []
-        FavoritePerformanceDescription = getFavoritePerformanceDescription
-        
-        let getFavoriteProgrammePictureString:[String] = userDefaults.array(forKey: "UDProgrammePictureKey") as? [String] ?? []
-        FavoriteProgrammePictureString = getFavoriteProgrammePictureString
-        
-        let getPerformancePictureString:[String] = userDefaults.array(forKey: "UDPerformancePictureKey") as? [String] ?? []
-        FavoritePerformancePictureString = getPerformancePictureString
-        //リロードする
-        tableView.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
         //UDProgrammeNameKeyから情報を取得
         let getFavoriteName:[String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
         FavoriteName = getFavoriteName
@@ -130,7 +108,7 @@ class FavoriteTableViewController: UITableViewController {
         //cellに右矢印を追加する
         FavoriteCell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         if indexPath.section == 0{
-            // ここでcellのlabelに値を入れています。//ここに新たな文字をい入れる
+            // ここでcellのlabelに値を入れる　ここに新たな文字をい入れる
             FavoriteCell.FavoriteNameLabel.text = FavoriteName[indexPath.item]
             FavoriteCell.FavoritePicture.image = UIImage(named: FavoriteProgrammePictureString[indexPath.item])
             if UDColorTestProgramme.contains(FavoriteName[indexPath.item]){
@@ -149,7 +127,6 @@ class FavoriteTableViewController: UITableViewController {
         }
         return FavoriteCell
     }
-    
     
     // cellが押されたときに呼ばれる関数
     // 画面遷移の処理もここで書いている
@@ -176,17 +153,16 @@ class FavoriteTableViewController: UITableViewController {
         }
     }
     
-    //favorite ボタン　実装////////////////////////////////////////////////////////
+    //お気に入りボタン実装
     @IBAction func tapAddButton(sender: Any) {
-        
         // userDefaultsに保存された値の取得
         var getUDProgrammeName:[String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
         var getUDProgrammeDescription:[String] = userDefaults.array(forKey: "UDProgrammeDescriptionKey") as? [String] ?? []
         var getUDProgrammePicture:[String] = userDefaults.array(forKey: "UDProgrammePictureKey" ) as? [String] ?? []
-        
         var getUDPerformanceName:[String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
         var getUDPerformanceDescription:[String] = userDefaults.array(forKey: "UDPerformanceDescriptionKey") as? [String] ?? []
         var getUDPerformancePicture:[String] = userDefaults.array(forKey: "UDPerformancePictureKey" ) as? [String] ?? []
+        
         // タップされたボタンのtableviewの選択行を取得
         let button = sender as! UIButton
         let cell = button.superview?.superview as! UITableViewCell
@@ -226,15 +202,8 @@ class FavoriteTableViewController: UITableViewController {
         // userDefaultsに格納したい値
         //UserDefaultにUDProgrammeNameを保存する
         userDefaults.set(getUDProgrammeName, forKey: "UDProgrammeNameKey")
-        print("getUDProgrammeName\(getUDProgrammeName)")
-        //UserDefaultにUDPerformanceNameを保存する
         userDefaults.set(getUDPerformanceName, forKey: "UDPerformanceNameKey")
-        print("getUDPerformanceName\(getUDPerformanceName)")
-        
-        //リロードする
         tableView.reloadData()
         
-    }
-    
-    ////////////////////////////////////////////////////////////////////////////    
+    } 
 }
