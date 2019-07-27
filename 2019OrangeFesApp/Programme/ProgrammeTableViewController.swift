@@ -18,9 +18,9 @@ class ProgrammeTableViewController: UITableViewController {
     let ProgrammePicture1String: [String] = ["112-1.png","112-2.png","114.png"]
     var ProgrammePicture1: [UIImage?] = []
     let ProgrammeDescription1: [String] = [
-    "部員の「好きなもの」を詰め込んだ、『Primarera』という部誌を発行しております。その他、平面だけでなく立体でも展示をしております。お立ち寄りいただければ幸いです！"
-        ,"華道部です。私たちは月2回ほどコーチの元で練習を重ねてきました。テーマは行事です。私達の作品、ぜひ見に来てください。"
-        ,"お茶とお菓子が食べれます。1席200円です。正座はしないので、お気軽にお越し下さい。日頃の稽古の成果を生かせるよう頑張ります。"
+        "「漫画広報部」部員の「好きなもの」を詰め込んだ、『Primarera』という部誌を発行しております。その他、平面だけでなく立体でも展示をしております。お立ち寄りいただければ幸いです！"
+        ,"「華道部」華道部です。私たちは月2回ほどコーチの元で練習を重ねてきました。テーマは行事です。私達の作品、ぜひ見に来てください。"
+        ,"「茶道部」お茶とお菓子が食べれます。1席200円です。正座はしないので、お気軽にお越し下さい。日頃の稽古の成果を生かせるよう頑張ります。"
     ]
     
     let ProgrammeName2: [String] = ["ゆっかいず","ドーナツショップ","お化け屋敷","ちゅるちゅるらんど","硬式テニス部３年","BEES","トッポギ","すいーと♡えんじぇる","起業家クラス","法政国際２年男子","Café in The Daytime","バレー部","硬式テニス部１・２年","放送部","１年H組","１年C組","図書委員会","アメリカンドッグ","１年E組","あなたとコンビに法政チーズ","１年G組"]
@@ -55,16 +55,16 @@ class ProgrammeTableViewController: UITableViewController {
     let ProgrammeName3: [String] = ["家庭科部","美術部",]
     let ProgrammePicture3String: [String] = ["310.png","321.png"]
     var ProgrammePicture3: [UIImage?] = []
-    let ProgrammeDescription3: [String] = ["家庭部はクッキーを販売しています。2袋100円のワンコインなので気軽にご購入いただけます。手軽に甘いものが欲しくなった時にいかがでしょうか？","こんにちは！オレンジ祭では昨年と同様に手作りハンコと小さなオブジェ等を販売します！合作は1人1つ小さな家を作り、机の上で小さな街を作ります。"]
+    let ProgrammeDescription3: [String] = ["「家庭科部」家庭部はクッキーを販売しています。2袋100円のワンコインなので気軽にご購入いただけます。手軽に甘いものが欲しくなった時にいかがでしょうか？","「美術部」こんにちは！オレンジ祭では昨年と同様に手作りハンコと小さなオブジェ等を販売します！合作は1人1つ小さな家を作り、机の上で小さな街を作ります。"]
     let ProgrammeName4: [String] = ["バドミントン部","RESISTANCE","有志ダンス","同窓会","PTAバザー","入試相談室"]
     let ProgrammePicture4String: [String] = ["432.png","431-1.png","431-2.png","SchoolLogo.png","SchoolLogo.png","SchoolLogo.png"]
     var ProgrammePicture4: [UIImage?] = []
     let ProgrammeDescription4: [String] = [
-    "「バドミントン部」４号館で焼き小籠包を売っています！外はパリッとこんがり焼き目をつけて、中はジューシーな肉汁が溢れ出てくる、ココでしか食べられない横浜の伝統ある焼き小籠包、ぜひ召し上がり下さい！！４号館でお待ちしています！！"
-    ,"「RESISTANCE」こんにちは、Resistanceです。私たちは軽音部ではなく、学校外での活動を主にやっています。今回はDJの人も加えてライブもします。是非来てください！"
-    ,"「有志ダンス」2年の伊東沙彩と松尾晃聖です。私たちは外部で本格的にダンスを習っていて、様々な活動をしています。振りつけも、今日も衣装も自分たちで考え、作り出しました。是非、私たちのダンスを見に来て下さいね。"
+        "「バドミントン部」４号館で焼き小籠包を売っています！外はパリッとこんがり焼き目をつけて、中はジューシーな肉汁が溢れ出てくる、ココでしか食べられない横浜の伝統ある焼き小籠包、ぜひ召し上がり下さい！！４号館でお待ちしています！！"
+        ,"「RESISTANCE」こんにちは、Resistanceです。私たちは軽音部ではなく、学校外での活動を主にやっています。今回はDJの人も加えてライブもします。是非来てください！"
+        ,"「有志ダンス」2年の伊東沙彩と松尾晃聖です。私たちは外部で本格的にダンスを習っていて、様々な活動をしています。振りつけも、今日も衣装も自分たちで考え、作り出しました。是非、私たちのダンスを見に来て下さいね。"
         ,"「同窓会」"
-    ,"「PTAバザー」法政国際高オリジナル商品も販売します♪♪♪数限定なのでお見逃しなく！！　皆様のお越しをお待ちしております　※PTAバザー主催の売上金は、生徒たちの為に使わせていただきます"
+        ,"「PTAバザー」法政国際高オリジナル商品も販売します♪♪♪数限定なのでお見逃しなく！！　皆様のお越しをお待ちしております　※PTAバザー主催の売上金は、生徒たちの為に使わせていただきます"
         ,"①全体説明　9/28 13:00 9/29 10:00 11:30 13:00 ②個別相談 9/28 14:00-15:30 9/29 10:30-15:30 来年度、本校を受験される中学生および保護者の方々のために設けた部屋です。個別相談はなるべく全体説明をお聞きになった上で、おまわり下さい。"
     
     ]
@@ -72,27 +72,20 @@ class ProgrammeTableViewController: UITableViewController {
     let ProgrammePicture5String: [String] = ["000.png","000.png","000.png","000.png"]
     var ProgrammePicture5: [UIImage?] = []
     let ProgrammeDescription5: [String] = ["ハンバーガー屋","アイスクリーム屋","パン屋","クレープ屋"]
-
     
-
-    
-    //公演一覧　統合データ部分////////////////////////////////////////////////////////////
     let Performance: [String] = ["応援部","ダンス部","弦楽部","合気道部","ゴスペル部","英語部","有志演劇","軽音楽部","吹奏楽部"]
-    
     let PerformancePictureString: [String] = ["Meteors.png","Dance.png","StringMusic.png","Aikido.png","Gospel.png","ESS.png","Drama.png","SchoolBand.png","BrassBand.png"]
-    
     var PerformancePicture: [UIImage?] = []
-    
     let PerformanceDescription: [String] = [
-        "Go!METEORS!!"
-        ,"是非来てください！"
-    ,"ダンス部です！４月からこのオレ祭のためにたくさんの練習をしてきました！校庭公演では可愛い衣装でキラキラ笑顔で3学年の公演をお見せします！体育館公演では多くのジャンルを精一杯お見せします。お越しください！"
-    ,"私たち弦楽部はヴァイオリン１８人、ヴィオラ７人、チェロ４人、コントラバス２人、フルート２人で活動しています！体育館で演奏するので是非見に来てください。"
-        ,"是非来てください！"
-        ,"是非来てください！"
-        ,"Alice in Wonder Land ＠小ホール"
-        ,"ご飯の時間！２い！"
-        ,"こんにちは軽音楽部です！私たちは部員８９名という大人数で楽しく仲良くライブに向けて練習をしています！オレンジ祭では１日目１年生と３年生、２日目は２年生と３年生が演奏します！３年生はこれで引退です！ぜひ！見に来てください！♡"]
+        "「応援部」こんにちは！応援部です！1日2回体育館と校庭で公演を行います。3年生はオレンジ祭で引退します。そしてこの3代で演技をするのも最後です。80名を超える迫力ある演技を、是非観に来て下さい！"
+        ,"「ダンス部」校庭公演と体育館公演を行います！3年生にとって最後の公演、そして3代で行う最初で最後の公演です♡かわいい衣装とかっこいいダンスで魅了します!!!校庭公演と体育館公演では、内容が違くなっているなっているのでどちらの公演も楽しんで下さい♡ダンス部一同お待ちしております!!!!"
+        ,"「弦楽部」私たち弦楽部は23人で週に3回4号館音楽室で活動しています。部員のほとんどが初心者なので、経験者でない方も大歓迎です。このオレンジ祭は、3年生最後の公演となります。どうぞ、最後までお聴き下さい！"
+        ,"「合気道部」こんにちは合気道部です。私たちは1年生12名2年生13名の25名でかっこいい演武を皆さんにお見せできるよう練習してきました。是非オレンジの間へお越しください。"
+        ,"「ゴスペル部」ゴスペル部です♫ゴスペル部はアカペラで歌う部活です。オレンジ祭両日、小ホールにて公演を行います。J-Popから洋楽まで、みなさんが楽しめるような曲・歌声でお待ちしています！是非お越し下さい！"
+        ,"「英語部」魔法の髪を持つ少女の冒険を歌と英語で。英語が分からない方でも楽しめます。小ホールでお待ちしております‼"
+        ,"「有志演劇」こんにちは！劇団わかめです。小ホールで劇やります！お時間がある方、ぜひお越しください♪※舞台への影響か考えられますので、公演中の出入りは原則禁止とさせていただきます。"
+        ,"「軽音楽部」こんにちは！軽音部です!!私たちは1年生6バンド、2年生5バンド、3年生7バンドの総勢79名で活動しています。みんなで一緒に盛り上がりましょう！是非M棟1階にお立ち寄りください〜〜!!"
+        ,"「吹奏楽部」こんにちは！吹奏楽部です♪私たちは2年生5人、1年生5人の合計10人で毎日仲良く楽しく活動しています^o^今日はもう少し人数が増えて更に楽しいステージとなっています！ぜひオレ間に来て下さい！"]
     
     let TimeTableImage: [String] = ["Day1TimeTable.jpg","Day2TimeTable.jpg"]
     
@@ -115,10 +108,10 @@ class ProgrammeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          //UD初期化
-        /*if let bundleId = Bundle.main.bundleIdentifier {
+        if let bundleId = Bundle.main.bundleIdentifier {
          UserDefaults.standard.removePersistentDomain(forName: bundleId)
             
-        } */
+        }
         
         for fileName in ProgrammePicture1String {
             ProgrammePicture1.append(UIImage(named: fileName))
@@ -341,8 +334,6 @@ class ProgrammeTableViewController: UITableViewController {
         var getUDPerformanceDescription:[String] = userDefaults.array(forKey: "UDPerformanceDescriptionKey") as? [String] ?? []
         var getUDProgrammePicture:[String] = userDefaults.array(forKey: "UDProgrammePictureKey" ) as? [String] ?? []
         var getUDPerformancePicture:[String] = userDefaults.array(forKey: "UDPerformancePictureKey" ) as? [String] ?? []
-        
-        print("getUDProgrammePicture\(getUDProgrammePicture)" )
         
         // タップされたボタンのtableviewの選択行を取得
         let button = sender as! UIButton

@@ -19,17 +19,14 @@ class FavoriteTableViewController: UITableViewController {
     var FavoritePerformanceDescription: [String] = []
     var FavoriteProgrammePictureString: [String] = []
     var FavoritePerformancePictureString: [String] = []
-    
-    var FavoriteProgrammePicture:[UIImage?] = []
-    var FavoritePerformancePicture:[UIImage?] = []
-    
-    
+
     var giveData = ""
     var giveDescriptionData = ""
     var givePictureStringData = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //UDProgrammeNameKeyから情報を取得
         let getFavoriteName:[String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
         FavoriteName = getFavoriteName
@@ -48,18 +45,12 @@ class FavoriteTableViewController: UITableViewController {
         
         let getPerformancePictureString:[String] = userDefaults.array(forKey: "UDPerformancePictureKey") as? [String] ?? []
         FavoritePerformancePictureString = getPerformancePictureString
-        
-        for fileName in FavoriteProgrammePictureString {
-            FavoriteProgrammePicture.append(UIImage(named: fileName))
-        }
-        for fileName in FavoritePerformancePictureString {
-            FavoritePerformancePicture.append(UIImage(named: fileName))
-        }
         //リロードする
         tableView.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         //UDProgrammeNameKeyから情報を取得
         let getFavoriteName:[String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
         FavoriteName = getFavoriteName
@@ -78,13 +69,6 @@ class FavoriteTableViewController: UITableViewController {
         
         let getPerformancePictureString:[String] = userDefaults.array(forKey: "UDPerformancePictureKey") as? [String] ?? []
         FavoritePerformancePictureString = getPerformancePictureString
-        
-        for fileName in FavoriteProgrammePictureString {
-            FavoriteProgrammePicture.append(UIImage(named: fileName))
-        }
-        for fileName in FavoritePerformancePictureString {
-            FavoritePerformancePicture.append(UIImage(named: fileName))
-        }
         //リロードする
         tableView.reloadData()
         
@@ -148,7 +132,7 @@ class FavoriteTableViewController: UITableViewController {
         if indexPath.section == 0{
             // ここでcellのlabelに値を入れています。//ここに新たな文字をい入れる
             FavoriteCell.FavoriteNameLabel.text = FavoriteName[indexPath.item]
-            FavoriteCell.FavoritePicture.image = FavoriteProgrammePicture[indexPath.item]
+            FavoriteCell.FavoritePicture.image = UIImage(named: FavoriteProgrammePictureString[indexPath.item])
             if UDColorTestProgramme.contains(FavoriteName[indexPath.item]){
                 FavoriteCell.FavoriteButton.setTitleColor(UIColor.orange, for: .normal)
             } else {
@@ -156,7 +140,7 @@ class FavoriteTableViewController: UITableViewController {
             }
         } else {
             FavoriteCell.FavoriteNameLabel.text = FavoritePerformanceName[indexPath.item]
-            FavoriteCell.FavoritePicture.image = FavoritePerformancePicture[indexPath.row]
+            FavoriteCell.FavoritePicture.image = UIImage(named: FavoritePerformancePictureString[indexPath.item])
             if UDColorTestPerformance.contains(FavoritePerformanceName[indexPath.item]){
                 FavoriteCell.FavoriteButton.setTitleColor(UIColor.orange, for: .normal)
             } else {
