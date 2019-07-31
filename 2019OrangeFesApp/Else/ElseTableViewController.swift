@@ -12,23 +12,18 @@ class ElseTableViewController: UITableViewController {
 
     // cellのlabelに書く文字列
     let Else1: [String] = ["法政国際高等学校ホームページ", "公式Instagram"]
-    let Else2: [String] = ["校長より", "生徒会長より","実行委員より", "アプリ開発者より"]
-    let Else2Paragraph: [String] = ["","","",""]
-    
+    let Else2: [String] = ["校長より", "委員長より","議長より", "副委員長より"]
+    let Else2Number: [Int] = [0,1,2,3]
     let Else3: [String] = ["2018年度オレンジ祭実行委員会","ログイン"]
     let Else4: [String] = ["利用規約"]
     let Else5: [String] = ["落し物一覧","来場者アンケート","お問い合わせ"]
     
     let Else1Picture: [String] = ["Map1.jpg","",""]
     
-    
-    
-    
-    
-    
     // 遷移先のViewControllerに渡す変数
     var giveElseData: String = ""
     var giveElseImage: String = ""
+    var giveGreetingNumber: Int = 0
 
     
     override func viewDidLoad() {
@@ -130,44 +125,42 @@ class ElseTableViewController: UITableViewController {
                 UIApplication.shared.open(url2)
             }
         } else if indexPath.section == 1{
-            performSegue(withIdentifier: "ElseSegue", sender: nil)
-            giveElseData = Else2[indexPath.item]
+            giveGreetingNumber = Else2Number[indexPath.row]
+            performSegue(withIdentifier: "GreetingSegue", sender: nil)
         } else if indexPath.section == 2{
             if indexPath.row == 1 {
                 self.performSegue(withIdentifier: "LoginSegue", sender: nil)
             } else {
-                performSegue(withIdentifier: "ElseSegue", sender: nil)
                 giveElseData = Else3[indexPath.item]
                 giveElseImage = "Staff.jpg"
+                performSegue(withIdentifier: "ElseSegue", sender: nil)
             }
         } else if indexPath.section == 3{
-            performSegue(withIdentifier: "AgreementSegue", sender: nil)
             giveElseData = Else4[indexPath.item]
+            performSegue(withIdentifier: "AgreementSegue", sender: nil)
             
         } else if indexPath.section == 4{
             if indexPath.row == 0 {
                 self.performSegue(withIdentifier: "LostAndFoundSegue", sender: nil)
             } else if indexPath.row == 1 {
-                performSegue(withIdentifier: "ElseSegue", sender: nil)
                 giveElseData = Else5[indexPath.item]
+                performSegue(withIdentifier: "ElseSegue", sender: nil)
             } else {
                 UIApplication.shared.open(url3)
             }
         }
-        
-        
-        // Segueを使った画面遷移を行う関数
-        
-        
-        
+
     }
     
     // 遷移先のViewControllerにデータを渡す関数
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ElseSegue" {
-            let Elsevc = segue.destination as! ElseViewController
-            Elsevc.ElseTitleData = giveElseData
-            Elsevc.ElseImageData = giveElseImage
+            let vc = segue.destination as! ElseViewController
+            vc.ElseTitleData = giveElseData
+            vc.ElseImageData = giveElseImage
+        } else if segue.identifier == "GreetingSegue" {
+            let vc = segue.destination as! ElseGreetingViewController
+            vc.GreetingNumber = giveGreetingNumber
         }
     }
     

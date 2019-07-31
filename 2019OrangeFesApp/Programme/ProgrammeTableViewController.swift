@@ -85,7 +85,7 @@ class ProgrammeTableViewController: UITableViewController {
         ,"「軽音楽部」こんにちは！軽音部です!!私たちは1年生6バンド、2年生5バンド、3年生7バンドの総勢79名で活動しています。みんなで一緒に盛り上がりましょう！是非M棟1階にお立ち寄りください〜〜!!"
         ,"「吹奏楽部」こんにちは！吹奏楽部です♪私たちは2年生5人、1年生5人の合計10人で毎日仲良く楽しく活動しています^o^今日はもう少し人数が増えて更に楽しいステージとなっています！ぜひオレ間に来て下さい！"]
     
-    let TimeTableImage: [String] = ["Day1TimeTable.jpg","Day2TimeTable.jpg"]
+    let TimeTableImage: [String] = ["928.png","929.png"]
     
     //segment controll用関数
     var p: Int = 0
@@ -98,6 +98,7 @@ class ProgrammeTableViewController: UITableViewController {
     var ProgrammeGiveData: String = ""
     var ProgrammePictureGiveData: String = ""
     var ProgrammeDescriptionGiveData: String = ""
+    var TimeTableGiveData: String = ""
     
     //UserDefaultsの変数
     var userDefaults = UserDefaults.standard
@@ -137,7 +138,7 @@ class ProgrammeTableViewController: UITableViewController {
     }
     // cellの高さを返す関数
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 90
 }
     
     // sectionの数を返す関数
@@ -454,6 +455,12 @@ class ProgrammeTableViewController: UITableViewController {
             }
             
         } else if p == 2 {
+            if indexPath.section == 0 {
+                TimeTableGiveData = TimeTableImage[0]
+            } else {
+                TimeTableGiveData = TimeTableImage[1]
+            }
+            
             performSegue(withIdentifier: "TimeTableSegue", sender: nil)
         } else {
             ProgrammeGiveData = Performance[indexPath.item]
@@ -466,10 +473,13 @@ class ProgrammeTableViewController: UITableViewController {
     // 遷移先のViewControllerにデータを渡す関数
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ProgrammeSegue" {
-            let Pvc = segue.destination as! ProgrammeViewController
-            Pvc.ProgrammeReceiveData = ProgrammeGiveData
-            Pvc.ProgrammeDescriptionReceiveData = ProgrammeDescriptionGiveData
-            Pvc.ProgrammePictureReceiveData = ProgrammePictureGiveData
+            let vc = segue.destination as! ProgrammeViewController
+            vc.ProgrammeReceiveData = ProgrammeGiveData
+            vc.ProgrammeDescriptionReceiveData = ProgrammeDescriptionGiveData
+            vc.ProgrammePictureReceiveData = ProgrammePictureGiveData
+        } else if segue.identifier == "TimeTableSegue" {
+            let vc = segue.destination as! TimeTableViewController
+            vc.TimeTableReceiveData = TimeTableGiveData
         }
     }
     
