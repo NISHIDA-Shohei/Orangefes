@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="JKG-L_3.ttf">
+            <string>JK-Gothic-L</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Lost Enter View Controller-->
         <scene sceneID="WHH-ZA-eul">
@@ -249,11 +254,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="xo6-B6-5Cy" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="Map.png" selectedImage="Map.png" id="Zo0-C2-Tky"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="CK4-rI-tYO">
-                        <rect key="frame" x="0.0" y="20" width="414" height="98"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.96003717180000003" green="0.74004137520000002" blue="0.25471782679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="40"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -283,7 +288,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTw-nr-wBO">
                                             <rect key="frame" x="63" y="11" width="331" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -318,10 +323,10 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="NtF-jw-9mw" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="その他" image="Else.png" selectedImage="Else.png" id="zKU-v1-u6Z"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="xcg-TS-iY4">
-                        <rect key="frame" x="0.0" y="20" width="414" height="98"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="40"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -438,7 +443,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="場所名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxF-Pd-PIF">
                                             <rect key="frame" x="168" y="11" width="190" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -472,7 +477,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umh-eh-0rK">
-                                <rect key="frame" x="0.0" y="118" width="414" height="569"/>
+                                <rect key="frame" x="0.0" y="116" width="414" height="571"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -557,16 +562,16 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIl-wg-WqY">
-                                <rect key="frame" x="20" y="476" width="70" height="21"/>
+                                <rect key="frame" x="20" y="476" width="68" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="団体説明">
                                         <attributes>
-                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                            <font key="NSFont" size="17" name="HiraMaruProN-W4"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -684,22 +689,23 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8p-TZ-V6V">
-                                            <rect key="frame" x="5" y="5" width="404" height="80"/>
+                                            <rect key="frame" x="5" y="5" width="439" height="80"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WZ2-SK-TdL">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WZ2-SK-TdL">
                                                     <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="foJ-7H-7vv"/>
+                                                        <constraint firstAttribute="height" constant="80" id="wur-72-ftf"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cow-21-4Ma">
-                                                    <rect key="frame" x="91" y="30" width="230" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cow-21-4Ma">
+                                                    <rect key="frame" x="85" y="28" width="42.333333333333343" height="24"/>
+                                                    <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83w-JA-SYl">
-                                                    <rect key="frame" x="342" y="0.0" width="30" height="80"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83w-JA-SYl">
+                                                    <rect key="frame" x="334" y="0.0" width="80" height="80"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                     <state key="normal" title="☆"/>
                                                     <connections>
@@ -708,11 +714,22 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="83w-JA-SYl" firstAttribute="top" secondItem="q8p-TZ-V6V" secondAttribute="top" id="4va-AE-bsd"/>
+                                                <constraint firstItem="WZ2-SK-TdL" firstAttribute="top" secondItem="q8p-TZ-V6V" secondAttribute="top" id="Td9-ga-s7D"/>
+                                                <constraint firstAttribute="bottom" secondItem="Cow-21-4Ma" secondAttribute="bottom" constant="28" id="bfe-Ga-WPW"/>
+                                                <constraint firstItem="Cow-21-4Ma" firstAttribute="leading" secondItem="WZ2-SK-TdL" secondAttribute="trailing" constant="5" id="bjn-E8-jkQ"/>
+                                                <constraint firstItem="Cow-21-4Ma" firstAttribute="top" secondItem="q8p-TZ-V6V" secondAttribute="top" constant="28" id="chX-8U-cCg"/>
+                                                <constraint firstAttribute="bottom" secondItem="WZ2-SK-TdL" secondAttribute="bottom" id="fzf-wg-DDa"/>
+                                                <constraint firstAttribute="trailing" secondItem="83w-JA-SYl" secondAttribute="trailing" constant="25" id="gdi-Dc-XCC"/>
+                                                <constraint firstAttribute="bottom" secondItem="83w-JA-SYl" secondAttribute="bottom" id="k6h-3a-r4M"/>
+                                                <constraint firstItem="WZ2-SK-TdL" firstAttribute="leading" secondItem="q8p-TZ-V6V" secondAttribute="leading" id="v0O-sf-CWS"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="q8p-TZ-V6V" secondAttribute="trailing" constant="5" id="5kl-Bn-c0U"/>
+                                        <constraint firstAttribute="trailing" secondItem="q8p-TZ-V6V" secondAttribute="trailing" constant="-30" id="5b7-EX-yd0"/>
                                         <constraint firstAttribute="bottom" secondItem="q8p-TZ-V6V" secondAttribute="bottom" constant="5" id="C1n-hw-eey"/>
                                         <constraint firstItem="q8p-TZ-V6V" firstAttribute="leading" secondItem="lJO-eh-HxB" secondAttribute="leading" constant="5" id="aiU-RE-xUW"/>
                                         <constraint firstItem="q8p-TZ-V6V" firstAttribute="top" secondItem="lJO-eh-HxB" secondAttribute="top" constant="5" id="zjG-f4-PrO"/>
@@ -750,7 +767,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <rect key="frame" x="0.0" y="20" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" name="TsukuARdGothic-Regular" family="Tsukushi A Round Gothic" pointSize="40"/>
+                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="40"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -790,39 +807,35 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteTableViewCell" rowHeight="80" id="37y-hh-F7X" customClass="FavoriteTableViewCell" customModule="_019OrangeFesApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteTableViewCell" rowHeight="90" id="XsW-ID-Vv0" customClass="FavoriteTableViewCell" customModule="_019OrangeFesApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="37y-hh-F7X" id="ksW-VR-sQ7" customClass="FavoriteTableViewCell" customModule="_019OrangeFesApp" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79.666666666666671"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XsW-ID-Vv0" id="xFZ-g9-wdB">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="89.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3D-5R-w5Z">
-                                            <rect key="frame" x="118" y="22" width="254" height="35"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRu-Re-nY5">
+                                            <rect key="frame" x="139" y="34" width="42" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAX-Ts-rrV">
-                                            <rect key="frame" x="20" y="-1" width="80" height="80"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cd-GQ-soA">
+                                            <rect key="frame" x="330" y="29" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58Q-8v-pK2">
+                                            <rect key="frame" x="0.0" y="0.0" width="87" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUZ-DL-3DW">
-                                            <rect key="frame" x="314" y="-2" width="80" height="80"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                            <state key="normal" title="☆"/>
-                                            <connections>
-                                                <action selector="tapAddButtonWithSender:" destination="qKW-zi-rdW" eventType="touchUpInside" id="inr-FM-Fhe"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="FavoriteButton" destination="LUZ-DL-3DW" id="BFh-k8-IdC"/>
-                                    <outlet property="FavoriteNameLabel" destination="g3D-5R-w5Z" id="9W3-LS-Lfa"/>
-                                    <outlet property="FavoritePicture" destination="lAX-Ts-rrV" id="Anf-Xi-h1m"/>
+                                    <outlet property="FavoriteButton" destination="8cd-GQ-soA" id="a4f-Vo-wRd"/>
+                                    <outlet property="FavoriteNameLabel" destination="cRu-Re-nY5" id="Rbo-aU-H2b"/>
+                                    <outlet property="FavoritePicture" destination="58Q-8v-pK2" id="t39-eQ-xec"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -833,13 +846,12 @@ https://forms.gle/kejw7gb7R72pzjPt9
                     </tableView>
                     <navigationItem key="navigationItem" title="お気に入り" id="FFK-ai-xJ5"/>
                     <connections>
-                        <outlet property="tableView" destination="YSM-yL-VVY" id="04B-Uu-P33"/>
                         <segue destination="qxP-QC-3Am" kind="show" identifier="FavoriteSegue" id="HYI-gW-vmB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8q-8u-zFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1635" y="592"/>
+            <point key="canvasLocation" x="1634.7826086956522" y="591.84782608695662"/>
         </scene>
         <!--Title-->
         <scene sceneID="COd-Oj-iE4">
@@ -850,12 +862,13 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhk-pi-6la">
-                                <rect key="frame" x="31" y="478" width="70" height="21"/>
+                                <rect key="frame" x="31" y="478" width="68" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="団体説明">
                                         <attributes>
-                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="HiraMaruProN-W4"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -863,11 +876,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njb-bi-RLQ">
-                                <rect key="frame" x="31" y="507" width="363" height="122"/>
+                                <rect key="frame" x="31" y="507" width="363" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidata</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fh6-VI-PRe">
@@ -898,7 +911,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <rect key="frame" x="0.0" y="20" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="40"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>

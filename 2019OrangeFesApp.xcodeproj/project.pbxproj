@@ -84,6 +84,8 @@
 		B6BF3EEF22ADD2C100D8521F /* Favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3EEB22ADD2C100D8521F /* Favorite.png */; };
 		B6BF3EF122ADD33C00D8521F /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3EF022ADD33B00D8521F /* Map.png */; };
 		B6BF3EF322AE1AF400D8521F /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EF222AE1AF400D8521F /* NavigationViewController.swift */; };
+		B6BFFF1522F4861B0012BF4D /* JKG-L_3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6BFFF1322F485F10012BF4D /* JKG-L_3.ttf */; };
+		B6BFFF1922F487F90012BF4D /* JKG-M_3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6BFFF1822F487E40012BF4D /* JKG-M_3.ttf */; };
 		B6D8538622EC97740098D4E9 /* StringMusic.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8535E22EC97660098D4E9 /* StringMusic.png */; };
 		B6D8538722EC97740098D4E9 /* 228.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8535F22EC97670098D4E9 /* 228.png */; };
 		B6D8538822EC97740098D4E9 /* 227.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8536022EC97670098D4E9 /* 227.png */; };
@@ -182,7 +184,6 @@
 		B670F15422BB0226006F4899 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
 		B670F16922BB02C7006F4899 /* OrangefesAppIconPre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OrangefesAppIconPre.png; sourceTree = "<group>"; };
 		B6A0C4F622EEBEB50013ACBC /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
-		B6A0C4F822EECFB60013ACBC /* TsukushiAMaruGothic.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = TsukushiAMaruGothic.ttc; sourceTree = "<group>"; };
 		B6BF3E1C22A0801D00D8521F /* 2019OrangeFesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2019OrangeFesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BF3E1F22A0801D00D8521F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6BF3E2622A0801D00D8521F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -232,6 +233,8 @@
 		B6BF3EEB22ADD2C100D8521F /* Favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Favorite.png; sourceTree = "<group>"; };
 		B6BF3EF022ADD33B00D8521F /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
 		B6BF3EF222AE1AF400D8521F /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		B6BFFF1322F485F10012BF4D /* JKG-L_3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JKG-L_3.ttf"; sourceTree = "<group>"; };
+		B6BFFF1822F487E40012BF4D /* JKG-M_3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JKG-M_3.ttf"; sourceTree = "<group>"; };
 		B6D8535E22EC97660098D4E9 /* StringMusic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StringMusic.png; sourceTree = "<group>"; };
 		B6D8535F22EC97670098D4E9 /* 228.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 228.png; sourceTree = "<group>"; };
 		B6D8536022EC97670098D4E9 /* 227.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 227.png; sourceTree = "<group>"; };
@@ -397,6 +400,7 @@
 		B6BF3E1E22A0801D00D8521F /* 2019OrangeFesApp */ = {
 			isa = PBXGroup;
 			children = (
+				B6BFFF1422F485F90012BF4D /* Fonts */,
 				B6D8530D22EC95A60098D4E9 /* ShopIcon */,
 				B670F13F22BB0226006F4899 /* ios */,
 				B6BF3EE722ADD2C100D8521F /* TabIcon */,
@@ -414,7 +418,6 @@
 				B6BF3EF222AE1AF400D8521F /* NavigationViewController.swift */,
 				B6BF3EE522AD275500D8521F /* TabBarController.swift */,
 				B6BF3E2A22A0801F00D8521F /* LaunchScreen.storyboard */,
-				B6A0C4F822EECFB60013ACBC /* TsukushiAMaruGothic.ttc */,
 				B66EC66322B0A2370086DDDD /* GoogleService-Info.plist */,
 				B6BF3E2D22A0801F00D8521F /* Info.plist */,
 			);
@@ -538,6 +541,15 @@
 				B6BF3EEB22ADD2C100D8521F /* Favorite.png */,
 			);
 			path = TabIcon;
+			sourceTree = "<group>";
+		};
+		B6BFFF1422F485F90012BF4D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B6BFFF1822F487E40012BF4D /* JKG-M_3.ttf */,
+				B6BFFF1322F485F10012BF4D /* JKG-L_3.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		B6D8530D22EC95A60098D4E9 /* ShopIcon */ = {
@@ -697,6 +709,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6BFFF1922F487F90012BF4D /* JKG-M_3.ttf in Resources */,
+				B6BFFF1522F4861B0012BF4D /* JKG-L_3.ttf in Resources */,
 				B6A0C4F722EEBEB50013ACBC /* 222.png in Resources */,
 				B670F16822BB0226006F4899 /* iTunesArtwork@3x.png in Resources */,
 				B6BF3EF122ADD33C00D8521F /* Map.png in Resources */,

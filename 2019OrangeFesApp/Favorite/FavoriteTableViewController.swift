@@ -72,7 +72,7 @@ class FavoriteTableViewController: UITableViewController {
     }
     // cellの高さを返す関数
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 90
     }
     
     // sectionに載せる文字列を返す関数
@@ -165,7 +165,7 @@ class FavoriteTableViewController: UITableViewController {
         
         // タップされたボタンのtableviewの選択行を取得
         let button = sender as! UIButton
-        let cell = button.superview?.superview as! UITableViewCell
+        let cell = button.superview?.superview?.superview as! UITableViewCell
         let row = tableView.indexPath(for: cell)!.row
         let section = tableView.indexPath(for: cell)!.section
         
