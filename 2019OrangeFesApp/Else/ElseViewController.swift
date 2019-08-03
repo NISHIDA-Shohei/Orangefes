@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ElseViewController: UIViewController {
+class StaffViewController: UIViewController {
     
-    @IBOutlet weak var ElseTitle: UINavigationItem!
-    @IBOutlet weak var ElseImage: UIImageView!
+    @IBOutlet weak var StaffTitle: UINavigationItem!
+    @IBOutlet weak var StaffImage: UIImageView!
     
-    var ElseTitleData: String = ""
-    var ElseImageData: String = ""
+    var StaffTitleData: String = ""
+    var StaffImageData: String = ""
     
 
     override func viewDidLoad() {
@@ -23,8 +23,8 @@ class ElseViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        ElseTitle.title = ElseTitleData
-        ElseImage.image = UIImage(named: "\(ElseImageData)")
+        StaffTitle.title = StaffTitleData
+        StaffImage.image = UIImage(named: "\(StaffImageData)")
         
         
     }

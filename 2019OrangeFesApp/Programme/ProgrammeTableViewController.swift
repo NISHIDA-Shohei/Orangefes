@@ -66,10 +66,10 @@ class ProgrammeTableViewController: UITableViewController {
         ,"「PTAバザー」法政国際高オリジナル商品も販売します♪♪♪数限定なのでお見逃しなく！！　皆様のお越しをお待ちしております　※PTAバザー主催の売上金は、生徒たちの為に使わせていただきます"
         ,"①全体説明　9/28 13:00 9/29 10:00 11:30 13:00 ②個別相談 9/28 14:00-15:30 9/29 10:30-15:30 来年度、本校を受験される中学生および保護者の方々のために設けた部屋です。個別相談はなるべく全体説明をお聞きになった上で、おまわり下さい。"]
     
-    let ProgrammeName5: [String] = ["MOS BURGER","31アイスクリーム","ベル　エポック","MARION CREPES"]
-    let ProgrammePicture5String: [String] = ["000.png","000.png","000.png","000.png"]
+    let ProgrammeName5: [String] = ["岸谷フード","一の会","ベル　エポック","MARION CREPES"]
+    let ProgrammePicture5String: [String] = ["clear.png","clear.png","clear.png","clear.png"]
     var ProgrammePicture5: [UIImage?] = []
-    let ProgrammeDescription5: [String] = ["ハンバーガー屋","アイスクリーム屋","パン屋","クレープ屋"]
+    let ProgrammeDescription5: [String] = ["総菜屋","学校食堂","パン屋","クレープ屋"]
     
     let Performance: [String] = ["応援部","ダンス部","弦楽部","合気道部","ゴスペル部","英語部","有志演劇","軽音楽部","吹奏楽部"]
     let PerformancePictureString: [String] = ["Meteors.png","Dance.png","StringMusic.png","Aikido.png","Gospel.png","ESS.png","Drama.png","SchoolBand.png","BrassBand.png"]
@@ -297,11 +297,13 @@ class ProgrammeTableViewController: UITableViewController {
             }
         } else {
             if indexPath.section == 0 {
-                ProgrammeCell.ProgrammePicture.image = UIImage(named: "000.png")
+                ProgrammeCell.ProgrammePicture.image = UIImage(named: "clear.png")
                 ProgrammeCell.name.text = "公演タイムテーブル"
+                ProgrammeCell.button.setTitleColor(UIColor.clear, for: .normal)
             } else {
-                ProgrammeCell.ProgrammePicture.image = UIImage(named: "000.png")
+                ProgrammeCell.ProgrammePicture.image = UIImage(named: "clear.png")
                 ProgrammeCell.name.text = "公演タイムテーブル"
+                ProgrammeCell.button.setTitleColor(UIColor.clear, for: .normal)
             }
         }
 
@@ -393,11 +395,11 @@ class ProgrammeTableViewController: UITableViewController {
                     changeOrange()
                 }
             }
-        } else {
+        } else if p == 1{
             //UDProgrammeNameにProgrammeNameを代入している
             if getUDPerformanceName.contains(Performance[row]){
                 getUDPerformanceName.remove(at: getUDPerformanceName.firstIndex(of: Performance[row])!)
-                getUDPerformanceDescription.remove(at: getUDPerformanceDescription.firstIndex(of: Performance[row])!)
+                getUDPerformanceDescription.remove(at: getUDPerformanceDescription.firstIndex(of: PerformanceDescription[row])!)
                 getUDPerformancePicture.remove(at: getUDPerformancePicture.firstIndex(of: PerformancePictureString[row])!)
                 button.setTitleColor(UIColor.black, for: .normal)
             }else {
@@ -406,6 +408,8 @@ class ProgrammeTableViewController: UITableViewController {
                 getUDPerformancePicture.append(PerformancePictureString[row])
                 button.setTitleColor(UIColor.orange, for: .normal)
             }
+        } else {
+            //何もしない
         }
         
         // userDefaultsに格納したい値

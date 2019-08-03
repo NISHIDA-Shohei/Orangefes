@@ -10,6 +10,9 @@
 		09A18F2954D0A33D4A863690 /* Pods_2019OrangeFesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E494D09027F4286DE66F1DB /* Pods_2019OrangeFesAppTests.framework */; };
 		7B67D14F9C850DD344352CB4 /* Pods_2019OrangeFesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106D36733594C51209219568 /* Pods_2019OrangeFesApp.framework */; };
 		9C4BFBBD26908CADCC737F65 /* Pods_2019OrangeFesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002DDB883336FD4A1813B45A /* Pods_2019OrangeFesAppUITests.framework */; };
+		B6147D8D22F5EB9E003B6DFE /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D8C22F5EB9E003B6DFE /* clear.png */; };
+		B6147D8F22F5F1C3003B6DFE /* Staff.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D8E22F5F1C3003B6DFE /* Staff.png */; };
+		B6147D9122F5F388003B6DFE /* StaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147D9022F5F388003B6DFE /* StaffViewController.swift */; };
 		B6198C7E22B1E02D001FB4A6 /* LostEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6198C7D22B1E02D001FB4A6 /* LostEnterViewController.swift */; };
 		B6198C8022B33545001FB4A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6198C7F22B33545001FB4A6 /* LoginViewController.swift */; };
 		B6198CBC22B539CC001FB4A6 /* Else.png in Resources */ = {isa = PBXBuildFile; fileRef = B6198CBB22B539CC001FB4A6 /* Else.png */; };
@@ -64,7 +67,6 @@
 		B6BF3E7F22A20AFC00D8521F /* OrangeFes LS.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E7C22A20AFB00D8521F /* OrangeFes LS.png */; };
 		B6BF3E8022A20AFC00D8521F /* Test1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E7D22A20AFC00D8521F /* Test1.jpg */; };
 		B6BF3E8122A20AFC00D8521F /* Test2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E7E22A20AFC00D8521F /* Test2.JPG */; };
-		B6BF3EC522A53FC100D8521F /* ElseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EC422A53FC100D8521F /* ElseViewController.swift */; };
 		B6BF3EC722A53FD800D8521F /* ElseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EC622A53FD800D8521F /* ElseTableViewController.swift */; };
 		B6BF3EC922A53FEC00D8521F /* ElseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EC822A53FEC00D8521F /* ElseTableViewCell.swift */; };
 		B6BF3ECD22A54D3100D8521F /* Day2TimeTable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3ECB22A54D3000D8521F /* Day2TimeTable.jpg */; };
@@ -117,7 +119,6 @@
 		B6D853A322EC97740098D4E9 /* 310.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8537B22EC97700098D4E9 /* 310.png */; };
 		B6D853A422EC97740098D4E9 /* 432.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8537C22EC97700098D4E9 /* 432.png */; };
 		B6D853A522EC97740098D4E9 /* SchoolBand.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8537D22EC97700098D4E9 /* SchoolBand.png */; };
-		B6D853A622EC97740098D4E9 /* 000.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8537E22EC97710098D4E9 /* 000.png */; };
 		B6D853A722EC97740098D4E9 /* 211.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8537F22EC97710098D4E9 /* 211.png */; };
 		B6D853A822EC97740098D4E9 /* 321.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8538022EC97710098D4E9 /* 321.png */; };
 		B6D853A922EC97740098D4E9 /* 226.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8538122EC97720098D4E9 /* 226.png */; };
@@ -153,6 +154,9 @@
 		782EBA45B90E5FEF2DE49B25 /* Pods-2019OrangeFesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2019OrangeFesAppTests.release.xcconfig"; path = "Target Support Files/Pods-2019OrangeFesAppTests/Pods-2019OrangeFesAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		8780A37FF064D248BB8DD1DF /* Pods-2019OrangeFesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2019OrangeFesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-2019OrangeFesAppUITests/Pods-2019OrangeFesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E494D09027F4286DE66F1DB /* Pods_2019OrangeFesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2019OrangeFesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6147D8C22F5EB9E003B6DFE /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
+		B6147D8E22F5F1C3003B6DFE /* Staff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Staff.png; sourceTree = "<group>"; };
+		B6147D9022F5F388003B6DFE /* StaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffViewController.swift; sourceTree = "<group>"; };
 		B6198C7D22B1E02D001FB4A6 /* LostEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostEnterViewController.swift; sourceTree = "<group>"; };
 		B6198C7F22B33545001FB4A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B6198CBB22B539CC001FB4A6 /* Else.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Else.png; sourceTree = "<group>"; };
@@ -213,7 +217,6 @@
 		B6BF3E7C22A20AFB00D8521F /* OrangeFes LS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrangeFes LS.png"; sourceTree = "<group>"; };
 		B6BF3E7D22A20AFC00D8521F /* Test1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test1.jpg; sourceTree = "<group>"; };
 		B6BF3E7E22A20AFC00D8521F /* Test2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test2.JPG; sourceTree = "<group>"; };
-		B6BF3EC422A53FC100D8521F /* ElseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElseViewController.swift; sourceTree = "<group>"; };
 		B6BF3EC622A53FD800D8521F /* ElseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElseTableViewController.swift; sourceTree = "<group>"; };
 		B6BF3EC822A53FEC00D8521F /* ElseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElseTableViewCell.swift; sourceTree = "<group>"; };
 		B6BF3ECB22A54D3000D8521F /* Day2TimeTable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Day2TimeTable.jpg; sourceTree = "<group>"; };
@@ -266,7 +269,6 @@
 		B6D8537B22EC97700098D4E9 /* 310.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 310.png; sourceTree = "<group>"; };
 		B6D8537C22EC97700098D4E9 /* 432.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 432.png; sourceTree = "<group>"; };
 		B6D8537D22EC97700098D4E9 /* SchoolBand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SchoolBand.png; sourceTree = "<group>"; };
-		B6D8537E22EC97710098D4E9 /* 000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 000.png; sourceTree = "<group>"; };
 		B6D8537F22EC97710098D4E9 /* 211.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 211.png; sourceTree = "<group>"; };
 		B6D8538022EC97710098D4E9 /* 321.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 321.png; sourceTree = "<group>"; };
 		B6D8538122EC97720098D4E9 /* 226.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 226.png; sourceTree = "<group>"; };
@@ -485,6 +487,7 @@
 		B6BF3E7B22A20AFB00D8521F /* Picture */ = {
 			isa = PBXGroup;
 			children = (
+				B6147D8E22F5F1C3003B6DFE /* Staff.png */,
 				B6BF3EDA22A6569000D8521F /* Staff.jpg */,
 				B6BF3ECC22A54D3100D8521F /* Day1TimeTable.jpg */,
 				B6BF3ECB22A54D3000D8521F /* Day2TimeTable.jpg */,
@@ -502,8 +505,8 @@
 				B6198C7F22B33545001FB4A6 /* LoginViewController.swift */,
 				B6BF3EC622A53FD800D8521F /* ElseTableViewController.swift */,
 				B6BF3EC822A53FEC00D8521F /* ElseTableViewCell.swift */,
-				B6BF3EC422A53FC100D8521F /* ElseViewController.swift */,
 				B6203CDC22EF0BEE00E4FEC7 /* ElseGreetingViewController.swift */,
+				B6147D9022F5F388003B6DFE /* StaffViewController.swift */,
 			);
 			path = Else;
 			sourceTree = "<group>";
@@ -555,9 +558,9 @@
 		B6D8530D22EC95A60098D4E9 /* ShopIcon */ = {
 			isa = PBXGroup;
 			children = (
+				B6147D8C22F5EB9E003B6DFE /* clear.png */,
 				B6203CF722F0A4A600E4FEC7 /* 928.png */,
 				B6203CF822F0A4A600E4FEC7 /* 929.png */,
-				B6D8537E22EC97710098D4E9 /* 000.png */,
 				B6D8536E22EC976C0098D4E9 /* 112-1.png */,
 				B6D8536822EC976A0098D4E9 /* 112-2.png */,
 				B6D8537322EC976D0098D4E9 /* 114.png */,
@@ -722,12 +725,12 @@
 				B6BF3EEF22ADD2C100D8521F /* Favorite.png in Resources */,
 				B6BF3ED822A5E7F000D8521F /* 23.PNG in Resources */,
 				B670F16122BB0226006F4899 /* Icon-App-60x60@3x.png in Resources */,
-				B6D853A622EC97740098D4E9 /* 000.png in Resources */,
 				B6D8539822EC97740098D4E9 /* 236.png in Resources */,
 				B670F16322BB0226006F4899 /* Icon-App-76x76@1x.png in Resources */,
 				B6D8539C22EC97740098D4E9 /* BrassBand.png in Resources */,
 				B6D853AD22EC97740098D4E9 /* ESS.png in Resources */,
 				B670F15F22BB0226006F4899 /* Icon-App-29x29@3x.png in Resources */,
+				B6147D8D22F5EB9E003B6DFE /* clear.png in Resources */,
 				B6D853A522EC97740098D4E9 /* SchoolBand.png in Resources */,
 				B6BF3EEC22ADD2C100D8521F /* TimeTable.png in Resources */,
 				B6BF3E8122A20AFC00D8521F /* Test2.JPG in Resources */,
@@ -769,6 +772,7 @@
 				B6BF3EDB22A6569100D8521F /* Staff.jpg in Resources */,
 				B6203CFA22F0A4A600E4FEC7 /* 929.png in Resources */,
 				B6BF3E5C22A0837300D8521F /* Pic4.jpeg in Resources */,
+				B6147D8F22F5F1C3003B6DFE /* Staff.png in Resources */,
 				B670F16222BB0226006F4899 /* Icon-App-60x60@2x.png in Resources */,
 				B6BF3ECE22A54D3100D8521F /* Day1TimeTable.jpg in Resources */,
 				B6D8539F22EC97740098D4E9 /* 216.png in Resources */,
@@ -915,6 +919,7 @@
 				B6BF3E6322A083D800D8521F /* ScheduleTableViewController.swift in Sources */,
 				B6BF3EC722A53FD800D8521F /* ElseTableViewController.swift in Sources */,
 				B6BF3EE622AD275500D8521F /* TabBarController.swift in Sources */,
+				B6147D9122F5F388003B6DFE /* StaffViewController.swift in Sources */,
 				B6BF3E5422A0810000D8521F /* ProgrammeTableViewCell.swift in Sources */,
 				B6198C7E22B1E02D001FB4A6 /* LostEnterViewController.swift in Sources */,
 				B6BF3E7422A0BB0800D8521F /* MapTableViewCell.swift in Sources */,
@@ -926,7 +931,6 @@
 				B6BF3E6522A083F100D8521F /* ScheduleViewController.swift in Sources */,
 				B6BF3EDF22A8CD2E00D8521F /* FavoriteTableViewCell.swift in Sources */,
 				B6BF3E5222A080EA00D8521F /* ProgrammeTableViewController.swift in Sources */,
-				B6BF3EC522A53FC100D8521F /* ElseViewController.swift in Sources */,
 				B6BF3EE122A8CD5E00D8521F /* FavoriteViewController.swift in Sources */,
 				B6BF3E5022A080CA00D8521F /* ProgrammeViewController.swift in Sources */,
 				B6203CDD22EF0BEE00E4FEC7 /* ElseGreetingViewController.swift in Sources */,
