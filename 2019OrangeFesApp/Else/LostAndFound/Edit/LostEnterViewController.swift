@@ -19,8 +19,6 @@ class LostEnterViewController: UIViewController, UITextFieldDelegate, UIPickerVi
     
     let PlaceList: [String] = ["１号間","２号間","３号間","４号間","体育館","グラウンド","校門付近","M棟","その他"]
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,19 +61,6 @@ class LostEnterViewController: UIViewController, UITextFieldDelegate, UIPickerVi
     @IBAction func EnterButton(_ sender: Any) {
         //投稿のためのメソッド
         create()
-        
-        let alert: UIAlertController = UIAlertController(title: "追加", message: "落し物を追加しました。", preferredStyle: .alert)
-        
-        alert.addAction(
-            UIAlertAction(
-                title: "OK",
-                style: .default,
-                handler: { action in
-                    self.navigationController?.popViewController(animated: true)
-            }
-            )
-        )
-        present(alert, animated: true, completion: nil)
     }
     
     //データの送信のメソッド

@@ -10,11 +10,11 @@ import UIKit
 
 class ScheduleViewController: UIViewController {
 
-    @IBOutlet weak var PerformanceDescription: UITextView!
-    @IBOutlet weak var PerformanceTitle: UINavigationItem!
+    @IBOutlet weak var LostAndFoundDescription: UITextView!
+    @IBOutlet weak var LostAndFoundTitle: UINavigationItem!
     
 
-    var PerformanceDescriptionReceiveData: String = ""
+    var LostAndFoundDescriptionData: String = "test"
     
     var receiveData: String = ""
     
@@ -22,18 +22,18 @@ class ScheduleViewController: UIViewController {
         super.viewDidLoad()
         
         // 枠のカラー
-        PerformanceDescription.layer.borderColor = UIColor.orange.cgColor
+        LostAndFoundDescription.layer.borderColor = UIColor.orange.cgColor
         
         // 枠の幅
-        PerformanceDescription.layer.borderWidth = 1.0
+        LostAndFoundDescription.layer.borderWidth = 1.0
         
         // 枠を角丸にする場合
-        PerformanceDescription.layer.cornerRadius = 10.0
-        PerformanceDescription.layer.masksToBounds = true
+        LostAndFoundDescription.layer.cornerRadius = 10.0
+        LostAndFoundDescription.layer.masksToBounds = true
         
-        PerformanceTitle.title = receiveData
+        LostAndFoundTitle.title = receiveData
         
-        PerformanceDescription.text = PerformanceDescriptionReceiveData
+        LostAndFoundDescription.text = LostAndFoundDescriptionData
     }
     
 }

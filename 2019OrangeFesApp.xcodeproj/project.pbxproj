@@ -23,6 +23,10 @@
 		B6147DA122F6C5BE003B6DFE /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D9922F6C5BE003B6DFE /* 11.png */; };
 		B6147DA322F6C62D003B6DFE /* 21.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147DA222F6C62D003B6DFE /* 21.png */; };
 		B6147DA522F6C8D1003B6DFE /* SchoolMap1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6147DA422F6C8D1003B6DFE /* SchoolMap1.jpg */; };
+		B6147DA722F6E6B1003B6DFE /* EditLostAndFoundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DA622F6E6B1003B6DFE /* EditLostAndFoundTableViewController.swift */; };
+		B6147DAB22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DAA22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift */; };
+		B6147DAD22F6E77E003B6DFE /* EditLostAndFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DAC22F6E77E003B6DFE /* EditLostAndFoundViewController.swift */; };
+		B6147DAF22F6EE16003B6DFE /* EnterLostAndFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DAE22F6EE16003B6DFE /* EnterLostAndFoundViewController.swift */; };
 		B6198C7E22B1E02D001FB4A6 /* LostEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6198C7D22B1E02D001FB4A6 /* LostEnterViewController.swift */; };
 		B6198C8022B33545001FB4A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6198C7F22B33545001FB4A6 /* LoginViewController.swift */; };
 		B6198CBC22B539CC001FB4A6 /* Else.png in Resources */ = {isa = PBXBuildFile; fileRef = B6198CBB22B539CC001FB4A6 /* Else.png */; };
@@ -172,6 +176,10 @@
 		B6147D9922F6C5BE003B6DFE /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
 		B6147DA222F6C62D003B6DFE /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.png; sourceTree = "<group>"; };
 		B6147DA422F6C8D1003B6DFE /* SchoolMap1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SchoolMap1.jpg; sourceTree = "<group>"; };
+		B6147DA622F6E6B1003B6DFE /* EditLostAndFoundTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLostAndFoundTableViewController.swift; sourceTree = "<group>"; };
+		B6147DAA22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLostAndFoundTableViewCell.swift; sourceTree = "<group>"; };
+		B6147DAC22F6E77E003B6DFE /* EditLostAndFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLostAndFoundViewController.swift; sourceTree = "<group>"; };
+		B6147DAE22F6EE16003B6DFE /* EnterLostAndFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterLostAndFoundViewController.swift; sourceTree = "<group>"; };
 		B6198C7D22B1E02D001FB4A6 /* LostEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostEnterViewController.swift; sourceTree = "<group>"; };
 		B6198C7F22B33545001FB4A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B6198CBB22B539CC001FB4A6 /* Else.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Else.png; sourceTree = "<group>"; };
@@ -340,13 +348,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B66EC66F22B11C3D0086DDDD /* LostAndFound */ = {
+		B6147DA822F6E6BA003B6DFE /* Show */ = {
 			isa = PBXGroup;
 			children = (
 				B6BF3E6222A083D800D8521F /* ScheduleTableViewController.swift */,
 				B6BF3E6022A083BF00D8521F /* ScheduleTableViewCell.swift */,
 				B6BF3E6422A083F100D8521F /* ScheduleViewController.swift */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		B6147DA922F6E6ED003B6DFE /* Edit */ = {
+			isa = PBXGroup;
+			children = (
 				B6198C7D22B1E02D001FB4A6 /* LostEnterViewController.swift */,
+				B6147DA622F6E6B1003B6DFE /* EditLostAndFoundTableViewController.swift */,
+				B6147DAA22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift */,
+				B6147DAC22F6E77E003B6DFE /* EditLostAndFoundViewController.swift */,
+				B6147DAE22F6EE16003B6DFE /* EnterLostAndFoundViewController.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		B66EC66F22B11C3D0086DDDD /* LostAndFound */ = {
+			isa = PBXGroup;
+			children = (
+				B6147DA922F6E6ED003B6DFE /* Edit */,
+				B6147DA822F6E6BA003B6DFE /* Show */,
 			);
 			path = LostAndFound;
 			sourceTree = "<group>";
@@ -941,6 +969,8 @@
 				B6BF3EE622AD275500D8521F /* TabBarController.swift in Sources */,
 				B6147D9122F5F388003B6DFE /* StaffViewController.swift in Sources */,
 				B6BF3E5422A0810000D8521F /* ProgrammeTableViewCell.swift in Sources */,
+				B6147DA722F6E6B1003B6DFE /* EditLostAndFoundTableViewController.swift in Sources */,
+				B6147DAF22F6EE16003B6DFE /* EnterLostAndFoundViewController.swift in Sources */,
 				B6198C7E22B1E02D001FB4A6 /* LostEnterViewController.swift in Sources */,
 				B6BF3E7422A0BB0800D8521F /* MapTableViewCell.swift in Sources */,
 				B6203CF222F0A18E00E4FEC7 /* TimeTableViewController.swift in Sources */,
@@ -949,9 +979,11 @@
 				B6BF3EF322AE1AF400D8521F /* NavigationViewController.swift in Sources */,
 				B6BF3E7022A0BAD000D8521F /* MapViewController.swift in Sources */,
 				B6BF3E6522A083F100D8521F /* ScheduleViewController.swift in Sources */,
+				B6147DAB22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift in Sources */,
 				B6BF3EDF22A8CD2E00D8521F /* FavoriteTableViewCell.swift in Sources */,
 				B6BF3E5222A080EA00D8521F /* ProgrammeTableViewController.swift in Sources */,
 				B6BF3EE122A8CD5E00D8521F /* FavoriteViewController.swift in Sources */,
+				B6147DAD22F6E77E003B6DFE /* EditLostAndFoundViewController.swift in Sources */,
 				B6BF3E5022A080CA00D8521F /* ProgrammeViewController.swift in Sources */,
 				B6203CDD22EF0BEE00E4FEC7 /* ElseGreetingViewController.swift in Sources */,
 				B6BF3E7222A0BAED00D8521F /* MapTableViewController.swift in Sources */,

@@ -71,7 +71,7 @@ class ScheduleTableViewController: UITableViewController {
         header.textLabel?.textColor = UIColor.black
     }
     
-    // cellの情報を書き込む関数**********************************************************************************
+    // cellの情報を書き込む関数
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleTableViewCell", for: indexPath) as! ScheduleTableViewCell
         
@@ -84,7 +84,6 @@ class ScheduleTableViewController: UITableViewController {
 
         return cell
     }
-    //******************************************************************************************************
     
     // cellが押されたときに呼ばれる関数
     // 画面遷移の処理もここで書いている
