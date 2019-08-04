@@ -99,6 +99,7 @@ class ProgrammeTableViewController: UITableViewController {
     var ProgrammePictureGiveData: String = ""
     var ProgrammeDescriptionGiveData: String = ""
     var TimeTableGiveData: String = ""
+    var TimeTableGiveTitleData: String = ""
     
     //UserDefaultsの変数
     var userDefaults = UserDefaults.standard
@@ -461,8 +462,10 @@ class ProgrammeTableViewController: UITableViewController {
         } else if p == 2 {
             if indexPath.section == 0 {
                 TimeTableGiveData = TimeTableImage[0]
+                TimeTableGiveTitleData = "9月28日　タイムテーブル"
             } else {
                 TimeTableGiveData = TimeTableImage[1]
+                TimeTableGiveTitleData = "9月29日　タイムテーブル"
             }
             
             performSegue(withIdentifier: "TimeTableSegue", sender: nil)
@@ -484,6 +487,7 @@ class ProgrammeTableViewController: UITableViewController {
         } else if segue.identifier == "TimeTableSegue" {
             let vc = segue.destination as! TimeTableViewController
             vc.TimeTableReceiveData = TimeTableGiveData
+            vc.TimeTableTitleReceiveData = TimeTableGiveTitleData
         }
     }
     

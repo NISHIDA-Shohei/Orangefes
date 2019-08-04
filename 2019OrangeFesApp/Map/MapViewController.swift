@@ -16,8 +16,6 @@ class MapViewController: UIViewController, UIScrollViewDelegate{
     var receiveData: String = ""
     var receiveMap: String = ""
     
-    
-    
     var selectedImg: UIImage!
     var imageView:UIImageView!
     
