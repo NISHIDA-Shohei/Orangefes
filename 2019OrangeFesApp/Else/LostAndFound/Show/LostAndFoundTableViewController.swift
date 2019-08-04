@@ -9,21 +9,21 @@
 import UIKit
 import Firebase
 
-class EditLostAndFoundTableViewController: UITableViewController {
-    
+class LostAndFoundTableViewController: UITableViewController {
+
     var LostNameList: [String] = []
     var LostPlaceList: [String] = []
     var LostKeyList: [String] = []
     
     var LostNameGiveData: String = ""
     var LostKeyGiveData: String = ""
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-
+        
         let refData = Database.database().reference().child("落し物一覧")
         refData.observe(.childAdded, with: { [weak self](snapshot) -> Void in
             
@@ -77,7 +77,7 @@ class EditLostAndFoundTableViewController: UITableViewController {
     
     // cellの情報を書き込む関数
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EditLostAndFoundTableViewCell", for: indexPath) as! EditLostAndFoundTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LostAndFoundTableViewCell", for: indexPath) as! LostAndFoundTableViewCell
         
         //cellに右矢印を追加する
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
@@ -97,28 +97,15 @@ class EditLostAndFoundTableViewController: UITableViewController {
         LostKeyGiveData = LostKeyList[indexPath.row]
         
         // Segueを使った画面遷移を行う関数
-        performSegue(withIdentifier: "EditLostSegue", sender: nil)
+        performSegue(withIdentifier: "LostAndFoundSegue", sender: nil)
     }
     
     // 遷移先のViewControllerにデータを渡す関数
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "EditLostSegue" {
-            let vc = segue.destination as! EditLostAndFoundViewController
+        if segue.identifier == "LostAndFoundSegue" {
+            let vc = segue.destination as! LostAndFoundViewController
             vc.LostNameReceiveData = LostNameGiveData
             vc.LostKeyReceiveData = LostKeyGiveData
         }
     }
-    
-    //キーボードを閉じる
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // キーボードを閉じる
-        textField.resignFirstResponder()
-        return true
-    }
-    
 }
-

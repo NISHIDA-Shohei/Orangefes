@@ -27,6 +27,9 @@
 		B6147DAB22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DAA22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift */; };
 		B6147DAD22F6E77E003B6DFE /* EditLostAndFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DAC22F6E77E003B6DFE /* EditLostAndFoundViewController.swift */; };
 		B6147DAF22F6EE16003B6DFE /* EnterLostAndFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DAE22F6EE16003B6DFE /* EnterLostAndFoundViewController.swift */; };
+		B6147DB122F71B34003B6DFE /* LostAndFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DB022F71B34003B6DFE /* LostAndFoundViewController.swift */; };
+		B6147DB322F71B4E003B6DFE /* LostAndFoundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DB222F71B4E003B6DFE /* LostAndFoundTableViewController.swift */; };
+		B6147DB522F71B63003B6DFE /* LostAndFoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DB422F71B63003B6DFE /* LostAndFoundTableViewCell.swift */; };
 		B6198C7E22B1E02D001FB4A6 /* LostEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6198C7D22B1E02D001FB4A6 /* LostEnterViewController.swift */; };
 		B6198C8022B33545001FB4A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6198C7F22B33545001FB4A6 /* LoginViewController.swift */; };
 		B6198CBC22B539CC001FB4A6 /* Else.png in Resources */ = {isa = PBXBuildFile; fileRef = B6198CBB22B539CC001FB4A6 /* Else.png */; };
@@ -180,6 +183,9 @@
 		B6147DAA22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLostAndFoundTableViewCell.swift; sourceTree = "<group>"; };
 		B6147DAC22F6E77E003B6DFE /* EditLostAndFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLostAndFoundViewController.swift; sourceTree = "<group>"; };
 		B6147DAE22F6EE16003B6DFE /* EnterLostAndFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterLostAndFoundViewController.swift; sourceTree = "<group>"; };
+		B6147DB022F71B34003B6DFE /* LostAndFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostAndFoundViewController.swift; sourceTree = "<group>"; };
+		B6147DB222F71B4E003B6DFE /* LostAndFoundTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostAndFoundTableViewController.swift; sourceTree = "<group>"; };
+		B6147DB422F71B63003B6DFE /* LostAndFoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostAndFoundTableViewCell.swift; sourceTree = "<group>"; };
 		B6198C7D22B1E02D001FB4A6 /* LostEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostEnterViewController.swift; sourceTree = "<group>"; };
 		B6198C7F22B33545001FB4A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B6198CBB22B539CC001FB4A6 /* Else.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Else.png; sourceTree = "<group>"; };
@@ -354,6 +360,9 @@
 				B6BF3E6222A083D800D8521F /* ScheduleTableViewController.swift */,
 				B6BF3E6022A083BF00D8521F /* ScheduleTableViewCell.swift */,
 				B6BF3E6422A083F100D8521F /* ScheduleViewController.swift */,
+				B6147DB222F71B4E003B6DFE /* LostAndFoundTableViewController.swift */,
+				B6147DB022F71B34003B6DFE /* LostAndFoundViewController.swift */,
+				B6147DB422F71B63003B6DFE /* LostAndFoundTableViewCell.swift */,
 			);
 			path = Show;
 			sourceTree = "<group>";
@@ -974,6 +983,7 @@
 				B6198C7E22B1E02D001FB4A6 /* LostEnterViewController.swift in Sources */,
 				B6BF3E7422A0BB0800D8521F /* MapTableViewCell.swift in Sources */,
 				B6203CF222F0A18E00E4FEC7 /* TimeTableViewController.swift in Sources */,
+				B6147DB522F71B63003B6DFE /* LostAndFoundTableViewCell.swift in Sources */,
 				B6BF3EDD22A8C81C00D8521F /* FavoriteTableViewController.swift in Sources */,
 				B6BF3E6122A083BF00D8521F /* ScheduleTableViewCell.swift in Sources */,
 				B6BF3EF322AE1AF400D8521F /* NavigationViewController.swift in Sources */,
@@ -986,7 +996,9 @@
 				B6147DAD22F6E77E003B6DFE /* EditLostAndFoundViewController.swift in Sources */,
 				B6BF3E5022A080CA00D8521F /* ProgrammeViewController.swift in Sources */,
 				B6203CDD22EF0BEE00E4FEC7 /* ElseGreetingViewController.swift in Sources */,
+				B6147DB322F71B4E003B6DFE /* LostAndFoundTableViewController.swift in Sources */,
 				B6BF3E7222A0BAED00D8521F /* MapTableViewController.swift in Sources */,
+				B6147DB122F71B34003B6DFE /* LostAndFoundViewController.swift in Sources */,
 				B6BF3E2022A0801D00D8521F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

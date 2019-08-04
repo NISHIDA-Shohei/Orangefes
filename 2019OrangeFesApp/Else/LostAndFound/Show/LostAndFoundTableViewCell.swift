@@ -1,5 +1,5 @@
 //
-//  EditLostAndFoundTableViewCell.swift
+//  LostAndFoundTableViewCell.swift
 //  2019OrangeFesApp
 //
 //  Created by 西田翔平 on 2019/08/04.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EditLostAndFoundTableViewCell: UITableViewCell {
+class LostAndFoundTableViewCell: UITableViewCell {
     
     @IBOutlet weak var LostNameLabel: UILabel!
     @IBOutlet weak var LostPlaceLabel: UILabel!
