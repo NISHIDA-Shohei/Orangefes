@@ -11,7 +11,7 @@ import UIKit
 class ElseTableViewController: UITableViewController {
 
     // cellのlabelに書く文字列
-    let Else1: [String] = ["法政国際高等学校ホームページ", "公式Instagram"]
+    let Else1: [String] = ["法政国際高校ホームページ", "公式Instagram"]
     let Else2: [String] = ["校長より", "委員長より","議長より", "副委員長より"]
     let Else2Number: [Int] = [0,1,2,3]
     let Else3: [String] = ["オレンジ祭実行委員会","ログイン"]
@@ -75,7 +75,7 @@ class ElseTableViewController: UITableViewController {
         if section == 0 {
             ElseSectionName = "公式"
         }else if section == 1 {
-            ElseSectionName = "メッセージ"
+            ElseSectionName = "ご挨拶"
         }else if section == 2{
             ElseSectionName = "スタッフ"
         }else if section == 3{
@@ -83,7 +83,7 @@ class ElseTableViewController: UITableViewController {
         }else{
             ElseSectionName = "お問い合わせ"
         }
-        return "\(ElseSectionName)"
+        return ElseSectionName
     }
     
     // cellの情報を書き込む関数

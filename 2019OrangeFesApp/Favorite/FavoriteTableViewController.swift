@@ -205,5 +205,17 @@ class FavoriteTableViewController: UITableViewController {
         userDefaults.set(getUDPerformanceName, forKey: "UDPerformanceNameKey")
         tableView.reloadData()
         
-    } 
+    }
+    
+    @IBAction func Reset(_ sender: Any) {
+        let reset = ""
+        userDefaults.set(reset, forKey: "UDProgrammeNameKey")
+        userDefaults.set(reset, forKey: "UDPerformanceNameKey")
+        userDefaults.set(reset, forKey: "UDProgrammeDescriptionKey")
+        userDefaults.set(reset, forKey: "UDProgrammePictureKey")
+        userDefaults.set(reset, forKey: "UDPerformanceDescriptionKey")
+        userDefaults.set(reset, forKey: "UDPerformancePictureKey")
+        tableView.reloadData()
+    }
+    
 }

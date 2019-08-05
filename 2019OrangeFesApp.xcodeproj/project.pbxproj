@@ -30,6 +30,8 @@
 		B6147DB122F71B34003B6DFE /* LostAndFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DB022F71B34003B6DFE /* LostAndFoundViewController.swift */; };
 		B6147DB322F71B4E003B6DFE /* LostAndFoundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DB222F71B4E003B6DFE /* LostAndFoundTableViewController.swift */; };
 		B6147DB522F71B63003B6DFE /* LostAndFoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DB422F71B63003B6DFE /* LostAndFoundTableViewCell.swift */; };
+		B6147DB722F73154003B6DFE /* coolHue-FD6E6A-FFC600.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147DB622F73154003B6DFE /* coolHue-FD6E6A-FFC600.png */; };
+		B6147DC122F739F0003B6DFE /* オレンジ祭アプリ.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147DC022F739F0003B6DFE /* オレンジ祭アプリ.png */; };
 		B6198C7E22B1E02D001FB4A6 /* LostEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6198C7D22B1E02D001FB4A6 /* LostEnterViewController.swift */; };
 		B6198C8022B33545001FB4A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6198C7F22B33545001FB4A6 /* LoginViewController.swift */; };
 		B6198CBC22B539CC001FB4A6 /* Else.png in Resources */ = {isa = PBXBuildFile; fileRef = B6198CBB22B539CC001FB4A6 /* Else.png */; };
@@ -55,7 +57,6 @@
 		B670F16322BB0226006F4899 /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F14F22BB0226006F4899 /* Icon-App-76x76@1x.png */; };
 		B670F16422BB0226006F4899 /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F15022BB0226006F4899 /* Icon-App-40x40@3x.png */; };
 		B670F16522BB0226006F4899 /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F15122BB0226006F4899 /* Icon-App-29x29@2x.png */; };
-		B670F16622BB0226006F4899 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B670F15222BB0226006F4899 /* README.md */; };
 		B670F16722BB0226006F4899 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F15322BB0226006F4899 /* iTunesArtwork@2x.png */; };
 		B670F16822BB0226006F4899 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F15422BB0226006F4899 /* iTunesArtwork@3x.png */; };
 		B670F16A22BB02C7006F4899 /* OrangefesAppIconPre.png in Resources */ = {isa = PBXBuildFile; fileRef = B670F16922BB02C7006F4899 /* OrangefesAppIconPre.png */; };
@@ -73,21 +74,12 @@
 		B6BF3E5C22A0837300D8521F /* Pic4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E5822A0837300D8521F /* Pic4.jpeg */; };
 		B6BF3E5D22A0837300D8521F /* Pic3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E5922A0837300D8521F /* Pic3.jpeg */; };
 		B6BF3E5E22A0837300D8521F /* Pic2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E5A22A0837300D8521F /* Pic2.jpeg */; };
-		B6BF3E6122A083BF00D8521F /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E6022A083BF00D8521F /* ScheduleTableViewCell.swift */; };
-		B6BF3E6322A083D800D8521F /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E6222A083D800D8521F /* ScheduleTableViewController.swift */; };
-		B6BF3E6522A083F100D8521F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E6422A083F100D8521F /* ScheduleViewController.swift */; };
 		B6BF3E7022A0BAD000D8521F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E6F22A0BAD000D8521F /* MapViewController.swift */; };
 		B6BF3E7222A0BAED00D8521F /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E7122A0BAED00D8521F /* MapTableViewController.swift */; };
 		B6BF3E7422A0BB0800D8521F /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E7322A0BB0800D8521F /* MapTableViewCell.swift */; };
 		B6BF3E7822A10ABF00D8521F /* Map1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E7722A10ABF00D8521F /* Map1.jpg */; };
-		B6BF3E7F22A20AFC00D8521F /* OrangeFes LS.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E7C22A20AFB00D8521F /* OrangeFes LS.png */; };
-		B6BF3E8022A20AFC00D8521F /* Test1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E7D22A20AFC00D8521F /* Test1.jpg */; };
-		B6BF3E8122A20AFC00D8521F /* Test2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E7E22A20AFC00D8521F /* Test2.JPG */; };
 		B6BF3EC722A53FD800D8521F /* ElseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EC622A53FD800D8521F /* ElseTableViewController.swift */; };
 		B6BF3EC922A53FEC00D8521F /* ElseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EC822A53FEC00D8521F /* ElseTableViewCell.swift */; };
-		B6BF3ECD22A54D3100D8521F /* Day2TimeTable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3ECB22A54D3000D8521F /* Day2TimeTable.jpg */; };
-		B6BF3ECE22A54D3100D8521F /* Day1TimeTable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3ECC22A54D3100D8521F /* Day1TimeTable.jpg */; };
-		B6BF3EDB22A6569100D8521F /* Staff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3EDA22A6569000D8521F /* Staff.jpg */; };
 		B6BF3EDD22A8C81C00D8521F /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EDC22A8C81C00D8521F /* FavoriteTableViewController.swift */; };
 		B6BF3EDF22A8CD2E00D8521F /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EDE22A8CD2E00D8521F /* FavoriteTableViewCell.swift */; };
 		B6BF3EE122A8CD5E00D8521F /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EE022A8CD5E00D8521F /* FavoriteViewController.swift */; };
@@ -186,6 +178,8 @@
 		B6147DB022F71B34003B6DFE /* LostAndFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostAndFoundViewController.swift; sourceTree = "<group>"; };
 		B6147DB222F71B4E003B6DFE /* LostAndFoundTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostAndFoundTableViewController.swift; sourceTree = "<group>"; };
 		B6147DB422F71B63003B6DFE /* LostAndFoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostAndFoundTableViewCell.swift; sourceTree = "<group>"; };
+		B6147DB622F73154003B6DFE /* coolHue-FD6E6A-FFC600.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coolHue-FD6E6A-FFC600.png"; sourceTree = "<group>"; };
+		B6147DC022F739F0003B6DFE /* オレンジ祭アプリ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "オレンジ祭アプリ.png"; sourceTree = "<group>"; };
 		B6198C7D22B1E02D001FB4A6 /* LostEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostEnterViewController.swift; sourceTree = "<group>"; };
 		B6198C7F22B33545001FB4A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B6198CBB22B539CC001FB4A6 /* Else.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Else.png; sourceTree = "<group>"; };
@@ -211,7 +205,6 @@
 		B670F14F22BB0226006F4899 /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
 		B670F15022BB0226006F4899 /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
 		B670F15122BB0226006F4899 /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
-		B670F15222BB0226006F4899 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B670F15322BB0226006F4899 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		B670F15422BB0226006F4899 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
 		B670F16922BB02C7006F4899 /* OrangefesAppIconPre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OrangefesAppIconPre.png; sourceTree = "<group>"; };
@@ -235,21 +228,12 @@
 		B6BF3E5822A0837300D8521F /* Pic4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pic4.jpeg; sourceTree = "<group>"; };
 		B6BF3E5922A0837300D8521F /* Pic3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pic3.jpeg; sourceTree = "<group>"; };
 		B6BF3E5A22A0837300D8521F /* Pic2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pic2.jpeg; sourceTree = "<group>"; };
-		B6BF3E6022A083BF00D8521F /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
-		B6BF3E6222A083D800D8521F /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
-		B6BF3E6422A083F100D8521F /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		B6BF3E6F22A0BAD000D8521F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B6BF3E7122A0BAED00D8521F /* MapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
 		B6BF3E7322A0BB0800D8521F /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
 		B6BF3E7722A10ABF00D8521F /* Map1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Map1.jpg; sourceTree = "<group>"; };
-		B6BF3E7C22A20AFB00D8521F /* OrangeFes LS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OrangeFes LS.png"; sourceTree = "<group>"; };
-		B6BF3E7D22A20AFC00D8521F /* Test1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test1.jpg; sourceTree = "<group>"; };
-		B6BF3E7E22A20AFC00D8521F /* Test2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test2.JPG; sourceTree = "<group>"; };
 		B6BF3EC622A53FD800D8521F /* ElseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElseTableViewController.swift; sourceTree = "<group>"; };
 		B6BF3EC822A53FEC00D8521F /* ElseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElseTableViewCell.swift; sourceTree = "<group>"; };
-		B6BF3ECB22A54D3000D8521F /* Day2TimeTable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Day2TimeTable.jpg; sourceTree = "<group>"; };
-		B6BF3ECC22A54D3100D8521F /* Day1TimeTable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Day1TimeTable.jpg; sourceTree = "<group>"; };
-		B6BF3EDA22A6569000D8521F /* Staff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Staff.jpg; sourceTree = "<group>"; };
 		B6BF3EDC22A8C81C00D8521F /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		B6BF3EDE22A8CD2E00D8521F /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		B6BF3EE022A8CD5E00D8521F /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
@@ -357,9 +341,6 @@
 		B6147DA822F6E6BA003B6DFE /* Show */ = {
 			isa = PBXGroup;
 			children = (
-				B6BF3E6222A083D800D8521F /* ScheduleTableViewController.swift */,
-				B6BF3E6022A083BF00D8521F /* ScheduleTableViewCell.swift */,
-				B6BF3E6422A083F100D8521F /* ScheduleViewController.swift */,
 				B6147DB222F71B4E003B6DFE /* LostAndFoundTableViewController.swift */,
 				B6147DB022F71B34003B6DFE /* LostAndFoundViewController.swift */,
 				B6147DB422F71B63003B6DFE /* LostAndFoundTableViewCell.swift */,
@@ -394,7 +375,6 @@
 				B670F16922BB02C7006F4899 /* OrangefesAppIconPre.png */,
 				B670F14022BB0226006F4899 /* iTunesArtwork@1x.png */,
 				B670F14122BB0226006F4899 /* AppIcon.appiconset */,
-				B670F15222BB0226006F4899 /* README.md */,
 				B670F15322BB0226006F4899 /* iTunesArtwork@2x.png */,
 				B670F15422BB0226006F4899 /* iTunesArtwork@3x.png */,
 			);
@@ -534,13 +514,9 @@
 		B6BF3E7B22A20AFB00D8521F /* Picture */ = {
 			isa = PBXGroup;
 			children = (
+				B6147DB622F73154003B6DFE /* coolHue-FD6E6A-FFC600.png */,
+				B6147DC022F739F0003B6DFE /* オレンジ祭アプリ.png */,
 				B6147D8E22F5F1C3003B6DFE /* Staff.png */,
-				B6BF3EDA22A6569000D8521F /* Staff.jpg */,
-				B6BF3ECC22A54D3100D8521F /* Day1TimeTable.jpg */,
-				B6BF3ECB22A54D3000D8521F /* Day2TimeTable.jpg */,
-				B6BF3E7C22A20AFB00D8521F /* OrangeFes LS.png */,
-				B6BF3E7D22A20AFC00D8521F /* Test1.jpg */,
-				B6BF3E7E22A20AFC00D8521F /* Test2.JPG */,
 			);
 			path = Picture;
 			sourceTree = "<group>";
@@ -784,15 +760,12 @@
 				B6147D8D22F5EB9E003B6DFE /* clear.png in Resources */,
 				B6D853A522EC97740098D4E9 /* SchoolBand.png in Resources */,
 				B6BF3EEC22ADD2C100D8521F /* TimeTable.png in Resources */,
-				B6BF3E8122A20AFC00D8521F /* Test2.JPG in Resources */,
 				B6D8539022EC97740098D4E9 /* 112-2.png in Resources */,
-				B6BF3E8022A20AFC00D8521F /* Test1.jpg in Resources */,
 				B6BF3E7822A10ABF00D8521F /* Map1.jpg in Resources */,
 				B6BF3E5D22A0837300D8521F /* Pic3.jpeg in Resources */,
 				B6D853A222EC97740098D4E9 /* 237.png in Resources */,
 				B6D8539922EC97740098D4E9 /* 218.png in Resources */,
 				B6D8539322EC97740098D4E9 /* 431-2.png in Resources */,
-				B6BF3E7F22A20AFC00D8521F /* OrangeFes LS.png in Resources */,
 				B6147D9E22F6C5BE003B6DFE /* 44.png in Resources */,
 				B6D8538F22EC97740098D4E9 /* 215.png in Resources */,
 				B6D8538922EC97740098D4E9 /* 224.png in Resources */,
@@ -810,7 +783,6 @@
 				B6D853A422EC97740098D4E9 /* 432.png in Resources */,
 				B6D853AC22EC97740098D4E9 /* 212.png in Resources */,
 				B6D8538E22EC97740098D4E9 /* SchoolLogo.png in Resources */,
-				B6BF3ECD22A54D3100D8521F /* Day2TimeTable.jpg in Resources */,
 				B6D8539B22EC97740098D4E9 /* 114.png in Resources */,
 				B6D8538D22EC97740098D4E9 /* Aikido.png in Resources */,
 				B670F15D22BB0226006F4899 /* Contents.json in Resources */,
@@ -819,13 +791,12 @@
 				B6D8539722EC97740098D4E9 /* Meteors.png in Resources */,
 				B6203CF922F0A4A600E4FEC7 /* 928.png in Resources */,
 				B6D8538622EC97740098D4E9 /* StringMusic.png in Resources */,
-				B6BF3EDB22A6569100D8521F /* Staff.jpg in Resources */,
 				B6203CFA22F0A4A600E4FEC7 /* 929.png in Resources */,
 				B6BF3E5C22A0837300D8521F /* Pic4.jpeg in Resources */,
 				B6147D8F22F5F1C3003B6DFE /* Staff.png in Resources */,
 				B670F16222BB0226006F4899 /* Icon-App-60x60@2x.png in Resources */,
-				B6BF3ECE22A54D3100D8521F /* Day1TimeTable.jpg in Resources */,
 				B6D8539F22EC97740098D4E9 /* 216.png in Resources */,
+				B6147DB722F73154003B6DFE /* coolHue-FD6E6A-FFC600.png in Resources */,
 				B6D853AA22EC97740098D4E9 /* 214.png in Resources */,
 				B6D853AB22EC97740098D4E9 /* 220.png in Resources */,
 				B6BF3E2C22A0801F00D8521F /* LaunchScreen.storyboard in Resources */,
@@ -853,12 +824,12 @@
 				B670F15C22BB0226006F4899 /* ItunesArtwork@2x.png in Resources */,
 				B670F16422BB0226006F4899 /* Icon-App-40x40@3x.png in Resources */,
 				B6147D9A22F6C5BE003B6DFE /* 32.png in Resources */,
+				B6147DC122F739F0003B6DFE /* オレンジ祭アプリ.png in Resources */,
 				B6BF3E2722A0801D00D8521F /* Main.storyboard in Resources */,
 				B6147DA022F6C5BE003B6DFE /* 42.png in Resources */,
 				B6147DA122F6C5BE003B6DFE /* 11.png in Resources */,
 				B6D853A822EC97740098D4E9 /* 321.png in Resources */,
 				B6147DA322F6C62D003B6DFE /* 21.png in Resources */,
-				B670F16622BB0226006F4899 /* README.md in Resources */,
 				B6BF3E5E22A0837300D8521F /* Pic2.jpeg in Resources */,
 				B6D8538722EC97740098D4E9 /* 228.png in Resources */,
 			);
@@ -973,7 +944,6 @@
 			files = (
 				B6198C8022B33545001FB4A6 /* LoginViewController.swift in Sources */,
 				B6BF3EC922A53FEC00D8521F /* ElseTableViewCell.swift in Sources */,
-				B6BF3E6322A083D800D8521F /* ScheduleTableViewController.swift in Sources */,
 				B6BF3EC722A53FD800D8521F /* ElseTableViewController.swift in Sources */,
 				B6BF3EE622AD275500D8521F /* TabBarController.swift in Sources */,
 				B6147D9122F5F388003B6DFE /* StaffViewController.swift in Sources */,
@@ -985,10 +955,8 @@
 				B6203CF222F0A18E00E4FEC7 /* TimeTableViewController.swift in Sources */,
 				B6147DB522F71B63003B6DFE /* LostAndFoundTableViewCell.swift in Sources */,
 				B6BF3EDD22A8C81C00D8521F /* FavoriteTableViewController.swift in Sources */,
-				B6BF3E6122A083BF00D8521F /* ScheduleTableViewCell.swift in Sources */,
 				B6BF3EF322AE1AF400D8521F /* NavigationViewController.swift in Sources */,
 				B6BF3E7022A0BAD000D8521F /* MapViewController.swift in Sources */,
-				B6BF3E6522A083F100D8521F /* ScheduleViewController.swift in Sources */,
 				B6147DAB22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift in Sources */,
 				B6BF3EDF22A8CD2E00D8521F /* FavoriteTableViewCell.swift in Sources */,
 				B6BF3E5222A080EA00D8521F /* ProgrammeTableViewController.swift in Sources */,
