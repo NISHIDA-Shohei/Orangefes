@@ -28,7 +28,9 @@ class EditLostAndFoundViewController: UIViewController, UITextFieldDelegate, UIP
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        LostName.delegate = self as UITextFieldDelegate //デリゲートをセット
+        LostName.delegate = self as UITextFieldDelegate
+        LostDate.delegate = self as UITextFieldDelegate
+        LostDescription.delegate = self as UITextFieldDelegate
         PickerView.delegate = self
         PickerView.dataSource = self
     }
@@ -84,6 +86,9 @@ class EditLostAndFoundViewController: UIViewController, UITextFieldDelegate, UIP
         folderRef.updateChildValues(newFolder)
         
     }
+    @IBAction func Delete(_ sender: Any) {
+        ref.child("落し物一覧").child(LostKeyReceiveData).removeValue()
+    }
     
     //キーボードを閉じる
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -95,5 +100,12 @@ class EditLostAndFoundViewController: UIViewController, UITextFieldDelegate, UIP
         textField.resignFirstResponder()
         return true
     }
+    func LabelShouldReturn(_ label: UILabel) -> Bool {
+        // キーボードを閉じる
+        label.resignFirstResponder()
+        return true
+    }
+    
+    
     
 }
