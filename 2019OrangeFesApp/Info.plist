@@ -2,17 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>TsukushiAMaruGothic.ttc</string>
-		<string>キャパニトＬ-清音教漢</string>
-		<string>nicomoji-plus_1.11.ttf</string>
-		<string>JKG-L_3.ttf</string>
-		<string>KodomoRounded-Light.otf</string>
-		<string>JKG-M_3.ttf</string>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>オレンジ祭アプリ</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -29,6 +22,15 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>TsukushiAMaruGothic.ttc</string>
+		<string>キャパニトＬ-清音教漢</string>
+		<string>nicomoji-plus_1.11.ttf</string>
+		<string>JKG-L_3.ttf</string>
+		<string>KodomoRounded-Light.otf</string>
+		<string>JKG-M_3.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

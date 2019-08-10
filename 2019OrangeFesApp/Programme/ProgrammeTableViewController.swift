@@ -66,10 +66,10 @@ class ProgrammeTableViewController: UITableViewController {
         ,"今年度もバザーを催します。\n法政国際オリジナルグッズ（オリジナルトートバッグ・刺繍入りタオル）も販売します。　数量限定となりますのでお見逃しなく！　\n皆様のお越しをお待ちしております。　\n※PTAバザー主催の売上金は、生徒たちの為に使わせていただきます"
         ,"①全体説明　9/28 13:00 9/29 10:00 11:30 13:00 ②個別相談 9/28 14:00-15:30 9/29 10:30-15:30 来年度、本校を受験される中学生および保護者の方々のために設けた部屋です。個別相談はなるべく全体説明をお聞きになった上で、おまわり下さい。"]
     
-    let ProgrammeName5: [String] = ["岸谷フード","一の会","食堂","ベル　エポック","MARION CREPES"]
+    let ProgrammeName5: [String] = ["岸谷フード","一の会","ベル　エポック","MARION CREPES","食堂"]
     let ProgrammePicture5String: [String] = ["clear.png","clear.png","clear.png","clear.png","clear.png"]
     var ProgrammePicture5: [UIImage?] = []
-    let ProgrammeDescription5: [String] = ["総菜屋","学校食堂","からあげ丼甘辛ソース・４５０円　\n豚キムチ丼温玉のせ・４５０円　\nラーメン・３５０円　\nトマトカレー夏野菜・４００円　\nコロッケパン・１００円　\nいももち・１５０円　\nアメリカンドック・１００円　\nドーナツ４種類・各１００円（キャラメル・アップルシナモン・ミルクショコラ・抹茶ミルク）　\nからあげ４個・１００円（オレンジ祭のみの企画です）","パン屋","クレープ屋"]
+    let ProgrammeDescription5: [String] = ["総菜屋","学校食堂","パン屋","クレープ屋","からあげ丼甘辛ソース・４５０円　\n豚キムチ丼温玉のせ・４５０円　\nラーメン・３５０円　\nトマトカレー夏野菜・４００円　\nコロッケパン・１００円　\nいももち・１５０円　\nアメリカンドック・１００円　\nドーナツ４種類・各１００円（キャラメル・アップルシナモン・ミルクショコラ・抹茶ミルク）　\nからあげ４個・１００円（オレンジ祭のみの企画です）"]
     
     let Performance: [String] = ["応援部","ダンス部","弦楽部","合気道部","ゴスペル部","英語部","有志演劇","軽音楽部","吹奏楽部"]
     let PerformancePictureString: [String] = ["Meteors.png","Dance.png","StringMusic.png","Aikido.png","Gospel.png","ESS.png","Drama.png","SchoolBand.png","BrassBand.png"]
@@ -215,7 +215,7 @@ class ProgrammeTableViewController: UITableViewController {
             } else if sectionNumber == 3 {
                 sectionPlace = "4号館"
             } else if sectionNumber == 4 {
-                sectionPlace = "オレンジの間前"
+                sectionPlace = "オレンジの間前・食堂"
             }
         } else if p == 1 {
                 sectionPlace = "公演"

@@ -15,7 +15,7 @@ class ElseTableViewController: UITableViewController {
     let Else2: [String] = ["校長より", "委員長より","議長より", "副委員長より"]
     let Else2Number: [Int] = [0,1,2,3]
     let Else3: [String] = ["オレンジ祭実行委員会","ログイン"]
-    let Else4: [String] = ["利用規約"]
+    let Else4: [String] = ["利用規約","プライバシーポリシー"]
     let Else5: [String] = ["落し物一覧","来場者アンケート","お問い合わせ"]
 
     
@@ -23,6 +23,7 @@ class ElseTableViewController: UITableViewController {
     var giveElseData: String = ""
     var giveStaffImage: String = ""
     var giveGreetingNumber: Int = 0
+    var giveAgreementData:String = ""
 
     
     override func viewDidLoad() {
@@ -137,8 +138,11 @@ class ElseTableViewController: UITableViewController {
                 performSegue(withIdentifier: "StaffSegue", sender: nil)
             }
         } else if indexPath.section == 3{
-            giveElseData = Else4[indexPath.item]
-            performSegue(withIdentifier: "AgreementSegue", sender: nil)
+            if indexPath.row == 0 {
+                performSegue(withIdentifier: "AgreementSegue", sender: nil)
+            } else {
+                performSegue(withIdentifier: "PolicySegue", sender: nil)
+            }
             
         } else if indexPath.section == 4{
             if indexPath.row == 0 {

@@ -292,7 +292,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DGg-i7-LRq">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">オレンジ祭アプリ利用規約
+                                <string key="text">オレンジ祭アプリ利用規約
 オレンジ祭アプリをダウンロードして頂きありがとうございます。この利用規約（以下「本規約」とします。）は、オレンジ祭の運営を行う法政大学国際高等学校オレンジ祭実行委員会（以下「本委員会」とします。）が提供する「オレンジ祭アプリ」（以下「本アプリ」とします。）と本アプリのサービス（以下「本サービス」とします。）の利用条件などを定めたものです。
 
 第１条　はじめに
@@ -344,7 +344,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
 〒230-0078 神奈川県横浜市鶴見区岸谷１丁目１３−１
 令和元年8月5日施行
 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -358,11 +358,90 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mbl-5N-0Br"/>
                     </view>
-                    <navigationItem key="navigationItem" title="利用規約" id="7IO-H3-LGD"/>
+                    <navigationItem key="navigationItem" title="利用規約" largeTitleDisplayMode="always" id="7IO-H3-LGD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XeM-t7-Bv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5357.971014492754" y="1329.6195652173915"/>
+        </scene>
+        <!--プライバシーポリシー-->
+        <scene sceneID="Cba-8F-RBg">
+            <objects>
+                <viewController id="4Qe-Cp-5R7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YTC-Ob-nNo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tJS-s2-he7">
+                                <rect key="frame" x="0.0" y="111" width="320" height="408"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text"> オレンジ祭アプリプライバシーポリシー 本アプリは、利用者の情報の一部を取得し利用します。このプライバシーポリシー（以下「本ポリシー」とします。）は、本アプリにおける個人情報やそれに基づく情報の取り扱いを定めたものです。
+
+第1条　個人情報の定義
+プライバシー情報のうち「個人情報」とは、個人情報保護法にいう「個人情報」を指すものとし、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日住所その他の記述等により特定の個人を識別できる情報を指します。
+
+第2条　提供していただく個人情報と取得方法、取得目的
+（1）位置情報
+取得方法：端末のGPS、Wi-Fi
+取得目的：ユーザーの使用国把握のため（位置情報は国単位のみでの収集となります。）
+
+（2）アクティブユーザー数
+取得方法：アプリの起動時
+取得目的：正確な利用者を把握するため（サーバーへの負荷を計測するため）
+
+（3）データダウンロード総量
+取得方法：落し物一覧を取得時
+取得目的：サーバーへの負荷を把握するため
+
+（4）アプリの安定性
+取得方法：アプリがクラッシュした際
+取得目的：アプリのクラッシュした回数、頻度を把握するため（よりよりUX実現のため）
+
+（5）お問い合わせ内容
+取得方法：お問い合わせフォーム（https://forms.gle/CeaSWZB6fMb1jdif8）から入力
+取得目的：今後のオレンジ祭運営の参考のため
+
+第3条　個人情報の管理
+オレンジ祭実行委員会は、個人情報の紛失・破損・改ざん・漏洩などを防止するため、管理体制の整備等の必要な措置を講じ、個人情報の厳重な管理を行います。
+
+第4条　情報の開示及び提供
+以下の場合を除き、取得した個人情報を第三者に開示または提供することはございません。
+
+（1）法令に基づく場合であって、本人の同意を得ることが困難であるとき
+
+（2）人の生命、身体または財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき
+
+（3）公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって、本人の同意を得ることが困難であるとき
+
+（4）国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する場合があって、本人の同意を得ることにより当該事務の遂行に支障を及ぼす恐れがあるとき
+
+第5条　個人情報の訂正、追加、削除、利用停止
+利用者からの個人情報の訂正、追加、削除、利用停止のご希望に個別に対応することは致しかねますのでご了承ください。
+
+第6条　プライバシーポリシーの変更
+本ポリシーは、予告なく変更されることがあります。変更について利用者に通知することは致しません。本アプリを利用する際は、随時最新のプライバシーポリシーをご確認ください。
+
+法政大学国際高等学校オレンジ祭実行委員会
+〒230-0078神奈川県横浜市鶴見区岸谷1丁目13-1
+令和元年8月7日施行</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tJS-s2-he7" firstAttribute="top" secondItem="Zjx-r0-y6A" secondAttribute="top" id="CYL-Ii-jdJ"/>
+                            <constraint firstItem="tJS-s2-he7" firstAttribute="leading" secondItem="Zjx-r0-y6A" secondAttribute="leading" id="Y3t-jg-mWu"/>
+                            <constraint firstItem="Zjx-r0-y6A" firstAttribute="bottom" secondItem="tJS-s2-he7" secondAttribute="bottom" id="qVJ-Ax-1bV"/>
+                            <constraint firstItem="Zjx-r0-y6A" firstAttribute="trailing" secondItem="tJS-s2-he7" secondAttribute="trailing" id="zsV-Be-ESz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zjx-r0-y6A"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="プライバシーポリシー" id="pL6-9W-RFq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ly-eP-dKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6214" y="1329"/>
         </scene>
         <!--挨拶-->
         <scene sceneID="aQc-xu-4gY">
@@ -373,7 +452,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvB-7M-fYT">
-                                <rect key="frame" x="124" y="151" width="176" height="35.5"/>
+                                <rect key="frame" x="125" y="151" width="175" height="35.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wvB-7M-fYT" secondAttribute="height" multiplier="74:15" id="RCh-mD-bYy"/>
                                 </constraints>
@@ -409,7 +488,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgL-7h-Avn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6028.985507246377" y="1328.5714285714284"/>
+            <point key="canvasLocation" x="7172" y="1329"/>
         </scene>
         <!--校内地図-->
         <scene sceneID="lL3-tm-vdE">
@@ -477,11 +556,12 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <segue destination="UBM-rj-vrg" kind="show" identifier="LostAndFoundSegue" id="6c6-6F-F4X"/>
                         <segue destination="Iin-yU-9qr" kind="show" identifier="AgreementSegue" id="OQw-aK-bse"/>
                         <segue destination="ejD-qc-kuc" kind="show" identifier="GreetingSegue" id="m24-T0-At4"/>
+                        <segue destination="4Qe-Cp-5R7" kind="show" identifier="PolicySegue" id="9h9-7c-Pbz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8I2-fz-DRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3177" y="592"/>
+            <point key="canvasLocation" x="3176" y="592"/>
         </scene>
         <!--その他-->
         <scene sceneID="25i-gE-HMR">
