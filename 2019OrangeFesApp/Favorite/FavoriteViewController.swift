@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Firebase
 
 class FavoriteViewController: UIViewController {
     
     @IBOutlet weak var FavoriteTitle: UINavigationItem!
     @IBOutlet weak var FavoriteDescriptionText: UITextView!
     @IBOutlet weak var FavoritePicture: UIImageView!
+    
+    @IBOutlet weak var StatusLabel: UILabel!
+    @IBOutlet weak var StatusTitle: UILabel!
+    
+    let Performance: [String] = ["応援部", "ダンス部","弦楽部","合気道部","ゴスペル部","英語部","有志演劇","軽音楽部","吹奏楽部"]
  
     var receiveData: String = ""
     var receiveDescriptionData: String = ""
@@ -33,5 +39,31 @@ class FavoriteViewController: UIViewController {
         FavoriteTitle.title = receiveData
         FavoritePicture.image = UIImage(named: receivePictureStringData)
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        if Performance.contains(receiveData) {
+            StatusLabel.textColor = UIColor.white
+            StatusTitle.textColor = UIColor.white
+            
+        } else {
+            let refData = Database.database().reference().child("団体状況").child(receiveData)
+            refData.observe(.value, with: { [weak self](snapshot) -> Void in
+                
+                let status = String(describing: snapshot.childSnapshot(forPath: "Status").value!)
+                
+                if status == "<null>" {
+                    self?.StatusLabel.text = "データなし"
+                } else {
+                    self?.StatusLabel.text = status
+                }
+                
+            })
+            
+        }
+        
+        
+        
     }
 }
