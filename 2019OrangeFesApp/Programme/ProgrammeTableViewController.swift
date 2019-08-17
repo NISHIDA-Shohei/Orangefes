@@ -108,10 +108,6 @@ class ProgrammeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-         //UD初期化 リリース前に削除
-        //if let bundleId = Bundle.main.bundleIdentifier {
-         //UserDefaults.standard.removePersistentDomain(forName: bundleId)
-        //}
         
         for fileName in ProgrammePicture1String {
             ProgrammePicture1.append(UIImage(named: fileName))

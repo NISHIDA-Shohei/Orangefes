@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dRw-U3-QGq">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,7 +20,7 @@
             <objects>
                 <tableViewController id="jGj-Fc-yQz" customClass="EditLostAndFoundTableViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ifW-rB-QV7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -28,17 +28,17 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RfD-Vu-cat" id="GNk-pr-clG">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5Q-kH-wJq">
-                                            <rect key="frame" x="80" y="58.666666666666657" width="42" height="21"/>
+                                            <rect key="frame" x="80" y="58.5" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agV-Io-BK9">
-                                            <rect key="frame" x="76" y="26" width="55" height="27.666666666666671"/>
+                                            <rect key="frame" x="76" y="26" width="55" height="27.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyB-L7-rSa">
-                                <rect key="frame" x="0.0" y="140" width="320" height="677"/>
+                                <rect key="frame" x="0.0" y="116" width="320" height="735"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnV-Pz-Vju">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="740"/>
@@ -231,7 +231,7 @@
             <objects>
                 <tableViewController id="UBM-rj-vrg" customClass="LostAndFoundTableViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tdy-mC-JeE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -239,16 +239,16 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eTt-Uw-0Jh" id="s5T-m2-cp0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="忘れ物名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r40-C4-eZN">
-                                            <rect key="frame" x="76" y="27.333333333333329" width="100" height="25"/>
+                                            <rect key="frame" x="76" y="27.5" width="100" height="25"/>
                                             <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="25"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZt-r8-X2e">
-                                            <rect key="frame" x="80" y="57.333333333333343" width="42" height="17"/>
+                                            <rect key="frame" x="80" y="57.5" width="42" height="17"/>
                                             <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -286,13 +286,13 @@
             <objects>
                 <viewController id="Iin-yU-9qr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B9b-7s-1K6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DGg-i7-LRq">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">オレンジ祭アプリ利用規約
+                                <string key="text">オレンジ祭アプリ利用規約
 オレンジ祭アプリをダウンロードして頂きありがとうございます。この利用規約（以下「本規約」とします。）は、オレンジ祭の運営を行う法政大学国際高等学校オレンジ祭実行委員会（以下「本委員会」とします。）が提供する「オレンジ祭アプリ」（以下「本アプリ」とします。）と本アプリのサービス（以下「本サービス」とします。）の利用条件などを定めたものです。
 
 第１条　はじめに
@@ -344,7 +344,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
 〒230-0078 神奈川県横浜市鶴見区岸谷１丁目１３−１
 令和元年8月5日施行 令和元年8月11日改正
 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -369,11 +369,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <viewController id="4Qe-Cp-5R7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YTC-Ob-nNo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tJS-s2-he7">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text"> オレンジ祭アプリプライバシーポリシー 本アプリは、利用者の情報の一部を取得し利用します。このプライバシーポリシー（以下「本ポリシー」とします。）は、本アプリにおける個人情報やそれに基づく情報の取り扱いを定めたものです。
 
@@ -448,11 +448,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <viewController id="ejD-qc-kuc" customClass="ElseGreetingViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="idj-Oa-4Kc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvB-7M-fYT">
-                                <rect key="frame" x="180" y="180" width="175" height="35.666666666666657"/>
+                                <rect key="frame" x="179" y="156" width="176" height="35.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wvB-7M-fYT" secondAttribute="height" multiplier="74:15" id="RCh-mD-bYy"/>
                                 </constraints>
@@ -461,7 +461,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SUi-kq-EU1">
-                                <rect key="frame" x="20" y="255.66666666666666" width="335" height="473.33333333333337"/>
+                                <rect key="frame" x="20" y="231.5" width="335" height="386.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
@@ -496,7 +496,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="xo6-B6-5Cy" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="校内地図" image="Map.png" selectedImage="Map.png" id="Zo0-C2-Tky"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="CK4-rI-tYO">
-                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.96003717180000003" green="0.74004137520000002" blue="0.25471782679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="largeTitleTextAttributes">
@@ -516,7 +516,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <tableViewController id="NyM-LE-vcr" customClass="ElseTableViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aUc-7J-Lg8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -524,11 +524,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N2B-wB-eb4" id="bZH-sX-zMl">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTw-nr-wBO">
-                                            <rect key="frame" x="76" y="13.333333333333336" width="42" height="17"/>
+                                            <rect key="frame" x="76" y="13.5" width="42" height="17"/>
                                             <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -569,7 +569,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="NtF-jw-9mw" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="その他" image="Else.png" selectedImage="Else.png" id="zKU-v1-u6Z"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="xcg-TS-iY4">
-                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
@@ -588,11 +588,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <viewController id="5Zv-TB-sjW" customClass="LoginViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iH9-Wb-5cF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8l-hQ-2D2">
-                                <rect key="frame" x="20" y="160" width="149" height="21"/>
+                                <rect key="frame" x="20" y="136" width="149" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="s8l-hQ-2D2" secondAttribute="height" multiplier="149:21" id="sHw-nD-iKY"/>
                                 </constraints>
@@ -601,13 +601,13 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UFn-sp-Ej7">
-                                <rect key="frame" x="20" y="191" width="335" height="30"/>
+                                <rect key="frame" x="20" y="167" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQG-O3-Soe">
-                                <rect key="frame" x="20" y="241" width="165" height="21"/>
+                                <rect key="frame" x="20" y="217" width="165" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="EQG-O3-Soe" secondAttribute="height" multiplier="55:7" id="niB-ef-j6I"/>
                                 </constraints>
@@ -616,13 +616,13 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RiM-KT-Xw0">
-                                <rect key="frame" x="20" y="272" width="335" height="30"/>
+                                <rect key="frame" x="20" y="248" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vl3-Sr-VND">
-                                <rect key="frame" x="146.66666666666666" y="388" width="82" height="36"/>
+                                <rect key="frame" x="146.5" y="315.5" width="82" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="ログイン"/>
                                 <connections>
@@ -664,7 +664,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <tableViewController id="Rum-U1-teW" customClass="StatusTableViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ocb-48-TIX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -672,11 +672,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qc1-GO-N9j" id="IEe-HN-EhO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="団体名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R63-Xn-m5M">
-                                            <rect key="frame" x="76" y="14.333333333333336" width="52" height="21"/>
+                                            <rect key="frame" x="76" y="14.5" width="52" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -711,29 +711,29 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <viewController id="TUB-Hv-gcD" customClass="StatusViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mip-oA-HIg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="団体状況" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCk-fw-NaQ">
-                                <rect key="frame" x="20" y="160" width="70" height="21"/>
+                                <rect key="frame" x="20" y="136" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFa-Sb-0SM">
-                                <rect key="frame" x="20" y="181" width="71" height="36"/>
+                                <rect key="frame" x="20" y="157" width="71" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Anm-N9-szn">
-                                <rect key="frame" x="0.0" y="217" width="430" height="190"/>
+                                <rect key="frame" x="0.0" y="193" width="375" height="190"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Anm-N9-szn" secondAttribute="height" multiplier="160:81" id="2b4-B1-veK"/>
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfF-M6-5Nr">
-                                <rect key="frame" x="146.66666666666666" y="427" width="82" height="36"/>
+                                <rect key="frame" x="146.5" y="403" width="82" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="追加する"/>
                                 <connections>
@@ -771,11 +771,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <viewController id="QgL-zi-TZH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CdK-HV-HFl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NE-Lw-9hG">
-                                <rect key="frame" x="90" y="385.66666666666669" width="195" height="41"/>
+                                <rect key="frame" x="90" y="313" width="195" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1NE-Lw-9hG" secondAttribute="height" multiplier="195:41" id="XRg-gE-yZs"/>
                                 </constraints>
@@ -786,7 +786,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBf-3J-zXv">
-                                <rect key="frame" x="114.66666666666669" y="324.66666666666669" width="146" height="41"/>
+                                <rect key="frame" x="114.5" y="252" width="146" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="団体状況追加"/>
                                 <connections>
@@ -794,7 +794,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="注意：団体状況や落し物について虚偽の情報を掲載した場合、利用規約第2条に違反します。違反が確認された場合、これらの機能を停止する場合がございます。情報には細心の注意を払い掲載してください。　" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="est-Rv-WH4">
-                                <rect key="frame" x="20" y="576" width="335" height="153"/>
+                                <rect key="frame" x="20" y="465" width="335" height="153"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="est-Rv-WH4" secondAttribute="height" multiplier="35:16" id="A5h-hC-0fp"/>
@@ -825,7 +825,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <tableViewController id="0os-Av-tsy" customClass="MapTableViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Em3-cj-mZ2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -833,11 +833,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6en-2o-dkO" id="sDa-7w-hgx">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="場所名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxF-Pd-PIF">
-                                            <rect key="frame" x="76" y="13.333333333333336" width="51" height="17"/>
+                                            <rect key="frame" x="76" y="13.5" width="51" height="17"/>
                                             <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -872,11 +872,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <viewController id="gpV-TG-BMo" customClass="MapViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u6q-CC-7hS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="umh-eh-0rK">
-                                <rect key="frame" x="0.0" y="140" width="375" height="589"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -903,11 +903,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <viewController id="dYF-yl-oBh" customClass="StaffViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="20S-dQ-i1c">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BwG-qd-tXT">
-                                <rect key="frame" x="0.0" y="140" width="375" height="589"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -934,11 +934,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <viewController id="7Qe-7N-XPf" customClass="TimeTableViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yQR-te-dTj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLn-Zl-F3s">
-                                <rect key="frame" x="0.0" y="140" width="375" height="589"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -965,14 +965,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <viewController id="Jsy-pg-EK9" customClass="ProgrammeViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iqV-jR-bDa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIl-wg-WqY">
-                                <rect key="frame" x="20" y="390" width="68" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="iIl-wg-WqY" secondAttribute="height" multiplier="4:1" id="mTa-BB-E30"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="355" width="68" height="17"/>
                                 <attributedString key="attributedText">
                                     <fragment content="団体説明">
                                         <attributes>
@@ -984,13 +981,13 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OiG-8b-uZb">
-                                <rect key="frame" x="0.0" y="165" width="375" height="205"/>
+                                <rect key="frame" x="0.0" y="126" width="375" height="194"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="OiG-8b-uZb" secondAttribute="height" multiplier="64:35" id="dJc-F8-ota"/>
+                                    <constraint firstAttribute="width" secondItem="OiG-8b-uZb" secondAttribute="height" multiplier="64:35" constant="20" id="dJc-F8-ota"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nL7-RE-wPe">
-                                <rect key="frame" x="20" y="417" width="335" height="151"/>
+                                <rect key="frame" x="20" y="387" width="335" height="151"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="151" id="AQa-xs-t8j"/>
@@ -999,34 +996,44 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="データなし" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qle-yg-ctC">
-                                <rect key="frame" x="283" y="375" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状況：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgB-Vg-EKo">
+                                <rect key="frame" x="234" y="355" width="51" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="団体状況：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgB-Vg-EKo">
-                                <rect key="frame" x="196" y="375" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-te-RDq">
+                                <rect key="frame" x="293" y="320" width="77" height="30"/>
+                                <state key="normal" title="地図を表示"/>
+                                <connections>
+                                    <action selector="ShowMap:" destination="Jsy-pg-EK9" eventType="touchUpInside" id="nCg-z7-9BN"/>
+                                    <segue destination="Ui2-AG-IPD" kind="show" identifier="MapSegue" id="2pB-qP-efT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="データなし" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qle-yg-ctC">
+                                <rect key="frame" x="285" y="355" width="85" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SgB-Vg-EKo" firstAttribute="top" secondItem="OiG-8b-uZb" secondAttribute="bottom" constant="5" id="2yN-sO-4uD"/>
+                            <constraint firstItem="mo4-qW-uc0" firstAttribute="trailing" secondItem="WfV-te-RDq" secondAttribute="trailing" constant="5" id="4Ir-Zq-CFG"/>
+                            <constraint firstItem="iIl-wg-WqY" firstAttribute="top" secondItem="OiG-8b-uZb" secondAttribute="bottom" constant="35" id="6k5-gl-P5B"/>
+                            <constraint firstItem="qle-yg-ctC" firstAttribute="leading" secondItem="SgB-Vg-EKo" secondAttribute="trailing" id="96w-jH-ZHq"/>
                             <constraint firstItem="OiG-8b-uZb" firstAttribute="leading" secondItem="mo4-qW-uc0" secondAttribute="leading" id="AtJ-vH-wQa"/>
-                            <constraint firstItem="mo4-qW-uc0" firstAttribute="trailing" secondItem="qle-yg-ctC" secondAttribute="trailing" constant="5" id="C41-AC-Ie1"/>
-                            <constraint firstItem="iIl-wg-WqY" firstAttribute="top" secondItem="OiG-8b-uZb" secondAttribute="bottom" constant="20" id="Fhb-sl-A2L"/>
                             <constraint firstItem="nL7-RE-wPe" firstAttribute="leading" secondItem="mo4-qW-uc0" secondAttribute="leading" constant="20" id="K8L-yq-Psj"/>
-                            <constraint firstItem="qle-yg-ctC" firstAttribute="leading" secondItem="SgB-Vg-EKo" secondAttribute="trailing" id="blW-fa-jaB"/>
-                            <constraint firstItem="qle-yg-ctC" firstAttribute="top" secondItem="OiG-8b-uZb" secondAttribute="bottom" constant="5" id="e9y-Vz-obf"/>
-                            <constraint firstItem="nL7-RE-wPe" firstAttribute="top" secondItem="iIl-wg-WqY" secondAttribute="bottom" constant="10" id="g7a-3Y-fix"/>
-                            <constraint firstItem="OiG-8b-uZb" firstAttribute="top" secondItem="mo4-qW-uc0" secondAttribute="top" constant="25" id="qqu-oA-Mhu"/>
+                            <constraint firstItem="qle-yg-ctC" firstAttribute="top" secondItem="WfV-te-RDq" secondAttribute="bottom" constant="5" id="SXC-xI-b3p"/>
+                            <constraint firstItem="nL7-RE-wPe" firstAttribute="top" secondItem="iIl-wg-WqY" secondAttribute="bottom" constant="15" id="aQE-y2-7G8"/>
+                            <constraint firstItem="WfV-te-RDq" firstAttribute="top" secondItem="OiG-8b-uZb" secondAttribute="bottom" id="dDz-kM-GFK"/>
+                            <constraint firstItem="SgB-Vg-EKo" firstAttribute="top" secondItem="OiG-8b-uZb" secondAttribute="bottom" constant="35" id="nRx-HR-Dk1"/>
+                            <constraint firstItem="OiG-8b-uZb" firstAttribute="top" secondItem="mo4-qW-uc0" secondAttribute="top" constant="10" id="qqu-oA-Mhu"/>
                             <constraint firstItem="mo4-qW-uc0" firstAttribute="trailing" secondItem="nL7-RE-wPe" secondAttribute="trailing" constant="20" id="uFi-eH-JHK"/>
                             <constraint firstItem="OiG-8b-uZb" firstAttribute="centerX" secondItem="iqV-jR-bDa" secondAttribute="centerX" id="uZz-kj-EXm"/>
+                            <constraint firstItem="mo4-qW-uc0" firstAttribute="trailing" secondItem="qle-yg-ctC" secondAttribute="trailing" constant="5" id="vEx-Cj-THd"/>
                             <constraint firstItem="OiG-8b-uZb" firstAttribute="trailing" secondItem="mo4-qW-uc0" secondAttribute="trailing" id="xAL-77-NVA"/>
-                            <constraint firstItem="iIl-wg-WqY" firstAttribute="leading" secondItem="mo4-qW-uc0" secondAttribute="leading" constant="20" id="xj9-oe-oYc"/>
+                            <constraint firstItem="iIl-wg-WqY" firstAttribute="leading" secondItem="mo4-qW-uc0" secondAttribute="leading" constant="20" id="xgU-6V-nKb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mo4-qW-uc0"/>
                     </view>
@@ -1048,35 +1055,35 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <viewController id="ACL-zk-SUK" customClass="LostAndFoundViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QhU-4m-bYN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="発見場所：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWx-Cj-nLG">
-                                <rect key="frame" x="20" y="160" width="85" height="17"/>
+                                <rect key="frame" x="20" y="136" width="85" height="17"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfP-8Q-180">
-                                <rect key="frame" x="19.999999999999996" y="187" width="42.666666666666657" height="17"/>
+                                <rect key="frame" x="20" y="163" width="42.5" height="17"/>
                                 <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="発見日時：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFG-vJ-4Jk">
-                                <rect key="frame" x="20" y="224" width="85" height="17"/>
+                                <rect key="frame" x="20" y="200" width="85" height="17"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CM4-6t-4vQ">
-                                <rect key="frame" x="19.999999999999996" y="251" width="42.666666666666657" height="17"/>
+                                <rect key="frame" x="20" y="227" width="42.5" height="17"/>
                                 <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="落し物は２号館２階、大教員室前のオレンジ祭実行本部にて保管しております。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9t8-EQ-aen">
-                                <rect key="frame" x="20" y="315" width="335" height="119.66666666666669"/>
+                                <rect key="frame" x="20" y="291" width="335" height="119.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9t8-EQ-aen" secondAttribute="height" multiplier="14:5" id="Y58-tf-XBw"/>
@@ -1085,7 +1092,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="詳細：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dip-hV-Sbf">
-                                <rect key="frame" x="20" y="288" width="51" height="17"/>
+                                <rect key="frame" x="20" y="264" width="51" height="17"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1126,7 +1133,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <tableViewController id="vqc-Xx-xVc" customClass="ProgrammeTableViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0WK-bt-9Z5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <segmentedControl key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="0ER-np-cIQ">
@@ -1227,7 +1234,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="7mh-CX-032" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="企画一覧" image="Programme.png" selectedImage="Programme.png" id="QN7-TL-yBR"/>
                     <navigationBar key="navigationBar" alpha="0.5" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="JE3-PF-xKM">
-                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
@@ -1266,7 +1273,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <tableViewController id="qKW-zi-rdW" customClass="FavoriteTableViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YSM-yL-VVY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
@@ -1366,14 +1373,11 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <viewController id="qxP-QC-3Am" customClass="FavoriteViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tmL-7O-Vfx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhk-pi-6la">
-                                <rect key="frame" x="20" y="390" width="68" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Uhk-pi-6la" secondAttribute="height" multiplier="4:1" id="YsQ-xY-B4W"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="366" width="68" height="17"/>
                                 <attributedString key="attributedText">
                                     <fragment content="団体説明">
                                         <attributes>
@@ -1386,7 +1390,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njb-bi-RLQ">
-                                <rect key="frame" x="20" y="417" width="335" height="151"/>
+                                <rect key="frame" x="20" y="398" width="335" height="151"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="151" id="oux-dM-rDY"/>
@@ -1396,37 +1400,46 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fh6-VI-PRe">
-                                <rect key="frame" x="0.0" y="165" width="375" height="205"/>
+                                <rect key="frame" x="0.0" y="126" width="375" height="205"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Fh6-VI-PRe" secondAttribute="height" multiplier="64:35" id="z4k-HI-Yxp"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="団体状況：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llj-Bb-hiv">
-                                <rect key="frame" x="196" y="375" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状況：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llj-Bb-hiv">
+                                <rect key="frame" x="234" y="366" width="51" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="データなし" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBR-Wv-acA">
-                                <rect key="frame" x="283" y="375" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="285" y="366" width="85" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeG-7k-uRX">
+                                <rect key="frame" x="293" y="331" width="77" height="30"/>
+                                <state key="normal" title="地図を表示"/>
+                                <connections>
+                                    <action selector="ShowMap:" destination="qxP-QC-3Am" eventType="touchUpInside" id="HOr-u0-EQF"/>
+                                    <segue destination="Ui2-AG-IPD" kind="show" identifier="MapSegue" id="uc8-g8-1S1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iqf-nv-WDS" firstAttribute="trailing" secondItem="VBR-Wv-acA" secondAttribute="trailing" constant="5" id="0g2-e9-m6L"/>
-                            <constraint firstItem="llj-Bb-hiv" firstAttribute="top" secondItem="Fh6-VI-PRe" secondAttribute="bottom" constant="5" id="6zu-g2-NfE"/>
                             <constraint firstItem="Fh6-VI-PRe" firstAttribute="trailing" secondItem="iqf-nv-WDS" secondAttribute="trailing" id="A07-It-fMe"/>
-                            <constraint firstItem="VBR-Wv-acA" firstAttribute="top" secondItem="Fh6-VI-PRe" secondAttribute="bottom" constant="5" id="Fj4-5C-hd6"/>
+                            <constraint firstItem="llj-Bb-hiv" firstAttribute="top" secondItem="Fh6-VI-PRe" secondAttribute="bottom" constant="35" id="B6a-47-3aq"/>
+                            <constraint firstItem="iqf-nv-WDS" firstAttribute="trailing" secondItem="xeG-7k-uRX" secondAttribute="trailing" constant="5" id="JCw-Bn-Ohq"/>
+                            <constraint firstItem="VBR-Wv-acA" firstAttribute="top" secondItem="xeG-7k-uRX" secondAttribute="bottom" constant="5" id="JLG-kf-jtB"/>
                             <constraint firstItem="Fh6-VI-PRe" firstAttribute="leading" secondItem="iqf-nv-WDS" secondAttribute="leading" id="RHn-Fy-9Cc"/>
+                            <constraint firstItem="VBR-Wv-acA" firstAttribute="leading" secondItem="llj-Bb-hiv" secondAttribute="trailing" id="Shy-v1-ewj"/>
+                            <constraint firstItem="xeG-7k-uRX" firstAttribute="top" secondItem="Fh6-VI-PRe" secondAttribute="bottom" id="XiN-on-GnP"/>
                             <constraint firstItem="Uhk-pi-6la" firstAttribute="leading" secondItem="iqf-nv-WDS" secondAttribute="leading" constant="20" id="eLH-tb-mpj"/>
-                            <constraint firstItem="njb-bi-RLQ" firstAttribute="top" secondItem="Uhk-pi-6la" secondAttribute="bottom" constant="10" id="feK-9Y-C1i"/>
-                            <constraint firstItem="VBR-Wv-acA" firstAttribute="leading" secondItem="llj-Bb-hiv" secondAttribute="trailing" id="hcg-A1-GWu"/>
-                            <constraint firstItem="VBR-Wv-acA" firstAttribute="leading" secondItem="llj-Bb-hiv" secondAttribute="trailing" id="o6d-dR-SFD"/>
-                            <constraint firstItem="Uhk-pi-6la" firstAttribute="top" secondItem="Fh6-VI-PRe" secondAttribute="bottom" constant="20" id="oar-II-jjy"/>
-                            <constraint firstItem="Fh6-VI-PRe" firstAttribute="top" secondItem="iqf-nv-WDS" secondAttribute="top" constant="25" id="tbe-fF-4tq"/>
+                            <constraint firstItem="njb-bi-RLQ" firstAttribute="top" secondItem="Uhk-pi-6la" secondAttribute="bottom" constant="15" id="feK-9Y-C1i"/>
+                            <constraint firstItem="Uhk-pi-6la" firstAttribute="top" secondItem="Fh6-VI-PRe" secondAttribute="bottom" constant="35" id="oar-II-jjy"/>
+                            <constraint firstItem="Fh6-VI-PRe" firstAttribute="top" secondItem="iqf-nv-WDS" secondAttribute="top" constant="10" id="tbe-fF-4tq"/>
+                            <constraint firstItem="iqf-nv-WDS" firstAttribute="trailing" secondItem="VBR-Wv-acA" secondAttribute="trailing" constant="5" id="voH-J9-NDF"/>
                             <constraint firstItem="njb-bi-RLQ" firstAttribute="leading" secondItem="iqf-nv-WDS" secondAttribute="leading" constant="20" id="xNn-0G-qVO"/>
                             <constraint firstItem="Fh6-VI-PRe" firstAttribute="centerX" secondItem="tmL-7O-Vfx" secondAttribute="centerX" id="xlQ-WQ-D7Y"/>
                             <constraint firstItem="iqf-nv-WDS" firstAttribute="trailing" secondItem="njb-bi-RLQ" secondAttribute="trailing" constant="20" id="zz1-X7-gSw"/>
@@ -1452,7 +1465,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="62o-KI-MAV" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="お気に入り" image="Favorite.png" selectedImage="Favorite.png" id="PEl-GQ-17q"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="JkN-mX-jvh">
-                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
@@ -1475,7 +1488,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ttx-ha-np3">
-                                <rect key="frame" x="0.0" y="140" width="320" height="677"/>
+                                <rect key="frame" x="0.0" y="116" width="320" height="735"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEY-kf-I1g">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
@@ -1604,6 +1617,37 @@ https://forms.gle/kejw7gb7R72pzjPt9
             </objects>
             <point key="canvasLocation" x="3176" y="3604"/>
         </scene>
+        <!--MapTitle-->
+        <scene sceneID="GG2-wP-Tp1">
+            <objects>
+                <viewController id="Ui2-AG-IPD" customClass="MapViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y3S-gq-VCl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSj-5K-Gef">
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fWi-5N-gfS" firstAttribute="trailing" secondItem="oSj-5K-Gef" secondAttribute="trailing" id="3ye-8i-25l"/>
+                            <constraint firstItem="fWi-5N-gfS" firstAttribute="bottom" secondItem="oSj-5K-Gef" secondAttribute="bottom" id="iD0-Rq-bMi"/>
+                            <constraint firstItem="oSj-5K-Gef" firstAttribute="leading" secondItem="fWi-5N-gfS" secondAttribute="leading" id="loe-KK-vvz"/>
+                            <constraint firstItem="oSj-5K-Gef" firstAttribute="top" secondItem="fWi-5N-gfS" secondAttribute="top" id="oCE-UR-xlk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fWi-5N-gfS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MapTitle" id="rbp-tB-HwE"/>
+                    <connections>
+                        <outlet property="MapTitle" destination="rbp-tB-HwE" id="DGT-S4-nG5"/>
+                        <outlet property="scrollView" destination="oSj-5K-Gef" id="J19-Ci-xFz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLL-D3-diA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="2030"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Else.png" width="30" height="30"/>
@@ -1611,4 +1655,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
         <image name="Map.png" width="30" height="30"/>
         <image name="Programme.png" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uc8-g8-1S1"/>
+    </inferredMetricsTieBreakers>
 </document>
