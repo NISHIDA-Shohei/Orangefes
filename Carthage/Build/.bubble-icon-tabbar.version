@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "0.8.3",
+  "iOS" : [
+    {
+      "name" : "BubbleTabBar",
+      "hash" : "5e9c58f46a194c6ae09496c9825f3eae5927c71b858cace3d6b13621e2ab035e",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+    }
+  ]
+}

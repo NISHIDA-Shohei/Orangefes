@@ -13,9 +13,22 @@ class FavoriteTableViewCell: UITableViewCell {
     @IBOutlet weak var FavoriteNameLabel: UILabel!
     @IBOutlet weak var FavoriteButton: UIButton!
     @IBOutlet weak var FavoritePicture: UIImageView!
+    @IBOutlet weak var FavoriteView: UIView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        FavoriteView.layer.cornerRadius = 10
+        FavoritePicture.layer.cornerRadius = 10
+        FavoritePicture.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        // 影の方向（width=右方向、height=下方向、CGSize.zero=方向指定なし）
+        FavoriteView.layer.shadowOffset = CGSize(width: 2, height: 4)
+        // 影の色
+        FavoriteView.layer.shadowColor = UIColor.black.cgColor
+        // 影の濃さ
+        FavoriteView.layer.shadowOpacity = 0.25
+        // 影をぼかし
+        FavoriteView.layer.shadowRadius = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -127,7 +127,7 @@ class ProgrammeTableViewController: UITableViewController {
         for fileName in PerformancePictureString {
             PerformancePicture.append(UIImage(named: fileName))
         }
-        }
+    }
     
     //リロードする
     override func viewWillAppear(_ animated: Bool) {
@@ -135,7 +135,7 @@ class ProgrammeTableViewController: UITableViewController {
     }
     // cellの高さを返す関数
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 110
 }
     
     // sectionの数を返す関数
@@ -173,21 +173,11 @@ class ProgrammeTableViewController: UITableViewController {
     
     //sectionの色
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        if p == 0 {
-            //labelの色
-            view.tintColor = UIColor(red: 255/255, green: 204/255, blue: 102/255, alpha: 0.7)
-            let header = view as! UITableViewHeaderFooterView
-            //labelの文字の色
-            header.textLabel?.textColor = UIColor.black
-        } else if p == 1{
-            view.tintColor = UIColor(red: 102/255, green: 255/255, blue: 153/255, alpha: 0.7)
-            let header = view as! UITableViewHeaderFooterView
-            header.textLabel?.textColor = UIColor.black
-        } else {
-            view.tintColor = UIColor(red: 204/255, green: 153/255, blue: 255/255, alpha: 0.7)
-            let header = view as! UITableViewHeaderFooterView
-            header.textLabel?.textColor = UIColor.black
-        }
+        //labelの色
+        view.tintColor = UIColor(red: 255/255, green: 153/255, blue: 255/255, alpha: 0.7)
+        let header = view as! UITableViewHeaderFooterView
+        //labelの文字の色
+        header.textLabel?.textColor = UIColor.black
     }
     
     // sectionの高さを返す関数
@@ -200,6 +190,10 @@ class ProgrammeTableViewController: UITableViewController {
         //sectionの日付
         let sectionNumber = section
         var sectionPlace: String = ""
+        
+        
+        //
+        
         
         if p == 0 {
             if sectionNumber == 0 {
@@ -232,7 +226,7 @@ class ProgrammeTableViewController: UITableViewController {
         let UDColorTest: [String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
         let UDColorTestPerformance: [String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
         //cellに右矢印を追加する
-        ProgrammeCell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
+        //ProgrammeCell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         // ここでcellのlabelに値を入れています。
         if p == 0 {
             if indexPath.section == 0 {

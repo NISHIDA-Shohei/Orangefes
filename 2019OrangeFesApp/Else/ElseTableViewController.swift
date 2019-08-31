@@ -38,7 +38,8 @@ class ElseTableViewController: UITableViewController {
     //sectionの色
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         //labelの色
-        view.tintColor = UIColor(red: 153/255, green: 255/255, blue: 255/255, alpha: 0.7)
+        view.tintColor = UIColor(red: 255/255, green: 153/255, blue: 255/255, alpha: 0.7)
+        //view.tintColor = UIColor(red: 153/255, green: 255/255, blue: 255/255, alpha: 0.7)
         //labelの文字
         let header = view as! UITableViewHeaderFooterView
         header.textLabel?.textColor = UIColor.black

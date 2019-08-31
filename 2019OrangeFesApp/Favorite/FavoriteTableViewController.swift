@@ -72,7 +72,7 @@ class FavoriteTableViewController: UITableViewController {
     }
     // cellの高さを返す関数
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 115
     }
     
     // sectionに載せる文字列を返す関数
@@ -87,11 +87,7 @@ class FavoriteTableViewController: UITableViewController {
     //sectionの色
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         //labelの色
-        if section == 0 {
-            view.tintColor = UIColor(red: 255/255, green: 204/255, blue: 102/255, alpha: 0.7)
-        } else {
-            view.tintColor = UIColor(red: 102/255, green: 255/255, blue: 153/255, alpha: 0.7)
-        }
+        view.tintColor = UIColor(red: 255/255, green: 153/255, blue: 255/255, alpha: 0.7)
         //labelの文字
         let header = view as! UITableViewHeaderFooterView
         header.textLabel?.textColor = UIColor.black
@@ -106,7 +102,7 @@ class FavoriteTableViewController: UITableViewController {
         let UDColorTestPerformance: [String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
         
         //cellに右矢印を追加する
-        FavoriteCell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
+        //FavoriteCell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         if indexPath.section == 0{
             // ここでcellのlabelに値を入れる　ここに新たな文字をい入れる
             FavoriteCell.FavoriteNameLabel.text = FavoriteName[indexPath.item]
