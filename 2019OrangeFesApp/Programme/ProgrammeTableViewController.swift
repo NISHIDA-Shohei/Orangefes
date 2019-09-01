@@ -228,14 +228,25 @@ class ProgrammeTableViewController: UITableViewController {
         //cellに右矢印を追加する
         //ProgrammeCell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         // ここでcellのlabelに値を入れています。
+        
+        func changeBlack(){
+            ProgrammeCell.button.setTitle("☆", for: .normal)
+            ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
+        }
+        func changeOrange(){
+            ProgrammeCell.button.setTitle("★", for: .normal)
+            ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
+            
+        }
+        
         if p == 0 {
             if indexPath.section == 0 {
                 ProgrammeCell.name.text = ProgrammeName1[indexPath.item]
                 ProgrammeCell.ProgrammePicture.image = ProgrammePicture1[indexPath.row]
                 if UDColorTest.contains(ProgrammeName1[indexPath.item]){
-                    ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
+                    changeOrange()
                 }else{
-                    ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
+                    changeBlack()
                 }
                 
             } else if indexPath.section == 1 {
@@ -243,9 +254,9 @@ class ProgrammeTableViewController: UITableViewController {
                 ProgrammeCell.ProgrammePicture.image = ProgrammePicture2[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName2[indexPath.item]){
-                    ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
+                    changeOrange()
                 }else{
-                    ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
+                    changeBlack()
                 }
                 
             } else if indexPath.section == 2 {
@@ -253,9 +264,9 @@ class ProgrammeTableViewController: UITableViewController {
                 ProgrammeCell.ProgrammePicture.image = ProgrammePicture3[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName3[indexPath.item]){
-                    ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
+                    changeOrange()
                 }else{
-                    ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
+                    changeBlack()
                 }
                 
             } else if indexPath.section == 3 {
@@ -263,9 +274,9 @@ class ProgrammeTableViewController: UITableViewController {
                 ProgrammeCell.ProgrammePicture.image = ProgrammePicture4[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName4[indexPath.item]){
-                    ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
+                    changeOrange()
                 }else{
-                    ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
+                    changeBlack()
                 }
                 
             } else if indexPath.section == 4 {
@@ -273,18 +284,18 @@ class ProgrammeTableViewController: UITableViewController {
                 ProgrammeCell.ProgrammePicture.image = ProgrammePicture5[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName5[indexPath.item]){
-                    ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
+                    changeOrange()
                 }else{
-                    ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
+                    changeBlack()
                 }
             }
         } else if p == 1 {
             ProgrammeCell.name.text = Performance[indexPath.item]
             ProgrammeCell.ProgrammePicture.image = PerformancePicture[indexPath.row]
             if UDColorTestPerformance.contains(Performance[indexPath.item]){
-                ProgrammeCell.button.setTitleColor(UIColor.orange, for: .normal)
+                changeOrange()
             }else{
-                ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
+                changeBlack()
             }
         } else {
             if indexPath.section == 0 {
@@ -319,9 +330,11 @@ class ProgrammeTableViewController: UITableViewController {
         
         //UDProgrammeNameにProgrammeNameを代入している
         func changeBlack(){
+            button.setTitle("☆", for: .normal)
             button.setTitleColor(UIColor.black, for: .normal)
         }
         func changeOrange(){
+            button.setTitle("★", for: .normal)
             button.setTitleColor(UIColor.orange, for: .normal)
         }
         if p == 0 {
@@ -392,12 +405,12 @@ class ProgrammeTableViewController: UITableViewController {
                 getUDPerformanceName.remove(at: getUDPerformanceName.firstIndex(of: Performance[row])!)
                 getUDPerformanceDescription.remove(at: getUDPerformanceDescription.firstIndex(of: PerformanceDescription[row])!)
                 getUDPerformancePicture.remove(at: getUDPerformancePicture.firstIndex(of: PerformancePictureString[row])!)
-                button.setTitleColor(UIColor.black, for: .normal)
+                changeBlack()
             }else {
                 getUDPerformanceName.append(Performance[row])
                 getUDPerformanceDescription.append(PerformanceDescription[row])
                 getUDPerformancePicture.append(PerformancePictureString[row])
-                button.setTitleColor(UIColor.orange, for: .normal)
+                changeOrange()
             }
         } else {
             //何もしない
@@ -407,10 +420,14 @@ class ProgrammeTableViewController: UITableViewController {
         //UserDefaultにUDProgrammeNameを保存する
         userDefaults.set(getUDProgrammeName, forKey: "UDProgrammeNameKey")
         userDefaults.set(getUDPerformanceName, forKey: "UDPerformanceNameKey")
+        
         userDefaults.set(getUDProgrammeDescription, forKey: "UDProgrammeDescriptionKey")
         userDefaults.set(getUDPerformanceDescription, forKey: "UDPerformanceDescriptionKey")
+        
         userDefaults.set(getUDProgrammePicture, forKey: "UDProgrammePictureKey")
         userDefaults.set(getUDPerformancePicture, forKey: "UDPerformancePictureKey")
+        
+        print(getUDPerformancePicture)
     }
     
     // cellが押されたときに呼ばれる関数
