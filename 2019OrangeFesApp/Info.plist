@@ -19,15 +19,15 @@
 	<key>CFBundleShortVersionString</key>
 	<string>2.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>To take photo with EcoPyon using AR tech</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string></string>
+	<string>To save photo user took with EcoPyon</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>TsukushiAMaruGothic.ttc</string>
@@ -42,10 +42,7 @@
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-		<string>arkit</string>
-	</array>
+	<array/>
 	<key>UIStatusBarTintParameters</key>
 	<dict>
 		<key>UINavigationBar</key>

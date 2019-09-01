@@ -224,7 +224,6 @@
 		B6C7FF7422FFC32400473004 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		B6C7FF7622FFC33D00473004 /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
 		B6C7FF7822FFC34F00473004 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
-		B6CD9D102317880E009E9A45 /* BubbleTabBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BubbleTabBar.framework; path = Carthage/Build/iOS/BubbleTabBar.framework; sourceTree = "<group>"; };
 		B6D8535E22EC97660098D4E9 /* StringMusic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StringMusic.png; sourceTree = "<group>"; };
 		B6D8535F22EC97670098D4E9 /* 228.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 228.png; sourceTree = "<group>"; };
 		B6D8536022EC97670098D4E9 /* 227.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 227.png; sourceTree = "<group>"; };
@@ -295,7 +294,6 @@
 		876343226CE0197F62756F6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6CD9D102317880E009E9A45 /* BubbleTabBar.framework */,
 				106D36733594C51209219568 /* Pods_2019OrangeFesApp.framework */,
 				8E494D09027F4286DE66F1DB /* Pods_2019OrangeFesAppTests.framework */,
 				002DDB883336FD4A1813B45A /* Pods_2019OrangeFesAppUITests.framework */,
