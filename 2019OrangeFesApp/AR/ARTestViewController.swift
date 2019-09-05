@@ -9,41 +9,66 @@
 import UIKit
 import ARKit
 import SceneKit
+import Firebase
+import FirebaseUI
 
 class ARTestViewController: UIViewController, ARSCNViewDelegate  {
     
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var TakeImageButton: UIButton!
     
+    private var node: SCNNode?
+    
+    let ref = Database.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sceneView.delegate = self
+        
+        // タップイベントハンドラの登録
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapView))
+        sceneView.addGestureRecognizer(tapGesture)
+        
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(longPressView))
+        sceneView.addGestureRecognizer(longPressGesture)
 
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard let touch = touches.first else {return}
-        let result = sceneView.hitTest(touch.location(in: sceneView), types: [ARHitTestResult.ResultType.featurePoint])
+    @objc func tapView(sender: UITapGestureRecognizer) {
+        let result = sceneView.hitTest(sender.location(in: sceneView), types: [ARHitTestResult.ResultType.featurePoint])
         guard let hitResult = result.last else {return}
+        //let rotate = simd_float4x4(SCNMatrix4MakeRotation(sceneView.session.currentFrame!.camera.eulerAngles.y, 0, 1, 0))
+        //let rotateTransform = simd_mul(hitResult.worldTransform, rotate)
         let hitTransform = SCNMatrix4(hitResult.worldTransform)
         let hitVector = SCNVector3Make(hitTransform.m41, hitTransform.m42, hitTransform.m43)
         createEcoPyon(position: hitVector)
+        
+        /*
+         node!.transform =  SCNMatrix4(m11: rotateTransform.columns.0.x, m12: rotateTransform.columns.0.y, m13: rotateTransform.columns.0.z, m14: rotateTransform.columns.0.w, m21: rotateTransform.columns.1.x, m22: rotateTransform.columns.1.y, m23: rotateTransform.columns.1.z, m24: rotateTransform.columns.1.w, m31: rotateTransform.columns.2.x, m32: rotateTransform.columns.2.y, m33: rotateTransform.columns.2.z, m34: rotateTransform.columns.0.w, m41: hitTransform.m41, m42: hitTransform.m42, m43: hitTransform.m43, m44: rotateTransform.columns.0.w)
+        */
     }
     
     func createEcoPyon(position: SCNVector3){
-        
-        let scene = SCNScene(named: "art.scnassets/EcoPyonV2.scn")!
-        let node = scene.rootNode.childNode(withName: "mesh_ekopyon", recursively: false)!
-        let node2 = scene.rootNode.childNode(withName: "pSphere1", recursively: false)!
-        node.position = position
-        node2.position = position
-        
-        sceneView.scene.rootNode.addChildNode(node)
-        sceneView.scene.rootNode.addChildNode(node2)
-        
-        
-        
+        let scene = SCNScene(named: "art.scnassets/Ecopyon_Final.scn")!
+        node = scene.rootNode.childNode(withName: "model_ekopyon", recursively: false)!
+        node!.position = position
+        sceneView.scene.rootNode.addChildNode(node!)
     }
+    
+    
+    @objc func longPressView(sender: UILongPressGestureRecognizer) {
+        if sender.state == .began {
+            let location = sender.location(in: sceneView)
+            let hitTest  = sceneView.hitTest(location)
+            if let result = hitTest.first  {
+                if result.node.name == "model_ekopyon"
+                {
+                    result.node.removeFromParentNode();
+                }
+            }
+        }
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -75,15 +100,42 @@ class ARTestViewController: UIViewController, ARSCNViewDelegate  {
         // imageをカメラロールに保存
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         
+        //sendImagetoFirebase
+        guard let imageData = image.jpegData(compressionQuality: 0.1) else { return }
+        
+        let metadata = StorageMetadata()
+        metadata.contentType = "image/jpeg"
+        
+        
+        let folderRef = ref.child("写真").childByAutoId();
+        let key = folderRef.key
+        let storage = Storage.storage().reference(forURL: "gs://orangefesapp.appspot.com/").child(key! + "ARImage")
+        
+        storage.putData(imageData, metadata: metadata) { meta, error in
+            storage.downloadURL(completion: { (url, error) in
+                let newFolder = ["ARImageURL": url?.absoluteString as Any, "ARImageName": key! + "ARImage"] as [String : Any]
+                folderRef.updateChildValues(newFolder)
+            })
+        }
+        
         TakeImageButton.setBackgroundImage(setImage, for: .normal)
     }
-    @IBAction func ResetNode(_ sender: Any) {
-        let scene = SCNScene(named: "art.scnassets/EcoPyonV2.scn")!
-        let node = scene.rootNode.childNode(withName: "mesh_ekopyon", recursively: false)!
-        let node2 = scene.rootNode.childNode(withName: "pSphere1", recursively: false)!
-        node.removeFromParentNode()
-        node2.removeFromParentNode()
+    
+    private func reset() {
+        //nodeの全削除
+        sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in
+            node.removeFromParentNode() }
     }
     
+
+    
+    
+    @IBAction func resetButton(_ sender: Any) {
+        reset()
+    }
+    
+    
+    
+
 
 }

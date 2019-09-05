@@ -82,6 +82,7 @@
 		B6C7FF7522FFC32400473004 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C7FF7422FFC32400473004 /* StatusViewController.swift */; };
 		B6C7FF7722FFC33D00473004 /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C7FF7622FFC33D00473004 /* StatusTableViewController.swift */; };
 		B6C7FF7922FFC34F00473004 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C7FF7822FFC34F00473004 /* StatusTableViewCell.swift */; };
+		B6CD9D2E231CA126009E9A45 /* OrangeFesImage１.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CD9D2D231CA126009E9A45 /* OrangeFesImage１.png */; };
 		B6D8538622EC97740098D4E9 /* StringMusic.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8535E22EC97660098D4E9 /* StringMusic.png */; };
 		B6D8538722EC97740098D4E9 /* 228.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8535F22EC97670098D4E9 /* 228.png */; };
 		B6D8538822EC97740098D4E9 /* 227.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8536022EC97670098D4E9 /* 227.png */; };
@@ -224,6 +225,7 @@
 		B6C7FF7422FFC32400473004 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		B6C7FF7622FFC33D00473004 /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
 		B6C7FF7822FFC34F00473004 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
+		B6CD9D2D231CA126009E9A45 /* OrangeFesImage１.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OrangeFesImage１.png"; path = "../../../../Desktop/OrangeFesImage１.png"; sourceTree = "<group>"; };
 		B6D8535E22EC97660098D4E9 /* StringMusic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StringMusic.png; sourceTree = "<group>"; };
 		B6D8535F22EC97670098D4E9 /* 228.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 228.png; sourceTree = "<group>"; };
 		B6D8536022EC97670098D4E9 /* 227.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 227.png; sourceTree = "<group>"; };
@@ -474,6 +476,7 @@
 		B6BF3E7B22A20AFB00D8521F /* Picture */ = {
 			isa = PBXGroup;
 			children = (
+				B6CD9D2D231CA126009E9A45 /* OrangeFesImage１.png */,
 				B6147DB622F73154003B6DFE /* coolHue-FD6E6A-FFC600.png */,
 				B6147DC022F739F0003B6DFE /* オレンジ祭アプリ.png */,
 				B6147D8E22F5F1C3003B6DFE /* Staff.png */,
@@ -728,6 +731,7 @@
 				B6147D8D22F5EB9E003B6DFE /* clear.png in Resources */,
 				B6D853A522EC97740098D4E9 /* SchoolBand.png in Resources */,
 				B6BF3EEC22ADD2C100D8521F /* TimeTable.png in Resources */,
+				B6CD9D2E231CA126009E9A45 /* OrangeFesImage１.png in Resources */,
 				B6D8539022EC97740098D4E9 /* 112-2.png in Resources */,
 				B6BF3E7822A10ABF00D8521F /* Map1.jpg in Resources */,
 				B6BF3E5D22A0837300D8521F /* Pic3.jpeg in Resources */,

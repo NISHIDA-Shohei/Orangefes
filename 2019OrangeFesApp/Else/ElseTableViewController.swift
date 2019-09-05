@@ -14,7 +14,7 @@ class ElseTableViewController: UITableViewController {
     let Else1: [String] = ["法政国際高校ホームページ", "公式Instagram"]
     let Else2: [String] = ["校長より", "委員長より","議長より", "副委員長より"]
     let Else2Number: [Int] = [0,1,2,3]
-    let Else3: [String] = ["オレンジ祭実行委員会","ログイン"]
+    let Else3: [String] = ["オレンジ祭実行委員会","クレジット","ログイン"]
     let Else4: [String] = ["利用規約","プライバシーポリシー"]
     let Else5: [String] = ["落し物一覧","来場者アンケート","お問い合わせ"]
 
@@ -130,13 +130,17 @@ class ElseTableViewController: UITableViewController {
         } else if indexPath.section == 1{
             giveGreetingNumber = Else2Number[indexPath.row]
             performSegue(withIdentifier: "GreetingSegue", sender: nil)
+            
         } else if indexPath.section == 2{
-            if indexPath.row == 1 {
-                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
-            } else {
+            if indexPath.row == 0 {
                 giveElseData = Else3[indexPath.item]
                 giveStaffImage = "Staff.png"
                 performSegue(withIdentifier: "StaffSegue", sender: nil)
+            } else if indexPath.row == 1 {
+                self.performSegue(withIdentifier: "CreditSegue", sender: nil)
+            } else {
+                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
+                
             }
         } else if indexPath.section == 3{
             if indexPath.row == 0 {
