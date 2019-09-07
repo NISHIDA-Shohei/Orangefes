@@ -512,13 +512,13 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orange Festival 2019 59th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7m-5P-htW">
-                                                <rect key="frame" x="55.666666666666657" y="201.66666666666669" width="264" height="20"/>
+                                                <rect key="frame" x="55.666666666666657" y="201.66666666666669" width="263.66666666666674" height="20"/>
                                                 <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="オレンジ祭アプリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3s-FC-6Wr">
-                                                <rect key="frame" x="50.666666666666657" y="165" width="273.66666666666674" height="36.666666666666657"/>
+                                                <rect key="frame" x="51" y="165" width="273.33333333333331" height="36.666666666666657"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="D3s-FC-6Wr" secondAttribute="height" multiplier="112:15" id="5Ft-gD-SEs"/>
                                                 </constraints>
@@ -562,7 +562,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カベ丸様" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdO-Gh-inY">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カベ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdO-Gh-inY">
                                                 <rect key="frame" x="152.66666666666666" y="487.66666666666663" width="70" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="QdO-Gh-inY" secondAttribute="height" multiplier="10:3" id="KIx-vl-yfg"/>
@@ -1574,7 +1574,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRu-Re-nY5">
-                                                    <rect key="frame" x="95" y="36.666666666666664" width="42" height="17"/>
+                                                    <rect key="frame" x="95" y="35" width="42" height="20"/>
                                                     <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
