@@ -10,7 +10,7 @@ import UIKit
 
 class MainProgrammeViewController: UIViewController {
 
-
+// this is not yet completed
     @IBOutlet weak var segmentControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
