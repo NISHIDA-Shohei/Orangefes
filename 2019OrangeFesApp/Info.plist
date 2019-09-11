@@ -25,9 +25,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>To take photo with EcoPyon using AR tech</string>
+	<string>ARえこぴょんを表示するため</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>To save photo user took with EcoPyon</string>
+	<string>写真をデバイスに保存するため</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>TsukushiAMaruGothic.ttc</string>
