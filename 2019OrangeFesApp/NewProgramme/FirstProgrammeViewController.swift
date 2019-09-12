@@ -158,8 +158,6 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         //UserDefaultの情報を取得
         let UDColorTest: [String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
         let UDColorTestPerformance: [String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
-        //cellに右矢印を追加する
-        //ProgrammeCell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         // ここでcellのlabelに値を入れています。
         
         func changeBlack(){
@@ -224,6 +222,149 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         
         return ProgrammeCell
     }
+    
+    //お気に入りボタン
+    @IBAction func tapAddButton(sender: Any) {
+        // userDefaultsに保存された値の取得
+        var getUDProgrammeName:[String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
+        var getUDProgrammeDescription:[String] = userDefaults.array(forKey: "UDProgrammeDescriptionKey") as? [String] ?? []
+        var getUDProgrammePicture:[String] = userDefaults.array(forKey: "UDProgrammePictureKey" ) as? [String] ?? []
+        
+        // タップされたボタンのtableviewの選択行を取得
+        let button = sender as! UIButton
+        let cell = button.superview?.superview?.superview as! UITableViewCell
+        let row = TableView.indexPath(for: cell)!.row
+        let section = TableView.indexPath(for: cell)!.section
+        
+        //UDProgrammeNameにProgrammeNameを代入している
+        func changeBlack(){
+            button.setTitle("☆", for: .normal)
+            button.setTitleColor(UIColor.black, for: .normal)
+        }
+        func changeOrange(){
+            button.setTitle("★", for: .normal)
+            button.setTitleColor(UIColor.orange, for: .normal)
+        }
+            if section == 0 {
+                if getUDProgrammeName.contains(ProgrammeName1[row]){
+                    getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName1[row])!)
+                    getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription1[row])!)
+                    getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture1String[row])!)
+                    changeBlack()
+                }else {
+                    getUDProgrammeName.append(ProgrammeName1[row])
+                    getUDProgrammeDescription.append(ProgrammeDescription1[row])
+                    getUDProgrammePicture.append(ProgrammePicture1String[row])
+                    changeOrange()
+                }
+            }else if section == 1 {
+                if getUDProgrammeName.contains(ProgrammeName2[row]){
+                    getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName2[row])!)
+                    getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription2[row])!)
+                    getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture2String[row])!)
+                    changeBlack()
+                }else {
+                    getUDProgrammeName.append(ProgrammeName2[row])
+                    getUDProgrammeDescription.append(ProgrammeDescription2[row])
+                    getUDProgrammePicture.append(ProgrammePicture2String[row])
+                    changeOrange()
+                }
+            }else if section == 2 {
+                if getUDProgrammeName.contains(ProgrammeName3[row]){
+                    getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName3[row])!)
+                    getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription3[row])!)
+                    getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture3String[row])!)
+                    changeBlack()
+                }else {
+                    getUDProgrammeName.append(ProgrammeName3[row])
+                    getUDProgrammeDescription.append(ProgrammeDescription3[row])
+                    getUDProgrammePicture.append(ProgrammePicture3String[row])
+                    changeOrange()
+                }
+            }else if section == 3 {
+                if getUDProgrammeName.contains(ProgrammeName4[row]){
+                    getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName4[row])!)
+                    getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription4[row])!)
+                    getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture4String[row])!)
+                    changeBlack()
+                }else {
+                    getUDProgrammeName.append(ProgrammeName4[row])
+                    getUDProgrammeDescription.append(ProgrammeDescription4[row])
+                    getUDProgrammePicture.append(ProgrammePicture4String[row])
+                    changeOrange()
+                }
+            }else if section == 4 {
+                if getUDProgrammeName.contains(ProgrammeName5[row]){
+                    getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName5[row])!)
+                    getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription5[row])!)
+                    getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture5String[row])!)
+                    changeBlack()
+                }else {
+                    getUDProgrammeName.append(ProgrammeName5[row])
+                    getUDProgrammeDescription.append(ProgrammeDescription5[row])
+                    getUDProgrammePicture.append(ProgrammePicture5String[row])
+                    changeOrange()
+                }
+            }
+        
+        // userDefaultsに格納したい値
+        //UserDefaultにUDProgrammeNameを保存する
+        userDefaults.set(getUDProgrammeName, forKey: "UDProgrammeNameKey")
+        
+        userDefaults.set(getUDProgrammeDescription, forKey: "UDProgrammeDescriptionKey")
+        
+        userDefaults.set(getUDProgrammePicture, forKey: "UDProgrammePictureKey")
+        
+    }
+    
+    // cellが押されたときに呼ばれる関数
+    // 画面遷移の処理もここで書いている
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 押されたときのcellのlabelの文字列をViewControllerに渡したいので、一旦、giveDataに入れとく
+                if indexPath.section == 0 {
+                ProgrammeGiveData = ProgrammeName1[indexPath.item]
+                ProgrammePictureGiveData = ProgrammePicture1String[indexPath.row]
+                ProgrammeDescriptionGiveData = ProgrammeDescription1[indexPath.item]
+                performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
+                
+            } else if indexPath.section == 1 {
+                ProgrammeGiveData = ProgrammeName2[indexPath.item]
+                ProgrammePictureGiveData = ProgrammePicture2String[indexPath.row]
+                ProgrammeDescriptionGiveData = ProgrammeDescription2[indexPath.item]
+                performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
+                
+            } else if indexPath.section == 2 {
+                ProgrammeGiveData = ProgrammeName3[indexPath.item]
+                ProgrammePictureGiveData = ProgrammePicture3String[indexPath.row]
+                ProgrammeDescriptionGiveData = ProgrammeDescription3[indexPath.item]
+                performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
+                
+            } else if indexPath.section == 3 {
+                ProgrammeGiveData = ProgrammeName4[indexPath.item]
+                ProgrammePictureGiveData = ProgrammePicture4String[indexPath.row]
+                ProgrammeDescriptionGiveData = ProgrammeDescription4[indexPath.item]
+                performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
+                
+            } else if indexPath.section == 4 {
+                ProgrammeGiveData = ProgrammeName5[indexPath.item]
+                ProgrammePictureGiveData = ProgrammePicture5String[indexPath.row]
+                ProgrammeDescriptionGiveData = ProgrammeDescription5[indexPath.item]
+                performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
+            }
+        
+    }
+    
+    // 遷移先のViewControllerにデータを渡す関数
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ProgrammeSegue" {
+            let vc = segue.destination as! ProgrammeViewController
+            vc.ProgrammeReceiveData = ProgrammeGiveData
+            vc.ProgrammeDescriptionReceiveData = ProgrammeDescriptionGiveData
+            vc.ProgrammePictureReceiveData = ProgrammePictureGiveData
+        }
+    }
+    
+    
     
     
     func reload(){

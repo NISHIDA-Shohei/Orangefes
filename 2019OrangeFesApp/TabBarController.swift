@@ -14,7 +14,7 @@ class TabBarController: UITabBarController {
         super.viewDidLoad()
         // カスタマイズ
         // アイコンの色
-        UITabBar.appearance().tintColor = UIColor.white // yellow
+        UITabBar.appearance().tintColor = UIColor.white 
         
         UITabBar.appearance().unselectedItemTintColor = UIColor.gray
             //UIColor(red: 0/255, green: 153/255, blue: 153/255, alpha: 1.0)
