@@ -10,7 +10,8 @@ import UIKit
 
 class MainProgrammeViewController: UIViewController {
 
-// this is not yet completed
+    @IBOutlet weak var NavigationTitle: UINavigationItem!
+    // this is not yet completed
     @IBOutlet weak var segmentControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +23,17 @@ class MainProgrammeViewController: UIViewController {
     
     private func updateView() {
         if segmentControl.selectedSegmentIndex == 0 {
+            NavigationTitle.title = "団体一覧"
             remove(asChildViewController: SecondProgrammeViewController)
             remove(asChildViewController: ThirdProgrammeViewController)
             add(asChildViewController: FirstProgrammeViewController)
         } else if segmentControl.selectedSegmentIndex == 1{
+            NavigationTitle.title = "公演団体"
             remove(asChildViewController: FirstProgrammeViewController)
             remove(asChildViewController: ThirdProgrammeViewController)
             add(asChildViewController: SecondProgrammeViewController)
         } else {
+            NavigationTitle.title = "公演時間"
             remove(asChildViewController: FirstProgrammeViewController)
             remove(asChildViewController: SecondProgrammeViewController)
             add(asChildViewController: ThirdProgrammeViewController)

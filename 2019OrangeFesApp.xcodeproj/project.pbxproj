@@ -50,6 +50,7 @@
 		B6558B73231AD6CF00F94586 /* ARTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6558B72231AD6CF00F94586 /* ARTestViewController.swift */; };
 		B6558B76231ADA7200F94586 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B6558B75231ADA7200F94586 /* art.scnassets */; };
 		B66EC66422B0A2370086DDDD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66EC66322B0A2370086DDDD /* GoogleService-Info.plist */; };
+		B68D8BF7232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68D8BF6232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift */; };
 		B6A0C4F722EEBEB50013ACBC /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A0C4F622EEBEB50013ACBC /* 222.png */; };
 		B6BF3E2022A0801D00D8521F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E1F22A0801D00D8521F /* AppDelegate.swift */; };
 		B6BF3E2722A0801D00D8521F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E2522A0801D00D8521F /* Main.storyboard */; };
@@ -193,6 +194,7 @@
 		B6558B72231AD6CF00F94586 /* ARTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTestViewController.swift; sourceTree = "<group>"; };
 		B6558B75231ADA7200F94586 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		B66EC66322B0A2370086DDDD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B68D8BF6232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdProgrammeTableViewCell.swift; sourceTree = "<group>"; };
 		B6A0C4F622EEBEB50013ACBC /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
 		B6BF3E1C22A0801D00D8521F /* 2019OrangeFesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2019OrangeFesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BF3E1F22A0801D00D8521F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 				B61B03732326413300ACCC1C /* SecondProgrammeViewController.swift */,
 				B61B03752326414200ACCC1C /* ThirdProgrammeViewController.swift */,
 				B61B03772326760F00ACCC1C /* FirstProgrammeTableViewCell.swift */,
+				B68D8BF6232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift */,
 				B60E9E722328CEC100A8B0EA /* SegmentedControl.swift */,
 			);
 			path = NewProgramme;
@@ -963,6 +966,7 @@
 				B6147DB122F71B34003B6DFE /* LostAndFoundViewController.swift in Sources */,
 				B61B036A2326407100ACCC1C /* MainProgrammeViewController.swift in Sources */,
 				B6BF3E2022A0801D00D8521F /* AppDelegate.swift in Sources */,
+				B68D8BF7232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift in Sources */,
 				B61B03762326414200ACCC1C /* ThirdProgrammeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
