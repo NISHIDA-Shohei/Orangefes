@@ -2,7 +2,7 @@
 //  ThirdProgrammeTableViewCell.swift
 //  2019OrangeFesApp
 //
-//  Created by 西田翔平 on 2019/09/13.
+//  Created by 西田翔平 on 2019/09/12.
 //  Copyright © 2019 Shohei Nishida. All rights reserved.
 //
 
@@ -28,7 +28,7 @@ class ThirdProgrammeTableViewCell: UITableViewCell {
         // 影の濃さ
         PerformanceView.layer.shadowOpacity = 0.25
         // 影をぼかし
-        PerformanceView.layer.shadowRadius = 10
+        PerformanceView.layer.shadowRadius = 3
         
     }
     

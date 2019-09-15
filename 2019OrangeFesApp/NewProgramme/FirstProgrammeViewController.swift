@@ -14,14 +14,15 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
     //1=1号館 2=2号館 3=3号館 4=4号館 5=オレンジの間前
     let ProgrammeName1: [String] = ["漫画広報部","華道部","茶道部"]
     let ProgrammePicture1String: [String] = ["112-1.png","112-2.png","114.png"]
+    var ProgrammePicture1: [UIImage?] = []
     let ProgrammeDescription1: [String] = [
         "「漫画広報部」部員の「好きなもの」を詰め込んだ、『Primarera』という部誌を発行しております。その他、平面だけでなく立体でも展示をしております。お立ち寄りいただければ幸いです！"
         ,"「華道部」華道部です。私たちは月2回ほどコーチの元で練習を重ねてきました。テーマは行事です。私達の作品、ぜひ見に来てください。"
         ,"「茶道部」お茶とお菓子が食べれます。1席150円です。正座はしないので、お気軽にお越し下さい。日頃の稽古の成果を生かせるよう頑張ります。"]
     
     let ProgrammeName2: [String] = ["ゆっかいず","ドーナツショップ","お化け屋敷","ちゅるちゅるらんど","硬式テニス部３年","BEES","トッポギ","すいーと♡えんじぇる","起業家クラス","法政国際２年男子","Cafe in The Daytime","バレー部","硬式テニス部１・２年","放送部","１年H組","１年C組","図書委員会","アメリカンドッグ","１年E組","あなたとコンビに法政チーズ","１年G組"]
-    
     let ProgrammePicture2String: [String] = ["211.png","212.png","213.png","214.png","215.png","216.png","217.png","218.png","220.png","221.png","222.png","223.png","224.png","225.png","226.png","227.png","228.png","234.png","235.png","236.png","237.png"]
+    var ProgrammePicture2: [UIImage?] = []
     
     
     let ProgrammeDescription2: [String] = [
@@ -49,6 +50,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
     
     let ProgrammeName3: [String] = ["家庭科部","美術部",]
     let ProgrammePicture3String: [String] = ["310.png","321.png"]
+    var ProgrammePicture3: [UIImage?] = []
     let ProgrammeDescription3: [String] = ["「家庭科部」家庭部はクッキーを販売しています。2袋100円のワンコインなので気軽にご購入いただけます。手軽に甘いものが欲しくなった時にいかがでしょうか？","「美術部」こんにちは！オレンジ祭では昨年と同様に手作りハンコと小さなオブジェ等を販売します！合作は1人1つ小さな家を作り、机の上で小さな街を作ります。"]
     let ProgrammeName4: [String] = ["バドミントン部","RESISTANCE","有志ダンス","同窓会","PTAバザー","入試相談室"]
     let ProgrammePicture4String: [String] = ["432.png","431-1.png","431-2.png","SchoolLogo.png","SchoolLogo.png","SchoolLogo.png"]
@@ -63,6 +65,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
     
     let ProgrammeName5: [String] = ["太田屋","一の会","ベル　エポック","MARION CREPES","食堂"]
     let ProgrammePicture5String: [String] = ["clear.png","clear.png","clear.png","clear.png","clear.png"]
+    var ProgrammePicture5: [UIImage?] = []
     let ProgrammeDescription5: [String] = ["惣菜屋","学校食堂","パン屋","クレープ屋","からあげ丼甘辛ソース・４５０円　\n豚キムチ丼温玉のせ・４５０円　\nラーメン・３５０円　\nトマトカレー夏野菜・４００円　\nコロッケパン・１００円　\nいももち・１５０円　\nアメリカンドック・１００円　\nドーナツ４種類・各１００円（キャラメル・アップルシナモン・ミルクショコラ・抹茶ミルク）　\nからあげ４個・１００円（オレンジ祭のみの企画です）"]
     
     // 遷移先のViewControllerに渡す変数
@@ -79,6 +82,22 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for fileName in ProgrammePicture1String {
+            ProgrammePicture1.append(UIImage(named: fileName))
+        }
+        for fileName in ProgrammePicture2String {
+            ProgrammePicture2.append(UIImage(named: fileName))
+        }
+        for fileName in ProgrammePicture3String {
+            ProgrammePicture3.append(UIImage(named: fileName))
+        }
+        for fileName in ProgrammePicture4String {
+            ProgrammePicture4.append(UIImage(named: fileName))
+        }
+        for fileName in ProgrammePicture5String {
+            ProgrammePicture5.append(UIImage(named: fileName))
+        }
         
         TableView.dataSource = self
         TableView.delegate = self
@@ -172,7 +191,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         
             if indexPath.section == 0 {
                 ProgrammeCell.name.text = ProgrammeName1[indexPath.item]
-                ProgrammeCell.ProgrammePicture.image = UIImage(named: ProgrammePicture1String[indexPath.row])
+                ProgrammeCell.ProgrammePicture.image = ProgrammePicture1[indexPath.row]
                 if UDColorTest.contains(ProgrammeName1[indexPath.item]){
                     changeOrange()
                 }else{
@@ -181,7 +200,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                 
             } else if indexPath.section == 1 {
                 ProgrammeCell.name.text = ProgrammeName2[indexPath.item]
-                ProgrammeCell.ProgrammePicture.image = UIImage(named: ProgrammePicture2String[indexPath.row])
+                ProgrammeCell.ProgrammePicture.image = ProgrammePicture2[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName2[indexPath.item]){
                     changeOrange()
@@ -191,7 +210,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                 
             } else if indexPath.section == 2 {
                 ProgrammeCell.name.text = ProgrammeName3[indexPath.item]
-                ProgrammeCell.ProgrammePicture.image = UIImage(named: ProgrammePicture3String[indexPath.row])
+                ProgrammeCell.ProgrammePicture.image = ProgrammePicture3[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName3[indexPath.item]){
                     changeOrange()
@@ -201,7 +220,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                 
             } else if indexPath.section == 3 {
                 ProgrammeCell.name.text = ProgrammeName4[indexPath.item]
-                ProgrammeCell.ProgrammePicture.image = UIImage(named: ProgrammePicture4String[indexPath.row])
+                ProgrammeCell.ProgrammePicture.image = ProgrammePicture4[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName4[indexPath.item]){
                     changeOrange()
@@ -211,7 +230,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                 
             } else if indexPath.section == 4 {
                 ProgrammeCell.name.text = ProgrammeName5[indexPath.item]
-                ProgrammeCell.ProgrammePicture.image = UIImage(named: ProgrammePicture5String[indexPath.row])
+                ProgrammeCell.ProgrammePicture.image = ProgrammePicture5[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName5[indexPath.item]){
                     changeOrange()

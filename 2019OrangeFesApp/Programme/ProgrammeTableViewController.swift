@@ -191,9 +191,7 @@ class ProgrammeTableViewController: UITableViewController {
         let sectionNumber = section
         var sectionPlace: String = ""
         
-        
         //
-        
         
         if p == 0 {
             if sectionNumber == 0 {

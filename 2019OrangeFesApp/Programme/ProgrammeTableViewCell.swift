@@ -27,7 +27,7 @@ class ProgrammeTableViewCell: UITableViewCell {
         // 影の濃さ
         ProgrammeView.layer.shadowOpacity = 0.25
         // 影をぼかし
-        ProgrammeView.layer.shadowRadius = 10
+        ProgrammeView.layer.shadowRadius = 5
         
     }
     

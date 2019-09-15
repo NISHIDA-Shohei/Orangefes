@@ -10,7 +10,6 @@
 		09A18F2954D0A33D4A863690 /* Pods_2019OrangeFesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E494D09027F4286DE66F1DB /* Pods_2019OrangeFesAppTests.framework */; };
 		7B67D14F9C850DD344352CB4 /* Pods_2019OrangeFesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106D36733594C51209219568 /* Pods_2019OrangeFesApp.framework */; };
 		9C4BFBBD26908CADCC737F65 /* Pods_2019OrangeFesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002DDB883336FD4A1813B45A /* Pods_2019OrangeFesAppUITests.framework */; };
-		B60E9E732328CEC100A8B0EA /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60E9E722328CEC100A8B0EA /* SegmentedControl.swift */; };
 		B6147D8D22F5EB9E003B6DFE /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D8C22F5EB9E003B6DFE /* clear.png */; };
 		B6147D8F22F5F1C3003B6DFE /* Staff.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D8E22F5F1C3003B6DFE /* Staff.png */; };
 		B6147D9122F5F388003B6DFE /* StaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147D9022F5F388003B6DFE /* StaffViewController.swift */; };
@@ -50,6 +49,7 @@
 		B6558B73231AD6CF00F94586 /* ARTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6558B72231AD6CF00F94586 /* ARTestViewController.swift */; };
 		B6558B76231ADA7200F94586 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B6558B75231ADA7200F94586 /* art.scnassets */; };
 		B66EC66422B0A2370086DDDD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66EC66322B0A2370086DDDD /* GoogleService-Info.plist */; };
+		B68D8BF7232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68D8BF6232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift */; };
 		B6A0C4F722EEBEB50013ACBC /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A0C4F622EEBEB50013ACBC /* 222.png */; };
 		B6BF3E2022A0801D00D8521F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E1F22A0801D00D8521F /* AppDelegate.swift */; };
 		B6BF3E2722A0801D00D8521F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E2522A0801D00D8521F /* Main.storyboard */; };
@@ -153,7 +153,6 @@
 		782EBA45B90E5FEF2DE49B25 /* Pods-2019OrangeFesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2019OrangeFesAppTests.release.xcconfig"; path = "Target Support Files/Pods-2019OrangeFesAppTests/Pods-2019OrangeFesAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		8780A37FF064D248BB8DD1DF /* Pods-2019OrangeFesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2019OrangeFesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-2019OrangeFesAppUITests/Pods-2019OrangeFesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E494D09027F4286DE66F1DB /* Pods_2019OrangeFesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2019OrangeFesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B60E9E722328CEC100A8B0EA /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		B6147D8C22F5EB9E003B6DFE /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
 		B6147D8E22F5F1C3003B6DFE /* Staff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Staff.png; sourceTree = "<group>"; };
 		B6147D9022F5F388003B6DFE /* StaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +192,7 @@
 		B6558B72231AD6CF00F94586 /* ARTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTestViewController.swift; sourceTree = "<group>"; };
 		B6558B75231ADA7200F94586 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		B66EC66322B0A2370086DDDD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B68D8BF6232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdProgrammeTableViewCell.swift; sourceTree = "<group>"; };
 		B6A0C4F622EEBEB50013ACBC /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
 		B6BF3E1C22A0801D00D8521F /* 2019OrangeFesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2019OrangeFesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BF3E1F22A0801D00D8521F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -358,7 +358,7 @@
 				B61B03732326413300ACCC1C /* SecondProgrammeViewController.swift */,
 				B61B03752326414200ACCC1C /* ThirdProgrammeViewController.swift */,
 				B61B03772326760F00ACCC1C /* FirstProgrammeTableViewCell.swift */,
-				B60E9E722328CEC100A8B0EA /* SegmentedControl.swift */,
+				B68D8BF6232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift */,
 			);
 			path = NewProgramme;
 			sourceTree = "<group>";
@@ -931,7 +931,6 @@
 				B6C7FF7522FFC32400473004 /* StatusViewController.swift in Sources */,
 				B6198C8022B33545001FB4A6 /* LoginViewController.swift in Sources */,
 				B6BF3EC922A53FEC00D8521F /* ElseTableViewCell.swift in Sources */,
-				B60E9E732328CEC100A8B0EA /* SegmentedControl.swift in Sources */,
 				B6BF3EC722A53FD800D8521F /* ElseTableViewController.swift in Sources */,
 				B6BF3EE622AD275500D8521F /* TabBarController.swift in Sources */,
 				B6C7FF7722FFC33D00473004 /* StatusTableViewController.swift in Sources */,
@@ -963,6 +962,7 @@
 				B6147DB122F71B34003B6DFE /* LostAndFoundViewController.swift in Sources */,
 				B61B036A2326407100ACCC1C /* MainProgrammeViewController.swift in Sources */,
 				B6BF3E2022A0801D00D8521F /* AppDelegate.swift in Sources */,
+				B68D8BF7232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift in Sources */,
 				B61B03762326414200ACCC1C /* ThirdProgrammeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
