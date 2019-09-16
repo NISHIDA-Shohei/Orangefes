@@ -15,6 +15,7 @@ class MainProgrammeViewController: UIViewController {
     @IBOutlet weak var segmentControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         updateView()
     }
     @IBAction func tapSegmentControl(_ sender: UISegmentedControl) {
