@@ -20,6 +20,9 @@ class FirstProgrammeTableViewCell: UITableViewCell {
         ProgrammeView.layer.cornerRadius = 10
         ProgrammePicture.layer.cornerRadius = 10
         ProgrammePicture.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        
+        ProgrammePicture.layer.borderColor = UIColor.gray.cgColor
+        ProgrammePicture.layer.borderWidth = 0.8
         // 影の方向（width=右方向、height=下方向、CGSize.zero=方向指定なし）
         ProgrammeView.layer.shadowOffset = CGSize(width: 2, height: 4)
         // 影の色
@@ -27,7 +30,7 @@ class FirstProgrammeTableViewCell: UITableViewCell {
         // 影の濃さ
         ProgrammeView.layer.shadowOpacity = 0.25
         // 影をぼかし
-        ProgrammeView.layer.shadowRadius = 6
+        ProgrammeView.layer.shadowRadius = 4
         
     }
     

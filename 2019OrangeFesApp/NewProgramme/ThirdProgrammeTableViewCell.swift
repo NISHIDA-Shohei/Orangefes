@@ -19,16 +19,22 @@ class ThirdProgrammeTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         PerformanceView.layer.cornerRadius = 10
-        PerformancePicture.layer.cornerRadius = 10
-        PerformancePicture.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        PerformancePicture.layer.cornerRadius = 40
+        
+        //画像の枠線の変更
+        PerformancePicture.layer.borderColor = UIColor.gray.cgColor
+        PerformancePicture.layer.borderWidth = 0.6
+        
+        PerformancePicture.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner, .layerMaxXMinYCorner]
+        
         // 影の方向（width=右方向、height=下方向、CGSize.zero=方向指定なし）
-        PerformanceView.layer.shadowOffset = CGSize(width: 2, height: 4)
+        //PerformanceView.layer.shadowOffset = CGSize(width: 2, height: 4)
         // 影の色
-        PerformanceView.layer.shadowColor = UIColor.black.cgColor
+        //PerformanceView.layer.shadowColor = UIColor.black.cgColor
         // 影の濃さ
-        PerformanceView.layer.shadowOpacity = 0.25
+        //PerformanceView.layer.shadowOpacity = 0.25
         // 影をぼかし
-        PerformanceView.layer.shadowRadius = 3
+        //PerformanceView.layer.shadowRadius = 2
         
     }
     

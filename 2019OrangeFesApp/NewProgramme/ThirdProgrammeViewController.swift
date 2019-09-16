@@ -85,7 +85,7 @@ class ThirdProgrammeViewController: UIViewController, UITableViewDelegate, UITab
     
     // cellの高さを返す関数
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 115
+        return 95
     }
     
     // sectionの数を返す関数
