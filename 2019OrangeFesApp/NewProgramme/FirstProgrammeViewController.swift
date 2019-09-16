@@ -251,7 +251,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         
         // タップされたボタンのtableviewの選択行を取得
         let button = sender as! UIButton
-        let cell = button.superview?.superview?.superview as! UITableViewCell
+        let cell = button.superview?.superview as! UITableViewCell
         let row = TableView.indexPath(for: cell)!.row
         let section = TableView.indexPath(for: cell)!.section
         

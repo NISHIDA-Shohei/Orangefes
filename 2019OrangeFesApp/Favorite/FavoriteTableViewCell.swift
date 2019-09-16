@@ -21,6 +21,10 @@ class FavoriteTableViewCell: UITableViewCell {
         FavoriteView.layer.cornerRadius = 10
         FavoritePicture.layer.cornerRadius = 10
         FavoritePicture.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        
+        FavoritePicture.layer.borderColor = UIColor.gray.cgColor
+        FavoritePicture.layer.borderWidth = 0.8
+        
         // 影の方向（width=右方向、height=下方向、CGSize.zero=方向指定なし）
         FavoriteView.layer.shadowOffset = CGSize(width: 2, height: 4)
         // 影の色
@@ -28,7 +32,7 @@ class FavoriteTableViewCell: UITableViewCell {
         // 影の濃さ
         FavoriteView.layer.shadowOpacity = 0.25
         // 影をぼかし
-        FavoriteView.layer.shadowRadius = 10
+        FavoriteView.layer.shadowRadius = 4
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

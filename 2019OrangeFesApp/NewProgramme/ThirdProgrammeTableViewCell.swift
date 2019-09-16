@@ -27,15 +27,6 @@ class ThirdProgrammeTableViewCell: UITableViewCell {
         
         PerformancePicture.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner, .layerMaxXMinYCorner]
         
-        // 影の方向（width=右方向、height=下方向、CGSize.zero=方向指定なし）
-        //PerformanceView.layer.shadowOffset = CGSize(width: 2, height: 4)
-        // 影の色
-        //PerformanceView.layer.shadowColor = UIColor.black.cgColor
-        // 影の濃さ
-        //PerformanceView.layer.shadowOpacity = 0.25
-        // 影をぼかし
-        //PerformanceView.layer.shadowRadius = 2
-        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
