@@ -46,9 +46,9 @@
 		B6203CF922F0A4A600E4FEC7 /* 928.png in Resources */ = {isa = PBXBuildFile; fileRef = B6203CF722F0A4A600E4FEC7 /* 928.png */; };
 		B6203CFA22F0A4A600E4FEC7 /* 929.png in Resources */ = {isa = PBXBuildFile; fileRef = B6203CF822F0A4A600E4FEC7 /* 929.png */; };
 		B6252A2E231BBA2C0075A7FB /* camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6252A2D231BBA2C0075A7FB /* camera@3x.png */; };
+		B63D5C0223342BA7000F393E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63D5C0123342BA7000F393E /* GoogleService-Info.plist */; };
 		B6558B73231AD6CF00F94586 /* ARTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6558B72231AD6CF00F94586 /* ARTestViewController.swift */; };
 		B6558B76231ADA7200F94586 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B6558B75231ADA7200F94586 /* art.scnassets */; };
-		B66EC66422B0A2370086DDDD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B66EC66322B0A2370086DDDD /* GoogleService-Info.plist */; };
 		B68D8BF7232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68D8BF6232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift */; };
 		B6A0C4F722EEBEB50013ACBC /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A0C4F622EEBEB50013ACBC /* 222.png */; };
 		B6BF3E2022A0801D00D8521F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E1F22A0801D00D8521F /* AppDelegate.swift */; };
@@ -189,9 +189,9 @@
 		B6203CF722F0A4A600E4FEC7 /* 928.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 928.png; sourceTree = "<group>"; };
 		B6203CF822F0A4A600E4FEC7 /* 929.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 929.png; sourceTree = "<group>"; };
 		B6252A2D231BBA2C0075A7FB /* camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@3x.png"; sourceTree = "<group>"; };
+		B63D5C0123342BA7000F393E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6558B72231AD6CF00F94586 /* ARTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTestViewController.swift; sourceTree = "<group>"; };
 		B6558B75231ADA7200F94586 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		B66EC66322B0A2370086DDDD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B68D8BF6232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdProgrammeTableViewCell.swift; sourceTree = "<group>"; };
 		B6A0C4F622EEBEB50013ACBC /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
 		B6BF3E1C22A0801D00D8521F /* 2019OrangeFesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2019OrangeFesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -436,7 +436,7 @@
 				B6BF3EE522AD275500D8521F /* TabBarController.swift */,
 				B6BF3EF222AE1AF400D8521F /* NavigationViewController.swift */,
 				B6BF3E2A22A0801F00D8521F /* LaunchScreen.storyboard */,
-				B66EC66322B0A2370086DDDD /* GoogleService-Info.plist */,
+				B63D5C0123342BA7000F393E /* GoogleService-Info.plist */,
 				B6BF3E2D22A0801F00D8521F /* Info.plist */,
 			);
 			path = 2019OrangeFesApp;
@@ -750,7 +750,6 @@
 				B6D8539E22EC97740098D4E9 /* 225.png in Resources */,
 				B6D8539122EC97740098D4E9 /* 223.png in Resources */,
 				B6198CBC22B539CC001FB4A6 /* Else.png in Resources */,
-				B66EC66422B0A2370086DDDD /* GoogleService-Info.plist in Resources */,
 				B6BF3EEF22ADD2C100D8521F /* Favorite.png in Resources */,
 				B6D8539C22EC97740098D4E9 /* BrassBand.png in Resources */,
 				B6D853AD22EC97740098D4E9 /* ESS.png in Resources */,
@@ -791,6 +790,7 @@
 				B6D8539F22EC97740098D4E9 /* 216.png in Resources */,
 				B6147DB722F73154003B6DFE /* coolHue-FD6E6A-FFC600.png in Resources */,
 				B6D853AA22EC97740098D4E9 /* 214.png in Resources */,
+				B63D5C0223342BA7000F393E /* GoogleService-Info.plist in Resources */,
 				B6D853AB22EC97740098D4E9 /* 220.png in Resources */,
 				B6BF3E2C22A0801F00D8521F /* LaunchScreen.storyboard in Resources */,
 				B6BF3E2922A0801F00D8521F /* Assets.xcassets in Resources */,
