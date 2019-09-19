@@ -19,10 +19,10 @@ class ProgrammeViewController: UIViewController {
     @IBOutlet weak var StatusTitle: UILabel!
     
     let map11Programme: [String] = ["茶道部","華道部","漫画広報部","図書委員会"]
-    let map21Programme: [String] = ["すいーと♡えんじぇる", "BEES","ちゅるちゅるらんど","トッポギ","硬式テニス部３年","お化け屋敷","ドーナツショップ","ゆっかいず"]
-    let map22Programme: [String] = ["１年D組", "１年C組","１年H組","放送部","硬式テニス部１・２年","バレー部","Cafe in The Daytime","法政国際２年男子"]
+    let map21Programme: [String] = ["すいーと♡えんじぇる", "BEES","ちゅるちゅるらんど","トッポギ","硬式テニス部３年","お化け屋敷","ドーナツショップ","ゆっかいず","家庭科部"]
+    let map22Programme: [String] = [ "１年C組","１年H組","放送部","硬式テニス部１・２年","バレー部","Cafe in The Daytime","法政国際２年男子","1年D組"]
     let map23Programme: [String] = ["１年G組", "あなたとコンビに法政チーズ","１年E組","アメリカンドッグ"]
-    let map31Programme: [String] = ["家庭科部","ゴスペル部","英語部","有志演劇"]
+    let map31Programme: [String] = ["ゴスペル部","英語部","有志演劇"]
     let map32Programme: [String] = ["美術部"]
     let map42Programme: [String] = ["食堂"]
     let map43Programme: [String] = ["バドミントン部","RESISTANCE","有志ダンス","同窓会","PTAバザー"]
@@ -84,9 +84,6 @@ class ProgrammeViewController: UIViewController {
         if map11Programme.contains(ProgrammeReceiveData) {
             giveMap = "11.png"
             giveData = "1号館　1階"
-        } else if map21Programme.contains(ProgrammeReceiveData) {
-            giveMap = "21.png"
-            giveData = "2号館　1階"
         } else if map21Programme.contains(ProgrammeReceiveData) {
             giveMap = "21.png"
             giveData = "2号館　1階"

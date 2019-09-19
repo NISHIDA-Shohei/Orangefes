@@ -15,8 +15,10 @@ class FirstProgrammeTableViewCell: UITableViewCell {
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var ProgrammeView: UIView!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         ProgrammeView.layer.cornerRadius = 10
         ProgrammePicture.layer.cornerRadius = 10
         ProgrammePicture.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
@@ -37,4 +39,6 @@ class FirstProgrammeTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    
 }

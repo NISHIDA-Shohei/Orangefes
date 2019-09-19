@@ -1639,12 +1639,12 @@ https://forms.gle/kejw7gb7R72pzjPt9
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WQU-LK-n6A">
                                 <rect key="frame" x="0.0" y="44" width="414" height="32"/>
-                                <color key="backgroundColor" red="1" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="9月28日"/>
                                     <segment title="9月29日"/>
                                 </segments>
-                                <color key="tintColor" red="1" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="segmentTap:" destination="9QX-nM-R2d" eventType="valueChanged" id="cx2-f7-J8v"/>
                                 </connections>
@@ -1680,7 +1680,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="5vR-zW-biH" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="KAy-HT-Y6M"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="akU-qs-LW2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="103.33333333333334"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1704,7 +1704,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                     <tabBarItem key="tabBarItem" title="企画一覧" image="list" selectedImage="list" id="RwJ-1s-WuD"/>
                     <navigationItem key="navigationItem" title="企画一覧" id="xae-rB-cok">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="K8L-23-fGo">
-                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Ew9-U0-Xl9">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Ew9-U0-Xl9">
                                 <rect key="frame" x="176" y="6" width="218" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
