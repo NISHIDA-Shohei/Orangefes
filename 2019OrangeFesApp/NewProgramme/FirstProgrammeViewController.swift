@@ -13,6 +13,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
     // cellのlabelに書く文字列
     //1=1号館 2=2号館 3=3号館 4=4号館 5=オレンジの間前
     let ProgrammeName1: [String] = ["漫画広報部","華道部","茶道部"]
+    let ProgrammeGenre1: [String] = [" 展示・販売 "," 展示 "," 食品 "]
     let ProgrammePicture1String: [String] = ["112-1.png","112-2.png","114.png"]
     var ProgrammePicture1: [UIImage?] = []
     let ProgrammeDescription1: [String] = [
@@ -21,9 +22,9 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         ,"「茶道部」お茶とお菓子が食べれます。1席150円です。正座はしないので、お気軽にお越し下さい。日頃の稽古の成果を生かせるよう頑張ります。"]
     
     let ProgrammeName2: [String] = ["ゆっかいず","ドーナツショップ","お化け屋敷","ちゅるちゅるらんど","硬式テニス部３年","BEES","トッポギ","すいーと♡えんじぇる","起業家クラス","法政国際２年男子","Cafe in The Daytime","バレー部","硬式テニス部１・２年","放送部","１年H組","１年C組","図書委員会","アメリカンドッグ","１年E組","あなたとコンビに法政チーズ","１年G組","1年D組","家庭科部"]
+    let ProgrammeGenre2: [String] = [" 食品 "," 食品 "," 展示 "," 食品 "," 食品 "," 中止 "," 食品 "," 食品 "," 食品 "," 展示 "," 食品 "," 食品 "," 食品 "," 展示 "," 食品 "," 食品 "," 展示・販売 "," 食品 "," 食品 "," 食品 "," 食品 "," 展示 "," 食品 "]
     let ProgrammePicture2String: [String] = ["211.png","212.png","213.png","214.png","215.png","216.png","217.png","218.png","220.png","221.png","222.png","223.png","224.png","225.png","226.png","227.png","228.png","234.png","235.png","236.png","237.png","clear.png","310.png"]
     var ProgrammePicture2: [UIImage?] = []
-    
     
     let ProgrammeDescription2: [String] = [
         "「ゆっかいず」こんにちは！ゆっかいずです^_^私たちゆっかいずは3年有志の団体で超ド級においしいタピオカを売っています！かんわいいフォトブースも用意しているので是非来てくだサイ！"
@@ -51,10 +52,12 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         ,"「家庭科部」家庭部はクッキーを販売しています。1袋100円のワンコインなので気軽にご購入いただけます。手軽に甘いものが欲しくなった時にいかがでしょうか？"]
     
     let ProgrammeName3: [String] = ["美術部"]
+    let ProgrammeGenre3: [String] = [" 展示・販売 "]
     let ProgrammePicture3String: [String] = ["321.png"]
     var ProgrammePicture3: [UIImage?] = []
     let ProgrammeDescription3: [String] = ["「美術部」こんにちは！オレンジ祭では昨年と同様に手作りハンコと小さなオブジェ等を販売します！合作は1人1つ小さな家を作り、机の上で小さな街を作ります。"]
     let ProgrammeName4: [String] = ["バドミントン部","RESISTANCE","有志ダンス","同窓会","PTAバザー","入試相談室"]
+    let ProgrammeGenre4: [String] = [" 食品 "," ライブ "," ライブ ",""," 展示・販売 ",""]
     let ProgrammePicture4String: [String] = ["432.png","431-1.png","431-2.png","SchoolLogo.png","SchoolLogo.png","SchoolLogo.png"]
     var ProgrammePicture4: [UIImage?] = []
     let ProgrammeDescription4: [String] = [
@@ -66,6 +69,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
             ,"①全体説明　4号館　4階音楽室　\n9/28 13:00 9/29 10:00 11:30 13:00 \n②個別相談 4号館　442教室 \n9/28 14:00-15:30 9/29 10:30-15:30 \n来年度、本校を受験される中学生および保護者の方々のために設けた部屋です。個別相談はなるべく全体説明をお聞きになった上で、おまわり下さい。"]
     
     let ProgrammeName5: [String] = ["太田屋","一の会","ベル　エポック","MARION CREPES","食堂"]
+    let ProgrammeGenre5: [String] = [" 食品 "," 食品 "," 食品 "," 食品 "," 食品 "]
     let ProgrammePicture5String: [String] = ["clear.png","clear.png","clear.png","clear.png","clear.png"]
     var ProgrammePicture5: [UIImage?] = []
     let ProgrammeDescription5: [String] = ["惣菜屋","学校食堂","パン屋","クレープ屋","からあげ丼甘辛ソース・４５０円　\n豚キムチ丼温玉のせ・４５０円　\nラーメン・３５０円　\nトマトカレー夏野菜・４００円　\nコロッケパン・１００円　\nいももち・１５０円　\nアメリカンドック・１００円　\nドーナツ４種類・各１００円（キャラメル・アップルシナモン・ミルクショコラ・抹茶ミルク）　\nからあげ４個・１００円（オレンジ祭のみの企画です）"]
@@ -191,9 +195,11 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
             
         }
         
+        
             if indexPath.section == 0 {
-                ProgrammeCell.name.text = ProgrammeName1[indexPath.item]
+                ProgrammeCell.name.text = ProgrammeName1[indexPath.row]
                 ProgrammeCell.ProgrammePicture.image = ProgrammePicture1[indexPath.row]
+                ProgrammeCell.ProgrammeGenre.text = ProgrammeGenre1[indexPath.row]
                 if UDColorTest.contains(ProgrammeName1[indexPath.item]){
                     changeOrange()
                 }else{
@@ -201,8 +207,9 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                 }
                 
             } else if indexPath.section == 1 {
-                ProgrammeCell.name.text = ProgrammeName2[indexPath.item]
+                ProgrammeCell.name.text = ProgrammeName2[indexPath.row]
                 ProgrammeCell.ProgrammePicture.image = ProgrammePicture2[indexPath.row]
+                ProgrammeCell.ProgrammeGenre.text = ProgrammeGenre2[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName2[indexPath.item]){
                     changeOrange()
@@ -211,8 +218,9 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                 }
                 
             } else if indexPath.section == 2 {
-                ProgrammeCell.name.text = ProgrammeName3[indexPath.item]
+                ProgrammeCell.name.text = ProgrammeName3[indexPath.row]
                 ProgrammeCell.ProgrammePicture.image = ProgrammePicture3[indexPath.row]
+                ProgrammeCell.ProgrammeGenre.text = ProgrammeGenre3[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName3[indexPath.item]){
                     changeOrange()
@@ -221,8 +229,9 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                 }
                 
             } else if indexPath.section == 3 {
-                ProgrammeCell.name.text = ProgrammeName4[indexPath.item]
+                ProgrammeCell.name.text = ProgrammeName4[indexPath.row]
                 ProgrammeCell.ProgrammePicture.image = ProgrammePicture4[indexPath.row]
+                ProgrammeCell.ProgrammeGenre.text = ProgrammeGenre4[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName4[indexPath.item]){
                     changeOrange()
@@ -231,8 +240,9 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                 }
                 
             } else if indexPath.section == 4 {
-                ProgrammeCell.name.text = ProgrammeName5[indexPath.item]
+                ProgrammeCell.name.text = ProgrammeName5[indexPath.row]
                 ProgrammeCell.ProgrammePicture.image = ProgrammePicture5[indexPath.row]
+                ProgrammeCell.ProgrammeGenre.text = ProgrammeGenre5[indexPath.row]
                 ProgrammeCell.button.setTitleColor(UIColor.black, for: .normal)
                 if UDColorTest.contains(ProgrammeName5[indexPath.item]){
                     changeOrange()
@@ -392,6 +402,8 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
     func reload(){
         TableView.reloadData()
     }
+    
+    
     
 
 }

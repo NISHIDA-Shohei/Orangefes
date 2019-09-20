@@ -23,6 +23,7 @@ target '2019OrangeFesApp' do
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
   pod 'Firebase/Analytics'
+  
 
 
 end

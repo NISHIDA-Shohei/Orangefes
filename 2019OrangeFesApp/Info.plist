@@ -28,6 +28,8 @@
 	<string>ARえこぴょんを表示するため</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>写真をデバイスに保存するため</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>light</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>TsukushiAMaruGothic.ttc</string>

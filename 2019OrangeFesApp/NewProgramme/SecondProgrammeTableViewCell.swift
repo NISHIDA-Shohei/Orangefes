@@ -1,20 +1,19 @@
 //
-//  FirstProgrammeTableViewCell.swift
+//  SecondProgrammeTableViewCell.swift
 //  2019OrangeFesApp
 //
-//  Created by 西田翔平 on 2019/09/09.
+//  Created by 西田翔平 on 2019/09/20.
 //  Copyright © 2019 Shohei Nishida. All rights reserved.
 //
 
 import UIKit
 
-class FirstProgrammeTableViewCell: UITableViewCell {
+class SecondProgrammeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var ProgrammePicture: UIImageView!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var ProgrammeView: UIView!
-    @IBOutlet weak var ProgrammeGenre: UILabel!
     
     
     override func awakeFromNib() {
@@ -35,14 +34,10 @@ class FirstProgrammeTableViewCell: UITableViewCell {
         // 影をぼかし
         ProgrammeView.layer.shadowRadius = 4
         
-        ProgrammeGenre.layer.borderColor = UIColor.black.cgColor
-        ProgrammeGenre.layer.borderWidth = 0.5
-        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
-    
+
 }
