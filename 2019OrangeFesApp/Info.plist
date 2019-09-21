@@ -30,6 +30,8 @@
 	<string>写真をデバイスに保存するため</string>
 	<key>UIUserInterfaceStyle</key>
 	<string>light</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>TsukushiAMaruGothic.ttc</string>
