@@ -23,8 +23,11 @@ target '2019OrangeFesApp' do
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
   pod 'Firebase/Analytics'
+<<<<<<< HEAD
   pod 'Google-Mobile-Ads-SDK'
   
+=======
+>>>>>>> parent of 3a07b31... 9.21.0
 
 
 end

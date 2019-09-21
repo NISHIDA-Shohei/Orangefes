@@ -14,7 +14,6 @@ class FirstProgrammeTableViewCell: UITableViewCell {
     @IBOutlet weak var ProgrammePicture: UIImageView!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var ProgrammeView: UIView!
-    @IBOutlet weak var ProgrammeGenre: UILabel!
     
     
     override func awakeFromNib() {
@@ -34,9 +33,6 @@ class FirstProgrammeTableViewCell: UITableViewCell {
         ProgrammeView.layer.shadowOpacity = 0.25
         // 影をぼかし
         ProgrammeView.layer.shadowRadius = 4
-        
-        ProgrammeGenre.layer.borderColor = UIColor.black.cgColor
-        ProgrammeGenre.layer.borderWidth = 0.5
         
     }
     

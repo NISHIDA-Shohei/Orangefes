@@ -86,7 +86,7 @@ class SecondProgrammeViewController: UIViewController, UITableViewDelegate, UITa
     
     // cellの情報を書き込む関数
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let ProgrammeCell = tableView.dequeueReusableCell(withIdentifier: "SecondProgrammeTableViewCell", for: indexPath as IndexPath) as! SecondProgrammeTableViewCell
+        let ProgrammeCell = tableView.dequeueReusableCell(withIdentifier: "FirstProgrammeTableViewCell", for: indexPath as IndexPath) as! FirstProgrammeTableViewCell
         //UserDefaultの情報を取得
         let UDColorTestPerformance: [String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
         // ここでcellのlabelに値を入れています。

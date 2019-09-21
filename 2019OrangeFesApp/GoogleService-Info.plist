@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>459817372492-qa4qg0kav0m297e90d8jolmtb2mmp6o3.apps.googleusercontent.com</string>
+	<string>624904224332-ag2cni79i049kqtdf8fe5iju4j0at6qe.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.459817372492-qa4qg0kav0m297e90d8jolmtb2mmp6o3</string>
+	<string>com.googleusercontent.apps.624904224332-ag2cni79i049kqtdf8fe5iju4j0at6qe</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAaVYMNZ2kE_VM4Zzc7O5Zw8Q52Lyo7ou0</string>
+	<string>AIzaSyCvxoFVzRqq88OrLwk166wr0na7H1eu46c</string>
 	<key>GCM_SENDER_ID</key>
-	<string>459817372492</string>
+	<string>624904224332</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>Shohei.N.-019OrangeFesApp</string>
+	<string>Shohei.N.2019OrangeFesApp</string>
 	<key>PROJECT_ID</key>
-	<string>orangefesapp</string>
+	<string>orangefesapp-4fe47</string>
 	<key>STORAGE_BUCKET</key>
-	<string>orangefesapp.appspot.com</string>
+	<string>orangefesapp-4fe47.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:459817372492:ios:f13e86e227b0d41d</string>
+	<string>1:624904224332:ios:0cb0303a391574c055fee9</string>
 	<key>DATABASE_URL</key>
-	<string>https://orangefesapp.firebaseio.com</string>
+	<string>https://orangefesapp-4fe47.firebaseio.com</string>
 </dict>
 </plist>
