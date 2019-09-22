@@ -261,6 +261,14 @@
                                     <outlet property="LostPlaceLabel" destination="AZt-r8-X2e" id="jaI-Hs-hMt"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableFooterCell" id="OJN-cS-gAS">
+                                <rect key="frame" x="0.0" y="108" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OJN-cS-gAS" id="5QB-TV-qMS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="UBM-rj-vrg" id="bT4-Lc-DSv"/>
@@ -340,7 +348,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
 令和元年8月5日施行 令和元年8月11日改正
 
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -419,7 +427,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
 法政大学国際高等学校オレンジ祭実行委員会
 〒230-0078神奈川県横浜市鶴見区岸谷1丁目13-1
 令和元年8月7日施行</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -490,14 +498,14 @@ https://forms.gle/kejw7gb7R72pzjPt9
             <objects>
                 <viewController id="QSf-LY-QzA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X5h-KP-lkm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9h-e9-FzF">
-                                <rect key="frame" x="0.0" y="104" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="747"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3pb-9f-VEI">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="635"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="747"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OrangeFesImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="TUJ-U9-2SL">
                                                 <rect key="frame" x="114.66666666666669" y="25" width="146" height="130"/>
@@ -507,22 +515,19 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orange Festival 2019 59th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7m-5P-htW">
-                                                <rect key="frame" x="55.666666666666657" y="201.66666666666669" width="264" height="20"/>
+                                                <rect key="frame" x="55.666666666666657" y="200" width="264" height="20"/>
                                                 <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="オレンジ祭アプリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3s-FC-6Wr">
-                                                <rect key="frame" x="51" y="165" width="273" height="36.666666666666657"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="D3s-FC-6Wr" secondAttribute="height" multiplier="112:15" id="5Ft-gD-SEs"/>
-                                                </constraints>
+                                                <rect key="frame" x="51" y="165" width="273.33333333333331" height="35"/>
                                                 <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="35"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コーディング" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ot-cx-hYp">
-                                                <rect key="frame" x="135.66666666666666" y="261.66666666666669" width="104" height="21"/>
+                                                <rect key="frame" x="135.66666666666666" y="260" width="104" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="3ot-cx-hYp" secondAttribute="height" multiplier="104:21" id="9ZC-iE-8sY"/>
                                                 </constraints>
@@ -531,7 +536,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIデザイン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsM-WP-7z1">
-                                                <rect key="frame" x="144.66666666666666" y="348.66666666666669" width="86" height="21"/>
+                                                <rect key="frame" x="144.66666666666666" y="347" width="86" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="OsM-WP-7z1" secondAttribute="height" multiplier="86:21" id="Mqm-b0-9Yb"/>
                                                 </constraints>
@@ -540,7 +545,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="えこぴょん３Dモデル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdT-SY-h3h">
-                                                <rect key="frame" x="103.66666666666669" y="487.66666666666663" width="168" height="21"/>
+                                                <rect key="frame" x="103.66666666666669" y="486" width="168" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="JdT-SY-h3h" secondAttribute="height" multiplier="8:1" id="w3a-Jt-Qn5"/>
                                                 </constraints>
@@ -549,7 +554,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masakazu Ozaki" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4y-88-dR1">
-                                                <rect key="frame" x="125" y="400.66666666666669" width="125" height="21"/>
+                                                <rect key="frame" x="125" y="399" width="125" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="j4y-88-dR1" secondAttribute="height" multiplier="125:21" id="BUb-1x-lez"/>
                                                 </constraints>
@@ -558,7 +563,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カベ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdO-Gh-inY">
-                                                <rect key="frame" x="152.66666666666666" y="513.66666666666663" width="70" height="21"/>
+                                                <rect key="frame" x="152.66666666666666" y="512" width="70" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="QdO-Gh-inY" secondAttribute="height" multiplier="10:3" id="KIx-vl-yfg"/>
                                                 </constraints>
@@ -567,7 +572,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special Thanks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjM-ks-JT0">
-                                                <rect key="frame" x="129.66666666666666" y="574.66666666666663" width="116" height="21"/>
+                                                <rect key="frame" x="129.66666666666666" y="573" width="116" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="vjM-ks-JT0" secondAttribute="height" multiplier="116:21" id="LRd-6k-j8A"/>
                                                 </constraints>
@@ -576,7 +581,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life is Tech!メンターの方々" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="454-xz-FNW">
-                                                <rect key="frame" x="81" y="600.66666666666663" width="213" height="21"/>
+                                                <rect key="frame" x="81" y="599" width="213" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="454-xz-FNW" secondAttribute="height" multiplier="71:7" id="esi-B8-J8R"/>
                                                 </constraints>
@@ -585,7 +590,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="西田　翔平" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8i-ji-rnp">
-                                                <rect key="frame" x="144" y="374.66666666666669" width="87" height="21"/>
+                                                <rect key="frame" x="144" y="373" width="87" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="i8i-ji-rnp" secondAttribute="height" multiplier="29:7" id="rQj-69-nXC"/>
                                                 </constraints>
@@ -594,7 +599,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="西田　翔平" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qz-cU-k0p">
-                                                <rect key="frame" x="144" y="287.66666666666669" width="87" height="21"/>
+                                                <rect key="frame" x="144" y="286" width="87" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1qz-cU-k0p" secondAttribute="height" multiplier="29:7" id="fPV-NQ-uoy"/>
                                                 </constraints>
@@ -603,7 +608,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クイ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivl-mj-XbK">
-                                                <rect key="frame" x="170" y="426.66666666666663" width="35" height="21"/>
+                                                <rect key="frame" x="170" y="425" width="35" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Ivl-mj-XbK" secondAttribute="height" multiplier="5:3" id="UZp-NL-MCt"/>
                                                 </constraints>
@@ -619,10 +624,10 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                             <constraint firstItem="1qz-cU-k0p" firstAttribute="centerX" secondItem="3pb-9f-VEI" secondAttribute="centerX" id="51N-2w-Yd9"/>
                                             <constraint firstItem="JdT-SY-h3h" firstAttribute="top" secondItem="Ivl-mj-XbK" secondAttribute="bottom" constant="40" id="D3Z-Dt-aBl"/>
                                             <constraint firstItem="OsM-WP-7z1" firstAttribute="top" secondItem="1qz-cU-k0p" secondAttribute="bottom" constant="40" id="EWb-Dm-6Cw"/>
-                                            <constraint firstItem="D3s-FC-6Wr" firstAttribute="centerX" secondItem="3pb-9f-VEI" secondAttribute="centerX" id="F33-Ye-zMc"/>
                                             <constraint firstItem="Q7m-5P-htW" firstAttribute="top" secondItem="D3s-FC-6Wr" secondAttribute="bottom" id="FQw-vZ-inS"/>
                                             <constraint firstItem="vjM-ks-JT0" firstAttribute="centerX" secondItem="3pb-9f-VEI" secondAttribute="centerX" id="K6V-Va-YQr"/>
                                             <constraint firstItem="j4y-88-dR1" firstAttribute="centerX" secondItem="3pb-9f-VEI" secondAttribute="centerX" id="O5j-ng-4OS"/>
+                                            <constraint firstItem="D3s-FC-6Wr" firstAttribute="centerX" secondItem="3pb-9f-VEI" secondAttribute="centerX" id="O9n-91-ioq"/>
                                             <constraint firstItem="j4y-88-dR1" firstAttribute="top" secondItem="i8i-ji-rnp" secondAttribute="bottom" constant="5" id="Qnk-FQ-SFB"/>
                                             <constraint firstItem="OsM-WP-7z1" firstAttribute="centerX" secondItem="3pb-9f-VEI" secondAttribute="centerX" id="SO4-cB-0AU"/>
                                             <constraint firstItem="1qz-cU-k0p" firstAttribute="top" secondItem="3ot-cx-hYp" secondAttribute="bottom" constant="5" id="WRK-FS-M6l"/>
@@ -640,7 +645,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                             <constraint firstItem="454-xz-FNW" firstAttribute="top" secondItem="vjM-ks-JT0" secondAttribute="bottom" constant="5" id="ryC-ah-b2U"/>
                                             <constraint firstItem="Ivl-mj-XbK" firstAttribute="centerX" secondItem="3pb-9f-VEI" secondAttribute="centerX" id="uAI-kO-muX"/>
                                             <constraint firstItem="D3s-FC-6Wr" firstAttribute="top" secondItem="TUJ-U9-2SL" secondAttribute="bottom" constant="10" id="w7Z-5A-eNS"/>
-                                            <constraint firstAttribute="height" constant="635" id="y2L-gE-rtG"/>
+                                            <constraint firstAttribute="height" constant="747" id="y2L-gE-rtG"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -663,7 +668,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <viewLayoutGuide key="safeArea" id="wxx-96-Ajn"/>
                     </view>
                     <navigationItem key="navigationItem" title="クレジット" id="1xK-ra-oxI"/>
-                    <size key="freeformSize" width="375" height="800"/>
+                    <size key="freeformSize" width="375" height="900"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAk-qE-U1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -675,7 +680,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="xo6-B6-5Cy" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="校内地図" image="map_marker" selectedImage="map_marker" id="Zo0-C2-Tky"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="CK4-rI-tYO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.96003717180000003" green="0.74004137520000002" blue="0.25471782679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="largeTitleTextAttributes">
@@ -721,6 +726,14 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <connections>
                                     <outlet property="ElseName" destination="VTw-nr-wBO" id="rto-rr-BJB"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableFooterCell" id="VMC-6E-Dfu">
+                                <rect key="frame" x="0.0" y="71.666667938232422" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VMC-6E-Dfu" id="xY0-z9-TUo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -835,7 +848,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="NtF-jw-9mw" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="その他" image="albums" selectedImage="albums" id="zKU-v1-u6Z"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="xcg-TS-iY4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
@@ -1132,6 +1145,14 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <connections>
                                     <outlet property="MapPlace" destination="bxF-Pd-PIF" id="3ZZ-hq-90D"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableFooterCell" id="lNj-82-I6u">
+                                <rect key="frame" x="0.0" y="71.666667938232422" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lNj-82-I6u" id="8pP-nT-WSH">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1555,6 +1576,14 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                             <outlet property="name" destination="szx-C0-ieu" id="1UM-24-i5r"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableFooterCell" id="R80-3q-9tC">
+                                        <rect key="frame" x="0.0" y="138" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R80-3q-9tC" id="4r9-w1-OT2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -1643,6 +1672,14 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                             <outlet property="name" destination="g6G-8W-GcA" id="yDg-Ek-zkf"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableFooterCell" id="FOE-FW-GPe">
+                                        <rect key="frame" x="0.0" y="123" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FOE-FW-GPe" id="H0D-ZB-2tL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WQU-LK-n6A">
@@ -1688,7 +1725,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="5vR-zW-biH" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="KAy-HT-Y6M"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="akU-qs-LW2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="103.33333333333334"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1835,6 +1872,14 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                     <outlet property="FavoritePicture" destination="58Q-8v-pK2" id="t39-eQ-xec"/>
                                     <outlet property="FavoriteView" destination="Rz0-YF-AiE" id="Dvi-vx-lwG"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableFooterCell" id="AHw-Wa-RpL">
+                                <rect key="frame" x="0.0" y="143" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AHw-Wa-RpL" id="oiz-gA-MmM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -2139,6 +2184,6 @@ https://forms.gle/kejw7gb7R72pzjPt9
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2pB-qP-efT"/>
-        <segue reference="Mw7-8h-NzK"/>
+        <segue reference="M9d-il-lLl"/>
     </inferredMetricsTieBreakers>
 </document>

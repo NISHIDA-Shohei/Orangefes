@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
 
 class FavoriteViewController: UIViewController {
     
@@ -37,6 +38,9 @@ class FavoriteViewController: UIViewController {
     var receiveData: String = ""
     var receiveDescriptionData: String = ""
     var receivePictureStringData: String = ""
+    
+    //admob
+    var bannerView: GADBannerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +56,13 @@ class FavoriteViewController: UIViewController {
         FavoriteDescriptionText.text = receiveDescriptionData
         FavoriteTitle.title = receiveData
         FavoritePicture.image = UIImage(named: receivePictureStringData)
+        
+        // In this case, we instantiate the banner with desired ad size.
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = "ca-app-pub-4195103882736205/5671880921"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
 
     }
     
@@ -119,5 +130,26 @@ class FavoriteViewController: UIViewController {
             vc.receiveData = giveData
             vc.receiveMap = giveMap
         }
+    }
+    
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+     bannerView.translatesAutoresizingMaskIntoConstraints = false
+     view.addSubview(bannerView)
+     view.addConstraints(
+       [NSLayoutConstraint(item: bannerView,
+                           attribute: .bottom,
+                           relatedBy: .equal,
+                           toItem: bottomLayoutGuide,
+                           attribute: .top,
+                           multiplier: 1,
+                           constant: 0),
+        NSLayoutConstraint(item: bannerView,
+                           attribute: .centerX,
+                           relatedBy: .equal,
+                           toItem: view,
+                           attribute: .centerX,
+                           multiplier: 1,
+                           constant: 0)
+       ])
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class MapViewController: UIViewController, UIScrollViewDelegate{
 
@@ -18,6 +19,9 @@ class MapViewController: UIViewController, UIScrollViewDelegate{
     
     var selectedImg: UIImage!
     var imageView:UIImageView!
+    
+    //admob
+    var bannerView: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +49,13 @@ class MapViewController: UIViewController, UIScrollViewDelegate{
         doubleTap.numberOfTapsRequired = 2
         imageView.isUserInteractionEnabled = true
         imageView.addGestureRecognizer(doubleTap)
+        
+        // In this case, we instantiate the banner with desired ad size.
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = "ca-app-pub-4195103882736205/5671880921"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
         
     }
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
@@ -79,6 +90,27 @@ class MapViewController: UIViewController, UIScrollViewDelegate{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+     bannerView.translatesAutoresizingMaskIntoConstraints = false
+     view.addSubview(bannerView)
+     view.addConstraints(
+       [NSLayoutConstraint(item: bannerView,
+                           attribute: .bottom,
+                           relatedBy: .equal,
+                           toItem: bottomLayoutGuide,
+                           attribute: .top,
+                           multiplier: 1,
+                           constant: 0),
+        NSLayoutConstraint(item: bannerView,
+                           attribute: .centerX,
+                           relatedBy: .equal,
+                           toItem: view,
+                           attribute: .centerX,
+                           multiplier: 1,
+                           constant: 0)
+       ])
     }
     
 }

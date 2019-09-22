@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ElseTableViewController: UITableViewController {
 
@@ -24,10 +25,22 @@ class ElseTableViewController: UITableViewController {
     var giveStaffImage: String = ""
     var giveGreetingNumber: Int = 0
     var giveAgreementData:String = ""
-
     
+    //admob
+    var bannerView: GADBannerView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // In this case, we instantiate the banner with desired ad size.
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = "ca-app-pub-4195103882736205/5671880921"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        
+        loadFooter()
+        
     }
     
     // sectionの数を返す関数
@@ -171,6 +184,33 @@ class ElseTableViewController: UITableViewController {
             let vc = segue.destination as! ElseGreetingViewController
             vc.GreetingNumber = giveGreetingNumber
         }
+    }
+    
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+     bannerView.translatesAutoresizingMaskIntoConstraints = false
+     view.addSubview(bannerView)
+     view.addConstraints(
+       [NSLayoutConstraint(item: bannerView,
+                           attribute: .bottom,
+                           relatedBy: .equal,
+                           toItem: bottomLayoutGuide,
+                           attribute: .top,
+                           multiplier: 1,
+                           constant: 0),
+        NSLayoutConstraint(item: bannerView,
+                           attribute: .centerX,
+                           relatedBy: .equal,
+                           toItem: view,
+                           attribute: .centerX,
+                           multiplier: 1,
+                           constant: 0)
+       ])
+    }
+    
+    func loadFooter(){
+        let footerCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TableFooterCell")!
+        let footerView: UIView = footerCell.contentView
+        tableView.tableFooterView = footerView
     }
     
 }
