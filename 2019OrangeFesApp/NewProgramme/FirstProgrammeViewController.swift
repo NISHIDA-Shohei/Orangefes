@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -82,6 +83,9 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBOutlet weak var TableView: UITableView!
     
+    //admob
+    var bannerView: GADBannerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -100,6 +104,15 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         for fileName in ProgrammePicture5String {
             ProgrammePicture5.append(UIImage(named: fileName))
         }
+        
+        // In this case, we instantiate the banner with desired ad size.
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = "ca-app-pub-4195103882736205/5671880921"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        
+        loadFooter()
         
         TableView.dataSource = self
         TableView.delegate = self
@@ -391,6 +404,33 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
     
     func reload(){
         TableView.reloadData()
+    }
+    
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+     bannerView.translatesAutoresizingMaskIntoConstraints = false
+     view.addSubview(bannerView)
+     view.addConstraints(
+       [NSLayoutConstraint(item: bannerView,
+                           attribute: .bottom,
+                           relatedBy: .equal,
+                           toItem: bottomLayoutGuide,
+                           attribute: .top,
+                           multiplier: 1,
+                           constant: 0),
+        NSLayoutConstraint(item: bannerView,
+                           attribute: .centerX,
+                           relatedBy: .equal,
+                           toItem: view,
+                           attribute: .centerX,
+                           multiplier: 1,
+                           constant: 0)
+       ])
+    }
+    
+    func loadFooter(){
+        let footerCell: UITableViewCell = TableView.dequeueReusableCell(withIdentifier: "TableFooterCell")!
+        let footerView: UIView = footerCell.contentView
+        TableView.tableFooterView = footerView
     }
     
 
