@@ -147,7 +147,7 @@ class ThirdProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         } else if section == 3{
             return "小ホール"
         } else {
-            return "多目的ホール"
+            return "M棟1階"
         }
     }
     

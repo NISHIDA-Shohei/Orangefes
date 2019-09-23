@@ -13,15 +13,6 @@
 		B6147D8D22F5EB9E003B6DFE /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D8C22F5EB9E003B6DFE /* clear.png */; };
 		B6147D8F22F5F1C3003B6DFE /* Staff.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D8E22F5F1C3003B6DFE /* Staff.png */; };
 		B6147D9122F5F388003B6DFE /* StaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147D9022F5F388003B6DFE /* StaffViewController.swift */; };
-		B6147D9A22F6C5BE003B6DFE /* 32.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D9222F6C5BE003B6DFE /* 32.png */; };
-		B6147D9B22F6C5BE003B6DFE /* 43.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D9322F6C5BE003B6DFE /* 43.png */; };
-		B6147D9C22F6C5BE003B6DFE /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D9422F6C5BE003B6DFE /* 22.png */; };
-		B6147D9D22F6C5BE003B6DFE /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D9522F6C5BE003B6DFE /* 23.png */; };
-		B6147D9E22F6C5BE003B6DFE /* 44.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D9622F6C5BE003B6DFE /* 44.png */; };
-		B6147D9F22F6C5BE003B6DFE /* 31.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D9722F6C5BE003B6DFE /* 31.png */; };
-		B6147DA022F6C5BE003B6DFE /* 42.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D9822F6C5BE003B6DFE /* 42.png */; };
-		B6147DA122F6C5BE003B6DFE /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147D9922F6C5BE003B6DFE /* 11.png */; };
-		B6147DA322F6C62D003B6DFE /* 21.png in Resources */ = {isa = PBXBuildFile; fileRef = B6147DA222F6C62D003B6DFE /* 21.png */; };
 		B6147DA522F6C8D1003B6DFE /* SchoolMap1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6147DA422F6C8D1003B6DFE /* SchoolMap1.jpg */; };
 		B6147DA722F6E6B1003B6DFE /* EditLostAndFoundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DA622F6E6B1003B6DFE /* EditLostAndFoundTableViewController.swift */; };
 		B6147DAB22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DAA22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift */; };
@@ -42,10 +33,18 @@
 		B61B03762326414200ACCC1C /* ThirdProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B03752326414200ACCC1C /* ThirdProgrammeViewController.swift */; };
 		B61B03782326760F00ACCC1C /* FirstProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B03772326760F00ACCC1C /* FirstProgrammeTableViewCell.swift */; };
 		B6203CDD22EF0BEE00E4FEC7 /* ElseGreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6203CDC22EF0BEE00E4FEC7 /* ElseGreetingViewController.swift */; };
-		B6203CF222F0A18E00E4FEC7 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6203CF122F0A18E00E4FEC7 /* TimeTableViewController.swift */; };
-		B6203CF922F0A4A600E4FEC7 /* 928.png in Resources */ = {isa = PBXBuildFile; fileRef = B6203CF722F0A4A600E4FEC7 /* 928.png */; };
-		B6203CFA22F0A4A600E4FEC7 /* 929.png in Resources */ = {isa = PBXBuildFile; fileRef = B6203CF822F0A4A600E4FEC7 /* 929.png */; };
 		B6252A2E231BBA2C0075A7FB /* camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6252A2D231BBA2C0075A7FB /* camera@3x.png */; };
+		B6370DE02337E63900581AAD /* 44.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DD72337E63800581AAD /* 44.png */; };
+		B6370DE12337E63900581AAD /* 42.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DD82337E63800581AAD /* 42.png */; };
+		B6370DE22337E63900581AAD /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DD92337E63900581AAD /* 11.png */; };
+		B6370DE32337E63900581AAD /* 31.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DDA2337E63900581AAD /* 31.png */; };
+		B6370DE42337E63900581AAD /* 32.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DDB2337E63900581AAD /* 32.png */; };
+		B6370DE52337E63900581AAD /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DDC2337E63900581AAD /* 22.png */; };
+		B6370DE62337E63900581AAD /* 21.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DDD2337E63900581AAD /* 21.png */; };
+		B6370DE72337E63900581AAD /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DDE2337E63900581AAD /* 23.png */; };
+		B6370DE82337E63900581AAD /* 43.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DDF2337E63900581AAD /* 43.png */; };
+		B6370DEB233844D400581AAD /* 929.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DE9233844D400581AAD /* 929.png */; };
+		B6370DEC233844D400581AAD /* 928.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DEA233844D400581AAD /* 928.png */; };
 		B63D5C0223342BA7000F393E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63D5C0123342BA7000F393E /* GoogleService-Info.plist */; };
 		B6558B73231AD6CF00F94586 /* ARTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6558B72231AD6CF00F94586 /* ARTestViewController.swift */; };
 		B6558B76231ADA7200F94586 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B6558B75231ADA7200F94586 /* art.scnassets */; };
@@ -58,8 +57,6 @@
 		B6BF3E3722A0801F00D8521F /* _019OrangeFesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E3622A0801F00D8521F /* _019OrangeFesAppTests.swift */; };
 		B6BF3E4222A0801F00D8521F /* _019OrangeFesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E4122A0801F00D8521F /* _019OrangeFesAppUITests.swift */; };
 		B6BF3E5022A080CA00D8521F /* ProgrammeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E4F22A080CA00D8521F /* ProgrammeViewController.swift */; };
-		B6BF3E5222A080EA00D8521F /* ProgrammeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E5122A080EA00D8521F /* ProgrammeTableViewController.swift */; };
-		B6BF3E5422A0810000D8521F /* ProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3E5322A0810000D8521F /* ProgrammeTableViewCell.swift */; };
 		B6BF3E5B22A0837300D8521F /* Pic1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E5722A0837300D8521F /* Pic1.jpeg */; };
 		B6BF3E5C22A0837300D8521F /* Pic4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E5822A0837300D8521F /* Pic4.jpeg */; };
 		B6BF3E5D22A0837300D8521F /* Pic3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3E5922A0837300D8521F /* Pic3.jpeg */; };
@@ -156,15 +153,6 @@
 		B6147D8C22F5EB9E003B6DFE /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
 		B6147D8E22F5F1C3003B6DFE /* Staff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Staff.png; sourceTree = "<group>"; };
 		B6147D9022F5F388003B6DFE /* StaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffViewController.swift; sourceTree = "<group>"; };
-		B6147D9222F6C5BE003B6DFE /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
-		B6147D9322F6C5BE003B6DFE /* 43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 43.png; sourceTree = "<group>"; };
-		B6147D9422F6C5BE003B6DFE /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
-		B6147D9522F6C5BE003B6DFE /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
-		B6147D9622F6C5BE003B6DFE /* 44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 44.png; sourceTree = "<group>"; };
-		B6147D9722F6C5BE003B6DFE /* 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 31.png; sourceTree = "<group>"; };
-		B6147D9822F6C5BE003B6DFE /* 42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 42.png; sourceTree = "<group>"; };
-		B6147D9922F6C5BE003B6DFE /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
-		B6147DA222F6C62D003B6DFE /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.png; sourceTree = "<group>"; };
 		B6147DA422F6C8D1003B6DFE /* SchoolMap1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SchoolMap1.jpg; sourceTree = "<group>"; };
 		B6147DA622F6E6B1003B6DFE /* EditLostAndFoundTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLostAndFoundTableViewController.swift; sourceTree = "<group>"; };
 		B6147DAA22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLostAndFoundTableViewCell.swift; sourceTree = "<group>"; };
@@ -185,10 +173,18 @@
 		B61B03752326414200ACCC1C /* ThirdProgrammeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdProgrammeViewController.swift; sourceTree = "<group>"; };
 		B61B03772326760F00ACCC1C /* FirstProgrammeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstProgrammeTableViewCell.swift; sourceTree = "<group>"; };
 		B6203CDC22EF0BEE00E4FEC7 /* ElseGreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElseGreetingViewController.swift; sourceTree = "<group>"; };
-		B6203CF122F0A18E00E4FEC7 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
-		B6203CF722F0A4A600E4FEC7 /* 928.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 928.png; sourceTree = "<group>"; };
-		B6203CF822F0A4A600E4FEC7 /* 929.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 929.png; sourceTree = "<group>"; };
 		B6252A2D231BBA2C0075A7FB /* camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@3x.png"; sourceTree = "<group>"; };
+		B6370DD72337E63800581AAD /* 44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 44.png; sourceTree = "<group>"; };
+		B6370DD82337E63800581AAD /* 42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 42.png; sourceTree = "<group>"; };
+		B6370DD92337E63900581AAD /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		B6370DDA2337E63900581AAD /* 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 31.png; sourceTree = "<group>"; };
+		B6370DDB2337E63900581AAD /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
+		B6370DDC2337E63900581AAD /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
+		B6370DDD2337E63900581AAD /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.png; sourceTree = "<group>"; };
+		B6370DDE2337E63900581AAD /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
+		B6370DDF2337E63900581AAD /* 43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 43.png; sourceTree = "<group>"; };
+		B6370DE9233844D400581AAD /* 929.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 929.png; sourceTree = "<group>"; };
+		B6370DEA233844D400581AAD /* 928.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 928.png; sourceTree = "<group>"; };
 		B63D5C0123342BA7000F393E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6558B72231AD6CF00F94586 /* ARTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTestViewController.swift; sourceTree = "<group>"; };
 		B6558B75231ADA7200F94586 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -207,8 +203,6 @@
 		B6BF3E4122A0801F00D8521F /* _019OrangeFesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _019OrangeFesAppUITests.swift; sourceTree = "<group>"; };
 		B6BF3E4322A0801F00D8521F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6BF3E4F22A080CA00D8521F /* ProgrammeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeViewController.swift; sourceTree = "<group>"; };
-		B6BF3E5122A080EA00D8521F /* ProgrammeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeTableViewController.swift; sourceTree = "<group>"; };
-		B6BF3E5322A0810000D8521F /* ProgrammeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeTableViewCell.swift; sourceTree = "<group>"; };
 		B6BF3E5722A0837300D8521F /* Pic1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pic1.jpeg; sourceTree = "<group>"; };
 		B6BF3E5822A0837300D8521F /* Pic4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pic4.jpeg; sourceTree = "<group>"; };
 		B6BF3E5922A0837300D8521F /* Pic3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pic3.jpeg; sourceTree = "<group>"; };
@@ -463,10 +457,7 @@
 		B6BF3E5522A082B000D8521F /* Programme */ = {
 			isa = PBXGroup;
 			children = (
-				B6BF3E5122A080EA00D8521F /* ProgrammeTableViewController.swift */,
-				B6BF3E5322A0810000D8521F /* ProgrammeTableViewCell.swift */,
 				B6BF3E4F22A080CA00D8521F /* ProgrammeViewController.swift */,
-				B6203CF122F0A18E00E4FEC7 /* TimeTableViewController.swift */,
 			);
 			path = Programme;
 			sourceTree = "<group>";
@@ -529,15 +520,15 @@
 			isa = PBXGroup;
 			children = (
 				B6147DA422F6C8D1003B6DFE /* SchoolMap1.jpg */,
-				B6147D9922F6C5BE003B6DFE /* 11.png */,
-				B6147DA222F6C62D003B6DFE /* 21.png */,
-				B6147D9422F6C5BE003B6DFE /* 22.png */,
-				B6147D9522F6C5BE003B6DFE /* 23.png */,
-				B6147D9722F6C5BE003B6DFE /* 31.png */,
-				B6147D9222F6C5BE003B6DFE /* 32.png */,
-				B6147D9822F6C5BE003B6DFE /* 42.png */,
-				B6147D9322F6C5BE003B6DFE /* 43.png */,
-				B6147D9622F6C5BE003B6DFE /* 44.png */,
+				B6370DD92337E63900581AAD /* 11.png */,
+				B6370DDD2337E63900581AAD /* 21.png */,
+				B6370DDC2337E63900581AAD /* 22.png */,
+				B6370DDE2337E63900581AAD /* 23.png */,
+				B6370DDA2337E63900581AAD /* 31.png */,
+				B6370DDB2337E63900581AAD /* 32.png */,
+				B6370DD82337E63800581AAD /* 42.png */,
+				B6370DDF2337E63900581AAD /* 43.png */,
+				B6370DD72337E63800581AAD /* 44.png */,
 			);
 			path = MapPic;
 			sourceTree = "<group>";
@@ -588,8 +579,8 @@
 			isa = PBXGroup;
 			children = (
 				B6147D8C22F5EB9E003B6DFE /* clear.png */,
-				B6203CF722F0A4A600E4FEC7 /* 928.png */,
-				B6203CF822F0A4A600E4FEC7 /* 929.png */,
+				B6370DEA233844D400581AAD /* 928.png */,
+				B6370DE9233844D400581AAD /* 929.png */,
 				B6D8536E22EC976C0098D4E9 /* 112-1.png */,
 				B6D8536822EC976A0098D4E9 /* 112-2.png */,
 				B6D8537322EC976D0098D4E9 /* 114.png */,
@@ -741,11 +732,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6370DE72337E63900581AAD /* 23.png in Resources */,
 				B6BFFF1922F487F90012BF4D /* JKG-M_3.ttf in Resources */,
 				B6BFFF1522F4861B0012BF4D /* JKG-L_3.ttf in Resources */,
 				B6A0C4F722EEBEB50013ACBC /* 222.png in Resources */,
 				B6147DA522F6C8D1003B6DFE /* SchoolMap1.jpg in Resources */,
 				B6C7FF7022FFBD3F00473004 /* 217.png in Resources */,
+				B6370DE22337E63900581AAD /* 11.png in Resources */,
 				B6BF3EF122ADD33C00D8521F /* Map.png in Resources */,
 				B6D8539E22EC97740098D4E9 /* 225.png in Resources */,
 				B6D8539122EC97740098D4E9 /* 223.png in Resources */,
@@ -758,11 +751,13 @@
 				B6BF3EEC22ADD2C100D8521F /* TimeTable.png in Resources */,
 				B6D8539022EC97740098D4E9 /* 112-2.png in Resources */,
 				B6BF3E7822A10ABF00D8521F /* Map1.jpg in Resources */,
+				B6370DE02337E63900581AAD /* 44.png in Resources */,
 				B6BF3E5D22A0837300D8521F /* Pic3.jpeg in Resources */,
 				B6D853A222EC97740098D4E9 /* 237.png in Resources */,
 				B6D8539922EC97740098D4E9 /* 218.png in Resources */,
 				B6D8539322EC97740098D4E9 /* 431-2.png in Resources */,
-				B6147D9E22F6C5BE003B6DFE /* 44.png in Resources */,
+				B6370DE82337E63900581AAD /* 43.png in Resources */,
+				B6370DEC233844D400581AAD /* 928.png in Resources */,
 				B6D8538F22EC97740098D4E9 /* 215.png in Resources */,
 				B6D8538922EC97740098D4E9 /* 224.png in Resources */,
 				B6D853A122EC97740098D4E9 /* 213.png in Resources */,
@@ -777,45 +772,41 @@
 				B6D853AC22EC97740098D4E9 /* 212.png in Resources */,
 				B6D8538E22EC97740098D4E9 /* SchoolLogo.png in Resources */,
 				B6D8539B22EC97740098D4E9 /* 114.png in Resources */,
+				B6370DE12337E63900581AAD /* 42.png in Resources */,
+				B6370DE42337E63900581AAD /* 32.png in Resources */,
 				B6D8538D22EC97740098D4E9 /* Aikido.png in Resources */,
 				B6D8539422EC97740098D4E9 /* Dance.png in Resources */,
-				B6147D9B22F6C5BE003B6DFE /* 43.png in Resources */,
 				B6D8539722EC97740098D4E9 /* Meteors.png in Resources */,
-				B6203CF922F0A4A600E4FEC7 /* 928.png in Resources */,
 				B6D8538622EC97740098D4E9 /* StringMusic.png in Resources */,
-				B6203CFA22F0A4A600E4FEC7 /* 929.png in Resources */,
 				B6BF3E5C22A0837300D8521F /* Pic4.jpeg in Resources */,
 				B6147D8F22F5F1C3003B6DFE /* Staff.png in Resources */,
 				B6C7FF6E22FEBA0100473004 /* AppIcon.appiconset in Resources */,
 				B6D8539F22EC97740098D4E9 /* 216.png in Resources */,
 				B6147DB722F73154003B6DFE /* coolHue-FD6E6A-FFC600.png in Resources */,
 				B6D853AA22EC97740098D4E9 /* 214.png in Resources */,
+				B6370DEB233844D400581AAD /* 929.png in Resources */,
 				B63D5C0223342BA7000F393E /* GoogleService-Info.plist in Resources */,
 				B6D853AB22EC97740098D4E9 /* 220.png in Resources */,
 				B6BF3E2C22A0801F00D8521F /* LaunchScreen.storyboard in Resources */,
 				B6BF3E2922A0801F00D8521F /* Assets.xcassets in Resources */,
+				B6370DE52337E63900581AAD /* 22.png in Resources */,
 				B6D8538C22EC97740098D4E9 /* 431-1.png in Resources */,
 				B6D853A322EC97740098D4E9 /* 310.png in Resources */,
 				B6D8539D22EC97740098D4E9 /* Drama.png in Resources */,
 				B6D8539622EC97740098D4E9 /* 112-1.png in Resources */,
 				B6D8539522EC97740098D4E9 /* Gospel.png in Resources */,
 				B6D853A722EC97740098D4E9 /* 211.png in Resources */,
-				B6147D9D22F6C5BE003B6DFE /* 23.png in Resources */,
 				B6BF3EEE22ADD2C100D8521F /* Programme.png in Resources */,
 				B6D8538B22EC97740098D4E9 /* 235.png in Resources */,
 				B6C7FF7222FFBE1100473004 /* 236.png in Resources */,
-				B6147D9C22F6C5BE003B6DFE /* 22.png in Resources */,
-				B6147D9F22F6C5BE003B6DFE /* 31.png in Resources */,
 				B6BF3E5B22A0837300D8521F /* Pic1.jpeg in Resources */,
-				B6147D9A22F6C5BE003B6DFE /* 32.png in Resources */,
+				B6370DE32337E63900581AAD /* 31.png in Resources */,
 				B6147DC122F739F0003B6DFE /* オレンジ祭アプリ.png in Resources */,
 				B6BF3E2722A0801D00D8521F /* Main.storyboard in Resources */,
-				B6147DA022F6C5BE003B6DFE /* 42.png in Resources */,
-				B6147DA122F6C5BE003B6DFE /* 11.png in Resources */,
 				B6D853A822EC97740098D4E9 /* 321.png in Resources */,
-				B6147DA322F6C62D003B6DFE /* 21.png in Resources */,
 				B6BF3E5E22A0837300D8521F /* Pic2.jpeg in Resources */,
 				B61B0367232636C900ACCC1C /* OrangeFesImage.png in Resources */,
+				B6370DE62337E63900581AAD /* 21.png in Resources */,
 				B6D8538722EC97740098D4E9 /* 228.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -936,13 +927,11 @@
 				B6C7FF7722FFC33D00473004 /* StatusTableViewController.swift in Sources */,
 				B61B03742326413300ACCC1C /* SecondProgrammeViewController.swift in Sources */,
 				B6147D9122F5F388003B6DFE /* StaffViewController.swift in Sources */,
-				B6BF3E5422A0810000D8521F /* ProgrammeTableViewCell.swift in Sources */,
 				B6147DA722F6E6B1003B6DFE /* EditLostAndFoundTableViewController.swift in Sources */,
 				B6147DAF22F6EE16003B6DFE /* EnterLostAndFoundViewController.swift in Sources */,
 				B61B03722326412000ACCC1C /* FirstProgrammeViewController.swift in Sources */,
 				B6198C7E22B1E02D001FB4A6 /* LostEnterViewController.swift in Sources */,
 				B6BF3E7422A0BB0800D8521F /* MapTableViewCell.swift in Sources */,
-				B6203CF222F0A18E00E4FEC7 /* TimeTableViewController.swift in Sources */,
 				B6147DB522F71B63003B6DFE /* LostAndFoundTableViewCell.swift in Sources */,
 				B6BF3EDD22A8C81C00D8521F /* FavoriteTableViewController.swift in Sources */,
 				B6BF3EF322AE1AF400D8521F /* NavigationViewController.swift in Sources */,
@@ -951,7 +940,6 @@
 				B6147DAB22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift in Sources */,
 				B6BF3EDF22A8CD2E00D8521F /* FavoriteTableViewCell.swift in Sources */,
 				B61B03782326760F00ACCC1C /* FirstProgrammeTableViewCell.swift in Sources */,
-				B6BF3E5222A080EA00D8521F /* ProgrammeTableViewController.swift in Sources */,
 				B6C7FF7922FFC34F00473004 /* StatusTableViewCell.swift in Sources */,
 				B6BF3EE122A8CD5E00D8521F /* FavoriteViewController.swift in Sources */,
 				B6147DAD22F6E77E003B6DFE /* EditLostAndFoundViewController.swift in Sources */,
