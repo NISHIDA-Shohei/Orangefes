@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
 
 class LostAndFoundTableViewController: UITableViewController {
 
@@ -18,8 +19,21 @@ class LostAndFoundTableViewController: UITableViewController {
     var LostNameGiveData: String = ""
     var LostKeyGiveData: String = ""
     
+    //admob
+    var bannerView: GADBannerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // In this case, we instantiate the banner with desired ad size.
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = "ca-app-pub-4195103882736205/5671880921"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        
+        loadFooter()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -107,5 +121,32 @@ class LostAndFoundTableViewController: UITableViewController {
             vc.LostNameReceiveData = LostNameGiveData
             vc.LostKeyReceiveData = LostKeyGiveData
         }
+    }
+    
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+     bannerView.translatesAutoresizingMaskIntoConstraints = false
+     view.addSubview(bannerView)
+     view.addConstraints(
+       [NSLayoutConstraint(item: bannerView,
+                           attribute: .bottom,
+                           relatedBy: .equal,
+                           toItem: bottomLayoutGuide,
+                           attribute: .top,
+                           multiplier: 1,
+                           constant: 0),
+        NSLayoutConstraint(item: bannerView,
+                           attribute: .centerX,
+                           relatedBy: .equal,
+                           toItem: view,
+                           attribute: .centerX,
+                           multiplier: 1,
+                           constant: 0)
+       ])
+    }
+    
+    func loadFooter(){
+        let footerCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TableFooterCell")!
+        let footerView: UIView = footerCell.contentView
+        tableView.tableFooterView = footerView
     }
 }

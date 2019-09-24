@@ -295,7 +295,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DGg-i7-LRq">
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">オレンジ祭アプリ利用規約
+                                <mutableString key="text">オレンジ祭　アプリ利用規約 
 オレンジ祭アプリをダウンロードして頂きありがとうございます。この利用規約（以下「本規約」とします。）は、オレンジ祭の運営を行う法政大学国際高等学校オレンジ祭実行委員会（以下「本委員会」とします。）が提供する「オレンジ祭アプリ」（以下「本アプリ」とします。）と本アプリのサービス（以下「本サービス」とします。）の利用条件などを定めたものです。
 
 第１条　はじめに
@@ -347,7 +347,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
 〒230-0078 神奈川県横浜市鶴見区岸谷１丁目１３−１
 令和元年8月5日施行 令和元年8月11日改正
 
-</string>
+</mutableString>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -378,7 +378,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tJS-s2-he7">
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text"> オレンジ祭アプリプライバシーポリシー 本アプリは、利用者の情報の一部を取得し利用します。このプライバシーポリシー（以下「本ポリシー」とします。）は、本アプリにおける個人情報やそれに基づく情報の取り扱いを定めたものです。
+                                <mutableString key="text"> オレンジ祭アプリ　プライバシーポリシー  本アプリは、利用者の情報の一部を取得し利用します。このプライバシーポリシー（以下「本ポリシー」とします。）は、本アプリにおける個人情報やそれに基づく情報の取り扱いを定めたものです。
 
 第1条　個人情報の定義
 プライバシー情報のうち「個人情報」とは、個人情報保護法にいう「個人情報」を指すものとし、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日住所その他の記述等により特定の個人を識別できる情報を指します。
@@ -426,7 +426,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
 
 法政大学国際高等学校オレンジ祭実行委員会
 〒230-0078神奈川県横浜市鶴見区岸谷1丁目13-1
-令和元年8月7日施行</string>
+令和元年8月7日施行</mutableString>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -712,7 +712,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTw-nr-wBO">
-                                            <rect key="frame" x="80" y="13.333333333333336" width="42" height="17"/>
+                                            <rect key="frame" x="60" y="13.333333333333336" width="42" height="17"/>
                                             <fontDescription key="fontDescription" name="JK-Gothic-L" family="JK Gothic L" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -720,7 +720,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="VTw-nr-wBO" firstAttribute="centerY" secondItem="bZH-sX-zMl" secondAttribute="centerY" id="2IF-eO-n9C"/>
-                                        <constraint firstItem="VTw-nr-wBO" firstAttribute="leading" secondItem="bZH-sX-zMl" secondAttribute="leadingMargin" constant="60" id="Bnr-SV-Q1n"/>
+                                        <constraint firstItem="VTw-nr-wBO" firstAttribute="leading" secondItem="bZH-sX-zMl" secondAttribute="leadingMargin" constant="40" id="Bnr-SV-Q1n"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -750,6 +750,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <segue destination="ejD-qc-kuc" kind="show" identifier="GreetingSegue" id="m24-T0-At4"/>
                         <segue destination="4Qe-Cp-5R7" kind="show" identifier="PolicySegue" id="9h9-7c-Pbz"/>
                         <segue destination="QSf-LY-QzA" kind="show" identifier="CreditSegue" id="Hb1-vj-93w"/>
+                        <segue destination="7Hd-N1-qPl" kind="show" identifier="AdSegue" id="k61-8k-Ck4"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8I2-fz-DRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1398,6 +1399,42 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZjO-E4-QgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4631.25" y="2029.2253521126761"/>
+        </scene>
+        <!--アプリ内の広告について-->
+        <scene sceneID="oCl-Q2-d08">
+            <objects>
+                <viewController id="7Hd-N1-qPl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b12-N8-BFN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nZr-jA-SWT">
+                                <rect key="frame" x="0.0" y="104" width="414" height="583"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">オレンジ祭アプリ　広告について 
+・表示場所
+画面中央下付近 
+・広告内容
+広告はGoogle社と契約して表示させているものです。 広告の大まかなジャンルはオレンジ祭実行委員会側で設定が可能ですが、表示される広告１つ１つまで正確な設定が出来る訳ではございません。 したがって、アプリ内の広告内容に関してオレンジ祭実行委員会は責任を負いません。 
+・収益方法
+広告を表示することによって発生するインプレッション報酬
+広告をクリックすることによって発生する報酬 
+・利益の使用方法
+広告による収益は全て今後の生徒の活動に使用させていただきます。</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="k0T-7V-ybN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="アプリ内の広告について" id="bE8-Kz-3QD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1k0-lB-1bT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5357.971014492754" y="2029.8913043478262"/>
         </scene>
         <!--団体一覧-->
         <scene sceneID="4UV-xn-0MZ">

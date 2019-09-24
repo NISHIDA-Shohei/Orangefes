@@ -17,9 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.1</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-4195103882736205~9347208531</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>LSRequiresIPhoneOS</key>
@@ -28,10 +30,6 @@
 	<string>ARえこぴょんを表示するため</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>写真をデバイスに保存するため</string>
-	<key>UIUserInterfaceStyle</key>
-	<string>light</string>
-	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-4195103882736205~9347208531</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>TsukushiAMaruGothic.ttc</string>
@@ -70,5 +68,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>

@@ -12,19 +12,19 @@ import GoogleMobileAds
 class ElseTableViewController: UITableViewController {
 
     // cellのlabelに書く文字列
-    let Else1: [String] = ["法政国際高校ホームページ", "公式Instagram"]
+    let Else1: [String] = ["法政国際高校ホームページ", "公式Instagram","人気企画投票"]
     let Else2: [String] = ["校長より", "委員長より","議長より", "副委員長より"]
     let Else2Number: [Int] = [0,1,2,3]
     let Else3: [String] = ["オレンジ祭実行委員会","クレジット","ログイン"]
-    let Else4: [String] = ["利用規約","プライバシーポリシー"]
+    let Else4: [String] = ["利用規約","プライバシーポリシー","アプリ内の広告について"]
     let Else5: [String] = ["落し物一覧","来場者アンケート","お問い合わせ"]
 
-    
     // 遷移先のViewControllerに渡す変数
     var giveElseData: String = ""
     var giveStaffImage: String = ""
     var giveGreetingNumber: Int = 0
     var giveAgreementData:String = ""
+    var giveAboutNumber: Int = 0
     
     //admob
     var bannerView: GADBannerView!
@@ -121,8 +121,6 @@ class ElseTableViewController: UITableViewController {
         return cell
     }
     
-    
-    
     // cellが押されたときに呼ばれる関数
     // 画面遷移の処理もここで書いている
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -131,14 +129,17 @@ class ElseTableViewController: UITableViewController {
         let url2 = URL(string: "https://www.instagram.com/2019orangefes/")!
         let url3 = URL(string: "https://forms.gle/FNqKq6VhnhYQdHKn6")!
         let url4 = URL(string: "https://forms.gle/kejw7gb7R72pzjPt9")!
+        let url5 = URL(string: "https://forms.gle/ftyVnvK2NbmoLQSv9")!
         
         // 押されたときのcellのlabelの文字列をViewControllerに渡したいので、一旦、giveDataに入れとく
         if indexPath.section == 0 {
             giveElseData = Else1[indexPath.item]
             if indexPath.row == 0 {
                 UIApplication.shared.open(url1)
-            } else {
+            } else if indexPath.row == 1{
                 UIApplication.shared.open(url2)
+            } else {
+                UIApplication.shared.open(url5)
             }
         } else if indexPath.section == 1{
             giveGreetingNumber = Else2Number[indexPath.row]
@@ -158,8 +159,10 @@ class ElseTableViewController: UITableViewController {
         } else if indexPath.section == 3{
             if indexPath.row == 0 {
                 performSegue(withIdentifier: "AgreementSegue", sender: nil)
-            } else {
+            } else if indexPath.row == 1{
                 performSegue(withIdentifier: "PolicySegue", sender: nil)
+            } else {
+                performSegue(withIdentifier: "AdSegue", sender: nil)
             }
             
         } else if indexPath.section == 4{
@@ -183,7 +186,7 @@ class ElseTableViewController: UITableViewController {
         } else if segue.identifier == "GreetingSegue" {
             let vc = segue.destination as! ElseGreetingViewController
             vc.GreetingNumber = giveGreetingNumber
-        }
+        } 
     }
     
     func addBannerViewToView(_ bannerView: GADBannerView) {

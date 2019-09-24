@@ -40,12 +40,12 @@
 		B6370DE32337E63900581AAD /* 31.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DDA2337E63900581AAD /* 31.png */; };
 		B6370DE42337E63900581AAD /* 32.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DDB2337E63900581AAD /* 32.png */; };
 		B6370DE52337E63900581AAD /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DDC2337E63900581AAD /* 22.png */; };
-		B6370DE62337E63900581AAD /* 21.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DDD2337E63900581AAD /* 21.png */; };
 		B6370DE72337E63900581AAD /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DDE2337E63900581AAD /* 23.png */; };
 		B6370DE82337E63900581AAD /* 43.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DDF2337E63900581AAD /* 43.png */; };
 		B6370DEB233844D400581AAD /* 929.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DE9233844D400581AAD /* 929.png */; };
 		B6370DEC233844D400581AAD /* 928.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DEA233844D400581AAD /* 928.png */; };
-		B63D5C0223342BA7000F393E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63D5C0123342BA7000F393E /* GoogleService-Info.plist */; };
+		B6370DF0233919D000581AAD /* 21.png in Resources */ = {isa = PBXBuildFile; fileRef = B6370DEF233919D000581AAD /* 21.png */; };
+		B6370DF223391BD900581AAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6370DF123391BD800581AAD /* GoogleService-Info.plist */; };
 		B6558B73231AD6CF00F94586 /* ARTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6558B72231AD6CF00F94586 /* ARTestViewController.swift */; };
 		B6558B76231ADA7200F94586 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B6558B75231ADA7200F94586 /* art.scnassets */; };
 		B68D8BF7232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68D8BF6232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift */; };
@@ -79,7 +79,6 @@
 		B6BF3EF322AE1AF400D8521F /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3EF222AE1AF400D8521F /* NavigationViewController.swift */; };
 		B6BFFF1522F4861B0012BF4D /* JKG-L_3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6BFFF1322F485F10012BF4D /* JKG-L_3.ttf */; };
 		B6BFFF1922F487F90012BF4D /* JKG-M_3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6BFFF1822F487E40012BF4D /* JKG-M_3.ttf */; };
-		B6C7FF6222FE6A7C00473004 /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C7FF6122FE6A7C00473004 /* AgreementViewController.swift */; };
 		B6C7FF6E22FEBA0100473004 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = B6C7FF6D22FEBA0100473004 /* AppIcon.appiconset */; };
 		B6C7FF7022FFBD3F00473004 /* 217.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C7FF6F22FFBD3F00473004 /* 217.png */; };
 		B6C7FF7222FFBE1100473004 /* 236.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C7FF7122FFBE1100473004 /* 236.png */; };
@@ -180,12 +179,12 @@
 		B6370DDA2337E63900581AAD /* 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 31.png; sourceTree = "<group>"; };
 		B6370DDB2337E63900581AAD /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
 		B6370DDC2337E63900581AAD /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
-		B6370DDD2337E63900581AAD /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.png; sourceTree = "<group>"; };
 		B6370DDE2337E63900581AAD /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
 		B6370DDF2337E63900581AAD /* 43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 43.png; sourceTree = "<group>"; };
 		B6370DE9233844D400581AAD /* 929.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 929.png; sourceTree = "<group>"; };
 		B6370DEA233844D400581AAD /* 928.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 928.png; sourceTree = "<group>"; };
-		B63D5C0123342BA7000F393E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B6370DEF233919D000581AAD /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.png; sourceTree = "<group>"; };
+		B6370DF123391BD800581AAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B6558B72231AD6CF00F94586 /* ARTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTestViewController.swift; sourceTree = "<group>"; };
 		B6558B75231ADA7200F94586 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		B68D8BF6232A8E62003AB0A0 /* ThirdProgrammeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdProgrammeTableViewCell.swift; sourceTree = "<group>"; };
@@ -225,7 +224,6 @@
 		B6BF3EF222AE1AF400D8521F /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		B6BFFF1322F485F10012BF4D /* JKG-L_3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JKG-L_3.ttf"; sourceTree = "<group>"; };
 		B6BFFF1822F487E40012BF4D /* JKG-M_3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JKG-M_3.ttf"; sourceTree = "<group>"; };
-		B6C7FF6122FE6A7C00473004 /* AgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
 		B6C7FF6D22FEBA0100473004 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		B6C7FF6F22FFBD3F00473004 /* 217.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 217.png; sourceTree = "<group>"; };
 		B6C7FF7122FFBE1100473004 /* 236.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 236.png; sourceTree = "<group>"; };
@@ -430,7 +428,7 @@
 				B6BF3EE522AD275500D8521F /* TabBarController.swift */,
 				B6BF3EF222AE1AF400D8521F /* NavigationViewController.swift */,
 				B6BF3E2A22A0801F00D8521F /* LaunchScreen.storyboard */,
-				B63D5C0123342BA7000F393E /* GoogleService-Info.plist */,
+				B6370DF123391BD800581AAD /* GoogleService-Info.plist */,
 				B6BF3E2D22A0801F00D8521F /* Info.plist */,
 			);
 			path = 2019OrangeFesApp;
@@ -511,7 +509,6 @@
 				B6BF3EC822A53FEC00D8521F /* ElseTableViewCell.swift */,
 				B6203CDC22EF0BEE00E4FEC7 /* ElseGreetingViewController.swift */,
 				B6147D9022F5F388003B6DFE /* StaffViewController.swift */,
-				B6C7FF6122FE6A7C00473004 /* AgreementViewController.swift */,
 			);
 			path = Else;
 			sourceTree = "<group>";
@@ -521,7 +518,7 @@
 			children = (
 				B6147DA422F6C8D1003B6DFE /* SchoolMap1.jpg */,
 				B6370DD92337E63900581AAD /* 11.png */,
-				B6370DDD2337E63900581AAD /* 21.png */,
+				B6370DEF233919D000581AAD /* 21.png */,
 				B6370DDC2337E63900581AAD /* 22.png */,
 				B6370DDE2337E63900581AAD /* 23.png */,
 				B6370DDA2337E63900581AAD /* 31.png */,
@@ -764,6 +761,7 @@
 				B6252A2E231BBA2C0075A7FB /* camera@3x.png in Resources */,
 				B6D8538822EC97740098D4E9 /* 227.png in Resources */,
 				B6558B76231ADA7200F94586 /* art.scnassets in Resources */,
+				B6370DF0233919D000581AAD /* 21.png in Resources */,
 				B6D853A922EC97740098D4E9 /* 226.png in Resources */,
 				B6D8539222EC97740098D4E9 /* 234.png in Resources */,
 				B6D8539A22EC97740098D4E9 /* 221.png in Resources */,
@@ -780,12 +778,12 @@
 				B6D8538622EC97740098D4E9 /* StringMusic.png in Resources */,
 				B6BF3E5C22A0837300D8521F /* Pic4.jpeg in Resources */,
 				B6147D8F22F5F1C3003B6DFE /* Staff.png in Resources */,
+				B6370DF223391BD900581AAD /* GoogleService-Info.plist in Resources */,
 				B6C7FF6E22FEBA0100473004 /* AppIcon.appiconset in Resources */,
 				B6D8539F22EC97740098D4E9 /* 216.png in Resources */,
 				B6147DB722F73154003B6DFE /* coolHue-FD6E6A-FFC600.png in Resources */,
 				B6D853AA22EC97740098D4E9 /* 214.png in Resources */,
 				B6370DEB233844D400581AAD /* 929.png in Resources */,
-				B63D5C0223342BA7000F393E /* GoogleService-Info.plist in Resources */,
 				B6D853AB22EC97740098D4E9 /* 220.png in Resources */,
 				B6BF3E2C22A0801F00D8521F /* LaunchScreen.storyboard in Resources */,
 				B6BF3E2922A0801F00D8521F /* Assets.xcassets in Resources */,
@@ -806,7 +804,6 @@
 				B6D853A822EC97740098D4E9 /* 321.png in Resources */,
 				B6BF3E5E22A0837300D8521F /* Pic2.jpeg in Resources */,
 				B61B0367232636C900ACCC1C /* OrangeFesImage.png in Resources */,
-				B6370DE62337E63900581AAD /* 21.png in Resources */,
 				B6D8538722EC97740098D4E9 /* 228.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -936,7 +933,6 @@
 				B6BF3EDD22A8C81C00D8521F /* FavoriteTableViewController.swift in Sources */,
 				B6BF3EF322AE1AF400D8521F /* NavigationViewController.swift in Sources */,
 				B6BF3E7022A0BAD000D8521F /* MapViewController.swift in Sources */,
-				B6C7FF6222FE6A7C00473004 /* AgreementViewController.swift in Sources */,
 				B6147DAB22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift in Sources */,
 				B6BF3EDF22A8CD2E00D8521F /* FavoriteTableViewCell.swift in Sources */,
 				B61B03782326760F00ACCC1C /* FirstProgrammeTableViewCell.swift in Sources */,
@@ -1128,6 +1124,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XD5X9TDNNJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1138,6 +1135,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = Shohei.N.2019OrangeFesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1151,6 +1149,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XD5X9TDNNJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1161,6 +1160,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = Shohei.N.2019OrangeFesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
