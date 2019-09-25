@@ -158,15 +158,15 @@ class FavoriteTableViewController: UITableViewController {
             giveDescriptionData = FavoritePerformanceDescription[indexPath.item]
             givePictureStringData = FavoritePerformancePictureString[indexPath.row]
         }
-        performSegue(withIdentifier: "FavoriteSegue", sender: nil)
+        performSegue(withIdentifier: "ProgrammeSegue", sender: nil)
     }
     // 遷移先のViewControllerにデータを渡す関数
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "FavoriteSegue" {
-            let vc = segue.destination as! FavoriteViewController
-            vc.receiveData = giveData
-            vc.receiveDescriptionData = giveDescriptionData
-            vc.receivePictureStringData = givePictureStringData
+        if segue.identifier == "ProgrammeSegue" {
+            let vc = segue.destination as! ProgrammeViewController
+            vc.ProgrammeReceiveData = giveData
+            vc.ProgrammeDescriptionReceiveData = giveDescriptionData
+            vc.ProgrammePictureReceiveData = givePictureStringData
         }
     }
     

@@ -17,7 +17,7 @@ class LostEnterViewController: UIViewController, UITextFieldDelegate, UIPickerVi
     @IBOutlet var LostPlaceLabel: UILabel!
     @IBOutlet var pickerView: UIPickerView!
     
-    let PlaceList: [String] = ["１号間","２号間","３号間","４号間","体育館","グラウンド","校門付近","M棟","その他"]
+    let PlaceList: [String] = ["１号館","２号館","３号館","４号館","体育館","グラウンド","校門付近","M棟","その他"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

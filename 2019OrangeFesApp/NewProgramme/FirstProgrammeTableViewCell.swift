@@ -14,6 +14,7 @@ class FirstProgrammeTableViewCell: UITableViewCell {
     @IBOutlet weak var ProgrammePicture: UIImageView!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var ProgrammeView: UIView!
+    @IBOutlet weak var ProgrammeGenre: UILabel!
     
     
     override func awakeFromNib() {
@@ -34,6 +35,10 @@ class FirstProgrammeTableViewCell: UITableViewCell {
         // 影をぼかし
         ProgrammeView.layer.shadowRadius = 4
         
+        ProgrammeGenre.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+        ProgrammeGenre.layer.cornerRadius = 3
+        ProgrammeGenre.layer.borderColor = UIColor.gray.cgColor
+        ProgrammeGenre.layer.borderWidth = 0.8
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

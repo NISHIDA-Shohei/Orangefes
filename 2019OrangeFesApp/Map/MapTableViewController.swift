@@ -19,11 +19,11 @@ class MapTableViewController: UITableViewController {
     let Building4: [String] = ["２階","３階","４階"]
     let BuildingElse: [String] = ["全体"]
     
-    let Building1Picture: [String] = ["11.png"]
-    let Building2Picture: [String] = ["21.png","22.png","23.png"]
-    let Building3Picture: [String] = ["31.png","32.png"]
-    let Building4Picture: [String] = ["42.png","43.png","44.png"]
-    let BuildingElsePicture: [String] = ["SchoolMap1.jpg"]
+    let Building1Picture: [String] = ["11"]
+    let Building2Picture: [String] = ["21","22","23"]
+    let Building3Picture: [String] = ["31","32"]
+    let Building4Picture: [String] = ["42","43","44"]
+    let BuildingElsePicture: [String] = ["SchoolMap1"]
     
     // 遷移先のViewControllerに渡す変数
     var giveData: String = ""

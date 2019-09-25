@@ -12,30 +12,30 @@ import GoogleMobileAds
 class ThirdProgrammeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let PerformanceName11: [String] = ["応援部","弦楽部","ダンス部"]
-    let PerformanceImage11: [String] = ["Meteors.png","StringMusic.png","Dance.png"]
+    let PerformanceImage11: [String] = ["Meteors","StringMusic","Dance"]
     let PerformanceTime11: [String] = ["10:00〜10:50","11:10〜12:00","14:30〜15:30"]
     let PerformanceTime21: [String] = ["11:00〜11:50","12:10〜13:00","13:20〜14:20"]
     
     let PerformanceName12: [String] = ["合気道部","吹奏楽部"]
-    let PerformanceImage12: [String] = ["Aikido.png","BrassBand.png"]
+    let PerformanceImage12: [String] = ["Aikido","BrassBand"]
     let PerformanceTime12: [String] = ["11:10〜12:00","13:05〜13:35"]
     
     let PerformanceName13: [String] = ["ダンス部","応援部"]
-    let PerformanceImage13:[String] = ["Dance.png","Meteors.png"]
+    let PerformanceImage13:[String] = ["Dance","Meteors"]
     let PerformanceTime13: [String] = ["12:20〜13:00","13:50〜14:40"]
     let PerformanceTime23: [String] = ["10:00〜10:40","14:30〜15:30"]
     
     let PerformanceName14: [String] = ["ゴスペル部","英語部"]
-    let PerformanceImage14: [String] = ["Gospel.png","ESS.png"]
+    let PerformanceImage14: [String] = ["Gospel","ESS"]
     let PerformanceTime14: [String] = ["12:00〜13:00","13:40〜14:20"]
     let PerformanceTime24: [String] = ["12:00〜13:00","13:40〜14:20"]
     
     let PerformanceName15: [String] = ["軽音楽部"]
-    let PerformanceImage15: [String] = ["SchoolBand.png"]
+    let PerformanceImage15: [String] = ["SchoolBand"]
     let PerformanceTime15: [String] = ["10:00〜15:30"]
     
     let PerformanceName22: [String] = ["吹奏楽部","合気道部"]
-    let PerformanceImage22: [String] = ["BrassBand.png","Aikido.png"]
+    let PerformanceImage22: [String] = ["BrassBand","Aikido"]
     let PerformanceTime22: [String] = ["10:45〜11:15","11:30〜12:25"]
     
     //segment controll用関数
