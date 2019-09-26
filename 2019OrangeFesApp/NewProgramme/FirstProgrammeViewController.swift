@@ -29,9 +29,9 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         ,"「茶道部」お茶とお菓子が食べれます。1席150円です。正座はしないので、お気軽にお越し下さい。日頃の稽古の成果を生かせるよう頑張ります。"
     ,"「図書委員会」生徒のみなさんと先生方から読まなくなった本を寄付していただき、古本として販売します。海外文学から絵本まで様々なジャンルを用意しています！是非お気軽に足を運んでみてください！"]
     
-    let ProgrammeName2: [String] = ["ゆっかいず","ドーナツショップ","お化け屋敷","ちゅるちゅるらんど","硬式テニス部３年","トッポギ","すいーと♡えんじぇる","起業家クラス","法政国際２年男子","Cafe in The Daytime","バレー部","硬式テニス部１・２年","放送部","１年H組","１年C組","1年D組　","アメリカンドッグ","バドミントン部　","１年E組","あなたとコンビに法政チーズ","１年G組","家庭科部"]
-    let ProgrammeGenre2: [String] = ["　食品　","　食品　","　展示　","　食品　","　食品　","　食品　","　食品　","　食品　","　展示　","　食品　","　食品　","　食品　","　展示　","　食品　","　展示　","　展示　","　食品　","　食品　","　展示　","　食品　","　食品　","　食品　"]
-    let ProgrammePicture2String: [String] = ["211","212","213","214","215","217","218","220","221","222","223","224","225","226","227","228","234","432","235","236","237","310"]
+    let ProgrammeName2: [String] = ["ゆっかいず","ドーナツショップ","お化け屋敷","ちゅるちゅるらんど","硬式テニス部３年","トッポギ","すいーと♡えんじぇる","起業家クラス","法政国際２年男子","Cafe in The Daytime","バレー部","硬式テニス部１・２年","放送部","MORI'S DINER","１年C組","1年D組　","アメリカンドッグ","バドミントン部　","１年E組","あなたとコンビに法政チーズ","１年G組","家庭科部","ソフトボール部"]
+    let ProgrammeGenre2: [String] = ["　食品　","　食品　","　展示　","　食品　","　食品　","　食品　","　食品　","　食品　","　展示　","　食品　","　食品　","　食品　","　展示　","　食品　","　展示　","　展示　","　食品　","　食品　","　展示　","　食品　","　食品　","　食品　","　食品　"]
+    let ProgrammePicture2String: [String] = ["211","212","213","214","215","217","218","220","221","222","223","224","225","226","227","228","234","432","235","236","237","310","230"]
     var ProgrammePicture2: [UIImage?] = []
     
     
@@ -50,14 +50,14 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         ,"「硬式テニス部1・2年」硬式テニス部1・2年によるたいやき屋さんです！かわいくて美味しいたいやきを売るので、ぜひお越し下さい！"
         ,"「放送部」放送部は224教室でビデオ放送を行っています。構成やナレーションまでこだわって作成したので、ぜひ見にきて下さい。また、少し疲れてしまった時の休憩スペースとしてもどうぞ!!"
         ,"「1年H組」1年H組です。New York風のAmerican Hot dogに、少しTwistを付け加えました。インスタ映え間違いなしのコーナーや、イケメン男子が待っています！"
-        ,"「1年C組」VS嵐"
+    ,"「1年C組」1年C組では、クラブをテーマにボーリングをやっています！！ナイスな音楽に包まれながら、薄暗いなかでボーリング、やってみませんか？？2号館2階、CLUB227でお待ちしています！！"
         ,"「1年D組」あなたは誰がピエロか見抜けるか人狼ゲームをしていた少女たち  しかしその中には人殺しのピエロが紛れ込んでいた……               次々とピエロによって殺されていく少女たちあなたはピエロから逃げ切れるのかそれともピエロに見つかり殺されてしまうのか…     \nけっしてふりかえるな"
         ,"「アメリカンドッグ」☆ベビーカステラ ☆ミニアメリカンドッグ ☆チーズボールやります！小腹がすいたら234へ!!待ってます！"
     ,"「バドミントン部」2号館で焼き小籠包を売っています！外はパリッとこんがり焼き目をつけて、中はジューシーな肉汁が溢れ出てくる、ココでしか食べられない横浜の伝統ある焼き小籠包、ぜひ召し上がり下さい！！2号館でお待ちしています！！"
         ,"「1年E組」法政国際高校1年E組に迷いこんでしまったあなた。次々と迫りくる試練を乗り越え脱出デキルカナ...!?リアル脱出ゲーム、是非おこし下さい！"
         ,"「あなたとコンビに法政チーズ」1-Fでチーズスティックをを販売します！　最近流行りの伸びるチーズを法政コンビニで味わって見ませんか？"
     ,"「１年G組」「肉巻きおにぎりがここにある！」私たち1年G組はやみつきになるジューシー肉巻き弁当を用意してあなたをお待ちしています！売り切れごめんの肉巻きおにぎり！1Gへ急げ!!"
-        ,"「家庭科部」家庭部はクッキーを販売しています。1袋100円のワンコインなので気軽にご購入いただけます。手軽に甘いものが欲しくなった時にいかがでしょうか？"]
+        ,"「家庭科部」家庭部はクッキーを販売しています。1袋100円のワンコインなので気軽にご購入いただけます。手軽に甘いものが欲しくなった時にいかがでしょうか？","「ソフトボール部」ソフトボール部です！ご飯屋さんのおにぎりなのでちょっと高いですが、とっても美味しいです！3号館のロビーで売ってるので、ぜひ来てください！！一個でもいいので買ってくれると嬉しいです！！"]
     
     let ProgrammeName3: [String] = ["美術部"]
     let ProgrammeGenre3: [String] = ["　展示・販売　"]
@@ -75,11 +75,11 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         ,"今年度もバザーを催します。\n法政国際オリジナルグッズ（オリジナルトートバッグ・刺繍入りタオル）も販売します。\n数量限定となりますのでお見逃しなく！　\n皆様のお越しをお待ちしております。　\n※PTAバザー主催の売上金は、生徒たちの為に使わせていただきます"
             ,"①全体説明　4号館　4階音楽室　\n9/28 13:00 9/29 10:00 11:30 13:00 \n②個別相談 4号館　442教室 \n9/28 14:00-15:30 9/29 10:30-15:30 \n来年度、本校を受験される中学生および保護者の方々のために設けた部屋です。個別相談はなるべく全体説明をお聞きになった上で、おまわり下さい。"]
     
-    let ProgrammeName5: [String] = ["太田屋","一の会","ベル　エポック","MARION CREPES","食堂"]
-    let ProgrammeGenre5: [String] = ["　食品　","　食品　","　食品　","　食品　","　食品　"]
-    let ProgrammePicture5String: [String] = ["clear","clear","clear","clear","clear"]
+    let ProgrammeName5: [String] = ["サッカー部","太田屋","一の会","ベル　エポック","MARION CREPES","食堂"]
+    let ProgrammeGenre5: [String] = ["　スポーツ　","　食品　","　食品　","　食品　","　食品　","　食品　"]
+    let ProgrammePicture5String: [String] = ["001","clear","clear","clear","clear","clear"]
     var ProgrammePicture5: [UIImage?] = []
-    let ProgrammeDescription5: [String] = ["惣菜屋","学校食堂","パン屋","クレープ屋","からあげ丼甘辛ソース・４５０円　\n豚キムチ丼温玉のせ・４５０円　\nラーメン・３５０円　\nトマトカレー夏野菜・４００円　\nコロッケパン・１００円　\nいももち・１５０円　\nアメリカンドック・１００円　\nドーナツ４種類・各１００円（キャラメル・アップルシナモン・ミルクショコラ・抹茶ミルク）　\nからあげ４個・１００円（オレンジ祭のみの企画です）"]
+    let ProgrammeDescription5: [String] = ["「サッカー部」私たちサッカー部の出し物は毎年恒例となっているキックターゲットで、ボールを蹴って的に当てるというゲームです。大人も子供も楽しめるので、是非遊びに来てください！\n\n場所：グラウンド","惣菜屋","学校食堂","パン屋","クレープ屋","からあげ丼甘辛ソース・４５０円　\n豚キムチ丼温玉のせ・４５０円　\nラーメン・３５０円　\nトマトカレー夏野菜・４００円　\nコロッケパン・１００円　\nいももち・１５０円　\nアメリカンドック・１００円　\nドーナツ４種類・各１００円（キャラメル・アップルシナモン・ミルクショコラ・抹茶ミルク）　\nからあげ４個・１００円（オレンジ祭のみの企画です）"]
     
     // 遷移先のViewControllerに渡す変数
     var ProgrammeGiveData: String = ""
@@ -195,7 +195,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         } else if sectionNumber == 4 {
             sectionPlace = "4号館"
         } else if sectionNumber == 5 {
-            sectionPlace = "オレンジの間前・食堂"
+            sectionPlace = "オレンジの間前・食堂・グラウンド"
         } else {
             sectionPlace = ""
         }
@@ -293,10 +293,11 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         var getUDProgrammeName:[String] = userDefaults.array(forKey: "UDProgrammeNameKey") as? [String] ?? []
         var getUDProgrammeDescription:[String] = userDefaults.array(forKey: "UDProgrammeDescriptionKey") as? [String] ?? []
         var getUDProgrammePicture:[String] = userDefaults.array(forKey: "UDProgrammePictureKey" ) as? [String] ?? []
+        var getUDProgrammeGenre: [String] = userDefaults.array(forKey: "UDProgrammeGenreKey" ) as? [String] ?? []
         
         // タップされたボタンのtableviewの選択行を取得
         let button = sender as! UIButton
-        let cell = button.superview?.superview as! UITableViewCell
+        let cell = button.superview?.superview?.superview as! UITableViewCell
         let row = TableView.indexPath(for: cell)!.row
         let section = TableView.indexPath(for: cell)!.section
         
@@ -316,11 +317,13 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                     getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName1[row])!)
                     getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription1[row])!)
                     getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture1String[row])!)
+                    getUDProgrammeGenre.remove(at: getUDProgrammeGenre.firstIndex(of: ProgrammeGenre1[row])!)
                     changeBlack()
                 }else {
                     getUDProgrammeName.append(ProgrammeName1[row])
                     getUDProgrammeDescription.append(ProgrammeDescription1[row])
                     getUDProgrammePicture.append(ProgrammePicture1String[row])
+                    getUDProgrammeGenre.append(ProgrammeGenre1[row])
                     changeOrange()
                 }
             }else if section == 2 {
@@ -328,11 +331,13 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                     getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName2[row])!)
                     getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription2[row])!)
                     getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture2String[row])!)
+                    getUDProgrammeGenre.remove(at: getUDProgrammeGenre.firstIndex(of: ProgrammeGenre2[row])!)
                     changeBlack()
                 }else {
                     getUDProgrammeName.append(ProgrammeName2[row])
                     getUDProgrammeDescription.append(ProgrammeDescription2[row])
                     getUDProgrammePicture.append(ProgrammePicture2String[row])
+                    getUDProgrammeGenre.append(ProgrammeGenre2[row])
                     changeOrange()
                 }
             }else if section == 3 {
@@ -340,11 +345,13 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                     getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName3[row])!)
                     getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription3[row])!)
                     getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture3String[row])!)
+                    getUDProgrammeGenre.remove(at: getUDProgrammeGenre.firstIndex(of: ProgrammeGenre3[row])!)
                     changeBlack()
                 }else {
                     getUDProgrammeName.append(ProgrammeName3[row])
                     getUDProgrammeDescription.append(ProgrammeDescription3[row])
                     getUDProgrammePicture.append(ProgrammePicture3String[row])
+                    getUDProgrammeGenre.append(ProgrammeGenre3[row])
                     changeOrange()
                 }
             }else if section == 4 {
@@ -352,11 +359,13 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                     getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName4[row])!)
                     getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription4[row])!)
                     getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture4String[row])!)
+                    getUDProgrammeGenre.remove(at: getUDProgrammeGenre.firstIndex(of: ProgrammeGenre4[row])!)
                     changeBlack()
                 }else {
                     getUDProgrammeName.append(ProgrammeName4[row])
                     getUDProgrammeDescription.append(ProgrammeDescription4[row])
                     getUDProgrammePicture.append(ProgrammePicture4String[row])
+                    getUDProgrammeGenre.append(ProgrammeGenre4[row])
                     changeOrange()
                 }
             }else if section == 5 {
@@ -364,11 +373,13 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
                     getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: ProgrammeName5[row])!)
                     getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: ProgrammeDescription5[row])!)
                     getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: ProgrammePicture5String[row])!)
+                    getUDProgrammeGenre.remove(at: getUDProgrammeGenre.firstIndex(of: ProgrammeGenre5[row])!)
                     changeBlack()
                 }else {
                     getUDProgrammeName.append(ProgrammeName5[row])
                     getUDProgrammeDescription.append(ProgrammeDescription5[row])
                     getUDProgrammePicture.append(ProgrammePicture5String[row])
+                    getUDProgrammeGenre.append(ProgrammeGenre5[row])
                     changeOrange()
                 }
             }
@@ -376,10 +387,9 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         // userDefaultsに格納したい値
         //UserDefaultにUDProgrammeNameを保存する
         userDefaults.set(getUDProgrammeName, forKey: "UDProgrammeNameKey")
-        
         userDefaults.set(getUDProgrammeDescription, forKey: "UDProgrammeDescriptionKey")
-        
         userDefaults.set(getUDProgrammePicture, forKey: "UDProgrammePictureKey")
+        userDefaults.set(getUDProgrammeGenre, forKey: "UDProgrammeGenreKey")
         
     }
     
@@ -432,9 +442,6 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
             vc.ProgrammePictureReceiveData = ProgrammePictureGiveData
         }
     }
-    
-    
-    
     
     func reload(){
         TableView.reloadData()

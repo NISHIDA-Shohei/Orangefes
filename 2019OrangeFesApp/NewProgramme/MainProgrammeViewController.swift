@@ -13,9 +13,16 @@ class MainProgrammeViewController: UIViewController {
     @IBOutlet weak var NavigationTitle: UINavigationItem!
     // this is not yet completed
     @IBOutlet weak var segmentControl: UISegmentedControl!
+    
+    //UserDefaultsの変数
+    var userDefaults = UserDefaults.standard
+    var deleteUDNumber:Int = 0
+    
+    let reset: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        deleteUDOnece()
         updateView()
     }
     @IBAction func tapSegmentControl(_ sender: UISegmentedControl) {
@@ -84,6 +91,29 @@ class MainProgrammeViewController: UIViewController {
         viewController.view.removeFromSuperview()
         // 子View Controllerへの通知
         viewController.removeFromParent()
+    }
+    
+    func deleteUDOnece(){
+        
+        deleteUDNumber = userDefaults.integer(forKey: "UDDeleteKey") as Int
+        
+        print(deleteUDNumber)
+        
+        if deleteUDNumber == 1{
+            //do nothing
+        } else {
+            userDefaults.set(reset, forKey: "UDProgrammeNameKey")
+            userDefaults.set(reset, forKey: "UDProgrammeDescriptionKey")
+            userDefaults.set(reset, forKey: "UDProgrammePictureKey")
+            userDefaults.set(reset, forKey: "UDProgrammeGenreKey")
+            
+            userDefaults.set(reset, forKey: "UDPerformanceNameKey")
+            userDefaults.set(reset, forKey: "UDPerformanceDescriptionKey")
+            userDefaults.set(reset, forKey: "UDPerformancePictureKey")
+            userDefaults.set(1, forKey: "UDDeleteKey")
+        }
+        
+        
     }
     
 }

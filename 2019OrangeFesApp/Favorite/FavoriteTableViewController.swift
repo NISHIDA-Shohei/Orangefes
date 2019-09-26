@@ -20,6 +20,9 @@ class FavoriteTableViewController: UITableViewController {
     var FavoritePerformanceDescription: [String] = []
     var FavoriteProgrammePictureString: [String] = []
     var FavoritePerformancePictureString: [String] = []
+    var FavoriteProgrammeGenre: [String] = []
+    
+    let reset: String = ""
 
     var giveData = ""
     var giveDescriptionData = ""
@@ -63,7 +66,11 @@ class FavoriteTableViewController: UITableViewController {
         
         let getPerformancePictureString:[String] = userDefaults.array(forKey: "UDPerformancePictureKey") as? [String] ?? []
         FavoritePerformancePictureString = getPerformancePictureString
-        print(FavoritePerformancePictureString)
+        
+        let getFavoriteProgrammeGenre: [String] = userDefaults.array(forKey: "UDProgrammeGenreKey") as? [String] ?? []
+        FavoriteProgrammeGenre = getFavoriteProgrammeGenre
+        
+        print(FavoriteProgrammeGenre)
         //リロードする
         tableView.reloadData()
         
@@ -124,6 +131,7 @@ class FavoriteTableViewController: UITableViewController {
             // ここでcellのlabelに値を入れる　ここに新たな文字をい入れる
             FavoriteCell.FavoriteNameLabel.text = FavoriteName[indexPath.item]
             FavoriteCell.FavoritePicture.image = UIImage(named: FavoriteProgrammePictureString[indexPath.item])
+            FavoriteCell.FavoriteGenre.text = FavoriteProgrammeGenre[indexPath.row]
             if UDColorTestProgramme.contains(FavoriteName[indexPath.item]){
                 FavoriteCell.FavoriteButton.setTitleColor(UIColor.orange, for: .normal)
                 FavoriteCell.FavoriteButton.setTitle("★", for: .normal)
@@ -134,6 +142,7 @@ class FavoriteTableViewController: UITableViewController {
         } else {
             FavoriteCell.FavoriteNameLabel.text = FavoritePerformanceName[indexPath.item]
             FavoriteCell.FavoritePicture.image = UIImage(named: FavoritePerformancePictureString[indexPath.item])
+            FavoriteCell.FavoriteGenre.text = ""
             if UDColorTestPerformance.contains(FavoritePerformanceName[indexPath.item]){
                 FavoriteCell.FavoriteButton.setTitleColor(UIColor.orange, for: .normal)
                 FavoriteCell.FavoriteButton.setTitle("★", for: .normal)
@@ -179,6 +188,7 @@ class FavoriteTableViewController: UITableViewController {
         var getUDPerformanceName:[String] = userDefaults.array(forKey: "UDPerformanceNameKey") as? [String] ?? []
         var getUDPerformanceDescription:[String] = userDefaults.array(forKey: "UDPerformanceDescriptionKey") as? [String] ?? []
         var getUDPerformancePicture:[String] = userDefaults.array(forKey: "UDPerformancePictureKey" ) as? [String] ?? []
+        var getUDProgrammeGenre: [String] = userDefaults.array(forKey: "UDProgrammeGenreKey" ) as? [String] ?? []
         
         // タップされたボタンのtableviewの選択行を取得
         let button = sender as! UIButton
@@ -201,11 +211,13 @@ class FavoriteTableViewController: UITableViewController {
                 getUDProgrammeName.remove(at: getUDProgrammeName.firstIndex(of: FavoriteName[row])!)
                 getUDProgrammeDescription.remove(at: getUDProgrammeDescription.firstIndex(of: FavoriteProgrammeDescription[row])!)
                 getUDProgrammePicture.remove(at: getUDProgrammePicture.firstIndex(of: FavoriteProgrammePictureString[row])!)
+                getUDProgrammeGenre.remove(at: getUDProgrammeGenre.firstIndex(of: FavoriteProgrammeGenre[row])!)
                 changeBlack()
             }else {
                 getUDProgrammeName.append(FavoriteName[row])
                 getUDProgrammeDescription.append(FavoriteProgrammeDescription[row])
                 getUDProgrammePicture.append(FavoriteProgrammePictureString[row])
+                getUDProgrammeGenre.append(FavoriteProgrammeGenre[row])
                 changeOrange()
                 print("ここには来ないはず")
             }
@@ -231,8 +243,22 @@ class FavoriteTableViewController: UITableViewController {
         userDefaults.set(getUDPerformanceDescription, forKey: "UDPerformanceDescriptionKey")
         userDefaults.set(getUDProgrammePicture, forKey: "UDProgrammePictureKey")
         userDefaults.set(getUDPerformancePicture, forKey: "UDPerformancePictureKey")
+        userDefaults.set(getUDProgrammeGenre, forKey: "UDProgrammeGenreKey")
         tableView.reloadData()
         
+    }
+    
+    @IBAction func tapReset(sender: Any) {
+        userDefaults.set(reset, forKey: "UDProgrammeNameKey")
+        userDefaults.set(reset, forKey: "UDProgrammeDescriptionKey")
+        userDefaults.set(reset, forKey: "UDProgrammePictureKey")
+        userDefaults.set(reset, forKey: "UDProgrammeGenreKey")
+        
+        userDefaults.set(reset, forKey: "UDPerformanceNameKey")
+        userDefaults.set(reset, forKey: "UDPerformanceDescriptionKey")
+        userDefaults.set(reset, forKey: "UDPerformancePictureKey")
+        
+        tableView.reloadData()
     }
     
     func addBannerViewToView(_ bannerView: GADBannerView) {

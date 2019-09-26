@@ -21,7 +21,7 @@ class ProgrammeViewController: UIViewController {
     
     let map11Programme: [String] = ["茶道部","華道部","漫画広報部","図書委員会　"]
     let map21Programme: [String] = ["すいーと♡えんじぇる","ちゅるちゅるらんど","トッポギ","硬式テニス部３年","お化け屋敷","ドーナツショップ","ゆっかいず","家庭科部"]
-    let map22Programme: [String] = [ "１年C組","１年H組","放送部","硬式テニス部１・２年","バレー部","Cafe in The Daytime","法政国際２年男子","1年D組　","起業家クラス"]
+    let map22Programme: [String] = [ "１年C組","MORI'S DINER","放送部","硬式テニス部１・２年","バレー部","Cafe in The Daytime","法政国際２年男子","1年D組　","起業家クラス"]
     let map23Programme: [String] = ["１年G組", "あなたとコンビに法政チーズ","１年E組","アメリカンドッグ","バドミントン部　"]
     let map31Programme: [String] = ["ゴスペル部","英語部","有志演劇"]
     let map32Programme: [String] = ["美術部"]

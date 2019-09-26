@@ -42,10 +42,6 @@ class ARTestViewController: UIViewController, ARSCNViewDelegate  {
         let hitTransform = SCNMatrix4(hitResult.worldTransform)
         let hitVector = SCNVector3Make(hitTransform.m41, hitTransform.m42, hitTransform.m43)
         createEcoPyon(position: hitVector)
-        
-        /*
-         node!.transform =  SCNMatrix4(m11: rotateTransform.columns.0.x, m12: rotateTransform.columns.0.y, m13: rotateTransform.columns.0.z, m14: rotateTransform.columns.0.w, m21: rotateTransform.columns.1.x, m22: rotateTransform.columns.1.y, m23: rotateTransform.columns.1.z, m24: rotateTransform.columns.1.w, m31: rotateTransform.columns.2.x, m32: rotateTransform.columns.2.y, m33: rotateTransform.columns.2.z, m34: rotateTransform.columns.0.w, m41: hitTransform.m41, m42: hitTransform.m42, m43: hitTransform.m43, m44: rotateTransform.columns.0.w)
-        */
     }
     
     func createEcoPyon(position: SCNVector3){
@@ -85,7 +81,7 @@ class ARTestViewController: UIViewController, ARSCNViewDelegate  {
     
     @IBAction func TakeImage(_ sender: Any) {
         let noImage = UIImage(named: "hoge")
-        let setImage = UIImage(named: "camera@3x.png")
+        let setImage = UIImage(named: "camera")
         
         TakeImageButton.setBackgroundImage(noImage, for: .normal)
         
@@ -99,24 +95,6 @@ class ARTestViewController: UIViewController, ARSCNViewDelegate  {
         UIGraphicsEndImageContext()
         // imageをカメラロールに保存
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-        
-        //sendImagetoFirebase
-        guard let imageData = image.jpegData(compressionQuality: 0.1) else { return }
-        
-        let metadata = StorageMetadata()
-        metadata.contentType = "image/jpeg"
-        
-        
-        let folderRef = ref.child("写真").childByAutoId();
-        let key = folderRef.key
-        let storage = Storage.storage().reference(forURL: "gs://orangefesapp.appspot.com/").child(key! + "ARImage")
-        
-        storage.putData(imageData, metadata: metadata) { meta, error in
-            storage.downloadURL(completion: { (url, error) in
-                let newFolder = ["ARImageURL": url?.absoluteString as Any, "ARImageName": key! + "ARImage"] as [String : Any]
-                folderRef.updateChildValues(newFolder)
-            })
-        }
         
         TakeImageButton.setBackgroundImage(setImage, for: .normal)
     }

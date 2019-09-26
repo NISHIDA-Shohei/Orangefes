@@ -10,6 +10,11 @@
 		09A18F2954D0A33D4A863690 /* Pods_2019OrangeFesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E494D09027F4286DE66F1DB /* Pods_2019OrangeFesAppTests.framework */; };
 		7B67D14F9C850DD344352CB4 /* Pods_2019OrangeFesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106D36733594C51209219568 /* Pods_2019OrangeFesApp.framework */; };
 		9C4BFBBD26908CADCC737F65 /* Pods_2019OrangeFesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002DDB883336FD4A1813B45A /* Pods_2019OrangeFesAppUITests.framework */; };
+		B60D96A3233C5E3F00560F4D /* OrangeFesAppLaunch.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D96A2233C5E3F00560F4D /* OrangeFesAppLaunch.png */; };
+		B60D96A5233C696800560F4D /* 227.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D96A4233C696700560F4D /* 227.png */; };
+		B60D96A7233C772500560F4D /* 001.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D96A6233C772500560F4D /* 001.png */; };
+		B60D96A9233C9AAB00560F4D /* 230.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D96A8233C9AAB00560F4D /* 230.png */; };
+		B60D96AB233CFDDB00560F4D /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D96AA233CFDDB00560F4D /* 23.png */; };
 		B6147D9122F5F388003B6DFE /* StaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147D9022F5F388003B6DFE /* StaffViewController.swift */; };
 		B6147DA722F6E6B1003B6DFE /* EditLostAndFoundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DA622F6E6B1003B6DFE /* EditLostAndFoundTableViewController.swift */; };
 		B6147DAB22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6147DAA22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift */; };
@@ -80,6 +85,11 @@
 		782EBA45B90E5FEF2DE49B25 /* Pods-2019OrangeFesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2019OrangeFesAppTests.release.xcconfig"; path = "Target Support Files/Pods-2019OrangeFesAppTests/Pods-2019OrangeFesAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		8780A37FF064D248BB8DD1DF /* Pods-2019OrangeFesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2019OrangeFesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-2019OrangeFesAppUITests/Pods-2019OrangeFesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E494D09027F4286DE66F1DB /* Pods_2019OrangeFesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2019OrangeFesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60D96A2233C5E3F00560F4D /* OrangeFesAppLaunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OrangeFesAppLaunch.png; sourceTree = "<group>"; };
+		B60D96A4233C696700560F4D /* 227.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 227.png; sourceTree = "<group>"; };
+		B60D96A6233C772500560F4D /* 001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001.png; sourceTree = "<group>"; };
+		B60D96A8233C9AAB00560F4D /* 230.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 230.png; sourceTree = "<group>"; };
+		B60D96AA233CFDDB00560F4D /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
 		B6147D9022F5F388003B6DFE /* StaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffViewController.swift; sourceTree = "<group>"; };
 		B6147DA622F6E6B1003B6DFE /* EditLostAndFoundTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLostAndFoundTableViewController.swift; sourceTree = "<group>"; };
 		B6147DAA22F6E75B003B6DFE /* EditLostAndFoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLostAndFoundTableViewCell.swift; sourceTree = "<group>"; };
@@ -261,6 +271,11 @@
 		B6BF3E1E22A0801D00D8521F /* 2019OrangeFesApp */ = {
 			isa = PBXGroup;
 			children = (
+				B60D96A2233C5E3F00560F4D /* OrangeFesAppLaunch.png */,
+				B60D96A6233C772500560F4D /* 001.png */,
+				B60D96A8233C9AAB00560F4D /* 230.png */,
+				B60D96A4233C696700560F4D /* 227.png */,
+				B60D96AA233CFDDB00560F4D /* 23.png */,
 				B61B03682326404300ACCC1C /* NewProgramme */,
 				B6BFFF1422F485F90012BF4D /* Fonts */,
 				B6BF3E1F22A0801D00D8521F /* AppDelegate.swift */,
@@ -469,10 +484,15 @@
 				B6BFFF1922F487F90012BF4D /* JKG-M_3.ttf in Resources */,
 				B6BFFF1522F4861B0012BF4D /* JKG-L_3.ttf in Resources */,
 				B6558B76231ADA7200F94586 /* art.scnassets in Resources */,
+				B60D96A5233C696800560F4D /* 227.png in Resources */,
 				B6370DF223391BD900581AAD /* GoogleService-Info.plist in Resources */,
 				B6BF3E2C22A0801F00D8521F /* LaunchScreen.storyboard in Resources */,
+				B60D96AB233CFDDB00560F4D /* 23.png in Resources */,
 				B6BF3E2922A0801F00D8521F /* Assets.xcassets in Resources */,
 				B6BF3E2722A0801D00D8521F /* Main.storyboard in Resources */,
+				B60D96A9233C9AAB00560F4D /* 230.png in Resources */,
+				B60D96A3233C5E3F00560F4D /* OrangeFesAppLaunch.png in Resources */,
+				B60D96A7233C772500560F4D /* 001.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

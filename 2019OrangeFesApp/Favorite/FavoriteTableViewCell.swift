@@ -14,6 +14,7 @@ class FavoriteTableViewCell: UITableViewCell {
     @IBOutlet weak var FavoriteButton: UIButton!
     @IBOutlet weak var FavoritePicture: UIImageView!
     @IBOutlet weak var FavoriteView: UIView!
+    @IBOutlet weak var FavoriteGenre: UILabel!
     
     
     override func awakeFromNib() {
@@ -33,6 +34,11 @@ class FavoriteTableViewCell: UITableViewCell {
         FavoriteView.layer.shadowOpacity = 0.25
         // 影をぼかし
         FavoriteView.layer.shadowRadius = 4
+        
+        FavoriteGenre.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+        FavoriteGenre.layer.cornerRadius = 3
+        FavoriteGenre.layer.borderColor = UIColor.gray.cgColor
+        FavoriteGenre.layer.borderWidth = 0.8
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

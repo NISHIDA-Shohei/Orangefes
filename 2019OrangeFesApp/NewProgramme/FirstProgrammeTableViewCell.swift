@@ -35,7 +35,6 @@ class FirstProgrammeTableViewCell: UITableViewCell {
         // 影をぼかし
         ProgrammeView.layer.shadowRadius = 4
         
-        ProgrammeGenre.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMinYCorner, .layerMaxXMaxYCorner]
         ProgrammeGenre.layer.cornerRadius = 3
         ProgrammeGenre.layer.borderColor = UIColor.gray.cgColor
         ProgrammeGenre.layer.borderWidth = 0.8

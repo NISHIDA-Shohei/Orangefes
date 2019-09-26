@@ -171,14 +171,10 @@ class SecondProgrammeViewController: UIViewController, UITableViewDelegate, UITa
             }
         }
         
-        
-        
         // userDefaultsに格納したい値
         //UserDefaultにUDProgrammeNameを保存する
         userDefaults.set(getUDPerformanceName, forKey: "UDPerformanceNameKey")
-        
         userDefaults.set(getUDPerformanceDescription, forKey: "UDPerformanceDescriptionKey")
-        
         userDefaults.set(getUDPerformancePicture, forKey: "UDPerformancePictureKey")
         
     }
