@@ -35,7 +35,7 @@ class ElseTableViewController: UITableViewController {
         // In this case, we instantiate the banner with desired ad size.
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
         addBannerViewToView(bannerView)
-        bannerView.adUnitID = "ca-app-pub-4195103882736205/5671880921"
+        bannerView.adUnitID = "ca-app-pub-2794500738665846/8940293663"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         

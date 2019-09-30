@@ -79,7 +79,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
     let ProgrammeGenre5: [String] = ["　スポーツ　","　食品　","　食品　","　食品　","　食品　","　食品　"]
     let ProgrammePicture5String: [String] = ["001","clear","clear","clear","clear","clear"]
     var ProgrammePicture5: [UIImage?] = []
-    let ProgrammeDescription5: [String] = ["「サッカー部」私たちサッカー部の出し物は毎年恒例となっているキックターゲットで、ボールを蹴って的に当てるというゲームです。大人も子供も楽しめるので、是非遊びに来てください！\n\n場所：グラウンド","惣菜屋","学校食堂","パン屋","クレープ屋","からあげ丼甘辛ソース・４５０円　\n豚キムチ丼温玉のせ・４５０円　\nラーメン・３５０円　\nトマトカレー夏野菜・４００円　\nコロッケパン・１００円　\nいももち・１５０円　\nアメリカンドック・１００円　\nドーナツ４種類・各１００円（キャラメル・アップルシナモン・ミルクショコラ・抹茶ミルク）　\nからあげ４個・１００円（オレンジ祭のみの企画です）"]
+    let ProgrammeDescription5: [String] = ["「サッカー部」私たちサッカー部の出し物は毎年恒例となっているキックターゲットで、ボールを蹴って的に当てるというゲームです。大人も子供も楽しめるので、是非遊びに来てください！\n\n場所：グラウンド","美味！！メンチボール\n\n場所：オレンジの間前","和菓子・アクセサリー\n\n場所：オレンジの間前","オレンジあげパン\n法政クッキー\n\n場所：オレンジの間前","魅惑のクレープ\n\n場所：オレンジの間前","からあげ丼甘辛ソース・４５０円　\n豚キムチ丼温玉のせ・４５０円　\nラーメン・３５０円　\nトマトカレー夏野菜・４００円　\nコロッケパン・１００円　\nいももち・１５０円　\nアメリカンドック・１００円　\nドーナツ４種類・各１００円（キャラメル・アップルシナモン・ミルクショコラ・抹茶ミルク）　\nからあげ４個・１００円（オレンジ祭のみの企画です）"]
     
     // 遷移先のViewControllerに渡す変数
     var ProgrammeGiveData: String = ""
@@ -121,7 +121,7 @@ class FirstProgrammeViewController: UIViewController, UITableViewDelegate, UITab
         // In this case, we instantiate the banner with desired ad size.
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
         addBannerViewToView(bannerView)
-        bannerView.adUnitID = "ca-app-pub-4195103882736205/5671880921"
+        bannerView.adUnitID = "ca-app-pub-2794500738665846/8940293663"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         

@@ -12,11 +12,11 @@ import Firebase
 class StatusTableViewController: UITableViewController {
     // cellのlabelに書く文字列
     //1=1号館 2=2号館 3=3号館 4=4号館 5=オレンジの間前
-    let ProgrammeName1: [String] = ["漫画広報部","華道部","茶道部"]
-    let ProgrammeName2: [String] = ["ゆっかいず","ドーナツショップ","お化け屋敷","ちゅるちゅるらんど","硬式テニス部３年","BEES","トッポギ","すいーと♡えんじぇる","起業家クラス","法政国際２年男子","Cafe in The Daytime","バレー部","硬式テニス部１・２年","放送部","１年H組","１年C組","図書委員会","アメリカンドッグ","１年E組","あなたとコンビに法政チーズ","１年G組"]
-    let ProgrammeName3: [String] = ["家庭科部","美術部",]
-    let ProgrammeName4: [String] = ["バドミントン部","RESISTANCE","有志ダンス","同窓会","PTAバザー","入試相談室"]
-    let ProgrammeName5: [String] = ["太田屋","一の会","ベル　エポック","MARION CREPES","食堂"]
+    let ProgrammeName1: [String] = ["漫画広報部","華道部","茶道部","図書委員会　"]
+    let ProgrammeName2: [String] = ["ゆっかいず","ドーナツショップ","お化け屋敷","ちゅるちゅるらんど","硬式テニス部３年","トッポギ","すいーと♡えんじぇる","起業家クラス","法政国際２年男子","Cafe in The Daytime","バレー部","硬式テニス部１・２年","放送部","MORI'S DINER","１年C組","1年D組　","アメリカンドッグ","バドミントン部　","１年E組","あなたとコンビに法政チーズ","１年G組","家庭科部","ソフトボール部"]
+    let ProgrammeName3: [String] = ["美術部"]
+    let ProgrammeName4: [String] = ["RESISTANCE","有志ダンス","同窓会","PTAバザー","入試相談室"]
+    let ProgrammeName5: [String] = ["サッカー部","太田屋","一の会","ベル　エポック","MARION CREPES","食堂"]
     
     
     func reload() {
@@ -89,7 +89,7 @@ class StatusTableViewController: UITableViewController {
         } else if sectionNumber == 3 {
             sectionPlace = "4号館"
         } else if sectionNumber == 4 {
-            sectionPlace = "オレンジの間前・食堂"
+            sectionPlace = "オレンジの間前・食堂・グラウンド"
         }
         return "\(sectionPlace)"
     }

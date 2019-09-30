@@ -681,7 +681,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="xo6-B6-5Cy" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="校内地図" image="map_marker" selectedImage="map_marker" id="Zo0-C2-Tky"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="CK4-rI-tYO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.96003717180000003" green="0.74004137520000002" blue="0.25471782679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="largeTitleTextAttributes">
@@ -1531,9 +1531,6 @@ https://forms.gle/kejw7gb7R72pzjPt9
 画面中央下付近 
 ・広告内容
 広告はGoogle社と契約して表示させているものです。 広告の大まかなジャンルはオレンジ祭実行委員会側で設定が可能ですが、表示される広告１つ１つまで正確な設定が出来る訳ではございません。 したがって、アプリ内の広告内容に関してオレンジ祭実行委員会は責任を負いません。 
-・収益方法
-広告を表示することによって発生するインプレッション報酬
-広告をクリックすることによって発生する報酬 
 ・利益の使用方法
 広告による収益は全て今後の生徒の活動に使用させていただきます。</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>

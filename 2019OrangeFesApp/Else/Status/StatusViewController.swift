@@ -17,7 +17,7 @@ class StatusViewController: UIViewController, UITextFieldDelegate, UIPickerViewD
     @IBOutlet var pickerView: UIPickerView!
     @IBOutlet weak var ProgrammeTitle: UINavigationItem!
     
-    let StatusList: [String] = ["空いています","5分待ち","10分待ち","15分待ち","20分待ち","25分待ち","30分以上待ち","整理券を配っています","準備中","終了","データがありません" ]
+    let StatusList: [String] = ["空いています","運営中","5分待ち","10分待ち","15分待ち","20分待ち","25分待ち","30分以上待ち","整理券を配っています","準備中","終了","データがありません" ]
     
     var ProgrammeReceiveData: String = ""
 
