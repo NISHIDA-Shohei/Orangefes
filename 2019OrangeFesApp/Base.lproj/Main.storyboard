@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dRw-U3-QGq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dRw-U3-QGq">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -294,7 +294,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DGg-i7-LRq">
-                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="514"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">オレンジ祭　アプリ利用規約 
 オレンジ祭アプリをダウンロードして頂きありがとうございます。この利用規約（以下「本規約」とします。）は、オレンジ祭の運営を行う法政大学国際高等学校オレンジ祭実行委員会（以下「本委員会」とします。）が提供する「オレンジ祭アプリ」（以下「本アプリ」とします。）と本アプリのサービス（以下「本サービス」とします。）の利用条件などを定めたものです。
@@ -377,7 +377,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tJS-s2-he7">
-                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="514"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text"> オレンジ祭アプリ　プライバシーポリシー  本アプリは、利用者の情報の一部を取得し利用します。このプライバシーポリシー（以下「本ポリシー」とします。）は、本アプリにおける個人情報やそれに基づく情報の取り扱いを定めたものです。
 
@@ -673,7 +673,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAk-qE-U1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7842" y="1504"/>
+            <point key="canvasLocation" x="7814" y="1434"/>
         </scene>
         <!--校内地図-->
         <scene sceneID="lL3-tm-vdE">
@@ -850,7 +850,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="NtF-jw-9mw" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="その他" image="albums" selectedImage="albums" id="zKU-v1-u6Z"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="xcg-TS-iY4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
@@ -1243,7 +1243,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IdJ-60-5l4">
-                                <rect key="frame" x="30" y="133.5" width="315" height="454.5"/>
+                                <rect key="frame" x="30" y="134.5" width="315" height="453.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パンフレットからの変更点" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7y-fe-jg1">
                                         <rect key="frame" x="37.5" y="40" width="240" height="20"/>
@@ -1299,7 +1299,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCc-MJ-fIj">
-                                <rect key="frame" x="30" y="133.5" width="315" height="454.5"/>
+                                <rect key="frame" x="30" y="134.5" width="315" height="453.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パンフレットからの変更点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gO5-Dd-IPz">
                                         <rect key="frame" x="37.5" y="40" width="240" height="20"/>
@@ -1355,7 +1355,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIl-wg-WqY">
-                                <rect key="frame" x="20" y="343" width="68" height="17"/>
+                                <rect key="frame" x="20" y="343.5" width="68" height="17"/>
                                 <attributedString key="attributedText">
                                     <fragment content="団体説明">
                                         <attributes>
@@ -1367,13 +1367,13 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OiG-8b-uZb">
-                                <rect key="frame" x="0.0" y="114" width="375" height="194"/>
+                                <rect key="frame" x="0.0" y="114.5" width="375" height="194"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OiG-8b-uZb" secondAttribute="height" multiplier="64:35" constant="20" id="dJc-F8-ota"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nL7-RE-wPe">
-                                <rect key="frame" x="20" y="375" width="335" height="151"/>
+                                <rect key="frame" x="20" y="375.5" width="335" height="151"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="151" id="AQa-xs-t8j"/>
@@ -1383,13 +1383,13 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状況：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgB-Vg-EKo">
-                                <rect key="frame" x="234" y="343" width="51" height="17"/>
+                                <rect key="frame" x="234" y="343.5" width="51" height="17"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-te-RDq">
-                                <rect key="frame" x="293" y="308" width="77" height="30"/>
+                                <rect key="frame" x="293" y="308.5" width="77" height="30"/>
                                 <state key="normal" title="地図を表示"/>
                                 <connections>
                                     <action selector="ShowMap:" destination="Jsy-pg-EK9" eventType="touchUpInside" id="nCg-z7-9BN"/>
@@ -1397,7 +1397,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="データなし" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qle-yg-ctC">
-                                <rect key="frame" x="285" y="343" width="85" height="17"/>
+                                <rect key="frame" x="285" y="343.5" width="85" height="17"/>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1887,7 +1887,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                 <navigationController id="5vR-zW-biH" customClass="NavigationViewController" customModule="_019OrangeFesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="企画一覧" image="list" selectedImage="list" id="KAy-HT-Y6M"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="akU-qs-LW2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="103.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1905,7 +1905,6 @@ https://forms.gle/kejw7gb7R72pzjPt9
                     <view key="view" contentMode="scaleToFill" id="1al-hy-uS1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="jGW-PJ-Jfl"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="企画一覧" image="list" selectedImage="list" id="RwJ-1s-WuD"/>
@@ -2240,7 +2239,7 @@ https://forms.gle/kejw7gb7R72pzjPt9
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSj-5K-Gef">
-                                <rect key="frame" x="0.0" y="104" width="375" height="514"/>
+                                <rect key="frame" x="0.0" y="104.5" width="375" height="513.5"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2272,6 +2271,6 @@ https://forms.gle/kejw7gb7R72pzjPt9
         <image name="star" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Y7b-e5-O7q"/>
+        <segue reference="Mw7-8h-NzK"/>
     </inferredMetricsTieBreakers>
 </document>
